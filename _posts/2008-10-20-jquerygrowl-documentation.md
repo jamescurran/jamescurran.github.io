@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: jQuery.growl Documentation
-    ---
+---
+layout: default
+title: jQuery.growl Documentation
+---
 
   <p>Right now, I'm in the midst of a long-running project to rewrite my other website, <a href="http://www.njtheater.com" target="_blank">NJTheater.com</a> (beta at <a href="http://www.njtheater.org/" target="_blank">njtheater.org</a>).  In the process, I've discovered jQuery, the hot new javascript library that all the kids are using today.   One of it's key selling points is it's well designed plugin system, which has led to a host of add-ons being written for it.  </p>  <p>Recently, I stumbled upon one such plugin, <a href="http://www.fragmentedcode.com/jquery-growl">jQuery Growl Plugin</a> by <a href="http://www.fragmentedcode.com/">David Higgins</a>.  Apparently, Growl is a MacOS application, so the Applist readers should by now figured out what it does.  For the Windows/Linux folk, it displays a little popup alert box, sort-of like the Messenger "toaster" popup, except they come down from the top.  They slide down, stay for a few moments, and then fade out.  If another is displayed while the first is still visible, they stack.  <a href="http://projects.zoulcreations.com/jquery/growl/" target="_blank">Demos here.</a> Now, while the demos looked rather cool, library itself does suffer from the main problem that affects most open source code -- the documentation just sucks.  In fact, it goes beyond mere suckage; at one point, you get the feeling the author is just mocking you.</p>  <p>But no sense in just complaining, or insulting a person who has contributed to the community.  The best thing to do in this case is for one to contribute himself.  And so, here's my documentation for the plugin</p>  <h2><u>jQuery.growl</u></h2>  <p>The official calling syntax is:</p>  <pre class="cpp"><font size="3">$.growl(title, message, image, priority); </font></pre>
 

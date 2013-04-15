@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: America is Doomed.....
-    ---
+---
+layout: default
+title: America is Doomed.....
+---
 <P>OK, I don't mean that in the sense &#8220;...if Bush is re-elected..&#8221;</P>
 <P>No, this goes deeper than the election.....</P>
 <P>Yesterday, I saw an &#8220;Washington Power Players&#8220; Edition of Jeopardy (It may have been a re-run from earlier in the season).  The players were Tim Russert (Host of NBC's Meet the Press), Christie Todd-Whitman (Fmr Governor of NJ & Fmr Secry of the EPA), and Tavis Smiley (Host of NPR's Tavis Smiley show).</P>

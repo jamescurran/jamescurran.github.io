@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Yep, I'm a socialist....
-    ---
+---
+layout: default
+title: Yep, I'm a socialist....
+---
 
 <p>I haven't posted here in a while, so I figure I'll go back to the old "generate content by taking online quizzes" trick.</p>
 <p>&nbsp;</p><table style="border:1px solid black;"><tr><td align="center">      <font size="3">      You are a     </font> <font size="3">    <br>     <font size="4"><b>Social Liberal</b></font>     <br>     <font size="3">(66% permissive)</font><br>     </font> <font size="3">    <br>     and an...     </font><font size="3"><br>      <font size="4"><b>Economic Liberal</b></font>      <br>     <font size="3">(20% permissive)</font><br>     </font>  <font size="3">    <br>     You are best described as a:<br>     <br><font size="+2"><u><b>Socialist </b></u></font>     </font><br>        <table id="thetable" cellpadding="0" cellspacing="0">        <tr>         <td> </td>         <td></td>        </tr>         <tr> <td></td>          <td align="left"> <img src="http://cdn.okcimg.com/graphics/politics_you.gif" border="0"></td>        </tr>       </table>        <br>        <table id="thetable" cellpadding="0" cellspacing="0">        <tr>         <td> </td>         <td></td>        </tr>         <tr> <td></td>          <td align="left"> <img src="http://cdn.okcimg.com/graphics/politics_you.gif" border="0"></td>        </tr>       </table>        <br><br>Link: <a href="http://www.okcupid.com/politics"><b> The Politics Test </b></a>   on  <a href="http://www.okcupid.com/"><b>Ok Cupid</b></a><br> Also : <a href="http://www.okcupid.com/online.dating.persona.test"> The OkCupid Dating Persona Test </a></td></tr></table>

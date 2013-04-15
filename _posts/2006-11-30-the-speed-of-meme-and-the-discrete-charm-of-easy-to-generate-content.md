@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Speed of Meme, and the discrete charm of easy to generate content.
-    ---
+---
+layout: default
+title: The Speed of Meme, and the discrete charm of easy to generate content.
+---
 
   
 <p>I hate posts which are just links to other pages (which is actually not true --- I <strong>do </strong>like reading other people's blogs which are just links --- I just think it's cheating when I do it)</p>

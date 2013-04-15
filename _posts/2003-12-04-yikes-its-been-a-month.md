@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Yikes... It's been a month.
-    ---
+---
+layout: default
+title: Yikes... It's been a month.
+---
 
   
 <p>Ok, so, I've been a bit lax about writing this blog.  Hey, it's not like people was hanging around wait for my next report.  We all know this is just for some future researcher writing a biography of me years from now, after I win a Nobel Prize or something.</p>

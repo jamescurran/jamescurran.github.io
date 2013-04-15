@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: #songsincode : The Turtle’s “Happy Together”
-    ---
+---
+layout: default
+title: #songsincode : The Turtle’s “Happy Together”
+---
 
   <pre class="c#">
     <font size="4">(Me + you) &amp;&amp;  (you + me)

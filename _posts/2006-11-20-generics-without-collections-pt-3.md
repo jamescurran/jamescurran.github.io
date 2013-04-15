@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Generics without Collections, Pt. 3
-    ---
+---
+layout: default
+title: Generics without Collections, Pt. 3
+---
 
   <p>Over the weekend, I attended the third <a href="http://www.njcodecamp.org/">NJ Code Camp.</a> And since the moderators asked nicely, I presented this series as a talk.  Overall, the lecture didn't go well. (I was too nervous and talk too quickly.  Oddly, on one of the evaluation sheets, someone complained that I was talking too loudly, which I first is the first time in my life that was ever said about me)</p> <p>Also, I think I was a victom of scheduling a bit.  My presentation was during the first shift, and was on an advanced topic.  The other generics talk that day (by Kevin Goff), which was much more of an introduction to generics, was given during the last shift.  So, if you didn't know generics well, you'd be completely confused by my talk.  But, if you'd seen Kevin's first, and then saw mine, it would have made more sense.</p> <p>Anyway, for the presetation I came up with a few more examples, which I'll be posting to the blog in the upcoming days (between Rev. Billy updates --- Remember the day after Thanksgiving is [wikipeida:Buy Nothing Day])</p> <p> </p> <p>One of the attendees to the presentation mentioned that he could use generics to simplify parsing enums, and another said that he'd already done it.  It took me only a few moments to write the code, so I figured I'd share it with you:</p> <p>Presently, to parse a string into a enum value, you have to write it like this:</p> <div class="csharpcode"><pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">enum</span> ABC {Able, Baker, Charlie};</pre><pre><span class="lnum">   2:  </span><span class="kwrd">string</span> str = <span class="str">"Charlie"</span>;</pre><pre class="alt"><span class="lnum">   3:  </span>ABC c = (ABC) Enum.Parse(<span class="kwrd">typeof</span>(ABC), str);</pre></div>
 <p> </p>

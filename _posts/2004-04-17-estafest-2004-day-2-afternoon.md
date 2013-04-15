@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: ESTAFest 2004 (Day 2 - Afternoon)
-    ---
+---
+layout: default
+title: ESTAFest 2004 (Day 2 - Afternoon)
+---
 Sorry about cutting that short but I was late for dinner.
 
 Anyway, back to our story:  Well, first of all, somehow a paragraph got lost form my last post (I'm writing off-line, so it's easier to add it here than correct it there).  So, the short play "Fin & Euba",  ended about 2PM.  The festival organizers wanted to start the next show immediately.  However, according to the published schedule, that show wasn't supposed to start to 3PM.  The cast wasn't ready yet, and had also told friends to come at 3PM.  Hushed discussions were held, and eventually, it was decided to start at 2:30.  (Actually, I think the discussions were just a delaying tactic to hold it until the cast was ready)

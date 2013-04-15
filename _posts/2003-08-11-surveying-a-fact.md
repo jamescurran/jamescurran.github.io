@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Surveying a Fact
-    ---
+---
+layout: default
+title: Surveying a Fact
+---
 <p><font face="Arial" size="2">My actual very first Blog entry (8-Feb-2003)</font></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Tahoma"><font face="Arial">I always figured that a blog should be made up of the random thoughts that one has at times.  Since I recent decided to start one (though it won't be online for some time after I write it), here goes with my first:</font></span></p>
 <p class="MsoNormal" style="MARGIN: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Tahoma"><font face="Arial"></font></span> </p>

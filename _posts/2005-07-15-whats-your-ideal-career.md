@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: What's Your Ideal Career?
-    ---
+---
+layout: default
+title: What's Your Ideal Career?
+---
 
   
 <TABLE>

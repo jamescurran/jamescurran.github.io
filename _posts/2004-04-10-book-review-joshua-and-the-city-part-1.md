@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Book Review: Joshua and the City (Part 1)
-    ---
+---
+layout: default
+title: Book Review: Joshua and the City (Part 1)
+---
 
   <p>Part 2 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/203.aspx">here.</a><br />Part 3 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/204.aspx">here</a>.</p>
   <p class="MsoNormal" style="margin:0in 0in 0pt;">I want to talk about the book I just finished.<span>  </span>Normally, I wouldn’t bother with a full critique, but I found this book so bad on so many different levels, I felt compelled to comment.</p>

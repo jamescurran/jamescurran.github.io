@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Republican National Convention, Day 3.
-    ---
+---
+layout: default
+title: The Republican National Convention, Day 3.
+---
 <P>Lots'o'photos today.  Partial because I did a lot, and partial because one event lent itself to photographing everything.  As usually, images are at: <A href="http://gallery.honestillusion.com">http://gallery.honestillusion.com</A></P>
 <P>First off, I dragged myself into the City an hour & a half earlier than normal, because I wanted to join in on &#8220;The World's Longest Unemployment Line" which ran along Broadway from Wall St to MSG. (That's about 3+ miles).  Participants were given large cardboard &#8220;Pink Slips&#8221; to wave.  I joined the line at 23rd St (right by the Flatiron Building).  Broadway is crossing 5th Ave there,  so there this rather desolate island between the three street, which needed to be covered. Our block leader wasn't very good at talking people into moving, so while is sidewalk was crowded south of 23rd, we were a bit sparse just north of it.  Oddly, the &#8220;Pants-on-Fire&#8221; car which I'd seen last night, was stationed at the intersection as well (I think it's following me!).  The protest was scheduled to last only 15 minutes.  </P>
 <P>At it, I met a woman who flew in from Olympia, WA for the protests.  Last night, I met a couple from Arizona. So, it's not just the &#8220;wild radicals&#8221; of NYC --- dislike of W is widespread, and they are just converging here......</P>

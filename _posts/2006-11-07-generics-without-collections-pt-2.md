@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Generics without Collections, pt. 2
-    ---
+---
+layout: default
+title: Generics without Collections, pt. 2
+---
 
   <p>My <a title="Generics without Collections" href="http://honestillusion.com/blogs/blog_0/archive/2006/10/02/Generics-without-Collections.aspx">previous article</a> on this subject dealt with creating a lazy-loaded data type.  But, if you think about it, that's realy just a collection, with just one item.  I promised you use of generics without collections, so let's move this to the next step, using the type to affect the behavior of the code, without ever storing an object of that type.</p> <p>You've probably written some code like this:</p> <div class="csharpcode"><pre class="alt">    <span class="kwrd">foreach</span> (Control ctrl <span class="kwrd">in</span> <span class="kwrd">this</span>.Controls)</pre><pre>    {</pre><pre class="alt">        ComboBox cb = ctrl <span class="kwrd">as</span> ComboBox;</pre><pre>        <span class="kwrd">if</span> (cb != <span class="kwrd">null</span>)</pre><pre class="alt">        {</pre><pre>             MessageBox.Show(<span class="str">"CheckBox "</span> + (chb.Checked ? <span class="str">"IS"</span> : <span class="str">"is NOT"</span>) + <span class="str">" checked"</span>);                </pre><pre class="alt"> </pre><pre>        }</pre><pre class="alt">    }</pre></div>
 <p>This gives a list of all ComboBoxes in the curret control set.  To handle that, we've got to go through all the controls and filter out the ones that are not ComboBoxes.  Wouldn't it be great if we could handle this filtering automatically?</p>

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Which Simon and Garfunkel album am I?
-    ---
+---
+layout: default
+title: Which Simon and Garfunkel album am I?
+---
 
   <IMG src="http://sglyrics.myrmid.com/bridgequiz.png" />
   <BR />

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Book Review: Joshua and the City (Part 2)
-    ---
+---
+layout: default
+title: Book Review: Joshua and the City (Part 2)
+---
 
   <p>Part 1 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/202.aspx">here.</a><br />Part 3 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/204.aspx">here</a>.</p>
   <p class="MsoNormal" style="margin:0in 0in 0pt;">This brings us to the next major failing of the book:<span>  </span>The character of Joshua.<span>  </span>In an attempt to make him a “Christ-like character”, Girzone spends too much time trying to make him “Christ-like” and not enough on making him a “Character”.<span>  </span>In the end, he fails at both tasks.<span>  </span>Joshua is a remarkably bland character, whose only noticeable traits are being soft-spoken and talking in cheesy platitudes.<span>   </span>The real Christ was able to command the attention of thousands when he spoke.<span>  </span>Joshua wouldn’t be the center of attention in a phone booth.<span>  </span>Girzone often tells us of his charm over people – mostly because it’s convenient to the plot-- but we never see it in the words he gives Joshua to say. </p>

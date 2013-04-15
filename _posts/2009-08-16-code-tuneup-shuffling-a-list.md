@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Code Tune-Up: Shuffling a List
-    ---
+---
+layout: default
+title: Code Tune-Up: Shuffling a List
+---
 Over on CodeProject, I spotted an article by Mahdi Yousefi called "
 
 <a href="http://www.codeproject.com/KB/validation/aspnet_capcha.aspx" target="_blank">Creating an ASP.NET captcha using jQuery and s3capcha”.</a>

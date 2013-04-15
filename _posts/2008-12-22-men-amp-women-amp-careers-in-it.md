@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Men &amp; Women &amp; Careers in IT.
-    ---
+---
+layout: default
+title: Men &amp; Women &amp; Careers in IT.
+---
 
   <p>
     <em>(Ok, this is the third time I'm writing this.  The first time it was in the comment form of a blog.  For some reason, it just swallowed the message without posting it, blanking the editbox, and then giving an error saying the edit box was empty.  So, I tried again.  The second time, not trusting a webpage textarea, I wrote it in a text editor, so I'd have a copy if the website continued to be difficult. But I wrote it in the train into work, so I couldn't post it immediately.  I just close up my laptop with the article unsaved in Crimson Editor.  When I got to work and tried to upload it, my laptop refused to come out of hibernation, forcing me to power cycle it (<strong>twice</strong>).  Text lost again.  By the time I was half-way through the second version, I decided I should post it to my blog as well.  Fortunately, Live Writer makes saving very easy (you get to skip that "Save File" Dialog), so this time it may actually see the light.)</em>

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The party & The crash
-    ---
+---
+layout: default
+title: The party & The crash
+---
 <P>The funny  thing about not posting all month is that I've had something I wanted to write about for 3 week; I just never got a chance.</P>
 <P>Every year on the first Saturday of August, my friends  Paul & Deb have a barbecue on the 30  acre farm in western NJ.  The party was a wild success as it always is running well into the night.  So late, in fact, that several of us spend the night. Now, as I understand it, Paul & Deb met while working on the Ridgewood, NJ EMS, and presently, she's on the local EMS team, and he's a fireman. </P>
 <P>So, on Sunday, about noon, as myself & Dan (the other last holdout-- another member on the Ridgewood EMS) were helping them clean up, a call come in --- a plane crash at the nearby airport.</P>

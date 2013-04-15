@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Life Expectancies
-    ---
+---
+layout: default
+title: Life Expectancies
+---
 
   
 <p>After my messages about Rock Star: Supernova, I guess now I can talk about the other reality show I watch, NBC's "<em>Biggest Loser</em>", which takes a group a overweight people, and puts them through a regiment of diet &amp; exercise.  The winner is the one who loses the most weight. I like it because it's not just about people doing stupid things for money, but about people working to improve themselves.   The last two years, on the first episode, I spotted one woman who I though "Ya'know, when she loses some weight, she'll be really cute".  Both years, that woman came in second.  Last year, I had a particularly large crush on Suzy.  I didn't particular like Matt, who, naturally ended up winning the contest, and started dating Suzy.  They are now engaged (or possibly already married)</p>

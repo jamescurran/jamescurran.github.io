@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Fun Fact:  To the Moon, Alice, to the Moon!
-    ---
+---
+layout: default
+title: Fun Fact:  To the Moon, Alice, to the Moon!
+---
 
 
 <p>I really should bring the subject matter here back around to computers.....</p>

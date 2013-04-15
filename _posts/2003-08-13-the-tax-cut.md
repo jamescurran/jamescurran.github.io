@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Tax Cut
-    ---
+---
+layout: default
+title: The Tax Cut
+---
 
   <p>
     <font size="2">

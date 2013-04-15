@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Naked Came The Null Delegate : Chapter 1 – “I, Disposable !”
-    ---
+---
+layout: default
+title: Naked Came The Null Delegate : Chapter 1 – “I, Disposable !”
+---
 
   <P>Slowly, as the rest of his coworkers drift off towards home, Seymour Sharpton, continued on in his cubical. He didn't mind. He was trying to look busy, but was really just writing on his Facebook wall. As the hours ticked by, he knew you'd soon be able to update his “Relationship Status”. He knew the one other person working late that night. He had carefully arranged for the new intern – the exotic Vissa Basicova – (a pure virtual, he was certain) – to be swamped with work that just <I>had </I>to be done by tomorrow morning, and tonight he was going to make his move. He had carefully prepared a command entity with her as he enumerated the worker pool. And he was now the domain controller, and this process was about to leave debug mode. First he'd get her to yield for a break for a soda. Then, after helping her through her workload, a environment exit for dinner... and then, who knows ?</P>
 <P>As he threaded the rows up to her cubical, he was shocked to find it empty – An unknown apartment state! – Had this application terminated before it started ? But her jacket and purse were still at her desk ---- she wouldn't have gone far. Just then he heard a sound --- oddly familiar but nevertheless out of place in the office. He followed the sound down the aisle to the mail room, and peering in, he saw Vissa --- and Bob, the mail room guy – a nullable type if there ever was one – engaged in a double interlocked exchange that he had only ever read about. And, as he watched the perspiration glisten off her naked double value types, the cold reality dawned on Sey: that Bob's bare pointer was implementing an interface the Sey would never get to extend.</P>

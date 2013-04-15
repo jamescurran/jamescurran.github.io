@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: A quick way to go to Shrinkster links.
-    ---
+---
+layout: default
+title: A quick way to go to Shrinkster links.
+---
 
   <P>I just read an article over on CodeProject on creating a small application to <A href="http://www.codeproject.com/csharp/GotoShrinkster.asp">quickly go to a Shrinkster.com url</A>, and as I was reading it, a simpler method occurred to me.</P>
 <P>Backing up a bit, Shrinkster.com is a site which holds a gaint database of web addresses.  If you wanted to give out a web page link on, say, an podcast, where you won't want to spell out a long URL ("double-you, double-you, double-you, Honest Illusion dot Com, Slash Blogs, slash blog underscore 0, slash archive, slash two thousand seven, slash zero two, slash....."), you could go to Shrinkster, enter the URL, and they would give you a short code (usually, three letters).  Then all you have to say is "Shrinkster.com slash A B C" (or what ever the code is).</P>

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Get an ApplicationBarIconButton by name (Redux)
-    ---
+---
+layout: default
+title: Get an ApplicationBarIconButton by name (Redux)
+---
 
   
 <p>Yesterday, I read a blog post on <a href="http://www.ariankulp.com/get-an-applicationbariconbutton-by-name" target="_blank">getting an ApplicationBarIconButton by name</a>.  The author made a couple minor errors in the code, which I was going to leave a comment about, except his comment page is broken. So, another excuse to write something for my own blog.</p>

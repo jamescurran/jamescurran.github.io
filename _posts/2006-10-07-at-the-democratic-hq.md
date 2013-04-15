@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: At the Democratic HQ
-    ---
+---
+layout: default
+title: At the Democratic HQ
+---
 
   
 <p>I volunteer for the Menendez Campaign.  He came by the this morning</p>

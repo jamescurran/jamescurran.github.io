@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Test Of new CS Modules
-    ---
+---
+layout: default
+title: Test Of new CS Modules
+---
 <P>[amazon:type=Blended:search=B00004YVL3:results=1]</P>
 <P>[amazon:type=Blended:search=b000002l74:results=3]</P>
 <P>Congress shall make no law repecting the establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press, or the right of the people, peacably, to assemble, and petition the government for a redress of grievences</P>

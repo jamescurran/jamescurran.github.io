@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Yes, I'm from Jersey.....
-    ---
+---
+layout: default
+title: Yes, I'm from Jersey.....
+---
 I scored a 
 
 

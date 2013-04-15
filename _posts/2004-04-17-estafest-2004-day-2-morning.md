@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: ESTAFest 2004 - Day 2 (Morning)
-    ---
+---
+layout: default
+title: ESTAFest 2004 - Day 2 (Morning)
+---
 After breakfast, I was over to the college for the morning workshop session. Actually, this one was a repeat of the one I came in at the end of yesterday: "Script Analyst: Understanding the playwright's scenario" by Ward Dales, who is one of the adjudicators.  I thought it was kind-a interesting, considering I don't actor or direct, and it was for directors dealing with actors.   
 In the next session, I attended a workshop on taking a show on the road, by Joe Musumeci, the other adjudicator.  This was also fun, although it had even less relevance to me --- everyone else enjoyed it because they had to pack up at least one show to bring it here to the festival.
 

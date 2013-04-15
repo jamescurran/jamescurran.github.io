@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Right Personality
-    ---
+---
+layout: default
+title: The Right Personality
+---
 <p>It seems lots of programmer/blogger folks (<a href="http://scottwater.com/blog/posts/9852.aspx">ScottW</a>, <a title="http://www.sellsbrothers.com/news/showTopic.aspx?ixTopic=796" href="http://www.sellsbrothers.com/news/showTopic.aspx?ixTopic=796"><font color="#6666cc">Chris Sells</font></a> , <a title="http://weblogs.asp.net/duncanma/posts/27108.aspx" href="http://weblogs.asp.net/duncanma/posts/27108.aspx"><font color="#6666cc">Duncan Mackenzie</font></a>, <a href="http://weblogs.asp.net/ksharkey/posts/27210.aspx"><font color="#6666cc">Kent Sharkey</font></a>, <a href="http://weblogs.asp.net/gad/posts/27239.aspx"><font color="#6666cc">GAD</font></a>) are taking an online Myers-Briggs <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">personality test</a>, and all coming up as type “ENTJ” (that's “Extroverted Intuitive Thinking Judging" for those not hip to the Myers-Briggs lingo), and since many of those bloggers work for Microsoft, they were speculating if that should be a requirement for employment. </p>
 <p>Well, I took the test also, and came up as</p>
 <p align="center">

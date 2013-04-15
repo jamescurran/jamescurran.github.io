@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: A ViewComponent extension for Castle MonoRail, Part II
-    ---
+---
+layout: default
+title: A ViewComponent extension for Castle MonoRail, Part II
+---
 
   <P>This was intended to be a two-part article.  It was just after I published <A href="http://honestillusion.com/blogs/blog_0/archive/2009/08/24/a-viewcomponent-extension-for-castle-monorail.aspx" target="_blank">the original article,</A> I noticed that I’d left out a large part of ViewComponentEx. We continue…..</P>
 <HR />

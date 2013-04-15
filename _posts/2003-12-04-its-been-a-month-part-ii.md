@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: It's been a month (Part II)
-    ---
+---
+layout: default
+title: It's been a month (Part II)
+---
 <p>On Nov 19th, I started my new job at <a href="http://www.partsearch.com">PartSearch Technologies</a>.</p>
 <p>On Nov 20th, having realized a few days earlier that Driver's License had expired three weeks earlier, I got a new one after work -- waiting in long lines, and thereby missing <em>Bat Boy - The Musical</em> at Montclair State College.</p>
 <p>The weekend of Nov 21<sup>st</sup>, I flew to Fort Lauderdale, FL for the weekend.  There a story behind this.  Way back in the late 1970's, I was in high school, and owned my first computer, a Radio Shack TRS-80.  I got very friendly with a saleman at the local Radio Shack, so when a customer ask him to recommend a free-lance programmer, he recommend me.  The project involved taking some numbers, manipulating them is very specific, if not entirely mathematically sound, ways, and producing some other numbers.  Presumably, the first numbers were today's winner at some race track and the generated numbers were tomorrow's winners -- or something like that.  I never paid much mind.  I just programmed the algorithm and let him assign meaning to the results.</p>

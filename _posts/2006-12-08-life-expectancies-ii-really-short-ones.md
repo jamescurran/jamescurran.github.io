@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Life expectancies, II (really short ones)
-    ---
+---
+layout: default
+title: Life expectancies, II (really short ones)
+---
 
   
 <p>To follow up on my earlier message on life expectancies, we should talk about the other confusing aspect of them:  Why are they sometimes ridiculously low.  For example, the present life expectancy for someone living in the USA is 77, which you'd think is perfectly reasonable, but then you hear that the LE of someone living in 1900 was only 40.  How could it be possible to nearly double in just 100 years.</p>

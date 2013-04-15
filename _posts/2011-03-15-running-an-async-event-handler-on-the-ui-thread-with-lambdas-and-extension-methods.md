@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Running An Async Event Handler on the UI thread (with lambdas and extension methods!)
-    ---
+---
+layout: default
+title: Running An Async Event Handler on the UI thread (with lambdas and extension methods!)
+---
 
   
 <p>So, it’s been a freakishly long time since my last post here.  </p>

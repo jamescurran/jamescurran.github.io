@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: kinda sad actually.....
-    ---
+---
+layout: default
+title: kinda sad actually.....
+---
 
   <TABLE>
 

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Growing &amp; Shrinking Freeze Tag
-    ---
+---
+layout: default
+title: Growing &amp; Shrinking Freeze Tag
+---
 
   <p>On Saturdays, I take a class in Improv Comedy.  I thought I'd share with you one of the exercises/game we did it class.</p>
   <p>The game is called "Growing &amp; Shrinking Freeze Tag".  In regular Improv Freeze Tag, two people start a scene, and at some point, while in the midpoint of some action, the director (or the audience) yells "Freeze", and the actors must hold that position.  Another actor joins the scene, tags one of the original actors, and replaces him in the scene, taking the exact same position.  The new actor now must start a completely new scene, with them doing a new action --- but must justify them being in their starting positions.  He must also convey to the other actor enough information about the situation he just created (CROW - Character, Relationship, Objective, Where) so that he can join in.</p>

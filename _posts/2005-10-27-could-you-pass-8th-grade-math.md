@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Could You Pass 8th Grade Math?
-    ---
+---
+layout: default
+title: Could You Pass 8th Grade Math?
+---
 
   <TABLE>
 

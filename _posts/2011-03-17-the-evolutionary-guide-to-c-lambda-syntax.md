@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Evolutionary Guide to C# Lambda Syntax
-    ---
+---
+layout: default
+title: The Evolutionary Guide to C# Lambda Syntax
+---
 
   
 <p>Originally (.NET V1.1), we had to explicitly create a Delegate object to wrap a method reference to use it as a callback method, and that method had to named.</p>

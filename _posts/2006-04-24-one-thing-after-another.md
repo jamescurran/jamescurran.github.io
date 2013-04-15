@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: One thing after another....
-    ---
+---
+layout: default
+title: One thing after another....
+---
 
   
 <p>The problem started small.</p>

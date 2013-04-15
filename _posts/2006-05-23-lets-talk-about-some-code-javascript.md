@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Let's talk about some code (Javascript)
-    ---
+---
+layout: default
+title: Let's talk about some code (Javascript)
+---
 
   
 <p>Ya'know, I'd always intended this blog to be one of them cool ".Net Blogs", with just a occasional entry about my life.  Ok, so two years later, I've got the occasion random life entry thing down, but in all the time, not one thing about programming.  Let's try correcting that.</p>

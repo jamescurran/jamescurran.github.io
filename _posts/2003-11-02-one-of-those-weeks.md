@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: One of those weeks.
-    ---
+---
+layout: default
+title: One of those weeks.
+---
 <p>I've been meaning to write about last weekend's theater trips, but the whole week has been hectic, and this is the first chance I've gotten:</p>
 <p>So, recapping it all:</p>
 <p>Friday October 24th,  <em>The Mystery of Edwin Drood</em> by the Corpus Christi Players.  One of my favorite shows.  I reviewed it for RECT so I can't say anything about it.</p>

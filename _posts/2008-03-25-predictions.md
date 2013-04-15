@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Predictions
-    ---
+---
+layout: default
+title: Predictions
+---
 
   <P>My friend Chris is, like me, a staunch Democratic.  Unlike me, he's also an incredible pessimist.  In 2006, he made what he called his "optimistic" prediction for the midterm election: The democrats would gain 3 Senate seat, 10 house seats, and 3 governorships. (Actual results: Democrats gained 6 Senate seats, 30 House seats, and 6 Governors).  I didn't make any predictions then.</P>
 <P>Since another election is looming, he's made is his predictions for the elections, and in the interest of balance, I've made mine.  And, since I'm probably going to lose the napkin I wrote them down on before November, I figured I'd record them here, so I know where I can find them, after the election.</P>

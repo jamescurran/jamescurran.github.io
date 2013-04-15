@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Book Review: Joshua and the City (Part 3)
-    ---
+---
+layout: default
+title: Book Review: Joshua and the City (Part 3)
+---
 
   <p>Part 1 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/202.aspx">here.<br /></a>Part 2 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/203.aspx">here.</a></p>
   <p class="MsoNormal" style="margin:0in 0in 0pt;">But after all of that, the thing that most bothered me, and moved me from merely being disappointed in the book at actually offended by it, is a 20 page story arc, which he mounts a slanderous attack against the First Amendment (which he conveniently only refers to as :“the separation of Church &amp; State”). In the novel, we have a person, (whom we are lead to believe is literally the devil incarnate), brings suit against Congress (based on the dreaded “separation of church &amp; state”), and having the Supreme Court agree with him.<span>  </span>What really bothered me was that most of the people in the book club discussion group seem to thinks he was right—that events <em>would </em>happen that<em> </em>way, citing the Pledge of Allegiance case, as it was the “same thing”.<span>  </span>In actuality, it’s quite different,<span>  </span>and the best the folks in the book could hope for is finding a judge courteous enough to not laugh in their faces as he dismissed the complaint.<span>  </span></p>

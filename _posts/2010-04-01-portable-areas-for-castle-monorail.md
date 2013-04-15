@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Portable Areas for Castle Monorail
-    ---
+---
+layout: default
+title: Portable Areas for Castle Monorail
+---
 
   
 <p>Recently I had read a blogger comparing Castle Monorail with ASP.NET MVC.  He chose ASP.NET mainly because it supported Portable Areas while Monorail did not.  As a supporter of Monorail, I was very offended by this, and decided to correct the problem.  The first step… finding out exactly what a “portable area” was.</p>

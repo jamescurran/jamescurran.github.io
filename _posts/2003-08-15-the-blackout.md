@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Blackout.
-    ---
+---
+layout: default
+title: The Blackout.
+---
 <p>I was at my desk at work when my computer monitor flickered out, and I noticed that the overhead lights were out.  We soon discovered that the rest on the office was dark, and from the yells of the people in the elevator, the whole building had no power.  We tried to figure out how wide the power outage was.  On a sunny day, one can't really tell if the lights are on in the building across the street.  And from the 13th floor, you can't really tell if the traffic lights are working.  (BTW, we really on one of these rare 13th floors that's actually called the 13th floor).</p>
 <p>Now, my original plan for the day was to leave work at 6pm, be home a bit after 7pm, and hopefully, be on the road to Cape Cod by 8pm (which should get me there by about midnight).   After closing up the office as best we could, a co-worker, Dan, and I headed out at 5pm.  At this point, I'm thinking that I'll be home (and on my way north) an hour early....</p>
 <p>I work on Rector Street in downtown NYC, two blocks from <a href="http://www.renewnyc.com/PhotoArchive/viewingwall.shtml">The Big Hole</a>.  Rector Street would be the same road as Wall St, except Trinity Church is in the way. On a normal day, I'd take the (1) train to Penn Station on 34th Street, and then take the NJTransit train home to Bloomfield, NJ.  But the NYC subways are electric, as are the NJT trains out of Penn Station.  The trains out of Hoboken Station are diesel, however, so that looked like the way to go.  </p>

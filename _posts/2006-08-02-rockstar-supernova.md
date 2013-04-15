@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: RockStar : Supernova
-    ---
+---
+layout: default
+title: RockStar : Supernova
+---
 
   
 <P>My guilty please of the summer of watching the Reality show "RockStar : Supernova".  It's the sequel/spin-off/second season of last year's "RockStar : INXS" where the surviving members of the band INXS selected a replacement for Michael Hutchence who had committed suicide some years ago. This year, not having a band wanting to replace a dead member handy (but see note below), they created a new band from scratch with three established rockers (notably Tommy Lee).</P>

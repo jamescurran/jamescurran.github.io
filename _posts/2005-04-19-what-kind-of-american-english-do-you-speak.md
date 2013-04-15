@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: What Kind of American English Do You Speak?
-    ---
+---
+layout: default
+title: What Kind of American English Do You Speak?
+---
 <DIV>
 <TABLE>
 

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: MVP Summit, Day 2
-    ---
+---
+layout: default
+title: MVP Summit, Day 2
+---
 
   <P>Today was the Executive day at the Summit.... Lot's'o'big shots.</P>
 <P>First up was Lori Moore, vice president of Product Service Service, ie, the woman who's budget is paying for all this.  She is a rather nice person, and she tries to let he hair down a bit for the MVP summits, but she is, hopelessly, a suit.</P>

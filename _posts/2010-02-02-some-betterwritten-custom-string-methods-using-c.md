@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Some Better-Written Custom String Methods using C#
-    ---
+---
+layout: default
+title: Some Better-Written Custom String Methods using C#
+---
 
   <P>In my daily web-surfing, I often stumble upon snippets of C# code posted by people.  Usually, I can tweak  it a bit. Sometimes, I can tweak it a lot.  I usually post a quick comment to the site offering it.  Today, I came upon some code that was so bad --- which the author said was from his forthcoming <B><I>book! </I></B>--- more drastic measures must be taken.</P>
 <P>First we have a function to put a string into “Title Case” (which the author refers to as “Proper Case”) – Having the first letter of each word capitalized.  Here’s the original:</P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String PCase(String strParam)

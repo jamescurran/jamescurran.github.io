@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: The Republican National Convention, Days 1 & 2.
-    ---
+---
+layout: default
+title: The Republican National Convention, Days 1 & 2.
+---
 <P>Being that I work in Midtown Manhattan (*) and am quite opposed to the crook currently in th White House, I felt the need to join in on the protests going on around town.  </P>
 <P>(*) Ok, I actually work in Gramercy Park, which is a bit south of Midtown, but basically, it's a mile from Madison Square Garden.  It's also right by Union Square, which is a rallying point of the protestors, and the finishing point of the march on Sunday.</P>
 <P>During that March, I was busy, so I missed it.  And I was busy Monday evening, so for the first day, all I could do is wander around the park on my lunch hour.  I snapped some pictures, which are on my gallery site <A href="http://gallery.honestillusion.com">http://gallery.honestillusion.com</A>. Lots of cops on bicycles, lots of tables selling T-shirts and buttons.  Amongst the protesters, the <A href="http://www.BillionairesforBush.com">Billionaires for Bush </A>were the most interesting. </P>

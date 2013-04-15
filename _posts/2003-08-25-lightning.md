@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Lightning....
-    ---
+---
+layout: default
+title: Lightning....
+---
 <p>This probably should be included as part of the “back-fill” since it relates to something that happened last week, but I'm figuring no one is actually going to read anything but the new stuff, so I'll dated it today.</p>
 <p>Anyway, last weekend I was in Cape Cod.  On Saturday, I went to see a play in New Bedford, MA (on the mainland, just south of the Cape), and on the way back to my stepmother house (where I was staying), a thunderstorm started --- Lots of rain, and lots of “sheet” lightning.</p>
 <p>"Sheet" lightning (also known as "heat" lightning) is a flash that fills sky, and usually without audible thunder.  Actually, it just regular lightening, it's just further away from the viewer, and the light is more diffused.</p>

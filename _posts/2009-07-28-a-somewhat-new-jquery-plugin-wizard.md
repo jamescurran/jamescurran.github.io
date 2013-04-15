@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: A (somewhat) New jQuery plug-in: Wizard
-    ---
+---
+layout: default
+title: A (somewhat) New jQuery plug-in: Wizard
+---
 
   
 <p>As I slowly rewrite NJTheater.com, one task that I was trying to move from a MSAccess application to a webpage would be made much easier if put in a wizard form, with the user being led through the steps.  Since I was using jQuery throughout the site, I figured I could find a plug-in for the job, and I did – sorta.</p>

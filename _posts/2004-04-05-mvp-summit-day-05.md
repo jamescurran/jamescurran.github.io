@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: MVP Summit, Day 0.5
-    ---
+---
+layout: default
+title: MVP Summit, Day 0.5
+---
 
   <P>The real MVP summit starts tomorrow (The first bus leave the hotel at 6:30!!), but today they had the registration at the Washisngton State Cenvention Center.  We went to one room, where they looked up our names, and handed as a bag, and then we went upstairs to a different hall, where there was food and a lot of kiosks where Microsoft showed off some of their new stuff.</P>
 <P>So, let's get to the important part --- What was the swag?</P>

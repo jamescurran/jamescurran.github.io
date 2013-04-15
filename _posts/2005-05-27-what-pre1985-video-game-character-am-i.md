@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: What Pre-1985 Video Game Character Am I?
-    ---
+---
+layout: default
+title: What Pre-1985 Video Game Character Am I?
+---
 
   
 <P>Ya'know.... As long as I keep finding these quizes, I may be able to keep posting here occasionally, without effort....</P>

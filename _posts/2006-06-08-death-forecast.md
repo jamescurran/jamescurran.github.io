@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Death Forecast
-    ---
+---
+layout: default
+title: Death Forecast
+---
 
   
 <p>

@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Too smart by Half
-    ---
+---
+layout: default
+title: Too smart by Half
+---
 
   <P>Today, I was at a Italian resturant, and was wondering "What, exactly, is Bolognese sause?" </P>
 <P>So, being the properly wired guy, I pulled out my cell phone to take advantage of Google's SMS server : I sent a message saying "define Bolognese" to 46646 ("GOOGL").</P>

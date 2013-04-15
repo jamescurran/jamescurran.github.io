@@ -1,7 +1,7 @@
-  ---
-    layout: default
-    title: Portable Areas for Castle Monorail, Part 2
-    ---
+---
+layout: default
+title: Portable Areas for Castle Monorail, Part 2
+---
 
   <P>In our last episode, we discussed the PortableAreaController base class, which makes it simple to create a portable area using Monorail.  In this installment, we put that class to use.</P>
 <P>For the purposes of this example, the controller isn’t going to do anything useful – I’m not even going to bother with code in the actions.  The different actions will display different views so you can see the effect, and I’m hoping you’ll just trust that you can put real code in the action methods.</P><PRE class="csharpcode">[Layout(<SPAN class="str">"default"</SPAN>,<SPAN class="str">"patest"</SPAN>)]
