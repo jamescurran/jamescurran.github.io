@@ -23,8 +23,10 @@ tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
   <li>To be able to use a local version of a file during development/debugging (when I’m often off-line), and easily switch to Google’s CDS for production. </li>
   <li>To be able to gather a collection a JS files into a single, combined file (mini-fied on the fly) (OK, the JavascriptHelper doesn’t actually do that, but implementing it would require rewriting only one method --- and adding a controller that handles the actual bundling &amp; mini-fying. We’ll get to that eventually) </li>
   </ul>
-  <p><b>Usage</b></p>  <p>Let’s say for example that I have a partial view that uses the jQuery UI slider control (which I’ll specify some unique id value). Plus it has JS code which needs to be called to initialize it. Say this is in the form of a method and a call to that method using that id. Now, let’s say that we want several sliders on that page, and use that partial view several times, so we’ll only the UI scripts and the method definition once, but we’ll need each separate call to the function. To handle this, you’d need to add to you partial view, the following:</p>
-  <div class="csharpcode">   <pre class="alt">Script.Std(<span class="str">"slider"</span>)</pre>
+  <p><b>Usage</b></p>
+  <p>Let’s say for example that I have a partial view that uses the jQuery UI slider control (which I’ll specify some unique id value). Plus it has JS code which needs to be called to initialize it. Say this is in the form of a method and a call to that method using that id. Now, let’s say that we want several sliders on that page, and use that partial view several times, so we’ll only the UI scripts and the method definition once, but we’ll need each separate call to the function. To handle this, you’d need to add to you partial view, the following:</p>
+  <div class="csharpcode">
+  <pre class="alt">Script.Std(<span class="str">"slider"</span>)</pre>
 
   <pre>Script.AddScript(<span class="str">"MySlider"</span>, <span class="str">"function HideSlider(id) { $(id).Hide();}"</span>)</pre>
 
