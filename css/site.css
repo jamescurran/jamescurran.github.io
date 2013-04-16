@@ -1,0 +1,36 @@
+body {
+  background-image:url('../images/grey.png');
+}
+
+html, body {
+  height: 100%;
+}
+
+.post {
+  padding-top:0px;
+}
+
+.post h2 {
+  margin-bottom:0px;
+}
+
+.post-date {
+  color:#AAA;
+}
+
+.badge a {
+  color:white;
+}
+
+.footer {
+  text-align:center;
+}
+
+.content {
+  min-height:400px;
+}
+
+.sidebar-nav { 
+  padding:9px 0;
+}
+

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Lightning....
+categories: site random-thoughts
+tags: site random-thoughts
 ---
 <p>This probably should be included as part of the “back-fill” since it relates to something that happened last week, but I'm figuring no one is actually going to read anything but the new stuff, so I'll dated it today.</p>
 <p>Anyway, last weekend I was in Cape Cod.  On Saturday, I went to see a play in New Bedford, MA (on the mainland, just south of the Cape), and on the way back to my stepmother house (where I was staying), a thunderstorm started --- Lots of rain, and lots of “sheet” lightning.</p>

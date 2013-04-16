@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Yep, I'm a socialist....
+categories: 
+tags: 
 ---
 
 <p>I haven't posted here in a while, so I figure I'll go back to the old "generate content by taking online quizzes" trick.</p>

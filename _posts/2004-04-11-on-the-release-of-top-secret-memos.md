@@ -1,6 +1,8 @@
 ---
 layout: default
 title: On the release of Top Secret Memos....
+categories: politics random-thoughts
+tags: politics random-thoughts
 ---
 
   <p>It's a Washington maxim, that if you want to bury a news story, release it after 6pm on a Friday, because no one watches the new over the weekend.  </p>

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: First Things First
+categories: site
+tags: site
 ---
 Ya'know the song "Carry On, Our Wayward Son" by Kansas?  OK, if you're under 35 you probably don't but it was a hit in 1976 .  Anyway,  the opening lines of it are: 
 <p></p>

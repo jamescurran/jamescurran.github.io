@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Portable Areas for Castle Monorail, Part 2
+categories: code c# .net programming dotnet csharp castle monorail
+tags: code c# .net programming dotnet csharp castle monorail
 ---
 
   <P>In our last episode, we discussed the PortableAreaController base class, which makes it simple to create a portable area using Monorail.  In this installment, we put that class to use.</P>

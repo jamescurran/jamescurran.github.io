@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Creating an Entity Framework connection from another one.
+categories: code c# .net programming dotnet csharp entityframework codeproject
+tags: code c# .net programming dotnet csharp entityframework codeproject
 ---
 
   <p>Database connection strings used to be simple.  Well, simple, once you learned the arcane syntax,  But, at least they had stayed the same for about a decade.  But with the EntityFramework, they took on an even more arcane “connection string – within –a –connection string” format.  And while the inner connection string related to your database, the wrapping connection string was intimately tied to the entity context.</p>

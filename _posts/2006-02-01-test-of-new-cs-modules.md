@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Test Of new CS Modules
+categories: site
+tags: site
 ---
 <P>[amazon:type=Blended:search=B00004YVL3:results=1]</P>
 <P>[amazon:type=Blended:search=b000002l74:results=3]</P>

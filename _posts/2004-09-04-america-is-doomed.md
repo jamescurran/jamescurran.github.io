@@ -1,6 +1,8 @@
 ---
 layout: default
 title: America is Doomed.....
+categories: politics random-thoughts
+tags: politics random-thoughts
 ---
 <P>OK, I don't mean that in the sense &#8220;...if Bush is re-elected..&#8221;</P>
 <P>No, this goes deeper than the election.....</P>

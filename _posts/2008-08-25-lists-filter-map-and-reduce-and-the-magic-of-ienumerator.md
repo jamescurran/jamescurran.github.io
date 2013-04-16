@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Lists: Filter, Map and Reduce - and the Magic of IEnumerator.
+categories: 
+tags: 
 ---
 
   <p>I have this bad habit.  I will frequently stumble upon a blog post describing some new technique, to which I will post a brilliant comment offering an improvement, which, of course, will get lost in the flotsam and jetsam of the blogosphere.  I have to keep reminding myself that is what I have my own blog for.</p>  <p>Case in point, I recent found this article by Sarah Taraporewalla about writing tradition <a href="http://sarahtaraporewalla.blogspot.com/2008/08/lists-filter-map-and-reduce.html" target="_blank">Filter, Map and Reduce methods</a> for Java Lists.  She wondered if they could be written in C#.  I did so in the comments, and now expanded on them here. </p>  <p>The main difference between mine and those of Sarah's (and also those of <a href="http://dotnet.org.za/pieter/archive/2008/08/17/filter-and-map-in-c.aspx" target="_blank">Peter</a>, by way of whose blog I reached Sarah's) is that they pass in a List&lt;&gt; object, and create a new List to return.  This is limiting and unnecessary.</p>  <pre class="c#">namespace FilterMapReduce

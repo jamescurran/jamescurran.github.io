@@ -1,6 +1,8 @@
 ---
 layout: default
 title: This weekend's theater.
+categories: theater
+tags: theater
 ---
 <p>I just remember that I added a “Theater” category, but I keep forgetting to use it.   This past weekend, I was:</p>
 <p>Thurs: "Pterodactyls" - Theater Project in Cranford.</p>

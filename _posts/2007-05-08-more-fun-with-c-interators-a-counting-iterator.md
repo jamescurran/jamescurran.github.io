@@ -1,6 +1,8 @@
 ---
 layout: default
 title: More Fun with C# Interators : A Counting Iterator
+categories: 
+tags: 
 ---
 
   <p>

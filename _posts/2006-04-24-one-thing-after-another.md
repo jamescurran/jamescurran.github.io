@@ -1,6 +1,8 @@
 ---
 layout: default
 title: One thing after another....
+categories: site my-life
+tags: site my-life
 ---
 
   

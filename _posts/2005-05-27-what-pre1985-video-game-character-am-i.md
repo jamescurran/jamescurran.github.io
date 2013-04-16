@@ -1,6 +1,8 @@
 ---
 layout: default
 title: What Pre-1985 Video Game Character Am I?
+categories: my-life quizes
+tags: my-life quizes
 ---
 
   

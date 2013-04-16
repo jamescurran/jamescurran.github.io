@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Ok, One more quiz...Commonly Confused Words Test
+categories: my-life quizes
+tags: my-life quizes
 ---
 
   

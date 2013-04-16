@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Office Football pool
+categories: my-life random-thoughts
+tags: my-life random-thoughts
 ---
 <P>Like pretty much every office in the country, mine has a pool of the Superbowl.&nbsp; Since we don't have enough employee to fill 100 boxes, each person got four combinations.&nbsp; Mine are&nbsp;<FONT face=Arial size=2> 6-0, 5-0, 1-7, 2-3. (Patriot's scores listed first).&nbsp; So, given that, here my prediction for the game:</FONT></P>
 <P><FONT face=Arial size=2>1st Quarter : Patriots score a touchdown, but no extra point. Panther do not score (6-0)<BR>2nd Quarter : Patriots score another touchdown, but without an&nbsp;extra point. Panther score a field goal (12-3)<BR>3rd Quarter : Patriots a field goal, Panthers score a touchdown with an extra point (15-10)<BR>4th Quarter : Patriots score yet another touchdown without an&nbsp;extra point, Pather score a TD with an extra point (21-17)</FONT></P>

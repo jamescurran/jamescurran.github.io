@@ -1,6 +1,8 @@
 ---
 layout: default
 title: What Kind of American English Do You Speak?
+categories: my-life random-thoughts
+tags: my-life random-thoughts
 ---
 <DIV>
 <TABLE>

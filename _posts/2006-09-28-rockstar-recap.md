@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Rockstar : Recap
+categories: my-life tv music
+tags: my-life tv music
 ---
 
   

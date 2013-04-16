@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Too smart by Half
+categories: random-thoughts
+tags: random-thoughts
 ---
 
   <P>Today, I was at a Italian resturant, and was wondering "What, exactly, is Bolognese sause?" </P>

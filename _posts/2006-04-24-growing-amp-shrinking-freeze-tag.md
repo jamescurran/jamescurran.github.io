@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Growing &amp; Shrinking Freeze Tag
+categories: my-life theater
+tags: my-life theater
 ---
 
   <p>On Saturdays, I take a class in Improv Comedy.  I thought I'd share with you one of the exercises/game we did it class.</p>

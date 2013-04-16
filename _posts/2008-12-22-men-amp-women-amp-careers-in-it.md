@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Men &amp; Women &amp; Careers in IT.
+categories: 
+tags: 
 ---
 
   <p>

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Contribute to open source, get a shot at a free book
+categories: 
+tags: 
 ---
 
   <p>

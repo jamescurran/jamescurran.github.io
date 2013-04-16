@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Which Simon and Garfunkel album am I?
+categories: my-life random-thoughts quizes
+tags: my-life random-thoughts quizes
 ---
 
   <IMG src="http://sglyrics.myrmid.com/bridgequiz.png" />

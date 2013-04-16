@@ -1,6 +1,8 @@
 ---
 layout: default
 title: More Fun with C# Iterators: Take, Skip, TakeWhile, SkipWhile
+categories: code c# .net programming generics-without-collections
+tags: code c# .net programming generics-without-collections
 ---
 
   <p>As I was reading <a href="http://gbarnett.org/archive/2007/03/08/linq-standard-query-operators-part-3.aspx">this article by Granville Barnett</a> on some of the new operators available on LINQ queries, I thought, "That's all well and good, but for the time being, we're living in a .Net 2.0 world.  I wonder if I could emulate those with just generics &amp; iterators?"  As it turned out, it was quite easy.</p> <p>First up is Take:  Given a collection, we want to return the subset which is just the first N items.  To handle this, we just return items while counting down to zero. When we reach zero, we stop.  </p> <p> </p><div class="csharpcode"><pre class="alt">        <span class="kwrd">static</span> <span class="kwrd">public</span> IEnumerable&lt;T&gt; Take&lt;T&gt;(IEnumerable&lt;T&gt; enm, <span class="kwrd">int</span> take)</pre><pre>        {</pre><pre class="alt">            <span class="kwrd">foreach</span> (T t <span class="kwrd">in</span> enm)</pre><pre>            {</pre><pre class="alt">                <span class="kwrd">if</span> (take-- == 0)</pre><pre>                    <span class="kwrd">break</span>;</pre><pre class="alt">                <span class="kwrd">yield</span> <span class="kwrd">return</span> t;</pre><pre>            } <span class="rem">// foreach </span></pre><pre class="alt">         }</pre></div>

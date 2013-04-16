@@ -1,6 +1,8 @@
 ---
 layout: default
 title: MVP Summit, Day 3 &amp; the Pink Door.
+categories: my-life random-thoughts mvp
+tags: my-life random-thoughts mvp
 ---
 
   <P>On the third day of the Summit, the MVPs met with the Product teams at Microsoft for whichever product they support.  That means I met with the folks on the C++ Team, who told me all about what's coming up in the next version of Visual Studio.  In other words, I was told a lot of things which I can't tell you, by people who's names you won't recognize.</P>

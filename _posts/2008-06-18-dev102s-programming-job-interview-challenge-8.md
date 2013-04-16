@@ -1,6 +1,8 @@
 ---
 layout: default
 title: DEV102's Programming Job Interview Challenge #8
+categories: 
+tags: 
 ---
 
   <p>

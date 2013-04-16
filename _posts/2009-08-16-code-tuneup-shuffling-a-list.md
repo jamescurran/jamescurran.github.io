@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Code Tune-Up: Shuffling a List
+categories: code c# .net programming dotnet csharp codeproject
+tags: code c# .net programming dotnet csharp codeproject
 ---
 Over on CodeProject, I spotted an article by Mahdi Yousefi called "
 

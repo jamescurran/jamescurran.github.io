@@ -1,6 +1,8 @@
 ---
 layout: default
 title: The weekend's theater
+categories: theater
+tags: theater
 ---
 <p>I'm a bit behind on this, aren't I?</p>
 <p>Friday: <em>Joseph &amp; The Amazing Technicolor Dreamcoat, </em>at Smiling Rhino Production, in Pompton Lakes.  I Reviewed this for RECT, so I'm not allowed to talk about it.</p>

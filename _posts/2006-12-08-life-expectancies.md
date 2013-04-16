@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Life Expectancies
+categories: random-thoughts
+tags: random-thoughts
 ---
 
   

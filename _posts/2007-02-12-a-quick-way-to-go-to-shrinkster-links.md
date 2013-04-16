@@ -1,6 +1,8 @@
 ---
 layout: default
 title: A quick way to go to Shrinkster links.
+categories: random-thoughts code programming
+tags: random-thoughts code programming
 ---
 
   <P>I just read an article over on CodeProject on creating a small application to <A href="http://www.codeproject.com/csharp/GotoShrinkster.asp">quickly go to a Shrinkster.com url</A>, and as I was reading it, a simpler method occurred to me.</P>

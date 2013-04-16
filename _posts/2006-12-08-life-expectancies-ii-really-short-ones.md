@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Life expectancies, II (really short ones)
+categories: random-thoughts
+tags: random-thoughts
 ---
 
   

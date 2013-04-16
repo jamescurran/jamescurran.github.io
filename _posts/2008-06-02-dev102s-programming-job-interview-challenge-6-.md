@@ -1,6 +1,8 @@
 ---
 layout: default
 title: DEV102's Programming Job Interview Challenge #6 
+categories: code c# .net dotnet csharp
+tags: code c# .net dotnet csharp
 ---
 
   <p>Another week, another C# interview question from the good folk's at Dev102.com -- Although I use the term "good folks" advisedly, as this week they did not even acknowledge the solution I posted for last weeks puzzle (which was both correct, and, I believe, the first blog post about it).</p>

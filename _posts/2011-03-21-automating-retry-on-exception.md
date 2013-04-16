@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Automating Retry on Exception
+categories: code c# .net programming dotnet csharp codeproject
+tags: code c# .net programming dotnet csharp codeproject
 ---
 
   <p>Every so often, you run across some action,  which just fails, where the best response it to just try it again.  This is particularly true when dealing with an external source, like a database or web service, which can have network or other temporary problems, which would have cleared up when you repeat the call seconds later.   Often, these actions fail by throwing an exception which makes the process of trying the call again rather cumbersome.  Having to deal with this a number of times in one application, I decided to wrap the full procedure up in a method, which I share here with you:</p>  <p>OK, this has very weird semantics.  A call will look something like this:</p>  <div class="csharpcode">   <pre class="alt">var msg = Util.Retry(5, 1,</pre>

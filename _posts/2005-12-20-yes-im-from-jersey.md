@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Yes, I'm from Jersey.....
+categories: my-life quizes
+tags: my-life quizes
 ---
 I scored a 
 

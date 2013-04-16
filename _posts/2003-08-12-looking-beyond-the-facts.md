@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Looking beyond the "Facts"
+categories: random-thoughts
+tags: random-thoughts
 ---
 <p>From 13-Feb-2003:</p>
 <p>Ok, my second entry, and it's only five days after my first... I'll get the hang of this yet.</p>

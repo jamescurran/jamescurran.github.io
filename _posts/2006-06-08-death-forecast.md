@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Death Forecast
+categories: my-life random-thoughts
+tags: my-life random-thoughts
 ---
 
   

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: The Republican National Convention, Days 1 & 2.
+categories: politics my-life
+tags: politics my-life
 ---
 <P>Being that I work in Midtown Manhattan (*) and am quite opposed to the crook currently in th White House, I felt the need to join in on the protests going on around town.  </P>
 <P>(*) Ok, I actually work in Gramercy Park, which is a bit south of Midtown, but basically, it's a mile from Madison Square Garden.  It's also right by Union Square, which is a rallying point of the protestors, and the finishing point of the march on Sunday.</P>

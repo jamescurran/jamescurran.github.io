@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Book Review: Joshua and the City (Part 2)
+categories: books
+tags: books
 ---
 
   <p>Part 1 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/202.aspx">here.</a><br />Part 3 is <a href="http://honestillusion.com/blogs/blog_0/archive/2004/04/10/204.aspx">here</a>.</p>

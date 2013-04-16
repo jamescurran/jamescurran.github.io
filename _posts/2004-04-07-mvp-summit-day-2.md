@@ -1,6 +1,8 @@
 ---
 layout: default
 title: MVP Summit, Day 2
+categories: my-life mvp
+tags: my-life mvp
 ---
 
   <P>Today was the Executive day at the Summit.... Lot's'o'big shots.</P>

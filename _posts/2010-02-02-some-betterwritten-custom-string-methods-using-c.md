@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Some Better-Written Custom String Methods using C#
+categories: code c# .net programming dotnet csharp
+tags: code c# .net programming dotnet csharp
 ---
 
   <P>In my daily web-surfing, I often stumble upon snippets of C# code posted by people.  Usually, I can tweak  it a bit. Sometimes, I can tweak it a lot.  I usually post a quick comment to the site offering it.  Today, I came upon some code that was so bad --- which the author said was from his forthcoming <B><I>book! </I></B>--- more drastic measures must be taken.</P>

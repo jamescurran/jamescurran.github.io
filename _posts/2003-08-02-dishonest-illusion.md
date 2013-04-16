@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Dishonest Illusion.
+categories: site
+tags: site
 ---
 <p>Well, a couple years ago,  when I first thought about getting the domain, honestillusion.com, I naturally first checked to see if anyone else was using the domain (which no one was), or using the term at all --- and to my surprise -- someone was.</p>
 <p>It seems that one of romance writer <a href="http://www.noraroberts.com/">Nora Roberts</a>'s books is entitled <em>Honest Illusions.  </em>Now, that was first published in 1992, and my claim to the term, as I've previously explained, goes back to 1976, so I'm still calling dibbs on it --- but if she want to use the term to sell some books, I'm cool with that (mainly because I'm sure she can afford better lawyers than I can, and afterall, it was eleven years ago....)</p>

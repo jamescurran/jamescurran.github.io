@@ -1,6 +1,8 @@
 ---
 layout: default
 title: kinda sad actually.....
+categories: my-life random-thoughts quizes
+tags: my-life random-thoughts quizes
 ---
 
   <TABLE>

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Dev102's Challenge #11 - Summing Numbers
+categories: 
+tags: 
 ---
 
   <p>My answer was acknowledged as correct for last week's challenge.  So, let's see if we can make it two in a row.  <a href="http://www.dev102.com/misc/a-programming-job-interview-challenge-11-summing-numbers/">This week</a>: </p>  <blockquote>   <p><em>Given a list of n integers and another integer called m, determine (true / false) if there exist 2 numbers in that list which sum up to m.       <br />Example: 2,6,4,9,1,12,7 and m=14 -&gt; 2 and 12 sum up to 14, so the answer is true.</em></p> </blockquote>  <p>This one is rather tricky.  There is no obvious (to me) solution.   I can see three viable methods, each with its own pros &amp; cons.</p>  <p>Method 1: We'll call this "brute force".  The obvious answer.  We add the values of list[1] and list[2],  then list[1] and list[3], then list[1] and list[4] and so forth, until we reach list[1] and list[ n ].  If we haven't found a match yet, we then move on to adding list[2] to list[3], then list[2] to list[4] etc. In code that would be: </p>  <pre class="c#">for(int i= 0; i &lt;N-1; ++i) 

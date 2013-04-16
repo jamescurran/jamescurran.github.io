@@ -1,6 +1,8 @@
 ---
 layout: default
 title: How I met Philip Glass
+categories: my-life
+tags: my-life
 ---
 <P>Some time ago, Raymond Chen blogged about the <A href="http://blogs.msdn.com/oldnewthing/archive/2004/02/04/67385.aspx">Glass Engine</A>, and asked&nbsp;<A href="http://weblogs.asp.net/marcmill">Marc Miller</A> to tell the story of how he met Philip Glass. It appears that Marc never did, so I'll post my story.</P>
 <P>Actually, it's not very exciting.&nbsp; Circa 1989, he was doing a concert tour, playing some of his compositions on solo piano.&nbsp; One stop was at the McCarter Theater (part of Princeton University).&nbsp; After the show, as I was leaving, I bumped into a friend, who worked there.&nbsp; He said he was about to head backstage to ask Glass to autograph a CD of his, and would I like to come.&nbsp; I said sure, and he lead the way.&nbsp; I got him to sign my program, and asked if there was going to be a production of &#8220;The Making of the Representative for Planet 8&#8221; any time soon.&nbsp; (It had premiered in Houston the year before, and then pretty much disappeared -- still haven't been recorded).&nbsp; He said that there may be one in NYC in the next year, but I never heard anything about it.</P>

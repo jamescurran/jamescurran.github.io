@@ -1,6 +1,8 @@
 ---
 layout: default
 title: One of those weeks.
+categories: my-life theater
+tags: my-life theater
 ---
 <p>I've been meaning to write about last weekend's theater trips, but the whole week has been hectic, and this is the first chance I've gotten:</p>
 <p>So, recapping it all:</p>

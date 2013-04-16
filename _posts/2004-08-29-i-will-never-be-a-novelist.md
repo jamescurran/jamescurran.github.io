@@ -1,6 +1,8 @@
 ---
 layout: default
 title: I will never be a novelist.
+categories: random-thoughts
+tags: random-thoughts
 ---
 <P>OK, let us recap.&nbsp; </P>
 <P>A whole bunch of posts in April, <BR>None in May, <BR>One in June.<BR>None in July.<BR>And now,&nbsp; we're down to the wire in getting a message out sometime in August</P>

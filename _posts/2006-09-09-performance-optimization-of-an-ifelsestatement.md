@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Performance optimization of an if/else-statement
+categories: code c# .net programming
+tags: code c# .net programming
 ---
 
   <p>

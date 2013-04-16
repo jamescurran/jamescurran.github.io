@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Lambda Expressions as Properties
+categories: code c# .net programming dotnet csharp codeproject
+tags: code c# .net programming dotnet csharp codeproject
 ---
 
   

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: The Tax Cut
+categories: politics
+tags: politics
 ---
 
   <p>

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Still more from last month.... (the Britney Spears post)
+categories: my-life random-thoughts
+tags: my-life random-thoughts
 ---
 <p>OK, I'll get to Thanksgiving soon. But I've still more it talk about from before that...</p>
 <p>Going back to, I guess, Nov 14th, I saw Saturday Night Live on TV.  I don't watch it that often, so naturally, it was a repeat of a show I'd seen a few weeks earlier.   I forget who the main guest was, but the musical guest was Britney Spears.  However, the first time I saw it I fell asleep about 40 minutes into it --- this time I saw the whole thing, which allowed me to confirm something that I'd suspect the first time: During her first song, she was lip-syncing it.</p>

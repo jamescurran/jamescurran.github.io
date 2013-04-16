@@ -1,6 +1,8 @@
 ---
 layout: default
 title: #songsincode : The Turtle’s “Happy Together”
+categories: code c# .net programming music dotnet csharp
+tags: code c# .net programming music dotnet csharp
 ---
 
   <pre class="c#">

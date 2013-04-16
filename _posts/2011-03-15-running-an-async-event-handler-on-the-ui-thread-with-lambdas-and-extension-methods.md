@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Running An Async Event Handler on the UI thread (with lambdas and extension methods!)
+categories: code c# .net programming dotnet csharp codeproject
+tags: code c# .net programming dotnet csharp codeproject
 ---
 
   

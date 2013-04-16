@@ -1,6 +1,8 @@
 ---
 layout: default
 title: It's been a month (Part II)
+categories: my-life theater random-thoughts
+tags: my-life theater random-thoughts
 ---
 <p>On Nov 19th, I started my new job at <a href="http://www.partsearch.com">PartSearch Technologies</a>.</p>
 <p>On Nov 20th, having realized a few days earlier that Driver's License had expired three weeks earlier, I got a new one after work -- waiting in long lines, and thereby missing <em>Bat Boy - The Musical</em> at Montclair State College.</p>
