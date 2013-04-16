@@ -35,15 +35,14 @@ tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
   
 </div>
 
-<p><font face="Consolas"></font></p>
-
 <p>“Script.Std()” says that “slider” is one of the standard JavaScript files which we have defined what it’s traits and dependencies are. Actually, that could be a comma-separated list of them, so you state everything you need in one line. I originally envisioned only a few “standard” file – jQuery, jQuery UI, et al – but soon realized assigning a keyword for every script file used made life easier. In fact, it will even accept “self” to load a script &amp; CSS file based on the name of the view, i.e., id Script.Std(“self”) is used in /Home/Index, then it will load /Scripts/Views/Home/Index.js and /Content/Css/Home/index.css (if they exist on the file system). How a file is pre-defined, as well as where we get a Script object, will be discussed in the next section. </p>
 
 <p>The first “Script.AddScript()” call defines the function that we need. The second AddScript called calls that function, using the id specific to that instance of the partial view. So, if our page has three instances of this partial view, we’ll need the function definition only once, but the call to it three times. This is handled by given a name to the snippet that need not be repeated. All blocks with the same name are rendered only once (actually, block with the same name as an existing block are ignored, so make sure that you only use a particular name for one script block. )</p>
 
 <p>Then in the Layout, we just add the lines:</p>
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode">
+<span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
 @Script.InsertCss();
 <span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
@@ -57,17 +56,36 @@ tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 
 <p>This will produce an output of :</p>
 
-<pre class="csharpcode"><span class="kwrd">&lt;h</span><span class="html">tml</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode">
+<span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="attr">href</span><span class="kwrd">="/content/css/ui.base.css"</span> <span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="attr">href</span><span class="kwrd">="/content/css/ui.core.css"</span> <span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="attr">href</span><span class="kwrd">="/content/css/ui.slider.css"</span> <span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">rel</span>
+ <span class="kwrd">="stylesheet"</span>
+ <span class="attr">type</span><span class="kwrd">="text/css"</span>
+ <span class="attr">href</span><span class="kwrd">="/content/css/ui.base.css"</span>
+ <span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">link</span>
+ <span class="attr">rel</span><span class="kwrd">="stylesheet"</span>
+ <span class="attr">type</span><span class="kwrd">="text/css"</span>
+ <span class="attr">href</span><span class="kwrd">="/content/css/ui.core.css"</span>
+ <span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">link</span>
+ <span class="attr">rel</span><span class="kwrd">="stylesheet"</span>
+ <span class="attr">type</span><span class="kwrd">="text/css"</span>
+ <span class="attr">href</span><span class="kwrd">="/content/css/ui.slider.css"</span>
+ <span class="kwrd">/&gt;</span>
 <span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">body</span><span class="kwrd">&gt;</span>
 /* other content for the page */
-<span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">="text/javascript"</span> <span class="attr">src</span><span class="kwrd">="/Scripts/jquery-1.6.1.min.js"</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-&lt;script type=<span class="str">"text/javascript"</span> src=<span class="str">"/Scripts/ui/jquery.ui.core.js"</span>&gt;&lt;/script&gt;
-&lt;script type=<span class="str">"text/javascript"</span> src=<span class="str">"/Scripts/ui/jquery.ui.widget.js"</span>&gt;&lt;/script&gt;
+<span class="kwrd">&lt;</span><span class="html">script</span>
+ <span class="attr">type</span><span class="kwrd">="text/javascript"</span>
+ <span class="attr">src</span><span class="kwrd">="/Scripts/jquery-1.6.1.min.js"</span>
+ <span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span>script type=<span class="str">"text/javascript"</span>
+  <span class="attr">src</span><span class="str">"/Scripts/ui/jquery.ui.core.js"</span>&gt;
+  &lt;/script&gt;
+&lt;script type=<span class="str">"text/javascript"</span> src=
+<span class="str">"/Scripts/ui/jquery.ui.widget.js"</span>&gt;&lt;/script&gt;
 &lt;script type=<span class="str">"text/javascript"</span> src=<span class="str">"/Scripts/ui/jquery.ui.mouse.js"</span>&gt;&lt;/script&gt;
 &lt;script type=<span class="str">"text/javascript"</span> src=<span class="str">"/Scripts/ui/jquery.ui.slider.js"</span>&gt;&lt;/script&gt;
 &lt;script type=<span class="str">"text/javascript"</span>&gt;
