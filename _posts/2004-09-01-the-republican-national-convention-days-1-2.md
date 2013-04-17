@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Republican National Convention, Days 1 & 2.
+title: The Republican National Convention, Days 1 &amp; 2.
 categories: politics my-life
 tags: politics my-life
 ---
