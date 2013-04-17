@@ -1,0 +1,30 @@
+{% for  post in site.categories[page.title]  % }
+
+<div class="postmeta extract">
+<p class="timestamp">
+{{ post.date }}
+<br/>
+<span class="time"></span>
+</div>
+
+<div class="post extract">
+  
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+
+  <p>{{ post.content | strip_html | truncatewords:80 }}</p>
+
+	<div class="blocked tags">
+<p>
+	{% for tag in post.categories   % }
+	<a href="/categories/{{ tag}}.html"></a>
+,
+	{% endfor %}
+</p>
+	</div>
+	<div class="hr"></div>
+</div>
+
+<div class="c">&nbsp;</div>
+
+{% endfor %}
