@@ -1,8 +1,18 @@
 {% include header.html %}
     <div class="container content">
-      <div class="row">test
+      <div class="row">
         <div class="span9">
-          {{ content }}
+          <article class="post">
+            <p>{{ content }}</p>
+            <div>
+              <span class="badge badge-inverse">
+                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
+                {{ page.date | date_to_string }}
+                </time>
+              </span>
+
+            </div>
+          </article>
         </div>
         {% include sidebar.html %}
       </div>
