@@ -5,16 +5,16 @@ categories: politics fun
 tags: politics fun
 ---
 
-  <p>Jerome Corsi is a right-wing writer, known mainly for writing hatchet-job books about Democrats.  His Swift-Boater opus “Unfit for Command” was a important factor in John Kerry’s loss to GW Bush.  <a href="http://en.wikipedia.org/wiki/Unfit_for_Command" target="_blank">It was completely discredited too late.</a> 
+  Jerome Corsi is a right-wing writer, known mainly for writing hatchet-job books about Democrats.  His Swift-Boater opus “Unfit for Command” was a important factor in John Kerry’s loss to GW Bush.  [It was completely discredited too late.](http://en.wikipedia.org/wiki/Unfit_for_Command) 
   His latest book tries to “prove” President Obama’s short-form birth certificate is a fake.  Since the book came out within days of Obama released his long form birth certificate, and Corsi still has a paperback edition to sell, to continue his quest to separate gullible Tea-Partiers from their money, he now has to attack that.</p> 
   
-  To that end, he’s posted in his column on WorldNetDaily  <a href="http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221" target="_blank">Mathematical 'proof' Obama birth certificate a forgery</a>.
+  To that end, he’s posted in his column on WorldNetDaily  [Mathematical 'proof' Obama birth certificate a forgery](http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221).
   
-      In the article, Corsi quotes “a prominent software engineer who works as a high-level programmer for a state government”, who <strong>refuses to be named</strong>  because he fears he’ll lose his job --- which I think is a legitimate concern, since publically slandering someone with obviously manufactured evidence is frequently a firing offense.
+In the article, Corsi quotes “a prominent software engineer who works as a high-level programmer for a state government”, who __refuses to be named__  because he fears he’ll lose his job --- which I think is a legitimate concern, since publicly slandering someone with obviously manufactured evidence is frequently a firing offense.
   
-  So, I am also a “prominent software engineer” who is, however, willing to be named (James Curran, in case you missed the masthead) and can even prove his prominence with a <a href="http://www.noveltheory.com/resume" target="_blank">resume</a> of top-level jobs, magazine articles, user group talks, and industry awards. And I going to prove that Corsi and his fanciful “prominent software engineer” are liars.
+So, I am also a “prominent software engineer” who is, however, willing to be named (James Curran, in case you missed the masthead) and can even prove his prominence with a [resume](http://www.noveltheory.com/resume) of top-level jobs, magazine articles, user group talks, and industry awards. And I going to prove that Corsi and his fanciful “prominent software engineer” are liars.
 
-  Much of the start of Corsi’s article deals with the multiple layers in the PDF file which shows their ignorance of how PDFs deal with scanned documents, but that can be explained as merely a matter of stupidity, not deceit, and <a href="http://www.youtube.com/nyatnagarl#p/a/u/1/ZHZQ_SrEiOc" target="_blank">has been dealt with by others</a>.
+  Much of the start of Corsi’s article deals with the multiple layers in the PDF file which shows their ignorance of how PDFs deal with scanned documents, but that can be explained as merely a matter of stupidity, not deceit, and [has been dealt with by others](http://www.youtube.com/nyatnagarl#p/a/u/1/ZHZQ_SrEiOc)
 
   The real fraud comes when they they get to the meat of the article, when they analysis Obama’s mother’s signature.  Here, the “unnamed prominent software engineer” (hereafter UPSE – feel free to pronounce it “oopsie”) claim that by “zooming into the maximum”, the letters in the signature are shown “in perfect alignment across the bottom, exactly one pixel from the bottom line”  -- something that “No person can write with mathematical perfection”.
 
@@ -22,9 +22,13 @@ tags: politics fun
 
   It easy to see for yourself the manipulation – just look at the images Corsi gives us.  Below are directly from the <a href="http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221" target="_blank">WND article</a> (follow the link &amp; see for yourself).
 
-  <a href="http://honestillusion.com/blogs/blog_0/110706dunhamsignature_3CE37EBE.jpg"><img style="background-image:none;border-right-width:0px;padding-left:0px;padding-right:0px;display:inline;border-top-width:0px;border-bottom-width:0px;border-left-width:0px;padding-top:0px;" title="110706dunhamsignature" border="0" alt="110706dunhamsignature" src="http://honestillusion.com/blogs/blog_0/110706dunhamsignature_thumb_5AE18CB2.jpg" width="731" height="320" /></a>
+[ ![110706dunhamsignature](/images/110706dunhamsignature_thumb_5AE18CB2.jpg)](/images/110706dunhamsignature_3CE37EBE.jpg)
+
+  
 
   This, which Corsi refers to as “Exhibit 5”, is a slightly zoomed selection from the PDF released by the White House.
+  
+  [ ![110705birthcertificatesignature3_0C6CFA48.jpg](/images/110705birthcertificatesignature3_thumb_32CEDD93.jpg)](/images/110705birthcertificatesignature3_0C6CFA48.jpg)
 
   <a href="http://honestillusion.com/blogs/blog_0/110705birthcertificatesignature3_0C6CFA48.jpg"><img style="background-image:none;border-bottom:0px;border-left:0px;padding-left:0px;padding-right:0px;display:inline;border-top:0px;border-right:0px;padding-top:0px;" title="110705birthcertificatesignature3" border="0" alt="110705birthcertificatesignature3" src="http://honestillusion.com/blogs/blog_0/110705birthcertificatesignature3_thumb_32CEDD93.jpg" width="735" height="260" /></a>
 
