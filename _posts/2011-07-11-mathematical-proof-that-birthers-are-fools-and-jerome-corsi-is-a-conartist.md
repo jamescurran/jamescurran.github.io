@@ -20,7 +20,7 @@ The real fraud comes when they they get to the meat of the article, when they an
 
 The problem here is that the images which show that – exhibits 3 &amp; 4 in Corsi’s article – were deliberately manipulated specifically to create that illusion.
 
-It easy to see for yourself the manipulation – just look at the images Corsi gives us.  Below are directly from the <a href="http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221" target="_blank">WND article</a> (follow the link &amp; see for yourself).
+It easy to see for yourself the manipulation – just look at the images Corsi gives us.  Below are directly from the [WND article](http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221) (follow the link &amp; see for yourself).
 
 [![110706dunhamsignature](/images/110706dunhamsignature_thumb_5AE18CB2.jpg)](/images/110706dunhamsignature_3CE37EBE.jpg)
 
@@ -34,13 +34,13 @@ So,  how do we know that “Exhibit 4” is a fraud?  Well, the first clue can
 
 To see the truth, let’s make our own zoomed image. Right-click on the top image (I’m going to assume you are using Windows; You’ll have to adapt if you are using a Mac).  You can use either the image above or the one on WND – they are the same.  From the Context menu, choose “Copy” (or “Copy Image” if you’re use Chrome or Firefox).  Then open a graphic editor.  Anyone will do.  I’ll use Windows Paint here, because I know everyone has it.  So, click Start –&gt; All Programs –&gt; Accessories –&gt; Paint.   Click the “Paste” icon on the toolbar, click twice on the (+) in the lower right to zoom the image to 300%, and it’ll look much like this:
   
-[![myImage1](/Images/myImage1_thumb_44CAFB53.jpg)](/Images/myImage1_78DF9AA6.jpg)
+[![myImage1](/images/myImage1_thumb_44CAFB53.jpg)](/images/myImage1_78DF9AA6.jpg)
   
 This is what “Exhibit 4” should look like if Corsi &amp; UPSE weren’t lying.  Of course, this image completely disproves UPSE’s point:  It’s quite obvious that the letters are NOT “in perfect alignment across the bottom, exactly one pixel from the bottom line”. The upper points of the “m” extend above the top of the first “a”, but are below the top of the second “a”, while the “b” and the lower points of the “m” extend below either “a”.
 
-So, how did UPSE fake the images used for Exhibit 3 &amp; 4:   Again, simple enough to do, and while most graphics editors can handle the task, Windows Paint can’t.  So, I’ll use the excellent freeware app, “<a href="http://getpaint.net" target="_blank">Paint.Net</a>”  (warning that page has several ads which also contain the word “Download” – the one you want is in the upper right).  Install Paint.net if necessary &amp; launch it.  The image should still be on your clipboard, so just choose “Edit –&gt; Paste in to New Image” (If that didn’t work, you may have to do the right-click/copy from the browser image again).  Zoom the image to 300% by clicking the (+)  on the toolbar twice. You should see our friendly large scale image we have above.  Now comes the fun part : Choose “Effects –&gt; Distort –&gt;Pixelate”.  Set the cell size to “5” and click OK.   What you get looks remarkably like UPSE “zoomed” image:
+So, how did UPSE fake the images used for Exhibit 3 &amp; 4:   Again, simple enough to do, and while most graphics editors can handle the task, Windows Paint can’t.  So, I’ll use the excellent freeware app, “[Paint.Net](http://getpaint.net)"  (warning that page has several ads which also contain the word “Download” – the one you want is in the upper right).  Install Paint.net if necessary &amp; launch it.  The image should still be on your clipboard, so just choose “Edit –&gt; Paste in to New Image” (If that didn’t work, you may have to do the right-click/copy from the browser image again).  Zoom the image to 300% by clicking the (+)  on the toolbar twice. You should see our friendly large scale image we have above.  Now comes the fun part : Choose “Effects –&gt; Distort –&gt;Pixelate”.  Set the cell size to “5” and click OK.   What you get looks remarkably like UPSE “zoomed” image:
   
-[![myImages2](/Images/myImage2_thumb_2899F0CE.gif)](/Images/myImage2_01DC005B.gif)
+[![myImages2](/images/myImage2_thumb_2899F0CE.gif)](/images/myImage2_01DC005B.gif)
 
   o, what is done when you “Pixelate”?  Well, the fact that it’s in the “Distort” category of effects should tell you a lot.  Basically what happens, is the graphics editor takes 25 pixels (a 5 by 5 block), and replaces them with one big solid color block which is the average of all the pixel that were there.  We are left with 1/25th the information in the original.  In other words, UPSE was only able to “prove” his lies by throwing away 96% of the detail in the image.
   
