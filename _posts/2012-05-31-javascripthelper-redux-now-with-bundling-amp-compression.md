@@ -13,7 +13,8 @@ Ha!
   
 Ok, I really hadn’t planned on adding it this soon , but right after my first blog article on the helper appeared, lots of other bloggers started writing  about the bundling features in the MVC4 beta, and is *seemed* simple enough. 
   
-For those of you who missed the first part ([JavascriptHelper–Managing JS files for ASP.NET MVC](http://honestillusion.com/blog/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.html)), a quick review (You’ll probably want to read that article eventually anyway):   JavascriptHelper is a MVC component which allows you to specify that a JavaScript file is needed, wherever you need it (view, partial views, layouts, helpers etc.) and the helper will collection them all up, plus all their dependencies – in the right order--  and insert all the &lt;script&gt; tags in one spot --- and at the same time, do the same thing for the CSS files those JS scripts need.    For example, in a partial view, you wish to use the jQuery UI Slider widget, you can simply write:</p>
+For those of you who missed the first part ([JavascriptHelper–Managing JS files for ASP.NET MVC](http://honestillusion.com/blog/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.html)), a quick review (You’ll probably want to read that article eventually anyway):   JavascriptHelper is a MVC component which allows you to specify that a JavaScript file is needed, wherever you need it (view, partial views, layouts, helpers etc.) and the helper will collection them all up, plus all their dependencies – in the right order--  and insert all the &lt;script&gt; tags in one spot --- and at the same time, do the same thing for the CSS files those JS scripts need.    For example, in a partial view, you wish to use the jQuery UI Slider widget, you can simply write:
+
   {% highlight csharp %}
   @Script.Std(“slider”)
   {% endhighlight%}
@@ -57,8 +58,8 @@ This haven’t changed since the last article.  I think there’s still a bit m
 
 ### The code:
   
-  <p>The source code is available (under the Apache license) from my GitHub library:</p>
-  <p>[http://github.com/jamescurran/JavascriptHelper](http://github.com/jamescurran/JavascriptHelper)
+  The source code is available (under the Apache license) from my GitHub library:
+  [http://github.com/jamescurran/JavascriptHelper](http://github.com/jamescurran/JavascriptHelper)
 
 
 <a href="http://dotnetshoutout.com/JavascriptHelper-Redux-Now-with-Bundling-Compression">
