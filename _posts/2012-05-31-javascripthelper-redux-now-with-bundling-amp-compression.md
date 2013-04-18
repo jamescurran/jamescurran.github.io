@@ -15,9 +15,9 @@ Ok, I really hadn’t planned on adding it this soon , but right after my first 
   
 For those of you who missed the first part ([JavascriptHelper–Managing JS files for ASP.NET MVC](http://honestillusion.com/blog/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.html)), a quick review (You’ll probably want to read that article eventually anyway):   JavascriptHelper is a MVC component which allows you to specify that a JavaScript file is needed, wherever you need it (view, partial views, layouts, helpers etc.) and the helper will collection them all up, plus all their dependencies – in the right order--  and insert all the &lt;script&gt; tags in one spot --- and at the same time, do the same thing for the CSS files those JS scripts need.    For example, in a partial view, you wish to use the jQuery UI Slider widget, you can simply write:
 
-  {% highlight csharp %}
+{% highlight csharp linenos %}
   @Script.Std(“slider”)
-  {% endhighlight%}
+{% endhighlight %}
   
 and at the spots you designate in your layout file, it will insert the &lt;script&gt; tags for jQuery, and just the parts of jQuery UI needed for the slider (core, widget, mouse, and slider), plus the jQuery UI CSS file.  And, now with v2.0, it will also optionally bundle them into one big file (optionally compressing them in one small file)
   
