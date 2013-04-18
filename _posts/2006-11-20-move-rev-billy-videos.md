@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Move Rev. Billy Videos!
 categories: 
 tags: 

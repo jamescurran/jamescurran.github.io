@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: One of those weeks.
 categories: my-life theater
 tags: my-life theater

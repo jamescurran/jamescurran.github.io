@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Oh My God! It's back!
 categories: 
 tags: 

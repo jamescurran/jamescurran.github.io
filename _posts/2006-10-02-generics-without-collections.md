@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Generics without Collections
 categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections

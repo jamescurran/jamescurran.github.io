@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Dev102's Challenge #11 - Summing Numbers
 categories: 
 tags: 

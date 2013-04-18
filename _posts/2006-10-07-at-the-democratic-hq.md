@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: At the Democratic HQ
 categories: politics my-life video
 tags: politics my-life video

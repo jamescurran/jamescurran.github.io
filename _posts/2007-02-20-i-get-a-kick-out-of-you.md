@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: I get a KICK out of you....
 categories: 
 tags: 

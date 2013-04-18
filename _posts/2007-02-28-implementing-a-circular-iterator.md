@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Implementing A Circular Iterator
 categories: code c# .net programming
 tags: code c# .net programming

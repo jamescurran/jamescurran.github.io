@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: My Pirate Name (Sorry, I'm a day late.....)
 categories: my-life
 tags: my-life

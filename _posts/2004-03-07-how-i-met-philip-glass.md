@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: How I met Philip Glass
 categories: my-life
 tags: my-life

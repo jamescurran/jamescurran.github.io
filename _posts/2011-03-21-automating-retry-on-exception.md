@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Automating Retry on Exception
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Dumbest Christmas Tradition
 categories: my-life random-thoughts
 tags: my-life random-thoughts

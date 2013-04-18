@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: More Fun with C# Iterators: Take, Skip, TakeWhile, SkipWhile
 categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections

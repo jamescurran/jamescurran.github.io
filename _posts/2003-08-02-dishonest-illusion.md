@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Dishonest Illusion.
 categories: site
 tags: site

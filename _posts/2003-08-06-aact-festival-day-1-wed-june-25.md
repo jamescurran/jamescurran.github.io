@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: AACT Festival Day 1 (Wed, June 25)
 categories: theater
 tags: theater

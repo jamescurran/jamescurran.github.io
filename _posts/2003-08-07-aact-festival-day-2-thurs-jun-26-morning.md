@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: AACT Festival Day 2 (Thurs, Jun 26 Morning)
 categories: theater
 tags: theater

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: ESTAFest 2004 - Day 2 (Morning)
 categories: theater
 tags: theater

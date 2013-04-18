@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Toothbrush Mystery
 categories: random-thoughts
 tags: random-thoughts

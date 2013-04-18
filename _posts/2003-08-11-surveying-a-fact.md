@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Surveying a Fact
 categories: politics
 tags: politics

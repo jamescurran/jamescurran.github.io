@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Cutest! Baby! Ever! (The Proof)
 categories: my-life
 tags: my-life

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Last Night's Theater..
 categories: theater
 tags: theater

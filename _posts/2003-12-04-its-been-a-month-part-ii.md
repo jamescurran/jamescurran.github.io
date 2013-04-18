@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: It's been a month (Part II)
 categories: my-life theater random-thoughts
 tags: my-life theater random-thoughts

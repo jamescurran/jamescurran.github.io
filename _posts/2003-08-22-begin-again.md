@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Begin Again....
 categories: site
 tags: site

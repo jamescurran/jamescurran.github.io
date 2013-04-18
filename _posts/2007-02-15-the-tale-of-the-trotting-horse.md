@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Tale of the Trotting Horse
 categories: 
 tags: 

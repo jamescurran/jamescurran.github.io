@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Test Of new CS Modules
 categories: site
 tags: site

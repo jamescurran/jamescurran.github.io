@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Scoble watch --- Challenge met!!!!
 categories: random-thoughts
 tags: random-thoughts

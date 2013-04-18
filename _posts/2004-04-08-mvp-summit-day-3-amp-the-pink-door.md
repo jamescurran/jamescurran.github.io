@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MVP Summit, Day 3 &amp; the Pink Door.
 categories: my-life random-thoughts mvp
 tags: my-life random-thoughts mvp

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Which Simon and Garfunkel album am I?
 categories: my-life random-thoughts quizes
 tags: my-life random-thoughts quizes

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: One reason why it's cool to have WindowsCE on your mobile phone.
 categories: my-life random-thoughts
 tags: my-life random-thoughts

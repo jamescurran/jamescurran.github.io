@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: ESTAFest Day 3
 categories: my-life theater
 tags: my-life theater

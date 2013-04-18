@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Order in Chaos, the Answer...
 categories: my-life random-thoughts
 tags: my-life random-thoughts

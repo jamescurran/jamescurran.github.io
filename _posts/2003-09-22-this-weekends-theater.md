@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: This weekend's theater.
 categories: theater
 tags: theater

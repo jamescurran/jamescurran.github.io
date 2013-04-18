@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: AACT Festival Day 3 (Fri, June 27)
 categories: theater
 tags: theater

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Rev. Billy Videos!
 categories: 
 tags: 

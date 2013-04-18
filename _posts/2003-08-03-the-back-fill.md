@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Back Fill
 categories: site
 tags: site

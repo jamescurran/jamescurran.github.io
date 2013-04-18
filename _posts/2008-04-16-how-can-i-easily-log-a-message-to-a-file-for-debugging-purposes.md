@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: How can I easily log a message to a file for debugging purposes?
 categories: code c# .net programming mvp
 tags: code c# .net programming mvp

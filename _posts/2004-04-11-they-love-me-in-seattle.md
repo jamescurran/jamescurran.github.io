@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: They LOVE me in Seattle.....
 categories: site
 tags: site

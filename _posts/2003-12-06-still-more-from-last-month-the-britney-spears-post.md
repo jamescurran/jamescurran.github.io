@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Still more from last month.... (the Britney Spears post)
 categories: my-life random-thoughts
 tags: my-life random-thoughts

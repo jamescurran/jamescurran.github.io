@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: DEV102's Programming Job Interview Challenge #4
 categories: code c# .net programming dotnet csharp
 tags: code c# .net programming dotnet csharp

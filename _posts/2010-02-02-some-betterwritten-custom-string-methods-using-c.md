@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Some Better-Written Custom String Methods using C#
 categories: code c# .net programming dotnet csharp
 tags: code c# .net programming dotnet csharp

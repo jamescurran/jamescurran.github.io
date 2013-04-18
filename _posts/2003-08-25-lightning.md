@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Lightning....
 categories: site random-thoughts
 tags: site random-thoughts

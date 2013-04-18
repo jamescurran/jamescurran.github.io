@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Let's talk about some code (Javascript)
 categories: code javascript programming
 tags: code javascript programming

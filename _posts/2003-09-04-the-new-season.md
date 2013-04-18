@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The New Season
 categories: my-life random-thoughts
 tags: my-life random-thoughts

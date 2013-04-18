@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: AACT Festival Day 4 (Sat June 28)
 categories: theater
 tags: theater

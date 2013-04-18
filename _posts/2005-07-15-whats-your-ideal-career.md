@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: What's Your Ideal Career?
 categories: my-life quizes
 tags: my-life quizes

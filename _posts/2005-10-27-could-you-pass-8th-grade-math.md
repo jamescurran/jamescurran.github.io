@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Could You Pass 8th Grade Math?
 categories: my-life random-thoughts quizes
 tags: my-life random-thoughts quizes

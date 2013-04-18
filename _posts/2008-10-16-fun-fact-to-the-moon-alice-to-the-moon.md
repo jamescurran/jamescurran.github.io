@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Fun Fact:  To the Moon, Alice, to the Moon!
 categories: random-thoughts programming
 tags: random-thoughts programming

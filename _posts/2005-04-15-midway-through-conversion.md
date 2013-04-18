@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Midway through conversion
 categories: site
 tags: site

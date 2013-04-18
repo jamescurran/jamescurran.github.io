@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Mathematical Proof that Birthers are Fools (and Jerome Corsi is a Con-artist)
 categories: politics fun
 tags: politics fun

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Just a test
 categories: site
 tags: site

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: DEV102's Programming Job Interview Challenge #5
 categories: 
 tags: 

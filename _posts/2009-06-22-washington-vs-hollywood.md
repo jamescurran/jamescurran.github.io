@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Washington vs. Hollywood.
 categories: politics random-thoughts
 tags: politics random-thoughts

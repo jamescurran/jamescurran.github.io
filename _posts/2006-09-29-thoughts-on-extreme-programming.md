@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Thoughts on eXtreme Programming
 categories: random-thoughts code programming
 tags: random-thoughts code programming

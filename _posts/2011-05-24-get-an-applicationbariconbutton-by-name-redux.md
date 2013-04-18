@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Get an ApplicationBarIconButton by name (Redux)
 categories: code c# .net generics-without-collections dotnet csharp codeproject
 tags: code c# .net generics-without-collections dotnet csharp codeproject

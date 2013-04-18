@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Pop (Culture) Quiz
 categories: books
 tags: books

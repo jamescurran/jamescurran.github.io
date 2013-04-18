@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Men &amp; Women &amp; Careers in IT.
 categories: 
 tags: 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Take the MIT Weblog Survey
 categories: 
 tags: 

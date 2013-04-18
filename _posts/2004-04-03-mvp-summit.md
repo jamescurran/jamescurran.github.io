@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MVP Summit
 categories: my-life mvp
 tags: my-life mvp

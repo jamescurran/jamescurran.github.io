@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Videos which involve neither Rev. Billy nor Politicans.
 categories: 
 tags: 

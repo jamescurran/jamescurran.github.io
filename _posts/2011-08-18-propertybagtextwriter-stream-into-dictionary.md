@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: PropertyBagTextWriter (Stream into Dictionary)
 categories: code c# .net programming dotnet csharp castle monorail codeproject
 tags: code c# .net programming dotnet csharp castle monorail codeproject

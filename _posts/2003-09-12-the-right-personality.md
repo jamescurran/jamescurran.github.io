@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Right Personality
 categories: random-thoughts
 tags: random-thoughts

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Evolutionary Guide to C# Lambda Syntax
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject

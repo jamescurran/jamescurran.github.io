@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Blackout.
 categories: my-life
 tags: my-life

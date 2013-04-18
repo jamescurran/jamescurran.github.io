@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Posts from Comments: QuickDataBind
 categories: code c# .net programming dotnet csharp
 tags: code c# .net programming dotnet csharp

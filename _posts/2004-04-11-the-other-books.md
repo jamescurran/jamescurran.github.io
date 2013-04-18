@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The other books....
 categories: books
 tags: books

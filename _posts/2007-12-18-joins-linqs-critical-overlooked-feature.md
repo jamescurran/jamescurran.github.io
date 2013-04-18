@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Joins - LINQ's critical, overlooked feature.
 categories: 
 tags: 

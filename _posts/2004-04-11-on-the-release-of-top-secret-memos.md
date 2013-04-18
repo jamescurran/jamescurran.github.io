@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: On the release of Top Secret Memos....
 categories: politics random-thoughts
 tags: politics random-thoughts

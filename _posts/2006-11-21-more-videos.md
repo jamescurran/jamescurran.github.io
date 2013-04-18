@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: More Videos
 categories: politics my-life video church-of-stop-shopping rev-billy music
 tags: politics my-life video church-of-stop-shopping rev-billy music

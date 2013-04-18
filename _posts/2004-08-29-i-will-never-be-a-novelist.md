@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: I will never be a novelist.
 categories: random-thoughts
 tags: random-thoughts

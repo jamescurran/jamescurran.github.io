@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Catching up....
 categories: my-life
 tags: my-life

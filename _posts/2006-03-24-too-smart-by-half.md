@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Too smart by Half
 categories: random-thoughts
 tags: random-thoughts

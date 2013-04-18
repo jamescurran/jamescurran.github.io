@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Office Football pool
 categories: my-life random-thoughts
 tags: my-life random-thoughts

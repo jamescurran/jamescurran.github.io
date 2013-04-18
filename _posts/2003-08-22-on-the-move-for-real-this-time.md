@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: On the Move, for real this time.
 categories: site
 tags: site

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Dev102's Challenge #10 - The Missing Number
 categories: 
 tags: 

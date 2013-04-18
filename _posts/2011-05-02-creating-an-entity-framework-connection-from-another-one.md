@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Creating an Entity Framework connection from another one.
 categories: code c# .net programming dotnet csharp entityframework codeproject
 tags: code c# .net programming dotnet csharp entityframework codeproject

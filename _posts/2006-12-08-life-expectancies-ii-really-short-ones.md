@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Life expectancies, II (really short ones)
 categories: random-thoughts
 tags: random-thoughts

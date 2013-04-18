@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: JavascriptHelper–Managing JS files for ASP.NET MVC
 categories: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject

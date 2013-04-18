@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: America is Doomed.....
 categories: politics random-thoughts
 tags: politics random-thoughts

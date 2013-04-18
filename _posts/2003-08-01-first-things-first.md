@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: First Things First
 categories: site
 tags: site

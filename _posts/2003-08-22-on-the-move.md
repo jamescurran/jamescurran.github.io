@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: On the Move..
 categories: site
 tags: site

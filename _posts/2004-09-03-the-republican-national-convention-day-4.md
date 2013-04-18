@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Republican National Convention, Day 4.
 categories: politics my-life
 tags: politics my-life

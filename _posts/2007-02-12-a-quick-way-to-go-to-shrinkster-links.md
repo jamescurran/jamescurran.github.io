@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: A quick way to go to Shrinkster links.
 categories: random-thoughts code programming
 tags: random-thoughts code programming

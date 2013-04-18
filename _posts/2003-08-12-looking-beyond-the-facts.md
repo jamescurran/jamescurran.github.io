@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Looking beyond the "Facts"
 categories: random-thoughts
 tags: random-thoughts

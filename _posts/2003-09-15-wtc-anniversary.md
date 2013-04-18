@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: WTC Anniversary
 categories: my-life
 tags: my-life
