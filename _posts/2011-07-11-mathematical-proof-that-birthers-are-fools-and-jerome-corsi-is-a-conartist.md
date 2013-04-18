@@ -42,7 +42,7 @@ So, how did UPSE fake the images used for Exhibit 3 &amp; 4:   Again, simple e
   
 [![myImages2](/images/myImage2_thumb_2899F0CE.gif)](/images/myImage2_01DC005B.gif)
 
-  o, what is done when you “Pixelate”?  Well, the fact that it’s in the “Distort” category of effects should tell you a lot.  Basically what happens, is the graphics editor takes 25 pixels (a 5 by 5 block), and replaces them with one big solid color block which is the average of all the pixel that were there.  We are left with 1/25th the information in the original.  In other words, UPSE was only able to “prove” his lies by throwing away 96% of the detail in the image.
+So, what is done when you “Pixelate”?  Well, the fact that it’s in the “Distort” category of effects should tell you a lot.  Basically what happens, is the graphics editor takes 25 pixels (a 5 by 5 block), and replaces them with one big solid color block which is the average of all the pixel that were there.  We are left with 1/25th the information in the original.  In other words, UPSE was only able to “prove” his lies by throwing away 96% of the detail in the image.
   
 And I think that should be our new slogan for Jerome Corsi and WorldNetDaily:  “4% truth and 96% lies”*
   
