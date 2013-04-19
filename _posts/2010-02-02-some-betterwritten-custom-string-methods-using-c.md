@@ -77,7 +77,7 @@ Next up, Reversing a String.  The Original:
 
 Now, here the author might be able to earn a pass.  It’s possible that somewhere in his book he talks about recursive functions, and uses this as an example.  Then, if might be OK.  I mean, it is the only reason I can think of that someone might want a function which reverses a string – despite ubiquity of string reversing functions in libraries like this.  But, he presented it on his blog as a collection of string functions, so we’ll have to judge them on that basis.  
 
-Again we have lots of string manipulation to accomplish something simple --- where there are already method built into the framework to handle such things:
+Again we have lots of string manipulation to accomplish something simple --- where there are already methods built into the framework to handle such things:
 
 <PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String Reverse(String strParam)
 {
@@ -85,11 +85,16 @@ Again we have lots of string manipulation to accomplish something simple --- whe
      Array.Reverse(rev);
      <SPAN class="kwrd">return</SPAN> Encoding.ASCII.GetString(rev);
 }</PRE>
-<P><STRONG>UPDATE:</STRONG> One commentator noted (quite rightly) noted that my Reverse() method would only work for strings of ASCII characters and will fail if there are any Unicode characters.   I knew that at the time, but I was hoping no one else would notice.  The problem was I needed a method which converted a string into an array of characters, and being unable to find one in the CLR, I substituted a string to byte array method instead.   I guess this is one of those times where you just have to step away for a while and come back to it, because now, I found the right method in a few seconds:</P>
-<P> <SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String Reverse(String strParam)</P>
-<DIV class="csharpcode"><PRE>{</PRE><PRE class="alt">     <SPAN class="kwrd">char</SPAN>[] rev = strParam.ToCharArray();</PRE><PRE>     Array.Reverse(rev);</PRE><PRE class="alt">     <SPAN class="kwrd">return</SPAN> <SPAN class="kwrd">new</SPAN> String(rev);</PRE><PRE>}</PRE></DIV>
-<P>And while my first version was a big improvement over the original, this is a big improvement over my first version, so you get double the benefits!</P>
-<P>Next, we have a simple function to count the occurrences of a substring.  </P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">int</SPAN> CharCount(String strSource, String strToCount)
+**UPDATE:** One commentator (quite rightly) noted that my Reverse() method would only work for strings of ASCII characters and will fail if there are any Unicode characters.   I knew that at the time, but I was hoping no one else would notice.  The problem was I needed a method which converted a string into an array of characters, and being unable to find one in the CLR, I substituted a string to byte array method instead.   I guess this is one of those times where you just have to step away for a while and come back to it, because now, I found the right method in a few seconds:
+
+<SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String Reverse(String strParam)</P>
+<DIV class="csharpcode"><PRE>{</PRE><PRE class="alt">     <SPAN class="kwrd">char</SPAN>[] rev = strParam.ToCharArray();</PRE><PRE>     Array.Reverse(rev);</PRE><PRE class="alt">     <SPAN class="kwrd">return</SPAN> <SPAN class="kwrd">new</SPAN> String(rev);</PRE><PRE>}</PRE>
+
+And while my first version was a big improvement over the original, this is a big improvement over my first version, so you get double the benefits!
+
+Next, we have a simple function to count the occurrences of a substring. 
+
+<PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">int</SPAN> CharCount(String strSource, String strToCount)
 {
     <SPAN class="kwrd">int</SPAN> iCount = 0;
     <SPAN class="kwrd">int</SPAN> iPos = strSource.IndexOf(strToCount);
@@ -100,7 +105,10 @@ Again we have lots of string manipulation to accomplish something simple --- whe
         iPos = strSource.IndexOf(strToCount);
     }
     <SPAN class="kwrd">return</SPAN> iCount;}</PRE>
-<P>The revision isn’t much different but the subtle difference is important.  Instead of creating a new, shorter string to search, we tell it to just start looking after the last match.  Instead we now merely look at the string.</P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">int</SPAN> CharCount(String strSource, String strToCount)
+
+The revision isn’t much different but the subtle difference is important.  Instead of creating a new, shorter string to search, we tell it to just start looking after the last match.  Instead we now merely look at the string.</P>
+
+<PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">int</SPAN> CharCount(String strSource, String strToCount)
 {
     <SPAN class="kwrd">int</SPAN> iCount = 0;
     <SPAN class="kwrd">int</SPAN> iPos = strSource.IndexOf(strToCount);
@@ -110,7 +118,11 @@ Again we have lots of string manipulation to accomplish something simple --- whe
         iPos = strSource.IndexOf(strToCount, iPos+1);
     }
     <SPAN class="kwrd">return</SPAN> iCount;
-}</PRE>The next one has a special problem --- It doesn’t do what it claims to do!<BR /><PRE class="csharpcode"><SPAN class="rem">// Trim the string to contain only a single whitepace between words</SPAN></PRE><PRE class="csharpcode"><SPAN class="rem"></SPAN><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String ToSingleSpace(String strParam)
+}</PRE>
+
+The next one has a special problem --- It doesn’t do what it claims to do!
+
+<PRE class="csharpcode"><SPAN class="rem">// Trim the string to contain only a single whitepace between words</SPAN></PRE><PRE class="csharpcode"><SPAN class="rem"></SPAN><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String ToSingleSpace(String strParam)
 {
     <SPAN class="kwrd">int</SPAN> iPosition = strParam.IndexOf(<SPAN class="str">" "</SPAN>);
     <SPAN class="kwrd">if</SPAN> (iPosition == -1)
@@ -122,12 +134,19 @@ Again we have lots of string manipulation to accomplish something simple --- whe
         <SPAN class="kwrd">return</SPAN> ToSingleSpace(strParam.Substring(0, iPosition) +        strParam.Substring(iPosition + 1));
     }
 }</PRE>
-<P>Now, it says that it should remove repeated space, so that there is only one space between words. However, what it actually does it to remove all spaces.  This gives us a problem: Should my rewritten function do what it claims to do, or what it actually does?  I decided to give you one of each.</P>
-<P>Duplicating the result is quite straightforward:</P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String RemoveAllSpaces(String strParam)
+
+Now, it says that it should remove repeated space, so that there is only one space between words. However, what it actually does it to remove all spaces.  This gives us a problem: Should my rewritten function do what it claims to do, or what it actually does?  I decided to give you one of each.
+
+Duplicating the result is quite straightforward:
+
+<PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String RemoveAllSpaces(String strParam)
 {
     <SPAN class="kwrd">return</SPAN> strParam.Replace(<SPAN class="str">" "</SPAN>, <SPAN class="str">""</SPAN>);
 }</PRE>
-<P>Writing a function to do what it is supposed to is a little more involved, but still simple:</P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String ToSingleSpace(String strParam)
+
+Writing a function to do what it is supposed to is a little more involved, but still simple:
+
+<PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> String ToSingleSpace(String strParam)
 {
     var sb = <SPAN class="kwrd">new</SPAN> StringBuilder(strParam.Length);
     var prevWS =<SPAN class="kwrd">true</SPAN>;
@@ -146,8 +165,13 @@ Again we have lots of string manipulation to accomplish something simple --- whe
         }
     }
     <SPAN class="kwrd">return</SPAN> sb.ToString();
-}</PRE>We create a string builder the size of our source string, which would be the maximum size our trimmed string could be, and we set prevWS to true.  This way, it will remove all leading whitespace.  Then we just step through the string, character by character, appending that character to our new string if it’s not a whitespace character, and appending a space for the first whitespace character found.  Note that this reduces all forms of whitespace (tabs, newlines, spaces etc) to a single space.  The original just worked on spaces. 
-<P>Finally, we have a function to determine is a string is a palindrome.  </P><PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">bool</SPAN> IsPalindrome(String strParam)
+}</PRE>
+
+We create a string builder the size of our source string, which would be the maximum size our trimmed string could be, and we set prevWS to true.  This way, it will remove all leading whitespace.  Then we just step through the string, character by character, appending that character to our new string if it’s not a whitespace character, and appending a space for the first whitespace character found.  Note that this reduces all forms of whitespace (tabs, newlines, spaces etc) to a single space.  The original just worked on spaces. 
+
+Finally, we have a function to determine is a string is a palindrome. 
+
+<PRE class="csharpcode"><SPAN class="kwrd">public</SPAN> <SPAN class="kwrd">static</SPAN> <SPAN class="kwrd">bool</SPAN> IsPalindrome(String strParam)
 {
     <SPAN class="kwrd">int</SPAN> iLength, iHalfLen;
     iLength = strParam.Length - 1;
@@ -175,5 +199,7 @@ Again we have lots of string manipulation to accomplish something simple --- whe
     }
     <SPAN class="kwrd">return</SPAN> <SPAN class="kwrd">true</SPAN>;
 }</PRE>
-<P>In this function, instead of comparing one-character long strings, I compare individual characters.  That change, by itself, cause a 4X speed improvement.</P>
-<P>So, there you have it.  The article had more, but the other were trivial, and I couldn’t make them any better.  And in case you think I’m all talk here, each of those rewrites was benchmarked to run 2 to 5 times faster than the original.</P>
+
+In this function, instead of comparing one-character long strings, I compare individual characters.  That change, by itself, cause a 4X speed improvement.
+
+So, there you have it.  The article had more, but the other were trivial, and I couldn’t make them any better.  And in case you think I’m all talk here, each of those rewrites was benchmarked to run 2 to 5 times faster than the original.
