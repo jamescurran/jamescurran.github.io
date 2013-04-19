@@ -4,12 +4,14 @@ title: Lambda Expressions as Properties
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
+Peter recently caused a bit of a stir with his article “[Sometimes an enum is not the best idea](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/05/30/sometimes-an-enum-is-not-the-best-idea.aspx)”.  In it, he had a very specific problem: When an enum is passed to a method as an Object, and that method converts it to a usable value by calling `ToString()`, you get that enum’s name and not it’s value.  And he gave a gave very specific solution to that problem.  Peter wanted an simple ad hoc solution that he could just drop into his code.  Peter’s idea was basically a quick fix to replace a bad design with something slightly less bad.   The problem arose when readers inferred that it was intended as a far more general solution, and pointed out different, more architectural solutions.  Bickering started in the comments.
 
-  
-<p>Peter recently caused a bit of a stir with his article “<a href="http://codebetter.com/blogs/peter.van.ooijen/archive/2010/05/30/sometimes-an-enum-is-not-the-best-idea.aspx" target="_blank">Sometimes an enum is not the best idea</a>”.  In it, he had a very specific problem: When an enum is passed to a method as an Object, and that method converts it to a usable value by calling ToString(), you get that enum’s name and not it’s value.  And he gave a gave very specific solution to that problem.  Peter wanted an simple ad hoc solution that he could just drop into his code.  Peter’s idea was basically a quick fix to replace a bad design with something slightly less bad.   The problem arose when readers inferred that it was intended as a far more general solution, and pointed out different, more architectural solutions.  Bickering started in the comments.</p>
-<p>I think the main problem is that Peter just want a quick fix to his existing design, and viewed a proper design as overkill for his simple needs.  However, since those simple needs were out of scope of his original purpose for the  article, he never got into specifics.  However, knowing the specifics would be key to knowing how complex the design needs to be.  This was the essence of Peter’s follow-up <a href="http://codebetter.com/blogs/peter.van.ooijen/archive/2010/06/02/ask-first.aspx" target="_blank">article</a> (which he posted as I was in the middle of writing this)</p>
-<p>So, let’s try looking at this problem to see if we can come up with a better design that still meets the goal of being simple.</p>
-<p>In Peter’s design, he has a Suppliers class (which he occasionally refers to as the Company class), which has several instances --- one for each supplier.  There is also an enum, PublicIds with one entry for each supplier.  PublicIds was used in two places:  In switch statements, and as a parameter in an ADO.NET statement:</p>
+I think the main problem is that Peter just want a quick fix to his existing design, and viewed a proper design as overkill for his simple needs.  However, since those simple needs were out of scope of his original purpose for the  article, he never got into specifics.  However, knowing the specifics would be key to knowing how complex the design needs to be.  This was the essence of Peter’s follow-up [article](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/06/02/ask-first.aspx) (which he posted as I was in the middle of writing this)
+
+So, let’s try looking at this problem to see if we can come up with a better design that still meets the goal of being simple.
+
+In Peter’s design, he has a Suppliers class (which he occasionally refers to as the Company class), which has several instances --- one for each supplier.  There is also an enum, PublicIds with one entry for each supplier.  PublicIds was used in two places:  In switch statements, and as a parameter in an ADO.NET statement:
+
 <pre class="csharpcode">
   <span class="kwrd">public</span> <span class="kwrd">void</span> DoWithCompany(PublicIds company)
 {
@@ -25,30 +27,42 @@ tags: code c# .net programming dotnet csharp codeproject
       <span class="rem">// Do something else</span>
       <span class="kwrd">break</span>;
     }
-}</pre>
+}
 <p>cmdExists.Parameters.AddWithValue("@idSupplier", Supplier.PublicIds.MyCompany);</p>
-<p> </p>
-<p>The second use was the real motivator of Peter’s article – The first was what caused all the hoopla on the blog.</p>
-<p>Commenters proposed some general ideas, basically out of Object-Oriented Design 101 – Creating a new subclass for  each of the Suppliers, with overridden methods.  Peter fought back --- the code in the “do something” blocks is not part of Supplier, but is in other classes.  Subclasses would requiring moving non-related code to where it doesn’t belong.</p>
-<p>Since Peter still hasn’t provided any real-world examples of his problem (which is reasonable, as they might involve proprietary material or just have too many dependencies to post meaningful excerpts), lets try to imagine some scenarios that might fit his description (namely that DoWithCompany is an example of  a method that “is a member of several quite different other classes and comes in many flavors”).</p>
-<p>Ok, so let’s say we have a Order class, with a ProcessOrderToSupplier(Supplier sup) method.   Let’s further say that most of Order processing is the same for all suppliers, but some suppliers offer a discount (or surcharge) under some conditions.  Hence we need custom processing per supplier to handle the discount, but moving order handling into the Supplier class would clearly be wrong.</p>
-<p>So, let’s try three different discounting schemes, and come up with three means of handling them in ways that are scalable, maintainable &amp; understandable.</p>
-<p>#1 – A flat discount rate on all items.</p>
-<p>      That’s simple.  A discount rate property (getter only) in Supplier.  It could be an abstract property which is overridden in derived classes (one for each Supplier), or just set in Supplier’s constructor.  (Could be set to zero for those suppliers not offering a discount).</p>
-<p>#2 -  Several suppliers offering (free shipping on orders over $100).</p>
-<p>       The “free shipping blah-blah-blah” part is handled entirely in the Order class.  The Supplier class just needs a way to say whether of not a particular supplier offers it.  This could be handled by a  Property as described above, or an attribute on the derived class, or by a marker interface (a marker interface has no members, and is just used in statements like:</p>
+</pre>
+
+
+The second use was the real motivator of Peter’s article – The first was what caused all the hoopla on the blog.
+
+Commenters proposed some general ideas, basically out of Object-Oriented Design 101 – Creating a new subclass for  each of the Suppliers, with overridden methods.  Peter fought back --- the code in the “do something” blocks is not part of Supplier, but is in other classes.  Subclasses would requiring moving non-related code to where it doesn’t belong.
+
+Since Peter still hasn’t provided any real-world examples of his problem (which is reasonable, as they might involve proprietary material or just have too many dependencies to post meaningful excerpts), lets try to imagine some scenarios that might fit his description (namely that DoWithCompany is an example of  a method that “is a member of several quite different other classes and comes in many flavors”).
+
+Ok, so let’s say we have a Order class, with a ProcessOrderToSupplier(Supplier sup) method.   Let’s further say that most of Order processing is the same for all suppliers, but some suppliers offer a discount (or surcharge) under some conditions.  Hence we need custom processing per supplier to handle the discount, but moving order handling into the Supplier class would clearly be wrong.
+
+So, let’s try three different discounting schemes, and come up with three means of handling them in ways that are scalable, maintainable &amp; understandable.
+
+ #1 – A flat discount rate on all items.
+    That’s simple.  A discount rate property (getter only) in Supplier.  It could be an abstract property which is overridden in derived classes (one for each Supplier), or just set in Supplier’s constructor.  (Could be set to zero for those suppliers not offering a discount).
+    
+ #2 -  Several suppliers offering (free shipping on orders over $100).
+       The “free shipping blah-blah-blah” part is handled entirely in the Order class.  The Supplier class just needs a way to say whether of not a particular supplier offers it.  This could be handled by a  Property as described above, or an attribute on the derived class, or by a marker interface (a marker interface has no members, and is just used in statements like:
 <pre class="csharpcode">
   <span class="kwrd">if</span> (sup <span class="kwrd">is</span> IOffersFreeShipping)
      ProcessFreeShipping();</pre>
-<p>#3 – One supplier offers 10% off total orders over $100. Another offers 15% off individual items over $25. And a third offers a $1 shipping surcharge on items over 20 lb.</p>
-<p>      Basically,  every supplier offers something different, and each is complex.  We’d think we’d need derived classes with overridden methods here to keep this object-oriented.  But that is exactly “the first step to multiple inheritance or an unmaintainable set of interfaces” which Peter was afraid of.</p>
-<p>
-  <em>(My laptop has an interesting way of telling me that I haven’t saved in a while --- the battery falls out.  I’ve now – too late -- discovered Windows Live Writer’s auto-save feature.  Now let’s see if I can recreate what I just lost……).</em>
-</p>
-<p>And besides that, creating a subclass specifically for one instance of a class just feels wrong --- particularly when we would be creating multiple subclass, one for each of several instances.  But how can be package instances of distinct functionality in individual instances of an object.</p>
-<p>By using <strong>Lambda Expressions as Properties.  </strong></p>
-<p>The idea is pretty simple.  We define a property, which, instead of returning some scalar value, returns a lambda expression (or pretty much any form on anonymous function).  The property works just like a instance method, except we can assign and change it at run-time.   If you’ve done any work in JavaScript, you’ve probably seen very much the same thing. </p>
-<p>Let’s look at some code.  We start by defining the Supplier class like this:</p>
+
+ #3 – One supplier offers 10% off total orders over $100. Another offers 15% off individual items over $25. And a third offers a $1 shipping surcharge on items over 20 lb.
+
+Basically,  every supplier offers something different, and each is complex.  We’d think we’d need derived classes with overridden methods here to keep this object-oriented.  But that is exactly “the first step to multiple inheritance or an unmaintainable set of interfaces” which Peter was afraid of.
+
+  *(My laptop has an interesting way of telling me that I haven’t saved in a while --- the battery falls out.  I’ve now – too late -- discovered Windows Live Writer’s auto-save feature.  Now let’s see if I can recreate what I just lost……).*
+
+And besides that, creating a subclass specifically for one instance of a class just feels wrong --- particularly when we would be creating multiple subclass, one for each of several instances.  But how can be package instances of distinct functionality in individual instances of an object.
+
+By using **Lambda Expressions as Properties**. 
+<p>The idea is pretty simple.  We define a property, which, instead of returning some scalar value, returns a lambda expression (or pretty much any form of anonymous function).  The property works just like a instance method, except we can assign and change it at run-time.   If you’ve done any work in JavaScript, you’ve probably seen very much the same thing. 
+
+Let’s look at some code.  We start by defining the Supplier class like this:</p>
 <pre class="csharpcode">
   <span class="kwrd">public</span> <span class="kwrd">class</span> Supplier 
 {
@@ -78,9 +92,11 @@ Supplier ThatOtherCompany = <span class="kwrd">new</span> Supplier(PublicIds.Tha
     items.ForEach(sup.PerItem);
     <span class="rem">//:</span>
 }</pre>
-<p>“Ok“, you say. “We’ve got the distinct behavior without subclasses – but we still have order processing code defined outside of the Order class, and to make matters worse, it moved to the instance definition in a really messy way.”</p>
-<p>No Problem, we just go back to out (new) old friend: Lambda Expression as Properties:</p>
-<p>This time, we’ll create static properties in the Order class:</p>
+<p>“Ok“, you say. “We’ve got the distinct behavior without subclasses – but we still have order processing code defined outside of the Order class, and to make matters worse, it moved to the instance definition in a really messy way.”
+
+No Problem, we just go back to out (new) old friend: Lambda Expression as Properties:
+
+This time, we’ll create static properties in the Order class:
 <pre class="csharpcode">
   <span class="kwrd">public</span> <span class="kwrd">class</span> Order
 {
@@ -116,18 +132,17 @@ Supplier ThatOtherCompany = <span class="kwrd">new</span> Supplier(PublicIds.Tha
         }
     }
 }</pre>
-<p>And we can now define out Supplier instances like this:</p>
-<p> </p>
+And we can now define out Supplier instances like this:
+
 <pre class="csharpcode">Supplier Company1 = <span class="kwrd">new</span> Supplier(PublicIds.Company1);
 Supplier MyCompany = <span class="kwrd">new</span> Supplier(PublicIds.MyCompany, Order.Discount15on25);
 Supplier ThatOtherCompany = <span class="kwrd">new</span> Supplier(PublicIds.ThatOtherCompany, Order.Shipping1Over20);</pre>
-<p>So, what have we accomplished?</p>
-<ul>
-  <li>We’ve distinct behavior amongst the different suppliers, without resorting to subclasses or switch/case blocks </li>
+So, what have we accomplished?
 
-  <li>We’ve all the Order processing code in the Order class. </li>
+* We’ve distinct behavior amongst the different suppliers, without resorting to subclasses or switch/case blocks 
+* We’ve all the Order processing code in the Order class.
 
-  <li>We’ve neat &amp; tidy Supplier instance definitions, which nevertheless indicates the special features of that supplier. </li>
+* We’ve neat &amp; tidy Supplier instance definitions, which nevertheless indicates the special features of that supplier. 
 
   <li>And we have those special features as part of the Supplier object. </li>
 </ul>
@@ -140,9 +155,11 @@ Supplier ThatOtherCompany = <span class="kwrd">new</span> Supplier(PublicIds.Tha
             <span class="kwrd">if</span> (oi.Weight &gt;=pounds) 
                 oi.Shipping = cost;
         };
-}</pre>
+}
 <p>// :</p>
 <p>Supplier ThatOtherCompany = <span class="kwrd">new</span> Supplier(PublicIds.ThatOtherCompany, Order.ShippingByWeight(20,1m); </p>
+</pre>
+>
 <a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f06%2f07%2flambda-expressions-as-properties.aspx">
   <img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f06%2f07%2flambda-expressions-as-properties.aspx" />
 </a>
