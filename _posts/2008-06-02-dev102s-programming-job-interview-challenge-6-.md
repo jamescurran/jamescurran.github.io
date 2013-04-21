@@ -27,20 +27,20 @@ tags: code c# .net dotnet csharp
 </div>
 What will be typed into the console? And <b><span style="text-decoration:underline;">WHY?</span></b></blockquote>
 
-<p>Â </p>
+<p> </p>
 
-<p>Â This one is fairly trivial (They seem to be alternating between difficult and easy questions).Â  And, as requested, I formulated my answer before typing it into VS (actually, I copy'n'pasted in SnippetCompiler), but the compiler DID confirm the answer I'd already theorized.</p>
+<p> This one is fairly trivial (They seem to be alternating between difficult and easy questions).  And, as requested, I formulated my answer before typing it into VS (actually, I copy'n'pasted in SnippetCompiler), but the compiler DID confirm the answer I'd already theorized.</p>
 <p>This answer is short enough that we can use the cool "white-on-white; select to see it" trick--- However, RSS feed (and apparently the theme of this blog) seem to ignore the color style, so it's probably visible to you below.. </p>
 
-<p>Â </p>
-<p>Â </p>
-<p>Â </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <div style="color:white;">
-<p>ArrayList is deep-down, just an object[].Â  To store an valuetype, like an int or float, in an ArrayList, that value would first have to be boxed.Â  Each valuetype is boxed separately, in distinct objects, even if they do happen to have the same value. When we get to the WriteLines, we are just performing (object) == (object) (actually, Object.ReferenceEquals(object1, object2); )Â  ReferenceEquals knows nothing about unboxing.Â  It just asks, "Are these two references pointing to the exact same object?".Â  For any two boxed objects, regardless of their value, the answer would be "No".Â  Hence, both lines print "False".</p>
+<p>ArrayList is deep-down, just an object[].  To store an valuetype, like an int or float, in an ArrayList, that value would first have to be boxed.  Each valuetype is boxed separately, in distinct objects, even if they do happen to have the same value. When we get to the WriteLines, we are just performing (object) == (object) (actually, Object.ReferenceEquals(object1, object2); )  ReferenceEquals knows nothing about unboxing.  It just asks, "Are these two references pointing to the exact same object?".  For any two boxed objects, regardless of their value, the answer would be "No".  Hence, both lines print "False".</p>
 </div>
-<p>Â </p>
-<p>Â </p>
-<p>Â </p>
+<p> </p>
+<p> </p>
+<p> </p>
 
-<p>Â (select the blank space above)</p>
+<p> (select the blank space above)</p>
 <br />

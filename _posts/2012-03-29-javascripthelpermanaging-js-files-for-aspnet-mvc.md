@@ -1,19 +1,19 @@
 ---
 layout: post
-title: JavascriptHelper‚ÄìManaging JS files for ASP.NET MVC
+title: JavascriptHelperñManaging JS files for ASP.NET MVC
 categories: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 ---
 
 After working several years with the Castle Monorail MVC framework, I decided to try ASP.NET MVC to see if it had caught up to Monorail. The transition seemed to go rather smoothly, but one area where I was surprised to find how clumsily it was handled, was the management of JavaScript files. Basically, if some part of a page, say a helper or partial page, needed a particular JS file, you had one of two choices.
 
-The first option is to have the part itself would write the script tag. This allows the part to operate as a ‚Äúblack box‚Äù ‚Äì just drop it in and it works ‚Äì But it means that there will be script tags loading file scattered throughout the page, and that the part needs to know your folder structure where you keep your JavaScript files. And it needs to know if you want the file loaded from you website or from a CDS like Googleapi.com. And, since there‚Äôs a good chance it will depend on jQuery, you have to make sure that jquery.js is loaded first, at the top of the page, despite ‚Äúbest Practices‚Äù which say script files should be loaded at the bottom of the page. Then, let‚Äôs say, two different partial views on the same page use the same JS file, you need a way of making sure it‚Äôs only included once. Plus, there‚Äôs a good chance it will also depend on its own CSS file being loaded, which doubles the problems above. Microsoft (well, PluralSite‚Äôs training videos on Microsoft‚Äôs site) recommends putting the script tags in a @section named Scripts, and rendering that in the layout, which helps but only addresses some of the problems)
+The first option is to have the part itself would write the script tag. This allows the part to operate as a ìblack boxî ñ just drop it in and it works ñ But it means that there will be script tags loading file scattered throughout the page, and that the part needs to know your folder structure where you keep your JavaScript files. And it needs to know if you want the file loaded from you website or from a CDS like Googleapi.com. And, since thereís a good chance it will depend on jQuery, you have to make sure that jquery.js is loaded first, at the top of the page, despite ìbest Practicesî which say script files should be loaded at the bottom of the page. Then, letís say, two different partial views on the same page use the same JS file, you need a way of making sure itís only included once. Plus, thereís a good chance it will also depend on its own CSS file being loaded, which doubles the problems above. Microsoft (well, PluralSiteís training videos on Microsoftís site) recommends putting the script tags in a @section named Scripts, and rendering that in the layout, which helps but only addresses some of the problems)
 
-Alternately, you can break the black box, and manually add the needed script &amp; CSS link tags in your layout. This allows you to group the files tag together in the proper places, CSS at the top, JS at the bottom. But, you must know all the JS files all component of the page need, including all dependencies they have. And if you are putting these in a layout file, then you‚Äôll need to put all the JS files needed for all pages anywhere on the site.
+Alternately, you can break the black box, and manually add the needed script &amp; CSS link tags in your layout. This allows you to group the files tag together in the proper places, CSS at the top, JS at the bottom. But, you must know all the JS files all component of the page need, including all dependencies they have. And if you are putting these in a layout file, then youíll need to put all the JS files needed for all pages anywhere on the site.
   
-Wouldn‚Äôt it be great if there was a way to automatically figure out just the files we need for a certain page, and include just those, without us having to do a lot of thinking about it. Isn‚Äôt that the type of thing we invented computers for?
+Wouldnít it be great if there was a way to automatically figure out just the files we need for a certain page, and include just those, without us having to do a lot of thinking about it. Isnít that the type of thing we invented computers for?
 
-Monorail also lacked such a manager, but Monorail has neither the major corporate sponsor nor the large user community base of ASP.NET MVC, where I figured *someone* would have written one. I wrote a manager like this for Monorail, so I guess that someone is going to be me‚Ä¶ which leads us to the **JavascriptHelper.**
+Monorail also lacked such a manager, but Monorail has neither the major corporate sponsor nor the large user community base of ASP.NET MVC, where I figured *someone* would have written one. I wrote a manager like this for Monorail, so I guess that someone is going to be meÖ which leads us to the **JavascriptHelper.**
 
 ###Goals:
 
@@ -29,13 +29,13 @@ My goals for the JavascriptHelper were the following:
  * To be able to specific a needed file by a simple name.
  * To be able to easily update the file a particular name refers to (in case where the actual filename includes the version number, like jquery-1.5.1.js
  * To be able to use one version of a file during development/debugging and easily switch to another (presumably mini-ified) for production.
- * To be able to use a local version of a file during development/debugging (when I‚Äôm often off-line), and easily switch to Google‚Äôs CDS for production.
- * To be able to gather a collection a JS files into a single, combined file (mini-fied on the fly) (OK, the JavascriptHelper doesn‚Äôt actually do that, but implementing it would require rewriting only one method --- and adding a controller that handles the actual bundling &amp; mini-fying. We‚Äôll get to that eventually)
+ * To be able to use a local version of a file during development/debugging (when Iím often off-line), and easily switch to Googleís CDS for production.
+ * To be able to gather a collection a JS files into a single, combined file (mini-fied on the fly) (OK, the JavascriptHelper doesnít actually do that, but implementing it would require rewriting only one method --- and adding a controller that handles the actual bundling &amp; mini-fying. Weíll get to that eventually)
  
  
  ###Usage:
  
-Let‚Äôs say for example that I have a partial view that uses the jQuery UI slider control (which I‚Äôll specify some unique id value). Plus it has JS code which needs to be called to initialize it. Say this is in the form of a method and a call to that method using that id. Now, let‚Äôs say that we want several sliders on that page, and use that partial view several times, so we‚Äôll only the UI scripts and the method definition once, but we‚Äôll need each separate call to the function. To handle this, you‚Äôd need to add to you partial view, the following:
+Letís say for example that I have a partial view that uses the jQuery UI slider control (which Iíll specify some unique id value). Plus it has JS code which needs to be called to initialize it. Say this is in the form of a method and a call to that method using that id. Now, letís say that we want several sliders on that page, and use that partial view several times, so weíll only the UI scripts and the method definition once, but weíll need each separate call to the function. To handle this, youíd need to add to you partial view, the following:
 
 {% highlight csharp linenos %}
   Script.Std("slider")
@@ -43,9 +43,9 @@ Let‚Äôs say for example that I have a partial view that uses the jQuery UI slide
   Script.AddScript("HideSlider('#"+ myId + "');")
 {% endhighlight %}
 
-`"Script.Std()‚Äù` says that ‚Äúslider‚Äù is one of the standard JavaScript files which we have defined what it‚Äôs traits and dependencies are. Actually, that could be a comma-separated list of them, so you state everything you need in one line. I originally envisioned only a few ‚Äústandard‚Äù file ‚Äì jQuery, jQuery UI, et al ‚Äì but soon realized assigning a keyword for every script file used made life easier. In fact, it will even accept ‚Äúself‚Äù to load a script &amp; CSS file based on the name of the view, i.e., id Script.Std(‚Äúself‚Äù) is used in /Home/Index, then it will load /Scripts/Views/Home/Index.js and /Content/Css/Home/index.css (if they exist on the file system). How a file is pre-defined, as well as where we get a Script object, will be discussed in the next section. 
+`"Script.Std()î` says that ìsliderî is one of the standard JavaScript files which we have defined what itís traits and dependencies are. Actually, that could be a comma-separated list of them, so you state everything you need in one line. I originally envisioned only a few ìstandardî file ñ jQuery, jQuery UI, et al ñ but soon realized assigning a keyword for every script file used made life easier. In fact, it will even accept ìselfî to load a script &amp; CSS file based on the name of the view, i.e., id Script.Std(ìselfî) is used in /Home/Index, then it will load /Scripts/Views/Home/Index.js and /Content/Css/Home/index.css (if they exist on the file system). How a file is pre-defined, as well as where we get a Script object, will be discussed in the next section. 
 
-The first `‚ÄúScript.AddScript()‚Äù` call defines the function that we need. The second AddScript called calls that function, using the id specific to that instance of the partial view. So, if our page has three instances of this partial view, we‚Äôll need the function definition only once, but the call to it three times. This is handled by given a name to the snippet that need not be repeated. All blocks with the same name are rendered only once (actually, block with the same name as an existing block are ignored, so make sure that you only use a particular name for one script block. )
+The first `ìScript.AddScript()î` call defines the function that we need. The second AddScript called calls that function, using the id specific to that instance of the partial view. So, if our page has three instances of this partial view, weíll need the function definition only once, but the call to it three times. This is handled by given a name to the snippet that need not be repeated. All blocks with the same name are rendered only once (actually, block with the same name as an existing block are ignored, so make sure that you only use a particular name for one script block. )
 
 Then in the Layout, we just add the lines:
 {% highlight html linenos %}
@@ -87,7 +87,7 @@ HideSlider('#sl68953');
 
 Creating a Script object.
 
-The ‚ÄúScript‚Äù object needs to be created differently depending on where it is being used. (You can, of course, call it anything you like. I use ‚ÄúScript‚Äù with a capital S, so that it corresponds to @Html).  (**Update:**  *With the release of MVC 4, Microsoft added their own, completely different pre-defined object called "Script", so I've switched to calling mine "JScript"*)
+The ìScriptî object needs to be created differently depending on where it is being used. (You can, of course, call it anything you like. I use ìScriptî with a capital S, so that it corresponds to @Html).  (**Update:**  *With the release of MVC 4, Microsoft added their own, completely different pre-defined object called "Script", so I've switched to calling mine "JScript"*)
 
 ####When used in a view, create it like this:
 
@@ -104,15 +104,15 @@ var script = StateTheaterMvc.Component.JavascriptHelper.Create(WebPageContext.Cu
 
 ####Configuration XML file
 
-Finally, we reach the part which is at the heart of the JavascriptHelper, the jslibraries.xml file. It‚Äôs a bit complex, but the default I‚Äôve set up is probably good enough, with perhaps only a few minor tweaks, and once fully configured to your taste, you could easily standardize on that for your whole enterprise. It is, however, simple enough that a NuGet package could be updated it when being added to a project. And the good news is that I‚Äôve also create a XSD schema file for it, so you can have IntelliSense to help you along.
+Finally, we reach the part which is at the heart of the JavascriptHelper, the jslibraries.xml file. Itís a bit complex, but the default Iíve set up is probably good enough, with perhaps only a few minor tweaks, and once fully configured to your taste, you could easily standardize on that for your whole enterprise. It is, however, simple enough that a NuGet package could be updated it when being added to a project. And the good news is that Iíve also create a XSD schema file for it, so you can have IntelliSense to help you along.
 
 The root element is &lt;libraries&gt; and it has three optional attributes:
 
-‚Äú`localjspath=`‚Äù which gives the relative location of the folder where you put your js files. The default is ‚Äú~/Scripts‚Äù which is the ASP.NET MVC default.
+ì`localjspath=`î which gives the relative location of the folder where you put your js files. The default is ì~/Scriptsî which is the ASP.NET MVC default.
 
-‚Äú`selfJsPath=`‚Äù which gives the relative location of the folder under which you put your view-specific js files. They follow the same structure as view files, so if you request the js file for /Home/Index, the view file would be /Views/Home/Index.cshtml, and the js file used what be /Scripts/Views/Home/Index.js. Defaults to ‚Äú~/Script/Views‚Äù
+ì`selfJsPath=`î which gives the relative location of the folder under which you put your view-specific js files. They follow the same structure as view files, so if you request the js file for /Home/Index, the view file would be /Views/Home/Index.cshtml, and the js file used what be /Scripts/Views/Home/Index.js. Defaults to ì~/Script/Viewsî
 
-‚Äú`useDebugScripts=`‚Äù when set to ‚Äútrue‚Äù forces use of debug versions of js files when available. Defaults to false. Debug scripts are always used when a debugger is attached.
+ì`useDebugScripts=`î when set to ìtrueî forces use of debug versions of js files when available. Defaults to false. Debug scripts are always used when a debugger is attached.
 
 {% highlight html linenos %}
 <library name="jquery" version="1.6.2" useGoogle="false" 
@@ -120,35 +120,35 @@ The root element is &lt;libraries&gt; and it has three optional attributes:
 {% endhighlight %}
 
 
-Within the `&lt;libraries&gt;` element, there are a collection of `&lt;library&gt;` elements ‚Äì one for each standard JavaScript file you‚Äôll be using-- which have two required and several optional attributes:</p>
+Within the `&lt;libraries&gt;` element, there are a collection of `&lt;library&gt;` elements ñ one for each standard JavaScript file youíll be using-- which have two required and several optional attributes:</p>
 
-‚Äú`name=`‚Äù which gives a unique name for a particular JavaScript file. It is required and is used by the helper and throughout the xml file to refer to that file.</p>
+ì`name=`î which gives a unique name for a particular JavaScript file. It is required and is used by the helper and throughout the xml file to refer to that file.</p>
 
-‚Äú`pathname=`‚Äù which gives the path, relative to the` localjspath` described above, and filename of this file. This can also be a fully-qualified URL if it‚Äôs a remote file. It is required. (unless useGoogle.
+ì`pathname=`î which gives the path, relative to the` localjspath` described above, and filename of this file. This can also be a fully-qualified URL if itís a remote file. It is required. (unless useGoogle.
 
-"`debugPath=`‚Äù which, like the pathname attribute, give the relative path to a javascript file to be used when debugging. This is optional and defaults to the value given for the pathname. The idea here is the you set the debugPath to the full, commented version, and the pathname to the mini-fied version, and the helper figures out which to use.
+"`debugPath=`î which, like the pathname attribute, give the relative path to a javascript file to be used when debugging. This is optional and defaults to the value given for the pathname. The idea here is the you set the debugPath to the full, commented version, and the pathname to the mini-fied version, and the helper figures out which to use.
 
-‚Äú`dependsOn`‚Äù which is a list of comma separated name of file, which must be loaded before this one. This is the most powerful feature, but also the most confusing, so we‚Äôll expand upon it in a moment. It is optional and defaults to no dependencies.
+ì`dependsOn`î which is a list of comma separated name of file, which must be loaded before this one. This is the most powerful feature, but also the most confusing, so weíll expand upon it in a moment. It is optional and defaults to no dependencies.
 
-‚Äú`alias=`‚Äù which is a list of comma separated alternate names this file could be identified as. I added this because I could never remember if it‚Äôs ‚Äúaccordion‚Äù or ‚Äúaccordian‚Äù. This is optional and defaults to no aliases.
+ì`alias=`î which is a list of comma separated alternate names this file could be identified as. I added this because I could never remember if itís ìaccordionî or ìaccordianî. This is optional and defaults to no aliases.
 
-‚Äú`css=`‚Äù which gives the name of the css element (see below) associated with this file.
+ì`css=`î which gives the name of the css element (see below) associated with this file.
 
-‚Äú`useGoogle=`‚Äù which, when set to true, will generate a request to the googleapi.com CDN to load the file. Optional, defaults to false. If true, ‚Äúversion‚Äù attribute is required.
+ì`useGoogle=`î which, when set to true, will generate a request to the googleapi.com CDN to load the file. Optional, defaults to false. If true, ìversionî attribute is required.
 
-‚Äú`version=`‚Äù is used only when ‚ÄúuseGoogle‚Äù is true. Gives the version of the file to load from Google.
+ì`version=`î is used only when ìuseGoogleî is true. Gives the version of the file to load from Google.
 
 Also with the &lt;libraries&gt; element (at the same level as the &lt;library&gt; elements), there is the &lt;css&gt; group.
 
 The &lt;css&gt; element has only one attribute:
 
-‚Äú`localcsspaath`‚Äù which gives the relative location of the folder where you put your CSS files. The default is ‚Äú~/Content‚Äù which is the ASP.NET MVC default.
+ì`localcsspaath`î which gives the relative location of the folder where you put your CSS files. The default is ì~/Contentî which is the ASP.NET MVC default.
 
 Within the &lt;css&gt; element are multiple &lt;sheet&gt; element, one for each css file associated with a js file. They have two required attributes:
 
-‚Äú`name=`‚Äù Unique name used to identified the particular css file. Matches name given in the ‚Äúcss‚Äù attribute in the &lt;library&gt; element above. Can be the same as the name used for the js file in the &lt;library&gt; element.
+ì`name=`î Unique name used to identified the particular css file. Matches name given in the ìcssî attribute in the &lt;library&gt; element above. Can be the same as the name used for the js file in the &lt;library&gt; element.
 
-‚Äúpathname=‚Äù which gives the path, relative to the localcsspath described above, and filename of this file.
+ìpathname=î which gives the path, relative to the localcsspath described above, and filename of this file.
 
 ###Example:
 
@@ -164,15 +164,15 @@ Within the &lt;css&gt; element are multiple &lt;sheet&gt; element, one for each 
     pathname="ui/jquery.ui.slider.js" css="ui" />
 {% endhighlight %}
 
-Starting with the first element, we specified a JavaScript file, which we‚Äôll be calling ‚Äújquery‚Äù.¬†¬† When we ask for ‚Äújquery‚Äù, we‚Äôll normally get ‚Äújquery-1.6.1.min.js‚Äù , unless we‚Äôre debugging, in which case, it will load ‚Äújquery-1.6.1.js‚Äù.¬† It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
+Starting with the first element, we specified a JavaScript file, which weíll be calling ìjqueryî.†† When we ask for ìjqueryî, weíll normally get ìjquery-1.6.1.min.jsî , unless weíre debugging, in which case, it will load ìjquery-1.6.1.jsî.† It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
 
-(Note that the ‚Äúname‚Äù value is used to the URL here.¬† This is the only place where the actual name used is significant.¬† Otherwise it can just be any unique string.¬† This is wrong, and will be fixed in some future release).
+(Note that the ìnameî value is used to the URL here.† This is the only place where the actual name used is significant.† Otherwise it can just be any unique string.† This is wrong, and will be fixed in some future release).
 
-Next we want to define the complete componentized version of jQuery UI, so that we can load just the parts we want. First, we declare the UI core as depending on jQuery.¬† Then we declare widget component as depending on the core.¬† And the mouse component as depending on the widgets.
+Next we want to define the complete componentized version of jQuery UI, so that we can load just the parts we want. First, we declare the UI core as depending on jQuery.† Then we declare widget component as depending on the core.† And the mouse component as depending on the widgets.
 
-Then we can the individual components themselves.¬† ‚Äúdatepicker‚Äù as depending on the widgets; ‚Äúslider‚Äù as depending on the widget &amp; the mouse components.¬† Since the mouse already depends on widget, it was really necessary to specify both here, but there‚Äôs no harm.¬† So, if you request to use ‚Äúslider‚Äù on your page, then the helper makes sure that jQuery, the UI core, UI Widgets, mouse &amp; slider components are all included, in the proper order.¬† (Note, there is no checking for circular dependencies, so be careful how you specify the dependsOn attribute)
+Then we can the individual components themselves.† ìdatepickerî as depending on the widgets; ìsliderî as depending on the widget &amp; the mouse components.† Since the mouse already depends on widget, it was really necessary to specify both here, but thereís no harm.† So, if you request to use ìsliderî on your page, then the helper makes sure that jQuery, the UI core, UI Widgets, mouse &amp; slider components are all included, in the proper order.† (Note, there is no checking for circular dependencies, so be careful how you specify the dependsOn attribute)
 
-Both are also associated with the ‚Äúui‚Äù css file, which brings us to that section:
+Both are also associated with the ìuiî css file, which brings us to that section:
 
 {% highlight xml linenos %}
 <css localcsspath="~/content/css/Views">
@@ -181,7 +181,7 @@ Both are also associated with the ‚Äúui‚Äù css file, which brings us to that sec
 </css>
 {% endhighlight %}
 
-Both of the jQuery UI components above give ‚Äúui‚Äù as their CSS file (the theme roller doesn‚Äôt create individual CSS files) so if either (or both) is used, that file is included.¬† CSS files don‚Äôt have a separate dependency tree, but all associated CSS files for every dependent js file up the tree are included, so if you wanted to use the separate jQuery UI CSS files, you‚Äôd associate¬† ‚Äúui.core.css‚Äù with uicode‚Äù, ‚Äúui.base.css‚Äù with ‚Äúuiwidget‚Äù and each component with its own CSS file, and all the needed files will be included.
+Both of the jQuery UI components above give ìuiî as their CSS file (the theme roller doesnít create individual CSS files) so if either (or both) is used, that file is included.† CSS files donít have a separate dependency tree, but all associated CSS files for every dependent js file up the tree are included, so if you wanted to use the separate jQuery UI CSS files, youíd associate† ìui.core.cssî with uicodeî, ìui.base.cssî with ìuiwidgetî and each component with its own CSS file, and all the needed files will be included.
 
 ###API
 
@@ -203,14 +203,14 @@ All script from either AddScript methods is rendered in a block at the script in
 
 `InsertCss()`-- Renders all css files
 
-###What‚Äôs the next step?
+###Whatís the next step?
 
-Now that I‚Äôve made this public, it‚Äôs really just a beta. I think there‚Äôs still a bit more to be done before it‚Äôs ready to be ‚ÄúProduction-Ready v1.0‚Äù. And I need some feedback‚Ä¶.
+Now that Iíve made this public, itís really just a beta. I think thereís still a bit more to be done before itís ready to be ìProduction-Ready v1.0î. And I need some feedbackÖ.
 
 
- * First of all, how exactly should it be packaged? I‚Äôve been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but it‚Äôs just one file, so that seem like overkill. I‚Äôd really like to create a NuGet package for this, but that question needs to be settled first.
+ * First of all, how exactly should it be packaged? Iíve been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but itís just one file, so that seem like overkill. Iíd really like to create a NuGet package for this, but that question needs to be settled first.
 
- * Or do we think bigger? Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).¬† Should be deeply embedded into the MVC eco-system? 
+ * Or do we think bigger? Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).† Should be deeply embedded into the MVC eco-system? 
 
  * Also, how is the API? Are the method names sufficiently intuitive?
 
