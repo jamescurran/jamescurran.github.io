@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Naked Came The Null Delegate:Chapter 1 ‚Äì ‚ÄúI, Disposable !‚Äù
+title: Naked Came The Null Delegate:Chapter 1 ñ ìI, Disposable !î
 categories: fiction fun
 tags: fiction fun
 ---
 
-  Slowly, as the rest of his coworkers drift off towards home, Seymour Sharpton, continued on in his cubical. He didn't mind. He was trying to look busy, but was really just writing on his Facebook wall. As the hours ticked by, he knew you'd soon be able to update his ‚ÄúRelationship Status‚Äù. He knew the one other person working late that night. He had carefully arranged for the new intern ‚Äì the exotic Vissa Basicova ‚Äì (a pure virtual, he was certain) ‚Äì to be swamped with work that just <I>had </I>to be done by tomorrow morning, and tonight he was going to make his move. He had carefully prepared a command entity with her as he enumerated the worker pool. And he was now the domain controller, and this process was about to leave debug mode. First he'd get her to yield for a break for a soda. Then, after helping her through her workload, a environment exit for dinner... and then, who knows ?
+  Slowly, as the rest of his coworkers drift off towards home, Seymour Sharpton, continued on in his cubical. He didn't mind. He was trying to look busy, but was really just writing on his Facebook wall. As the hours ticked by, he knew you'd soon be able to update his ìRelationship Statusî. He knew the one other person working late that night. He had carefully arranged for the new intern ñ the exotic Vissa Basicova ñ (a pure virtual, he was certain) ñ to be swamped with work that just <I>had </I>to be done by tomorrow morning, and tonight he was going to make his move. He had carefully prepared a command entity with her as he enumerated the worker pool. And he was now the domain controller, and this process was about to leave debug mode. First he'd get her to yield for a break for a soda. Then, after helping her through her workload, a environment exit for dinner... and then, who knows ?
 
-As he threaded the rows up to her cubical, he was shocked to find it empty ‚Äì An unknown apartment state! ‚Äì Had this application terminated before it started ? But her jacket and purse were still at her desk ---- she wouldn't have gone far. Just then he heard a sound --- oddly familiar but nevertheless out of place in the office. He followed the sound down the aisle to the mail room, and peering in, he saw Vissa --- and Bob, the mail room guy ‚Äì a nullable type if there ever was one ‚Äì engaged in a double interlocked exchange that he had only ever read about. And, as he watched the perspiration glisten off her naked double value types, the cold reality dawned on Sey: that Bob's bare pointer was implementing an interface the Sey would never get to extend.
+As he threaded the rows up to her cubical, he was shocked to find it empty ñ An unknown apartment state! ñ Had this application terminated before it started ? But her jacket and purse were still at her desk ---- she wouldn't have gone far. Just then he heard a sound --- oddly familiar but nevertheless out of place in the office. He followed the sound down the aisle to the mail room, and peering in, he saw Vissa --- and Bob, the mail room guy ñ a nullable type if there ever was one ñ engaged in a double interlocked exchange that he had only ever read about. And, as he watched the perspiration glisten off her naked double value types, the cold reality dawned on Sey: that Bob's bare pointer was implementing an interface the Sey would never get to extend.
 
-And yet, only one thought clearly entered his head --- ‚ÄúShe probably didn't lock her PC.‚Äù 
+And yet, only one thought clearly entered his head --- ìShe probably didn't lock her PC.î 
 At quick call back to her cubical showed that the condition was true: In her mad lust for a deadly embrace, a simple Win-L had alluded her, leaving her machine open to a little tier interaction.. So, while she engaged in her own unsafe operation, he would seek a new execution plan. 
-A indiscreet message ‚Äúaccidentally‚Äù emailed to the whole department from her account would be too obviously a set up --- although it would be interesting to hear from her witness where she was at the time it was sent. A more subtle approach was needed. But, as Bob's grunt signaled a premature thread termination, Sey know he must work fast ! Their binding context would soon finalize. 
+A indiscreet message ìaccidentallyî emailed to the whole department from her account would be too obviously a set up --- although it would be interesting to hear from her witness where she was at the time it was sent. A more subtle approach was needed. But, as Bob's grunt signaled a premature thread termination, Sey know he must work fast ! Their binding context would soon finalize. 
 
 Deleting some of her completed work would be step one --- she probably won't notice the missing reports until it was time to present them tomorrow. And, locking her out of a needed network would drag the remaining unfinished work out a few extra hours. With a few deft strokes, his work was done, and he was about to leave the PC just as he found it, when she received an (unsigned) email:
 
@@ -23,13 +23,13 @@ Deleting some of her completed work would be step one --- she probably won't not
 >   We mustn't name pipes.
 
 Sey forwarded the strange message to his account and then deleted her copy. He then hid by his own desk for a few minutes until Vissa returned to hers. Sey then strolled up to her.
-‚ÄúVissa ‚Ä¶ How go the reports?‚Äù
-She looked a bit frazzled, and it was clear the her predicate was in a unsatisfied condition ‚Äì It seemed Bob's pipe stream had closed without a synchronization context.
-‚Äúer... um... coming ... along,‚Äù she said.
-‚ÄúWell, then, keep it up.... We need those first thing in the morning ---- But don't stay too late. You look tired. You should get to bed.......‚Äù
+ìVissa Ö How go the reports?î
+She looked a bit frazzled, and it was clear the her predicate was in a unsatisfied condition ñ It seemed Bob's pipe stream had closed without a synchronization context.
+ìer... um... coming ... along,î she said.
+ìWell, then, keep it up.... We need those first thing in the morning ---- But don't stay too late. You look tired. You should get to bed.......î
 And then, he left the office for his single threaded apartment, wondering if he had played this right. Perhaps he could have been the ternary operator....
 
-(Continued: [Chapter 2 : ‚ÄúUnhandled Exception‚Äù ‚Äì By Charles Petzold @ charlespetzold.com](http://www.charlespetzold.com/blog/2010/10/Naked-Came-the-Null-Delegate-Chapter-2-Unhandled-Exception.htm) )
+(Continued: [Chapter 2 : ìUnhandled Exceptionî ñ By Charles Petzold @ charlespetzold.com](http://www.charlespetzold.com/blog/2010/10/Naked-Came-the-Null-Delegate-Chapter-2-Unhandled-Exception.htm) )
 
 For links to all the parts, and the story behind the story, visit: <A title="http://nakedcamethenulldelegate.wordpress.com/2010/10/07/the-story/" href="http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/">http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/</A>
 
