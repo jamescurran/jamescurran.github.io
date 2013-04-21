@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Naked Came The Null Delegate : Chapter 1 – “I, Disposable !”
+title: Naked Came The Null Delegate:Chapter 1 – “I, Disposable !”
 categories: fiction fun
 tags: fiction fun
 ---

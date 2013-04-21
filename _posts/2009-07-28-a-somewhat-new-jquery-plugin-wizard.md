@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A (somewhat) New jQuery plug-in: Wizard
+title: A (somewhat) New jQuery plug-in:Wizard
 categories: code javascript programming codeproject
 tags: code javascript programming codeproject
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: More Fun with C# Interators : A Counting Iterator
+title: More Fun with C# Interators:A Counting Iterator
 categories: 
 tags: 
 ---

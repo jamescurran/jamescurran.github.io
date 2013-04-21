@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dev102's Challenge #13 : Brackets
+title: Dev102's Challenge #13:Brackets
 categories: 
 tags: 
 ---

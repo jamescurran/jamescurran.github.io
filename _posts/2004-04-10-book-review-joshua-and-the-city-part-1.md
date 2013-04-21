@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Review: Joshua and the City (Part 1)
+title: Book Review:Joshua and the City (Part 1)
 categories: books
 tags: books
 ---

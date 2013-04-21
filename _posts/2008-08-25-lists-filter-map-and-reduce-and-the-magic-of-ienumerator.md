@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lists: Filter, Map and Reduce - and the Magic of IEnumerator.
+title: Lists:Filter, Map and Reduce - and the Magic of IEnumerator.
 categories: 
 tags: 
 ---

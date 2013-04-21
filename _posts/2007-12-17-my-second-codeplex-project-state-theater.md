@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Second CodePlex Project : State Theater
+title: My Second CodePlex Project:State Theater
 categories: 
 tags: 
 ---

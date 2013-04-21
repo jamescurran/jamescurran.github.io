@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Patterns: Thoughts on the Singleton Pattern
+title: Design Patterns:Thoughts on the Singleton Pattern
 categories: code c# .net programming
 tags: code c# .net programming
 ---

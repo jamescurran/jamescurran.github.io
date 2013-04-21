@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First CodePlex Project : SnitzMember
+title: My First CodePlex Project:SnitzMember
 categories: 
 tags: 
 ---

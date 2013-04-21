@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sex &amp; Computers &amp; Rock &amp; Roll : The Cycle of Creativity
+title: Sex &amp; Computers &amp; Rock &amp; Roll:The Cycle of Creativity
 categories: 
 tags: 
 ---

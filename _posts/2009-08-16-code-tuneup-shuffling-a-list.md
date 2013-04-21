@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Tune-Up: Shuffling a List
+title: Code Tune-Up:Shuffling a List
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
