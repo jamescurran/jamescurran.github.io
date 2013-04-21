@@ -133,4 +133,4 @@ tags: politics
       </font>
     </font>
   </p>
-  <p>Â </p>
+  <p> </p>

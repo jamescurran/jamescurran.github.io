@@ -6,8 +6,8 @@ tags: politics my-life video
 ---
 
   
-<p>I volunteer for the Menendez Campaign.Â  He came by the this morning</p>
-<p>Â </p>
+<p>I volunteer for the Menendez Campaign.  He came by the this morning</p>
+<p> </p>
 <p>And so was Rep. Pascrell:</p>
 <p>[YouTube:STAyEkLKYTo] </p>
 <p>(Update: I finally got the YouTube links working)</p>

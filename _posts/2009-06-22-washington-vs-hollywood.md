@@ -9,4 +9,4 @@ tags: politics random-thoughts
   
 On the other hand:
 
-In the past 80 years, The Academy of Motion Picture Art &amp; Sciences has nominated 208 people for the Best Director Oscarâ„¢ (some more than once) of which three have been women, and only one African-American, with all the rest being white men.</p>
+In the past 80 years, The Academy of Motion Picture Art &amp; Sciences has nominated 208 people for the Best Director Oscar™ (some more than once) of which three have been women, and only one African-American, with all the rest being white men.</p>

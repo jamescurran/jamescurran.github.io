@@ -4,9 +4,9 @@ title: Automating Retry on Exception
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
-Every so often, you run across some action,Â  which just fails, where the best response it to just try it again.Â  This is particularly true when dealing with an external source, like a database or web service, which can have network or other temporary problems, which would have cleared up when you repeat the call seconds later.Â Â  Often, these actions fail by throwing an exception which makes the process of trying the call again rather cumbersome.Â  Having to deal with this a number of times in one application, I decided to wrap the full procedure up in a method, which I share here with you:
+Every so often, you run across some action,  which just fails, where the best response it to just try it again.  This is particularly true when dealing with an external source, like a database or web service, which can have network or other temporary problems, which would have cleared up when you repeat the call seconds later.   Often, these actions fail by throwing an exception which makes the process of trying the call again rather cumbersome.  Having to deal with this a number of times in one application, I decided to wrap the full procedure up in a method, which I share here with you:
 
-OK, this has very weird semantics.Â  A call will look something like this:
+OK, this has very weird semantics.  A call will look something like this:
 
     var msg = Util.Retry(5, 1,
          ( ) =>"Error,
@@ -24,13 +24,13 @@ OK, this has very weird semantics.Â  A call will look something like this:
 
 
 
- * The first parameter is the maximum num of time to retry the call before giving up.Â 
+ * The first parameter is the maximum num of time to retry the call before giving up. 
 
  * The second parameter is the time, in seconds, to wait between retries.
 
  * The third parameter is a function (or lambda expression) taking no parameters, and returning the value to return in case of failure. It done as a function to avoid evaluating it unless needed, in case it was a heavy-weight object, or had some side-effect.
 
- * TheÂ  fourth parameter (made optional by way of an overload) is a function (or lambda expression) taking an exception as a parameter, and returning nothing.Â  Can be used to log the final exception when it gives up retrying.
+ * The  fourth parameter (made optional by way of an overload) is a function (or lambda expression) taking an exception as a parameter, and returning nothing.  Can be used to log the final exception when it gives up retrying.
  * 
 The last parameter is a function (or lambda expression) taking no parameters, which performs the actual work which may need to be retried. 
   <br /></p>
