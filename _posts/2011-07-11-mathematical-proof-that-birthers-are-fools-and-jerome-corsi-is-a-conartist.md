@@ -20,7 +20,7 @@ The real fraud comes when they they get to the meat of the article, when they an
 
 The problem here is that the images which show that - exhibits 3 &amp; 4 in Corsi's article - were deliberately manipulated specifically to create that illusion.
 
-It easy to see for yourself the manipulation - just look at the images Corsi gives us.  Below are directly from the [WND article](http://www.wnd.com/index.php fa=PAGE.view&amp;pageId=319221) (follow the link &amp; see for yourself).
+It easy to see for yourself the manipulation - just look at the images Corsi gives us.  Below are directly from the [WND article](http://www.wnd.com/index.php?fa=PAGE.view&amp;pageId=319221) (follow the link &amp; see for yourself).
 
 [![110706dunhamsignature](/images/110706dunhamsignature_thumb_5AE18CB2.jpg)](/images/110706dunhamsignature_3CE37EBE.jpg)
 
@@ -44,5 +44,5 @@ So, how did UPSE fake the images used for Exhibit 3 &amp; 4:   Again, simple eno
 
 So, what is done when you "Pixelate"   Well, the fact that it's in the "Distort" category of effects should tell you a lot.  Basically what happens, is the graphics editor takes 25 pixels (a 5 by 5 block), and replaces them with one big solid color block which is the average of all the pixel that were there.  We are left with 1/25th the information in the original.  In other words, UPSE was only able to "prove" his lies by throwing away 96% of the detail in the image.
   
-And I think that should be our new slogan for Jerome Corsi and WorldNetDaily:  "4% truth and 96% lies"*
+And I think that should be our new slogan for Jerome Corsi and WorldNetDaily: *"4% truth and 96% lies"*
   

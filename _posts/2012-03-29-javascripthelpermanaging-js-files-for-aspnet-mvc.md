@@ -37,51 +37,19 @@ My goals for the JavascriptHelper were the following:
  
 Let's say for example that I have a partial view that uses the jQuery UI slider control (which I'll specify some unique id value). Plus it has JS code which needs to be called to initialize it. Say this is in the form of a method and a call to that method using that id. Now, let's say that we want several sliders on that page, and use that partial view several times, so we'll only the UI scripts and the method definition once, but we'll need each separate call to the function. To handle this, you'd need to add to you partial view, the following:
 
-{% highlight csharp linenos %}
-  Script.Std("slider")
-  Script.AddScript("MySlider", "function HideSlider(id) { $(id).Hide();}")
-  Script.AddScript("HideSlider('#"+ myId + "');")
-{% endhighlight %}
+    Script.Std("slider")
+    Script.AddScript("MySlider", "function HideSlider(id) { $(id).Hide();}")
+    Script.AddScript("HideSlider('#"+ myId + "');")
 
 `"Script.Std()"` says that "slider" is one of the standard JavaScript files which we have defined what it's traits and dependencies are. Actually, that could be a comma-separated list of them, so you state everything you need in one line. I originally envisioned only a few "standard" file - jQuery, jQuery UI, et al - but soon realized assigning a keyword for every script file used made life easier. In fact, it will even accept "self" to load a script &amp; CSS file based on the name of the view, i.e., id Script.Std("self") is used in /Home/Index, then it will load /Scripts/Views/Home/Index.js and /Content/Css/Home/index.css (if they exist on the file system). How a file is pre-defined, as well as where we get a Script object, will be discussed in the next section. 
 
 The first `"Script.AddScript()"` call defines the function that we need. The second AddScript called calls that function, using the id specific to that instance of the partial view. So, if our page has three instances of this partial view, we'll need the function definition only once, but the call to it three times. This is handled by given a name to the snippet that need not be repeated. All blocks with the same name are rendered only once (actually, block with the same name as an existing block are ignored, so make sure that you only use a particular name for one script block. )
 
 Then in the Layout, we just add the lines:
-{% highlight html linenos %}
-<html>
- <head>
-      @Script.InsertCss(); 
-  </head>
- <body> ..
-{% endhighlight  %}
+<script src="https://gist.github.com/jamescurran/5437560.js"></script>
+This will produce an output of :
 
-<p>This will produce an output of :</p>
-
-{% highlight html linenos %}
-<html>
-<head>
-<link rel ="stylesheet" type="text/css" href="/content/css/ui.base.css"  />
-<link rel="stylesheet"  type="text/css" href="/content/css/ui.core.css" />
-<link rel="stylesheet" type="text/css" href="/content/css/ui.slider.css" />
-</head>
-<body>
-/* other content for the page */
-<script type="text/javascript" src="/Scripts/jquery-1.6.1.min.js" ></script>
-<script type="text/javascript" src"/Scripts/ui/jquery.ui.core.js">  </script>
-<script type="text/javascript" src="/Scripts/ui/jquery.ui.widget.js"></script>
-<script type="text/javascript" src="/Scripts/ui/jquery.ui.mouse.js"></script>
-<script type="text/javascript" src="/Scripts/ui/jquery.ui.slider.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-function HideSlider(id) { $(id).Hide();}
-HideSlider('#sl12321');
-HideSlider('#sl14315');
-HideSlider('#sl68953');
-//]]>
-</script></body>
-<html>  
-{% endhighlight %}
+<script src="https://gist.github.com/jamescurran/5437573.js"></script>
 
 ###Setup:
 
@@ -92,15 +60,11 @@ The "Script" object needs to be created differently depending on where it is bei
 ####When used in a view, create it like this:
 
 
-{% highlight html linenos %}
-@{ var Script = StateTheaterMvc.Component.JavascriptHelper.Create(this; }
-{% endhighlight %}
+    @{ var Script = StateTheaterMvc.Component.JavascriptHelper.Create(this; }
 
 ####When used inside a @helper method or an HtmlHelper extension method:
 
-{% highlight csharp linenos %}
-var script = StateTheaterMvc.Component.JavascriptHelper.Create(WebPageContext.Current);
-{% endhighlight %}
+    var script = StateTheaterMvc.Component.JavascriptHelper.Create(WebPageContext.Current);
 
 ####Configuration XML file
 
@@ -114,11 +78,8 @@ The root element is &lt;libraries&gt; and it has three optional attributes:
 
 "`useDebugScripts=`" when set to "true" forces use of debug versions of js files when available. Defaults to false. Debug scripts are always used when a debugger is attached.
 
-{% highlight html linenos %}
-<library name="jquery" version="1.6.2" useGoogle="false" 
+    <library name="jquery" version="1.6.2" useGoogle="false" 
   pathname="jquery-1.6.1.min.js" debugPath="jquery-1.6.1.js" />
-{% endhighlight %}
-
 
 Within the `&lt;libraries&gt;` element, there are a collection of `&lt;library&gt;` elements - one for each standard JavaScript file you'll be using-- which have two required and several optional attributes:</p>
 
@@ -152,17 +113,7 @@ Within the &lt;css&gt; element are multiple &lt;sheet&gt; element, one for each 
 
 ###Example:
 
-{% highlight xml linenos %}
-<library name="jquery" version="1.6.1" useGoogle="false" pathname="jquery-1.6.1.min.js"
-     debugPath="jquery-1.6.1.js" />
-<library name="uicore" dependsOn="jquery" pathname="ui/jquery.ui.core.js"/>
-<library name="uiwidget" dependsOn="uicore" pathname="ui/jquery.ui.widget.js"/>
-<library name="mouse" dependsOn="uiwidget" pathname="ui/jquery.ui.mouse.js"/>
-<library name="datepicker" dependsOn="uiwidget"
-    pathname="ui/jquery.ui.datepicker.js" css="ui" />
-<library name="slider" dependsOn="uiwidget,mouse" 
-    pathname="ui/jquery.ui.slider.js" css="ui" />
-{% endhighlight %}
+<script src="https://gist.github.com/jamescurran/5437587.js"></script>
 
 Starting with the first element, we specified a JavaScript file, which we'll be calling "jquery".   When we ask for "jquery", we'll normally get "jquery-1.6.1.min.js" , unless we're debugging, in which case, it will load "jquery-1.6.1.js".  It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
 
@@ -174,12 +125,10 @@ Then we can the individual components themselves.  "datepicker" as depending on 
 
 Both are also associated with the "ui" css file, which brings us to that section:
 
-{% highlight xml linenos %}
-<css localcsspath="~/content/css/Views">
-   <sheet name="ui" pathname="ui/themes/Redmond/jquery-ui-1.8.13.custom.css" />
-   <sheet name="cluetip" pathname="jquery.cluetip.css" />
-</css>
-{% endhighlight %}
+    <css localcsspath="~/content/css/Views">
+       <sheet name="ui" pathname="ui/themes/Redmond/jquery-ui-1.8.13.custom.css" />
+       <sheet name="cluetip" pathname="jquery.cluetip.css" />
+    </css>
 
 Both of the jQuery UI components above give "ui" as their CSS file (the theme roller doesn't create individual CSS files) so if either (or both) is used, that file is included.  CSS files don't have a separate dependency tree, but all associated CSS files for every dependent js file up the tree are included, so if you wanted to use the separate jQuery UI CSS files, you'd associate  "ui.core.css" with uicode", "ui.base.css" with "uiwidget" and each component with its own CSS file, and all the needed files will be included.
 
@@ -224,4 +173,9 @@ The source code is available (under the Apache license) from my GitHub library:
 
 [http://github.com/jamescurran/JavascriptHelper](http://github.com/jamescurran/JavascriptHelper)
 
-<a href="http://www.dotnetkicks.com/kick/ url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx"><img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http%253a%252f%252fhonestillusion.com%252fblogs%252fblog_0%252farchive%252f2012%252f03%252f29%252fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a><div class="wlWriterHeaderFooter" style="margin:0px;padding:0px 0px 0px 0px;"><div class="shoutIt"><a href="http://dotnetshoutout.com/Submit url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx&amp;title=JavascriptHelper%e2%80%93Managing+JS+files+for+ASP.NET+MVC"><img alt="Shout it" style="border:0px;" src="http://dotnetshoutout.com/image.axd url=http://honestillusion.com/blogs/blog_0/archive/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a></div></div>
+<a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx">
+
+<img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%253a%252f%252fhonestillusion.com%252fblogs%252fblog_0%252farchive%252f2012%252f03%252f29%252fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a>
+
+
+<div class="wlWriterHeaderFooter" style="margin:0px;padding:0px 0px 0px 0px;"><div class="shoutIt"><a href="http://dotnetshoutout.com/Submit?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx&amp;title=JavascriptHelper%e2%80%93Managing+JS+files+for+ASP.NET+MVC"><img alt="Shout it" style="border:0px;" src="http://dotnetshoutout.com/image.axd?url=http://honestillusion.com/blogs/blog_0/archive/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a></div></div>
