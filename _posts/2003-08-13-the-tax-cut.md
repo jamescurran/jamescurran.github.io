@@ -39,12 +39,12 @@ tags: politics
   </ul>
   <p>
     <font size="2">
-      <font color="#000000" face="Garamond" size="3">So, what's wrong with this? <strong>Everything!</strong></font>
+      <font color="#000000" face="Garamond" size="3">So, what's wrong with this  <strong>Everything!</strong></font>
     </font>
   </p>
   <p>
     <font size="2">
-      <font color="#000000" face="Garamond" size="3">Why would companies be more willing to offer dividends just because the recipients will get to keep more of it? What's is it to them? OK, the tax cut might encourage more people to invest to dividend offering company, raising their stock, which might encourage more companies to offer them, so he's not completely off the mark here ---but this is not really a good thing, as we'll get to in a moment.<br />The next step in this scheme jumps to "small business owner", as if they are the only ones likely to benefit from this. Actually, they are the least likely.</font>
+      <font color="#000000" face="Garamond" size="3">Why would companies be more willing to offer dividends just because the recipients will get to keep more of it  What's is it to them  OK, the tax cut might encourage more people to invest to dividend offering company, raising their stock, which might encourage more companies to offer them, so he's not completely off the mark here ---but this is not really a good thing, as we'll get to in a moment.<br />The next step in this scheme jumps to "small business owner", as if they are the only ones likely to benefit from this. Actually, they are the least likely.</font>
     </font>
   </p>
   <ul>
@@ -71,12 +71,12 @@ tags: politics
   </ul>
   <p>
     <font size="2">
-      <font color="#000000" face="Garamond" size="3">But these people will be using it to hire new workers right?<br />Well, No... almost certainly not.... Think about it.... </font>
+      <font color="#000000" face="Garamond" size="3">But these people will be using it to hire new workers right <br />Well, No... almost certainly not.... Think about it.... </font>
     </font>
   </p>
   <p>
     <font size="2">
-      <font color="#000000" face="Garamond" size="3">Say you run a struggling business and suddenly you get, say, an extra $10,000 dollars from your stock investments ($10,000 is ridiculously high for this amount, but we'll go with it). Now what would your thoughts be?</font>
+      <font color="#000000" face="Garamond" size="3">Say you run a struggling business and suddenly you get, say, an extra $10,000 dollars from your stock investments ($10,000 is ridiculously high for this amount, but we'll go with it). Now what would your thoughts be </font>
     </font>
   </p>
   <blockquote dir="ltr" style="margin-right:0px;">
@@ -87,7 +87,7 @@ tags: politics
     </p>
     <p>
       <font size="2">
-        <font color="#000000" face="Garamond" size="3">B) Why am I wasting my time on this struggling business when I could be making big buck in the stock market?</font>
+        <font color="#000000" face="Garamond" size="3">B) Why am I wasting my time on this struggling business when I could be making big buck in the stock market </font>
       </font>
     </p>
     <p>
@@ -118,7 +118,7 @@ tags: politics
   </p>
   <p>
     <font size="2">
-      <font color="#000000" face="Garamond" size="3">So, what would work?</font>
+      <font color="#000000" face="Garamond" size="3">So, what would work </font>
     </font>
   </p>
   <p>
@@ -133,4 +133,4 @@ tags: politics
       </font>
     </font>
   </p>
-  <p> </p>
+  <p> </p>

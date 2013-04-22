@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's Your Ideal Career?
+title: What's Your Ideal Career 
 categories: my-life quizes
 tags: my-life quizes
 ---
@@ -14,6 +14,6 @@ tags: my-life quizes
 <TD><IMG src="http://www.quizdiva.net/careerquiz/investigative.jpg" /><FONT size="+0">You are precise, scientific, and intellectual. Your talents lie in understanding and solving math and science problems. You would make an excellent: Architect - Biologist - Chemist Dentist - Electrical Technician - Mathematician Medical Technician - Meteorologist - Pharmacist Physician - Surveyor - Veterinarian The worst career options for your are enterprising careers, like lawyer or real estate agent.</FONT></TD></TR></TABLE>
 <DIV>
   <A href="http://www.blogthings.com/idealcareerquiz/">
-    <FONT color="#246398">What's Your Ideal Career?</FONT>
+    <FONT color="#246398">What's Your Ideal Career </FONT>
   </A>
 </DIV>

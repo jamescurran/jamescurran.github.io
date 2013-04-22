@@ -42,4 +42,4 @@ tags: my-life random-thoughts quizes
 <TD>You Are Untraveled in the Middle East (0%)</TD></TR>
 <TR>
 <TD>You Are Untraveled in the Midwestern United States (0%)</TD></TR></TABLE>
-<DIV><A href="http://www.blogthings.com/howwelltraveledareyouquiz/"><FONT color="#246398">How Well Traveled Are You?</FONT></A> </DIV>
+<DIV><A href="http://www.blogthings.com/howwelltraveledareyouquiz/"><FONT color="#246398">How Well Traveled Are You </FONT></A> </DIV>

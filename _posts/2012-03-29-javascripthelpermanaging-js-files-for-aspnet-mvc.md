@@ -11,7 +11,7 @@ The first option is to have the part itself would write the script tag. This all
 
 Alternately, you can break the black box, and manually add the needed script &amp; CSS link tags in your layout. This allows you to group the files tag together in the proper places, CSS at the top, JS at the bottom. But, you must know all the JS files all component of the page need, including all dependencies they have. And if you are putting these in a layout file, then you’ll need to put all the JS files needed for all pages anywhere on the site.
   
-Wouldn’t it be great if there was a way to automatically figure out just the files we need for a certain page, and include just those, without us having to do a lot of thinking about it. Isn’t that the type of thing we invented computers for?
+Wouldn’t it be great if there was a way to automatically figure out just the files we need for a certain page, and include just those, without us having to do a lot of thinking about it. Isn’t that the type of thing we invented computers for 
 
 Monorail also lacked such a manager, but Monorail has neither the major corporate sponsor nor the large user community base of ASP.NET MVC, where I figured *someone* would have written one. I wrote a manager like this for Monorail, so I guess that someone is going to be me… which leads us to the **JavascriptHelper.**
 
@@ -164,13 +164,13 @@ Within the &lt;css&gt; element are multiple &lt;sheet&gt; element, one for each 
     pathname="ui/jquery.ui.slider.js" css="ui" />
 {% endhighlight %}
 
-Starting with the first element, we specified a JavaScript file, which we’ll be calling “jquery”.   When we ask for “jquery”, we’ll normally get “jquery-1.6.1.min.js” , unless we’re debugging, in which case, it will load “jquery-1.6.1.js”.  It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
+Starting with the first element, we specified a JavaScript file, which we’ll be calling “jquery”.   When we ask for “jquery”, we’ll normally get “jquery-1.6.1.min.js” , unless we’re debugging, in which case, it will load “jquery-1.6.1.js”.  It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
 
-(Note that the “name” value is used to the URL here.  This is the only place where the actual name used is significant.  Otherwise it can just be any unique string.  This is wrong, and will be fixed in some future release).
+(Note that the “name” value is used to the URL here.  This is the only place where the actual name used is significant.  Otherwise it can just be any unique string.  This is wrong, and will be fixed in some future release).
 
-Next we want to define the complete componentized version of jQuery UI, so that we can load just the parts we want. First, we declare the UI core as depending on jQuery.  Then we declare widget component as depending on the core.  And the mouse component as depending on the widgets.
+Next we want to define the complete componentized version of jQuery UI, so that we can load just the parts we want. First, we declare the UI core as depending on jQuery.  Then we declare widget component as depending on the core.  And the mouse component as depending on the widgets.
 
-Then we can the individual components themselves.  “datepicker” as depending on the widgets; “slider” as depending on the widget &amp; the mouse components.  Since the mouse already depends on widget, it was really necessary to specify both here, but there’s no harm.  So, if you request to use “slider” on your page, then the helper makes sure that jQuery, the UI core, UI Widgets, mouse &amp; slider components are all included, in the proper order.  (Note, there is no checking for circular dependencies, so be careful how you specify the dependsOn attribute)
+Then we can the individual components themselves.  “datepicker” as depending on the widgets; “slider” as depending on the widget &amp; the mouse components.  Since the mouse already depends on widget, it was really necessary to specify both here, but there’s no harm.  So, if you request to use “slider” on your page, then the helper makes sure that jQuery, the UI core, UI Widgets, mouse &amp; slider components are all included, in the proper order.  (Note, there is no checking for circular dependencies, so be careful how you specify the dependsOn attribute)
 
 Both are also associated with the “ui” css file, which brings us to that section:
 
@@ -181,7 +181,7 @@ Both are also associated with the “ui” css file, which brings us to that section
 </css>
 {% endhighlight %}
 
-Both of the jQuery UI components above give “ui” as their CSS file (the theme roller doesn’t create individual CSS files) so if either (or both) is used, that file is included.  CSS files don’t have a separate dependency tree, but all associated CSS files for every dependent js file up the tree are included, so if you wanted to use the separate jQuery UI CSS files, you’d associate  “ui.core.css” with uicode”, “ui.base.css” with “uiwidget” and each component with its own CSS file, and all the needed files will be included.
+Both of the jQuery UI components above give “ui” as their CSS file (the theme roller doesn’t create individual CSS files) so if either (or both) is used, that file is included.  CSS files don’t have a separate dependency tree, but all associated CSS files for every dependent js file up the tree are included, so if you wanted to use the separate jQuery UI CSS files, you’d associate  “ui.core.css” with uicode”, “ui.base.css” with “uiwidget” and each component with its own CSS file, and all the needed files will be included.
 
 ###API
 
@@ -203,20 +203,20 @@ All script from either AddScript methods is rendered in a block at the script in
 
 `InsertCss()`-- Renders all css files
 
-###What’s the next step?
+###What’s the next step 
 
 Now that I’ve made this public, it’s really just a beta. I think there’s still a bit more to be done before it’s ready to be “Production-Ready v1.0”. And I need some feedback….
 
 
- * First of all, how exactly should it be packaged? I’ve been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but it’s just one file, so that seem like overkill. I’d really like to create a NuGet package for this, but that question needs to be settled first.
+ * First of all, how exactly should it be packaged  I’ve been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but it’s just one file, so that seem like overkill. I’d really like to create a NuGet package for this, but that question needs to be settled first.
 
- * Or do we think bigger? Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).  Should be deeply embedded into the MVC eco-system? 
+ * Or do we think bigger  Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).  Should be deeply embedded into the MVC eco-system  
 
- * Also, how is the API? Are the method names sufficiently intuitive?
+ * Also, how is the API  Are the method names sufficiently intuitive 
 
-* Is an XML file the proper way to store the dependency information?
+* Is an XML file the proper way to store the dependency information 
 
-* Is there any feature that really needs to be added?
+* Is there any feature that really needs to be added 
 
 ###The code:
 
@@ -224,4 +224,4 @@ The source code is available (under the Apache license) from my GitHub library:
 
 [http://github.com/jamescurran/JavascriptHelper](http://github.com/jamescurran/JavascriptHelper)
 
-<a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx"><img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%253a%252f%252fhonestillusion.com%252fblogs%252fblog_0%252farchive%252f2012%252f03%252f29%252fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a><div class="wlWriterHeaderFooter" style="margin:0px;padding:0px 0px 0px 0px;"><div class="shoutIt"><a href="http://dotnetshoutout.com/Submit?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx&amp;title=JavascriptHelper%e2%80%93Managing+JS+files+for+ASP.NET+MVC"><img alt="Shout it" style="border:0px;" src="http://dotnetshoutout.com/image.axd?url=http://honestillusion.com/blogs/blog_0/archive/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a></div></div>
+<a href="http://www.dotnetkicks.com/kick/ url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx"><img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http%253a%252f%252fhonestillusion.com%252fblogs%252fblog_0%252farchive%252f2012%252f03%252f29%252fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a><div class="wlWriterHeaderFooter" style="margin:0px;padding:0px 0px 0px 0px;"><div class="shoutIt"><a href="http://dotnetshoutout.com/Submit url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2012%2f03%2f29%2fjavascripthelper-managing-js-files-for-asp-net-mvc.aspx&amp;title=JavascriptHelper%e2%80%93Managing+JS+files+for+ASP.NET+MVC"><img alt="Shout it" style="border:0px;" src="http://dotnetshoutout.com/image.axd url=http://honestillusion.com/blogs/blog_0/archive/2012/03/29/javascripthelper-managing-js-files-for-asp-net-mvc.aspx" /></a></div></div>
