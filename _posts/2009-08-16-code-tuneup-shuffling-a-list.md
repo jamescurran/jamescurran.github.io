@@ -6,7 +6,7 @@ tags: code c# .net programming dotnet csharp codeproject
 ---
 Over on CodeProject, I spotted an article by Mahdi Yousefi called "[Creating an ASP.NET captcha using jQuery and s3capcha](http://www.codeproject.com/KB/validation/aspnet_capcha.aspx)".</a>
 
-<script src="https://gist.github.com/jamescurran/5439129.js"></script>
+<script src="https://gist.github.com/jamescurran/5439129.js">   </script>
 
 So, what's wrong with this   Well, let's see:
 
@@ -75,4 +75,4 @@ With this, we can do some interesting things, since you input doesn't have to be
       
 Here's the full source code:
 
-<script src="https://gist.github.com/jamescurran/5439217.js"></script>
+<script src="https://gist.github.com/jamescurran/5439217.js">   </script>
