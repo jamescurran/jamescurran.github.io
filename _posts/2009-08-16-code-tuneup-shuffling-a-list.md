@@ -4,7 +4,7 @@ title: Code Tune-Up:Shuffling a List
 categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
-Over on CodeProject, I spotted an article by Mahdi Yousefi called "[Creating an ASP.NET captcha using jQuery and s3capcha](http://www.codeproject.com/KB/validation/aspnet_capcha.aspx)".</a>
+Over on CodeProject, I spotted an article by Mahdi Yousefi called "[Creating an ASP.NET captcha using jQuery and s3capcha](http://www.codeproject.com/KB/validation/aspnet_capcha.aspx)".
 
 <script src="https://gist.github.com/jamescurran/5439129.js">   </script>
 
@@ -69,7 +69,7 @@ But that brings us to another key point.  The only thing that the input is being
 
 With this, we can do some interesting things, since you input doesn't have to be a collection at all:
 
-        Enumerable.Range(1,10).ShuffleCopy().Print();
+      Enumerable.Range(1,10).ShuffleCopy().Print();
 
       output:  1-5-7-9-10-2-6-3-8-4-
       
