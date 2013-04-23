@@ -19,4 +19,4 @@ tags: code c# .net programming generics-without-collections
 <p>
 </p><div class="csharpcode"><pre class="alt">ABC a = ABC.Able;</pre><pre><span class="kwrd">int</span> ai = (<span class="kwrd">int</span>) a;</pre><pre class="alt">ABC aa = (ABC) ai;</pre></div>
 <p> </p>
-<p> </p><pre></pre><a href="http://www.dotnetkicks.com/kick/ url=http://honestillusion.com/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http://honestillusion.com/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx" border="0" /></a>
+<p> </p><pre></pre><a href="http://www.dotnetkicks.com/kick/?url=http://honestillusion.com/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://honestillusion.com/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx" border="0" /></a>

@@ -8,7 +8,7 @@ tags: politics fun
   Jerome Corsi is a right-wing writer, known mainly for writing hatchet-job books about Democrats.  His Swift-Boater opus "Unfit for Command" was a important factor in John Kerry's loss to GW Bush.  [It was completely discredited too late.](http://en.wikipedia.org/wiki/Unfit_for_Command) 
   His latest book tries to "prove" President Obama's short-form birth certificate is a fake.  Since the book came out within days of Obama released his long form birth certificate, and Corsi still has a paperback edition to sell, to continue his quest to separate gullible Tea-Partiers from their money, he now has to attack that.</p> 
   
-  To that end, he's posted in his column on WorldNetDaily  [Mathematical 'proof' Obama birth certificate a forgery](http://www.wnd.com/index.php fa=PAGE.view&amp;pageId=319221).
+  To that end, he's posted in his column on WorldNetDaily  [Mathematical 'proof' Obama birth certificate a forgery](http://www.wnd.com/index.php?fa=PAGE.view&pageId=319221).
   
 In the article, Corsi quotes "a prominent software engineer who works as a high-level programmer for a state government", who __refuses to be named__  because he fears he'll lose his job --- which I think is a legitimate concern, since publicly slandering someone with obviously manufactured evidence is frequently a firing offense.
   

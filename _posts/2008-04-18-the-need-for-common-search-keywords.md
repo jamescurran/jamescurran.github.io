@@ -31,4 +31,4 @@ So, to start us off, here are a few I thought up.  Be sure to include them in an
    - "ASP.NET Ajax" = "aspnetajax" 
    - "LINQ" = "linq" (that was easy -- maybe Microsoft is learning). 
     
-    <a href="http://www.dotnetkicks.com/kick/ url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f04%2f18%2fthe-need-for-common-search-keywords.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f04%2f18%2fthe-need-for-common-search-keywords.aspx" border="0" /></a>
+    <a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f04%2f18%2fthe-need-for-common-search-keywords.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f04%2f18%2fthe-need-for-common-search-keywords.aspx" border="0" /></a>

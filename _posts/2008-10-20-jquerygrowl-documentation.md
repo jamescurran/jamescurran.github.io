@@ -151,4 +151,4 @@ tags:
 <p>However the dock is defined, the style elements defined in the dockCss property are then added to it, and it's append to the &lt;body&gt; of the page.</p>
 
 <p> </p>
-<a href="http://www.dotnetkicks.com/kick/ url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx" border="0" /></a>
+<a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx" border="0" /></a>

@@ -77,4 +77,4 @@ The code for it looks like this:</pre>
     Console.Write(a); // writes <span class="str">"2345"</span>
 }
 </pre>
-<p>Somewhat enhanced source code is available <a href="http://honestillusion.com/files/folders/c-sharp/entry4396.aspx">here</a>.</p><a href="http://www.dotnetkicks.com/kick/ url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx" border="0" /></a>
+<p>Somewhat enhanced source code is available <a href="http://honestillusion.com/files/folders/c-sharp/entry4396.aspx">here</a>.</p><a href="http://www.dotnetkicks.com/kick/?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx" border="0" /></a>

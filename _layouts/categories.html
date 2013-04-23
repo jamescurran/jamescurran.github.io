@@ -1,4 +1,4 @@
-{% for  post in site.categories[page.title]  % }
+{% for  post in site.categories[page.title]  %}
 
 <div class="postmeta extract">
 <p class="timestamp">
@@ -16,7 +16,7 @@
 
 	<div class="blocked tags">
 <p>
-	{% for tag in post.categories   % }
+	{% for tag in post.categories %}
 	<a href="/categories/{{ tag}}.html"></a>
 ,
 	{% endfor %}
