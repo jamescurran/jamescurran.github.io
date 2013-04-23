@@ -1,13 +1,14 @@
 ---
 layout: post
-title: DEV102's Programming Job Interview Challenge #4
+title: DEV102's Programming Job Interview Challenge 4
 categories: code c# .net programming dotnet csharp
 tags: code c# .net programming dotnet csharp
 ---
 
 The folks at Dev102.com are offering weekly programming challenges, where they offer questions, and let bloggers post about them.  I meant to write an answer for last week, but never got around to it.  Just as well -- my answer would have been wrong.  So, let's move on to [this week's](http://www.dev102.com/2008/05/19/a-programming-job-interview-challenge-4/):
+
   > *How would you implement the following method: Foo(7) == 17 and Foo(17) == 7. Any other input to that method is not defined so you can return anything you want. Just follow those rules:*
-  >
+  
   - *Conditional statements (if, switch, ...) are not allowed.*
   - *Usage of containers (hash tables, arrays, ...) are not allowed.*
  
