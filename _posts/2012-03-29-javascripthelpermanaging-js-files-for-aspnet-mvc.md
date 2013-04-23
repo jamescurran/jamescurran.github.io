@@ -46,10 +46,10 @@ Let's say for example that I have a partial view that uses the jQuery UI slider 
 The first `"Script.AddScript()"` call defines the function that we need. The second AddScript called calls that function, using the id specific to that instance of the partial view. So, if our page has three instances of this partial view, we'll need the function definition only once, but the call to it three times. This is handled by given a name to the snippet that need not be repeated. All blocks with the same name are rendered only once (actually, block with the same name as an existing block are ignored, so make sure that you only use a particular name for one script block. )
 
 Then in the Layout, we just add the lines:
-<script src="https://gist.github.com/jamescurran/5437560.js"></script>
+<script src="https://gist.github.com/jamescurran/5437560.js">    </script>
 This will produce an output of :
 
-<script src="https://gist.github.com/jamescurran/5437573.js"></script>
+<script src="https://gist.github.com/jamescurran/5437573.js">   </script>
 
 ###Setup:
 
@@ -113,7 +113,7 @@ Within the &lt;css&gt; element are multiple &lt;sheet&gt; element, one for each 
 
 ###Example:
 
-<script src="https://gist.github.com/jamescurran/5437587.js"></script>
+<script src="https://gist.github.com/jamescurran/5437587.js">   </script>
 
 Starting with the first element, we specified a JavaScript file, which we'll be calling "jquery".   When we ask for "jquery", we'll normally get "jquery-1.6.1.min.js" , unless we're debugging, in which case, it will load "jquery-1.6.1.js".  It will load these from the website, but, if, as I put it into production, I flip the useGoogle file to true, then it will load it from [http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js](http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js)
 

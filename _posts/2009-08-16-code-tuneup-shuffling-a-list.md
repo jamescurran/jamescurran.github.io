@@ -45,7 +45,7 @@ Next is that main loop:
         input[swap] = tmp;
     }
 
-Here's where we see the major change to the implementation. Both method use basically the same algorithm, but instead of building a new List, I move the elements around within the same list.  Essentially, I'm doing the same thing, if you imagine the two arrays occupying that same space - as one grows small the other grows bigger. 
+Here's where we see the major change to the implementation. Both method use basically the same algorithm (The [Fisher–Yates shuffle](http://en.wikipedia.org/wiki/Knuth_shuffle) also known as the Knuth Shuffle) , but instead of building a new List, I move the elements around within the same list.  Essentially, I'm doing the same thing, if you imagine the two arrays occupying that same space - as one grows small the other grows bigger. (Basically, the original closely modeled Fisher & Yates's method, which was intended to be done by hand with paper & pencil, and the revision here follows Knuth's optimization for computers)
 
 And with that, we're done.  Since the original List is now shuffled, we could return void, but by returning the input, we can allow chaining (and it also maintains the original method signature)
 
