@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Dev102's Challenge 12:Managed &amp; unmanaged
-categories: 
-tags: 
+categories: code dotnet csharp
+tags: code dotnet csharp
 ---
 
 My solution(s) for last week's challenge were cited, but, only as an "honorable mention" / "also run".

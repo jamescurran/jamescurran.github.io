@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Dev102's Challenge 13:Brackets
-categories: 
-tags: 
+categories: code dotnet csharp
+tags: code dotnet csharp
 ---
 
 Many people skipped last week's challenge (like I had planned to).  As it turned out, I was the only blogger to responded.
