@@ -5,17 +5,61 @@ categories: code c# .net programming
 tags: code c# .net programming
 ---
 
-  <p>Many years ago, I wrote an article entitled "Implement A Circular Iterator" for <em>The VisualC++ Developer's Journal</em>.  (Unfortunately, VCDJ is now out of business, and it's successor, <a href="http://www.ftponline.com/vsm/" target="_blank"><em>Visual Studio Magazine</em>,</a> doesn't maintain an online archive of articles from that magazine.  Fortunately, I kept a <a href="http://www.noveltheory.com/iterators/Iterator_N0.htm">copy</a> of it)</p> <p>The essence of the C++ code is that given a templated collection, it will give you an iterator to would loop throught the collection over &amp; over.</p> <p>A bit more recently, some one wrote C# variant of this, and published it on <a href="http://www.codeproject.com/csharp/circularlist.asp">CodeProject</a>.  However, that one was a CircularList, which would be derived from a standard List.  In the <a href="http://www.codeproject.com/csharp/circularlist.asp msg=1519678&amp;mode=all&amp;userid=2094#xx1519678xx">comments</a>, I created an IEnumerator class.  It could be used with any class the implemented IEnumerable, like this</p> <p> </p> <div class="csharpcode"><pre class="alt"><span class="kwrd">static</span> <span class="kwrd">void</span> Main(<span class="kwrd">string</span>[] args)</pre><pre>{</pre><pre class="alt">     <span class="kwrd">int</span>[] a = <span class="kwrd">new</span> <span class="kwrd">int</span>[] {1,2,3,4,5,6,7};</pre><pre> </pre><pre class="alt">     <span class="kwrd">foreach</span>(<span class="kwrd">int</span> i <span class="kwrd">in</span> a)</pre><pre>        Console.WriteLine(<span class="str">"{0}"</span>, i);</pre><pre class="alt"> </pre><pre>     Console.WriteLine(<span class="str">"--------------------------"</span>);</pre><pre class="alt">     <span class="kwrd">int</span> cnt = 0;</pre><pre>     <span class="kwrd">foreach</span>(<span class="kwrd">int</span> i <span class="kwrd">in</span> <span class="kwrd">new</span> CircularEnumerator(a))</pre><pre class="alt">     {</pre><pre>         Console.Write(<span class="str">"{0}"</span>, i);</pre><pre class="alt">         ++cnt;</pre><pre>         <span class="kwrd">if</span> (cnt == 30)</pre><pre class="alt">             <span class="kwrd">break</span>;</pre><pre>     }</pre><pre class="alt">}</pre></div>
-<p> would print "12345671234567123456712".  Note the "break" in the above.  It's vitally important, because the foreach </p>
-<p> will never exit on it own.</p>
-<p>But, that used the non-generic IEnumerator interface, and manually implement all the parts of the interface.  I figured that using an C# iterator it would be easier.  And, as it turns out, it was:</p>
-<p> </p>
-<div class="csharpcode"><pre class="alt"><span class="kwrd">static</span> <span class="kwrd">class</span> Util</pre><pre>{</pre><pre class="alt"> <span class="kwrd">public</span> <span class="kwrd">static</span> IEnumerable&lt;T&gt; Circular&lt;T&gt;(IEnumerable&lt;T&gt; coll)</pre><pre> {</pre><pre class="alt">    <span class="kwrd">while</span>(<span class="kwrd">true</span>)</pre><pre>    {</pre><pre class="alt">        <span class="kwrd">foreach</span>(T t <span class="kwrd">in</span> coll)</pre><pre>            <span class="kwrd">yield</span> <span class="kwrd">return</span> t;</pre><pre class="alt">    }</pre><pre> }</pre><pre class="alt">}</pre></div>
-<p> </p>
-<p>This would be used exactly like the previous version, with a single line changed:</p>
-<p>
-</p><div class="csharpcode">foreach(int a in Util.Circular(ary)</div>
-<p></p>
-<p> However, this bring up an important point.  Here I've put in into a static class named "Util".  Now, it would be a natural to put it into the same class as my <a href="http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx">SkipFirst &amp; SkipLast enumerators</a> I wrote about recently.  However, I put those into a static class named "Skip" which won't be appropriate for this.  However (part II), when I <a href="http://honestillusion/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx">wrote utility functions for enums</a> I put them in a static class called "Enumr".  Now, to you (that's the collectively, blog-reading "You" --  i.e. answer in the comments) think it would be OK, to put both function dealing with enums <em>and</em> functions dealing with IEnumerators in a class called "Enumr"  </p>
+  Many years ago, I wrote an article entitled "Implement A Circular Iterator" for *The VisualC++ Developer's Journal*.  (Unfortunately, VCDJ is now out of business, and it's successor, *[Visual Studio Magazine](http://www.ftponline.com/vsm/)* doesn't maintain an online archive of articles from that magazine.  Fortunately, I kept a [copy](http://www.noveltheory.com/iterators/Iterator_N0.htm) of it)
+ 
+The essence of the C++ code is that given a templated collection, it will give you an iterator to would loop through the collection over &amp; over.
+ 
+A bit more recently, some one wrote C# variant of this, and published it on [CodeProject](http://www.codeproject.com/csharp/circularlist.asp).  However, that one was a CircularList, which would be derived from a standard List.  In the [comments](http://www.codeproject.com/csharp/circularlist.asp?msg=1519678&mode=all&userid=2094#xx1519678xx), I created an IEnumerator class.  It could be used with any class the implemented IEnumerable, like this
+ 
+ 	static void Main(string[] args)
+	{
+		 int[] a = new int[] {1,2,3,4,5,6,7};
+	 
+		 foreach(int i in a)
+			Console.WriteLine("{0}", i);
+	 
+		 Console.WriteLine("--------------------------");
+		 int cnt = 0;
+		 foreach(int i in new CircularEnumerator(a))
+		 {
+			 Console.Write("{0}", i);
+			 ++cnt;
+			 if (cnt == 30)
+				 break;
+		 }
+	}
+
+
+
+would print "12345671234567123456712".  Note the "break" in the above.  It's vitally important, because the foreach will never exit on it own.
+
+But, that used the non-generic IEnumerator interface, and manually implement all the parts of the interface.  I figured that using an C# iterator it would be easier.  And, as it turns out, it was:
+
+	static class Util
+	{
+	 public static IEnumerable<T> Circular<T>(this IEnumerable<T> coll)
+	 {
+		while(true)
+		{
+			foreach(T t in coll)
+				yield return t;
+		}
+	 }
+	}
+
+This would be used exactly like the previous version, with a single line changed:
+
+      foreach(int a in Util.Circular(ary))
+      
+---
+**Update:** As I revisit these old posts, I tweak a bit.  Here I've made it an extension method.   Now it can be called like this:
+      
+      foreach(int a in ary.Circular())
+
+This kinda makes the next paragraph irrelevant.
+
+---
+
+However, this bring up an important point.  Here I've put in into a static class named "Util".  Now, it would be a natural to put it into the same class as my <a href="http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx">SkipFirst &amp; SkipLast enumerators</a> I wrote about recently.  However, I put those into a static class named "Skip" which won't be appropriate for this.  However (part II), when I <a href="http://honestillusion/blogs/blog_0/archive/2006/11/20/Generics-without-Collections_2C00_-Pt.-3.aspx">wrote utility functions for enums</a> I put them in a static class called "Enumr".  Now, to you (that's the collectively, blog-reading "You" --  i.e. answer in the comments) think it would be OK, to put both function dealing with enums <em>and</em> functions dealing with IEnumerators in a class called "Enumr"  </p>
 
 <a href="http://www.dotnetkicks.com/kick/?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/28/implementing-a-circular-iterator.aspx"><img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/28/implementing-a-circular-iterator.aspx" border="0" alt="kick it on DotNetKicks.com" /></a>
