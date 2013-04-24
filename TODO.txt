@@ -1,1 +1,8 @@
  - 2007-02-15-the-tale-of-the-trotting-horse.md - fix images, move source code to Github
+
+Pull original from GitHub:
+2011-03-17-the-evolutionary-guide-to-c-lambda-syntax
+2003-08-03-the-back-fill
+
+
+
