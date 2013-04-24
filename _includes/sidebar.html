@@ -2,19 +2,20 @@
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
 <li class="nav-header">News</li>
-<li> 
+<li class="small"> 
 "What news?"<br/>
- "None, my lord, but that the world's grown honest.""<br/>
+ "None, my lord, but that the world's grown honest."<br/>
   "Then is doomsday near.""<br/>
-  --Shakespeare, <b>Hamlet</b> </li>
+  --Shakespeare, <i>Hamlet</i> </li>
 <li><hr/></li>
-<li><i>Commit it then to the flames: for it can contain nothing but sophistry and illusion.</i><br/>
+<li class="small"><i>Commit it then to the flames: for it can contain nothing but sophistry and illusion.</i><br/>
  --David Hume (1711-1776)</li>
     
       <li class="nav-header">Recent Posts</li>
       {% for post in site.posts limit: 10 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
+      <li><a href="/archive.html">(Older posts...)</a></li>
       <li class="nav-header">About</li>
       <li>I'm a software developer in NY/NJ area.  I write C#, Javascript, and (formerly) C++, C & a bunch of others.</li>
       <li class="nav-header">Email</li>
