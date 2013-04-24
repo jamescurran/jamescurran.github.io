@@ -11,22 +11,24 @@ Anyway, onward to [this week's challenge, #8](http://www.dev102.com/net/a-progra
 
 >You are writing a software component that receives a binary record every 20 millisecond. .... Your component goal is to alert whenever it identifies a specific expression (which is provided at the initialization process) in the stream of records - you are looking for a specific combination of binary records. 
 
-The answer is, of course, a [*Finite State Machine*](http://en.wikipedia.org/wiki/Finite_State_Machine). To explain how one works, we need to come up with a example expression to search for.  Let's say these records come it four formats: Type A, type B, type C and Type D, and we are looking a sequence of records in the following pattern: ABACB (if you'd like, you can assume that there are many record types, and Type D represents "any record that's not type A, B or C").  So, we start in state "0". State 0 can be called "looking for first A record".  At state 0, if we find an A record, we move into state 1 ("Find first A, looking for first B").  If we find any other kind of record, we stay in state 0.  This can be expressed in table form as:
+The answer is, of course, a [*Finite State Machine*](http://en.wikipedia.org/wiki/Finite_State_Machine). To explain how one works, we need to come up with a example expression to search for.  Let's say these records come it four formats: Type A, type B, type C and Type D, and we are looking a sequence of records in the following pattern: ABACB (if you'd like, you can assume that there are many record types, and Type D represents "any record that's not type A, B or C").  So, we start in state "0". State 0 can be called "looking for first A record".  At state 0, if we find an A record, we move into state 1 ("Found first A, looking for first B").  If we find any other kind of record, we stay in state 0.  This can be expressed in table form as:
 
   <div align="center">   
    <table border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>     </table> </div> 
        
 Next when we are in state 1, if we find a B record, we move into state 2, but the other transitions are a bit trickier.  If we find a C or D, we're back to state 0 ("looking for 1st A"), but if we find another A, we have to stay in state 1.  Adding that to our graph:
  
-<div align="center">   <table border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>     </table> </div>  <p> </p>  <p>Ok, now, we are in state 2 ("found AB, looking for 2nd A"), Here if we find an A, we move on to state 3 --- anything else, and we're back to state 0.
+<div align="center">   <table border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>     </table> </div>  
+   
+Ok, now, we are in state 2 ("found AB, looking for 2nd A"), Here if we find an A, we move on to state 3 --- anything else, and we're back to state 0.
    
 <div align="center">   <table border="1"  cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>     </table> </div>  
     
-State 3 ("found ABA, looking for C"), is a bit trickier again.  If we find a C, naturally, we move into state 4. And if we find a D, were back into state 0.  But, if we an A, we step back to state 1.  And if we find a B, we step back only to state 2 (ie, we've found "ABAB" and the second "AB" may be the start of the pattern we want.
+State 3 ("found ABA, looking for C"), is a bit tricky again.  If we find a C, naturally, we move into state 4. And if we find a D, were back into state 0.  But, if we an A, we step back to state 1.  And if we find a B, we step back only to state 2 (ie, we've found "ABAB" and the second "AB" may be the start of the pattern we want.
     
 <div align="center">   <table border="1"  cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>3</td>          <td>1</td>          <td>2</td>          <td>4</td>          <td>0</td>       </tr>     </table> </div>
    
-At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("Let loose the pigeons!").  If it's an A, we go to state 1 (as usually). Anything else, and we start over at state 0.
+At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("*Let loose the pigeons!*").  If it's an A, we go to state 1 (as usually). Anything else, and we start over at state 0.
      
 <div align="center">   <table  border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State VV</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>3</td>          <td>1</td>          <td>2</td>          <td>4</td>          <td>0</td>       </tr>        <tr>         <td>4</td>          <td>1</td>          <td><strong>*</strong></td>          <td>0</td>          <td>0</td>       </tr>     </table> </div> 
        
@@ -35,7 +37,7 @@ Now, to put this into C# code, we merely need a simple pre-initialize int array 
 
           const int[,] states = new int [5,4]
           {
-             { 1,0,0,0},
+             {1,0,0,0},
              {1,2,0,0}
              {3,0,0,0}
              {1,2,4,0}
@@ -48,7 +50,7 @@ Now, to put this into C# code, we merely need a simple pre-initialize int array 
   
         bool MatchFound(Record newRecord)
        {
-         // return 0,1,2 or 3 for record type A,B,C or D respectively. 
+         // returns 0,1,2 or 3 for record type A,B,C or D respectively. 
         // can be assumed to be present, as per the spec. 
         
              int type = GetRecordType(newRecord);
