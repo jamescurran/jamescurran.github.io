@@ -1,10 +1,21 @@
 <div class="span3">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
+<li class="nav-header">News</li>
+<li class="small"> 
+"What news?"<br/>
+ "None, my lord, but that the world's grown honest."<br/>
+  "Then is doomsday near.""<br/>
+  --Shakespeare, <i>Hamlet</i> </li>
+<li><hr/></li>
+<li class="small"><i>Commit it then to the flames: for it can contain nothing but sophistry and illusion.</i><br/>
+ --David Hume (1711-1776)</li>
+    
       <li class="nav-header">Recent Posts</li>
       {% for post in site.posts limit: 10 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
+      <li><a href="/archive.html">(Older posts...)</a></li>
       <li class="nav-header">About</li>
       <li>I'm a software developer in NY/NJ area.  I write C#, Javascript, and (formerly) C++, C & a bunch of others.</li>
       <li class="nav-header">Email</li>
@@ -12,7 +23,7 @@
       <li class="nav-header">Social</li>
       <li><a href="https://twitter.com/zamescurran" class="twitter-follow-button" data-show-count="false">Follow @zamescurran</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-<!--      <li><a href="https://plus.google.com/115664183233658484964/posts" rel="author me">+markschabacker</a></li>  -->
+      <li><a href="https://plus.google.com/111298803405285394909/posts" rel="author me">+jamescurran</a></li>
     </ul>
   </div>
 </div>

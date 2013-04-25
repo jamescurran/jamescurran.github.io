@@ -1,29 +1,116 @@
-<h1>Ooops......</h1>
+<!DOCTYPE html>
+<!-----  include header.html (excerpt) --->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <title>404 on HonestIllusion.com</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
 
-You stumbled upon an dead URL at HonestIllusion.com <br/>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-I've recently changed blogging host & platform  & other stuff, so a lot of old URL don't  work any more.<br/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  </head>
 
-<h1>But DONT Panic!</h1>
+  <body>
 
-The articles are still here ! (Many even have the typos fixed!)<br/>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Honest Illusion</a>
+		  <span class="offset5 small">"Where Lightening is still the biggest thrill of all..."</span>
+          <div class="nav-collapse collapse">
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  <body>
+<!-----  End include header.html (excerpt) --->
+    <div class="container content">
+      <div class="row">
+        <div class="span9">
+        <h1>Ooops......</h1>
+        <h2>It's just an Illusion... Honest!</h2>
 
-If the link was in the form:<br/>
+<p>You stumbled upon an dead URL at HonestIllusion.com </p>
 
-http://honestillusion.com/blogs/blog_0/archive/2008/01/15/article-name-here.aspx<br/>
+<p>I've recently changed blogging host & platform  & other stuff, so a lot of old URL don't work any more.</p>
 
-try changing it to:<br/>
+<h1>But DON'T Panic!</h1>
 
-http://honestillusion.com/blog/2008/01/15/article-name-here.html<br/>
+<p>The articles are still here ! (Many even have the typos fixed!)</p>
+
+<dl>
+<dt>If the link was in the form:</dt>
+
+<dd><b>http://honestillusion.com/blogs/blog_0/archive/2008/01/15/article-name-here.aspx</b></dd>
+
+<dt>try changing it to:</dt>
+<dd><b>http://honestillusion.com/blog/2008/01/15/article-name-here/</b></dd>
+</dl>
 
 <ul>
 <li>"blogs" to "blog"</li>
 <li>Delete "blog_0/archive/"</li>
-<li>"aspx" to "html"</li>
+<li>".aspx" to forward-slash</li>
 </ul>
  
-<h2>If that doesn't work, try the <a href="archives.html">archive</a>.</h2>
- 	
+<h3>If that doesn't work, try the <a href="/archives.html">archive</a>.</h3>
+        </div>
+<!-----  include sidebar.html (excerpt) --->
+<div class="span3">
+  <div class="well sidebar-nav">
+    <ul class="nav nav-list">
+      <li class="nav-header">About</li>
+      <li>I'm a software developer in NY/NJ area.  I write C#, Javascript, and (formerly) C++, C & a bunch of others.</li>
+      <li class="nav-header">Email</li>
+      <li>james.curran@gmail.com</li>
+      <li class="nav-header">Social</li>
+      <li><a href="https://twitter.com/zamescurran" class="twitter-follow-button" data-show-count="false">Follow @zamescurran</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+<!--      <li><a href="https://plus.google.com/115664183233658484964/posts" rel="author me">+markschabacker</a></li>  -->
+    </ul>
+  </div>
+</div>
+<!-----  End include sidebar.html --->
+      </div>
+    </div>
+<!-----  include footer.html (excerpt) --->
+   <div class="row-fluid">
+      <div class="span12 footer muted">
+        Copyright 2003-2013 - James M. Curran
+      </div>
+    </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1066116-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+  </body>
+</html>
+<!-----  End include footer.html  --->
+
+
+
  
      
 
