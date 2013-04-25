@@ -5,9 +5,8 @@ categories: politics
 tags: politics
 ---
 
-  <p>
-    <font size="2">
-      <font color="#000000" face="Garamond" size="3">The tax plan itself has several facets:<br />Removal of the "Marriage penalty" -- Almost a total non-issue. The "Married, filing jointly" option was designed for the "traditional" family, where the father made most of the money and the mother made little or nothing. If both made significant income, they got screwed on the deal --- which they invented the "Married, filing separately" option years ago. This change is mostly for couples too lazy to file separately. (Note that it mostly helps DINKs and not the real working class)</font>
+The tax plan itself has several facets:
+Removal of the "Marriage penalty" -- Almost a total non-issue. The "Married, filing jointly" option was designed for the "traditional" family, where the father made most of the money and the mother made little or nothing. If both made significant income, they got screwed on the deal --- which they invented the "Married, filing separately" option years ago. This change is mostly for couples too lazy to file separately. (Note that it mostly helps DINKs and not the real working class)</font>
     </font>
   </p>
   <p>
