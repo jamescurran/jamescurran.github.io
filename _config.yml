@@ -1,4 +1,4 @@
- exclude: safe  files
+ exclude: safe
  pygments: true
  permalink: /blog/:year/:month/:day/:title/
  safe: false
