@@ -27,7 +27,7 @@ When Windows 95 was introduced, I started to write a Win32 version, but never fi
 
 However, with Windows XP, the 16-bit subsystem complains about it every now and then, so I figured that time was right to go all the way, and write a .Net v2 / C# version.  As I started to write it, a found the older incomplete Win32 version, so first I finished that one.  I found a simple way to count the number of instances running (using a semaphore), but, since I didn't want to add a main menu to an application whose purpose is to be small and unassuming, the real trick was adding a menu item (for the About box) to the system menu from C#.
 
-Now, you can have all three version <a href="http://honestillusion.com/files/folders/misc/entry4451.aspx">here.</a>
+Now, you can have all three version [here](/files/Horse.zip).
 
 Horse16.exe was written in C in 1990.
 Horse32.exe is written in C++ from the same source as Horse16.  It's really a C program, except I can no longer deal with declaring all my variables at the top of the function, so I renamed the file with a .cpp extension.

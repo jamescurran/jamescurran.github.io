@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Speed of Meme, and the discrete charm of easy to generate content.
+title: The Speed of Meme, and the discreet charm of easy to generate content.
 categories: random-thoughts
 tags: random-thoughts
 ---
