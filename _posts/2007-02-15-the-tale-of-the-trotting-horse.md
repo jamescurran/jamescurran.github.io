@@ -9,7 +9,7 @@ It was originally a GW-Basic program for MSDOS.  I'm not even sure where I got i
   
 But eventually, I moved to Windows, so I created a WinApp version of it in 1990, for Windows 3.0.
 
-  [photo:4450]  Shown, actual size.
+  ![photo:4450](/images/1000.7.4450.HorseProg.jpg)  Shown, actual size.
   
 It was a simple a little app, which just sits in the corner of your screen, just endlessly running.  It reminded me of the Talking Heads' video "*Road to Nowhere*".
   
