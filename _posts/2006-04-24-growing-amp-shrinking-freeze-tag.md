@@ -41,7 +41,7 @@ I yell, "Quick! He getting away!" We subdue Bob again, and Amanda (the cop) leav
 
 FREEZE
 
-We are now a little boy & his mother standing over a doctor who's lying face down.  My first thought (*) was to yell "Bad Doctor! Bad Bad Doctor! That Shot hurt!".  Tera picked up on this and says she's going to report him to the AMA and storms out (now it didn't make much sense for her to leave her child behind, that's how the game is played).  Bob and I continue the scene -- he continues the examination.  Now checking my ears...
+We are now a little boy & his mother standing over a doctor who's lying face down.  My first thought ( * ) was to yell "Bad Doctor! Bad Bad Doctor! That Shot hurt!".  Tera picked up on this and says she's going to report him to the AMA and storms out (now it didn't make much sense for her to leave her child behind, that's how the game is played).  Bob and I continue the scene -- he continues the examination.  Now checking my ears...
 
   FREEZE
 
@@ -49,5 +49,5 @@ We are now a little boy & his mother standing over a doctor who's lying face dow
   
   SCENE.
   
-  (*) It later occurred to me a better way to continue would have been to say "Oh No, The doctor's had a heart attack! Is there another doctor in the house".  But as always, the good ones good to you too late.....
+  ( * ) It later occurred to me a better way to continue would have been to say "Oh No, The doctor's had a heart attack! Is there another doctor in the house".  But as always, the good ones good to you too late.....
   

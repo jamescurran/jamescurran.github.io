@@ -7,7 +7,8 @@ tags: code javascript programming
 
 Ya'know, I'd always intended this blog to be one of them cool ".Net Blogs", with just a occasional entry about my life.  Ok, so two years later, I've got the occasion random life entry thing down, but in all the time, not one thing about programming.  Let's try correcting that.
 
-Lately, I've been reading  [amazon:type=Blended:search=0975240269:results=1], which is otherwise a fine book on Javscript technique. (<a href="http://www.sitepoint.com/books/jsant1/">website</a>)  However, every now & then, the authors just get a bit caught up in "clever" code.  For example, this snippet from pg. 178:
+Lately, I've been reading <a href="http://www.amazon.com/gp/product/0975240269/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0975240269&amp;linkCode=as2&amp;tag=njtheatercom-20">The JavaScript Anthology: 101 Essential Tips, Tricks &amp; Hacks</a><img src="http://www.assoc-amazon.com/e/ir?t=njtheatercom-20&amp;l=as2&amp;o=1&amp;a=0975240269" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+, which is otherwise a fine book on Javscript technique. ( [website](http://www.sitepoint.com/books/jsant1/) )  However, every now & then, the authors just get a bit caught up in "clever" code.  For example, this snippet from pg. 178:
 
 	function dofade(steps, img, value, targetvisibility, otype)
 	{

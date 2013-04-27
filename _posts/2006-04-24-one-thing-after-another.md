@@ -10,7 +10,7 @@ The problem started small.
 
 I was trying to install a headset on my PC.  I'd got a switch, to toggle between the speakers and the headphones.  Things were going fine, when suddenly, my keyboard stopped working.   I've got 5 PCs using the same keyboard & monitor using a KVM switch, so I switched to a different box, and the keyboard worked fine there.  So, I switched back -- still nothing on my primary PC.
 
-OK, I still not concerned.  I tried rebooting.  No good.\
+OK, I still not concerned.  I tried rebooting.  No good.
 
 I did a power cycle.  Still nothing.  I'm getting a little concerned.  I opened up the case, to check that the cable is tight.  
 
@@ -24,14 +24,14 @@ So, I figured it time to call in a trained professional.  I found a computer rep
 
 It would start to load Windows, and then lock up. It did this repeatedly, always at the same spot.  Figuring an operating system file was corrupted in the crash, he gave it back to me to re-install the OS.  This puzzled me, as the system didn't actually crash -- the main trouble happened while it was powered down, and by all accounts, the hard disk was OK.
 
-Nevertheless, I took it back and tried to reinstall XP.  I tried three times, and the system would always lock up, just as it started the second phase of the setup.  I concluded that I had damaged the part of the CPU that handles [wikipedia:Protected Mode] while leaving the circuits that handle [wikipedia:Real Mode] intact.  So, it would boot OK in real mode, and then lock up when Windows tried to switch to protected mode.
+Nevertheless, I took it back and tried to reinstall XP.  I tried three times, and the system would always lock up, just as it started the second phase of the setup.  I concluded that I had damaged the part of the CPU that handles [Protected Mode](http://en.wikipedia.org/wiki/Protected_mode) while leaving the circuits that handle [Real Mode](http://en.wikipedia.org/wiki/Real_mode) intact.  So, it would boot OK in real mode, and then lock up when Windows tried to switch to protected mode.
 
 So, back to the repair shop, with the instruction to replace the CPU (if he had a AMD64 available) or the entire motherboard with a different CPU (if he didn't)  (CPUs are about $300-$500 with that particular one on the high end, while the motherboard is about $50, so replacing the CPU only would probably be to his advantage).
 
 However, not trusting my diagnostic abilities, he spend much of a day trying to figure out what was wrong himself.  What he found was that the CPU itself was OK, and the problem was in the motherboard.  This saved me a couple hundred dollars which is a good thing, but.....
 
-But... Apparently out of habit (because the problem is *always* the hard disk), he reformatted the hard disk & re-installed the OS. Recall, there was nothing wrong with the hard disk --- except that they weren't being backed up properly (*).  
+But... Apparently out of habit (because the problem is *always* the hard disk), he reformatted the hard disk & re-installed the OS. Recall, there was nothing wrong with the hard disk --- except that they weren't being backed up properly ( * ).  
 
 So, in the end, I lost a year's worth of documents (mostly photos and financial records in MSMoney)...
 
-(*) Improperly backup hard disk:  The entire hard disk was being backed up to a [wikipedia:Network attached storage] system --- except the process that run the backup didn't have access to my "My Documents" folder (which is naturally the most important one). This has been corrected.
+( * ) Improperly backup hard disk:  The entire hard disk was being backed up to a [Network attached storage](http://en.wikipedia.org/wiki/Network-attached_storage) system --- except the process that run the backup didn't have access to my "My Documents" folder (which is naturally the most important one). This has been corrected.
