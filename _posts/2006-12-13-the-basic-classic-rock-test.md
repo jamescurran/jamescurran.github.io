@@ -5,7 +5,19 @@ categories:
 tags: 
 ---
 
-  <table cellpadding="20" align="center">  <tr> <td align="middle"> <p align="left"><font size="3">I had stopped posting my results of online quizzes -- mainly because I'd stopped taking online quizzes -- but since I did so well on this one..  I'm not sure which 4 questions I got wrong (I was confident on all but one or two of them), but it was <strong>not</strong> the Traveling Wilburys question.</font></p> <p align="left"> </p> <p><font size="5"><b>Rock Star</b></font><br />You scored 92%! </p></td></tr> <tr> <td>You damn rock star. You know all the basics, and if you got any wrong, I bet it was that stupid Traveling Wilburys question. Your friends are probably intimidated by your knowledge of classic rock and envy your impressive collection. When a classic rock song comes on the radio, you can probably identify it before the vocals kick in most of the time. You probably get good scores on the "maiden name of Clapton's mom" tests, too. </td></tr> <tr> <td align="middle"><img src="http://is1.okcupid.com/users/102/306/1023073104876057970/mt1115192032.jpg" /> </td></tr></table>
-  <br />
-  <br />
-  <br /> <table cellpadding="20">  <tr> <td><span id="comparisonarea">My test tracked 1 variable How you compared to other people <i>your age and gender</i>:  <blockquote> <table cellspacing="4" cellpadding="0">  <tr> <td> <table cellspacing="1" cellpadding="0" bgcolor="black">  <tr> <td><a href="http://www.okcupid.com/"><img alt="free online dating" src="http://is1.okcupid.com/graphics/0.gif" border="0" /></a></td> <td><a href="http://www.okcupid.com/"><img alt="free online dating" src="http://is1.okcupid.com/graphics/0.gif" border="0" /></a></td></tr></table></td> <td>You scored higher than <b>37%</b> on <b>notes</b></td></tr></table></blockquote></span></td></tr></table> <table cellpadding="20">  <tr> <td>Link: <a href="http://www.okcupid.com/tests/take testid=9994175725051725569">The BASIC classic rock Test</a> written by <a href="http://www.okcupid.com/profile u=allmydays">allmydays</a> on <a href="http://www.okcupid.com">OkCupid</a>, home of the <a href="http://www.okcupid.com/online.dating.persona.test">The Dating Persona Test</a></td></tr></table>
+I had stopped posting my results of online quizzes -- mainly because I'd stopped taking online quizzes -- but since I did so well on this one..  I'm not sure which 4 questions I got wrong (I was confident on all but one or two of them), but it was **not** the Traveling Wilburys question.
+
+
+##Rock Star
+
+		You scored 92%! 
+		
+> You damn rock star. You know all the basics, and if you got any wrong, I bet it was that stupid Traveling Wilburys question. Your friends are probably intimidated by your knowledge of classic rock and envy your impressive collection. When a classic rock song comes on the radio, you can probably identify it before the vocals kick in most of the time. You probably get good scores on the "maiden name of Clapton's mom" tests, too. 
+
+		![](http://is1.okcupid.com/users/102/306/1023073104876057970/mt1115192032.jpg)
+
+My test tracked 1 variable How you compared to other people *your age and gender*: 
+
+>You scored higher than *37%* on **notes** 
+
+Link: [The BASIC classic rock Test](http://www.okcupid.com/tests/take?testid=9994175725051725569) written by [allmydays](http://www.okcupid.com/profile?u=allmydays) on [OkCupid](http://www.okcupid.com), home of the [The Dating Persona Test](http://www.okcupid.com/online.dating.persona.test)

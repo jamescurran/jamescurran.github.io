@@ -10,4 +10,4 @@ So, being the properly wired guy, I pulled out my cell phone to take advantage o
 
 And, as promised, within minutes, Google text-messaged me back with the definition --- *In Italian!*
 
-(For the record, [wikipedia:Bolognese] means "In the style from the city of Bologna", which is to say, "with meat", as opposed to [wikipedia:Marinara] ("Sailor Style"  ), which is just tomatos and herbs.
+(For the record, [Bolognese](http://en.wikipedia.org/wiki/Bolognese_sauce) means "In the style from the city of Bologna", which is to say, "with meat", as opposed to [Marinara](http://en.wikipedia.org/wiki/Marinara_sauce) ("Sailor Style"), which is just tomatoes and herbs.

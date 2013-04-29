@@ -9,13 +9,13 @@ It was originally a GW-Basic program for MSDOS.  I'm not even sure where I got i
   
 But eventually, I moved to Windows, so I created a WinApp version of it in 1990, for Windows 3.0.
 
-  [photo:4450]  Shown, actual size.
+  ![photo:4450](/images/1000.7.4450.HorseProg.jpg)  Shown, actual size.
   
 It was a simple a little app, which just sits in the corner of your screen, just endlessly running.  It reminded me of the Talking Heads' video "*Road to Nowhere*".
   
 This led to a wee bit of fame, as it was included in the book *Windows Magic Tricks* by Judd Robbins (Copyright 1992, Sybex; probably out of print for years).  A reader of that book wrote to me to point out that, despite it's original name of "Galloping Horse", the horse was, in fact, trotting.
   
-The trick to writing that was converting the image data, which was just an array of hex bytes, and was intended to be drawn on a DOS screen, into a Windows bitmap, but by borrowing a couple functions from Petzold's [amazon:type=Blended:search=157231995X] (Actually, it was my *autographed* first edition), I got it working.
+The trick to writing that was converting the image data, which was just an array of hex bytes, and was intended to be drawn on a DOS screen, into a Windows bitmap, but by borrowing a couple functions from Petzold's <a href="http://www.amazon.com/gp/product/B004OR1XLK/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004OR1XLK&amp;linkCode=as2&amp;tag=njtheatercom-20">Programming Windows&reg; (Microsoft Programming Series)</a><img src="http://www.assoc-amazon.com/e/ir?t=njtheatercom-20&amp;l=as2&amp;o=1&amp;a=B004OR1XLK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />  (Actually, it was my *autographed* first edition), I got it working.
   
 Then I tried running two or more instances of it at the same time.  That got a bit monotonous, so I added a counter to figure out how many were running at once, and varied the background for each subsequent instance.  In 16-bit Windows, where there was virtually no memory protection, this was easy.
 
@@ -27,7 +27,7 @@ When Windows 95 was introduced, I started to write a Win32 version, but never fi
 
 However, with Windows XP, the 16-bit subsystem complains about it every now and then, so I figured that time was right to go all the way, and write a .Net v2 / C# version.  As I started to write it, a found the older incomplete Win32 version, so first I finished that one.  I found a simple way to count the number of instances running (using a semaphore), but, since I didn't want to add a main menu to an application whose purpose is to be small and unassuming, the real trick was adding a menu item (for the About box) to the system menu from C#.
 
-Now, you can have all three version <a href="http://honestillusion.com/files/folders/misc/entry4451.aspx">here.</a>
+Now, you can have all three version [here](/files/Horse.zip).
 
 Horse16.exe was written in C in 1990.
 Horse32.exe is written in C++ from the same source as Horse16.  It's really a C program, except I can no longer deal with declaring all my variables at the top of the function, so I renamed the file with a .cpp extension.

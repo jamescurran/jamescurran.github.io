@@ -4,19 +4,81 @@ title: Performance optimization of an if/else-statement
 categories: code c# .net programming
 tags: code c# .net programming
 ---
+[Mads Kristensen](http://www.madskristensen.dk/blog/Performance+Optimization+Of+An+Ifelsestatement.aspx) wrote on the subject on if/else statements in C#, running time benchmarks on code such as this:
 
-  <p>
-    <a href="http://www.madskristensen.dk/blog/Performance+Optimization+Of+An+Ifelsestatement.aspx">Mads Kristensen</a> wrote on the subject on if/else statements in C#, running time benchmarks on code such as this:</p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000"></font></span><span style="color:blue;">private</span><font color="#000000"> </font><span style="color:blue;">bool</span><font color="#000000"> RunIf(</font><span style="color:blue;">string</span><font color="#000000"> input)</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><font color="#000000"><span>  </span>{</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">    </font></span><span style="color:blue;">if</span><font color="#000000"> (input == </font><span style="color:maroon;">"hello"</span><font color="#000000">)</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">      </font></span><span style="color:blue;">return</span><font color="#000000"> </font><span style="color:blue;">true</span><font color="#000000">;</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">    </font></span><span style="color:blue;">else</span><font color="#000000"> </font><span style="color:blue;">if</span><font color="#000000"> (input == </font><span style="color:maroon;">"jelly"</span><font color="#000000">)</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">      </font></span><span style="color:blue;">return</span><font color="#000000"> </font><span style="color:blue;">true</span><font color="#000000">;</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">    </font></span></span><span style="font-size:10pt;color:blue;font-family:consolas;">else</span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><span><font color="#000000">      </font></span><span style="color:blue;">return</span><font color="#000000"> </font><span style="color:blue;">true</span><font color="#000000">;</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"><font color="#000000"><span>  </span>}</font></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;">I wrote an analysis in the comments in his blog, but I figured, why not used for my own blog </span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"></span></p> <p class="MsoNormal" style="margin:0cm 0cm 0pt;"><span style="font-size:10pt;font-family:consolas;"></span></p>Well, the first thing you need to do is to get rid of the string comparision. I'm sure the time it takes to do those is swamping the time for the jump processing. Try using integers instead, and an Neil pointed out, return different things so that the compiler doesn't optimized it: <br /><br /> <div class="csharpcode"><pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">private</span> <span class="kwrd">int</span> RunIf(<span class="kwrd">int</span> input) </pre><pre><span class="lnum">   2:  </span>{ </pre><pre class="alt"><span class="lnum">   3:  </span>    <span class="kwrd">if</span> (input == 1) </pre><pre><span class="lnum">   4:  </span>        <span class="kwrd">return</span> 10; </pre><pre class="alt"><span class="lnum">   5:  </span>    <span class="kwrd">else</span> <span class="kwrd">if</span> (input == 2) </pre><pre><span class="lnum">   6:  </span>        <span class="kwrd">return</span> 3; </pre><pre class="alt"><span class="lnum">   7:  </span>    <span class="kwrd">else</span> </pre><pre><span class="lnum">   8:  </span>        <span class="kwrd">return</span> 314; </pre><pre class="alt"><span class="lnum">   9:  </span>} </pre></div><br />Further, we have to actually do something with the returned value, to prevent the optimizer from just removing the entire loop: <br />
-<div class="csharpcode"><pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">int</span> z = 0; </pre><pre><span class="lnum">   2:  </span><span class="kwrd">int</span> test = 1; </pre><pre class="alt"><span class="lnum">   3:  </span><span class="kwrd">for</span> (<span class="kwrd">int</span> i = 0; i &lt; 100000000; i++) </pre><pre><span class="lnum">   4:  </span>{ </pre><pre class="alt"><span class="lnum">   5:  </span>    z = i + RunIf(test) + z; </pre><pre><span class="lnum">   6:  </span>} </pre><pre class="alt"><span class="lnum">   7:  </span>TimeSpan span = DateTime.Now.Subtract(start); </pre><pre><span class="lnum">   8:  </span>Console.WriteLine(span.TotalMilliseconds); </pre><pre class="alt"><span class="lnum">   9:  </span>Console.WriteLine(<span class="str">"meaningless final value: {0}"</span>, z); </pre></div>
-<p><br />With those code changes, on my system, I get: </p>
-<p>test = 1: 515.6118 or 531.2364ms <br />test = 2: 593.7348 or 609.3594ms <br />test = 3: 593.7348 or 609.3594ms </p>Analysis: <span style="font-size:10pt;font-family:consolas;"> 
-<ul>
-<li class="MsoNormal" style="margin:0cm 0cm 0pt;"> Clearly the resolution of the timer is 15.6246ms -- all the times are multiples of that value (ie, test =1 took either 38 or 39 ticks of the clock). 
-</li><li class="MsoNormal" style="margin:0cm 0cm 0pt;"> Test=2 &amp; Test=3 took the same amount of time, as you'd expect, as it's just taking one branch or the other. 
-</li><li class="MsoNormal" style="margin:0cm 0cm 0pt;"> Test=1 fast faster because it only required one comparision, while test =2 &amp; test =3 each required 2. 
-</li><li class="MsoNormal" style="margin:0cm 0cm 0pt;"> The second comparison (and the jump assoicated with it) took approx 78ms. Assuming the first comparison &amp; jump also took 78ms, then we have approx 440ms overhead to pass the parameter &amp; call the function. </li></ul>
-<p class="MsoNormal" style="margin:0cm 0cm 0pt;">This does leave open the question why "jelly" &amp; "other" had different values in your tests. The next step would be to look at the generated code using Ildasm.exe or Reflector, and see what it's doing differently.</p>
-<p class="MsoNormal" style="margin:0cm 0cm 0pt;"> </p>
-<p class="MsoNormal" style="margin:0cm 0cm 0pt;">Putting the strings back into the test harness, I was able to duplicate your results. This makes no sense what so ever. Consider, you can tell two string are different faster than you can determine that they are the same (looking at one letter from each versus looking at 5 letters from each). <br /><br />So, I dug a bit further. The trick is in how String::Equals is implemented. First it does a Object::ReferenceEquals, and then, only if that fails, does it do the character-by-character comparision. So, when you code it as you did, it's the same as: <br /></p>
-<div class="csharpcode"><pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">const</span> <span class="kwrd">string</span> Hello = <span class="str">"hello"</span>; </pre><pre><span class="lnum">   2:  </span><span class="rem">// : </span></pre><pre class="alt"><span class="lnum">   3:  </span>RunIf(Hello); </pre><pre><span class="lnum">   4:  </span><span class="rem">//: </span></pre><pre class="alt"><span class="lnum">   5:  </span><span class="kwrd">if</span> (input == Hello) </pre></div><br />Everythings pointing to the same string so the ReferenceEquals comes back true. So, in your example, here's what was happening: <br />input = "hello": One reference comparision (true), one branch (not taken) and one return. <br /><br />input = "jelly": One reference comparision (false), one leter-by-letter comparison (false), one branch (taken), another reference comparision (true), another branch (not taken) and one return. <br /><br />input = "other" : One reference comparision (false), one leter-by-letter comparison (false), one branch (taken), another reference comparision (false), another leter-by-letter comparison (false), another branch (not taken) and one return. <br /><br />To see the effect, change the test to : <br />
-<div class="csharpcode"><pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">string</span> n1 = <span class="str">"je"</span>; </pre><pre><span class="lnum">   2:  </span><span class="kwrd">string</span> test = n1 + <span class="str">"lly"</span>; </pre><pre class="alt"><span class="lnum">   3:  </span><span class="kwrd">for</span> (<span class="kwrd">int</span> i = 0; i &lt; 100000000; i++) </pre><pre><span class="lnum">   4:  </span>{ </pre><pre class="alt"><span class="lnum">   5:  </span>     z = i + RunIf(test) + z; </pre><pre><span class="lnum">   6:  </span>} </pre></div>(It has to be like that. "je" + "lly" won't fool the compiler). This way, the "jelly" comes out a bit slower that "other". </span>
+	private bool RunIf(string input)
+	{
+		if (input == "hello")
+			return true;
+		else if (input == "jelly")
+			return true;
+		else
+			return true;
+	}
+
+I wrote an analysis in the comments in his blog, but I figured, why not used for my own blog? 
+
+Well, the first thing you need to do is to get rid of the string comparison. I'm sure the time it takes to do those is swamping the time for the jump processing. Try using integers instead, and an Neil pointed out, return different things so that the compiler doesn't optimized it: 
+
+	private int RunIf(int input) 
+	{ 
+		if (input == 1) 
+			return 10; 
+		else if (input == 2) 
+			return 3; 
+		else 
+			return 314; 
+	} 
+Further, we have to actually do something with the returned value, to prevent the optimizer from just removing the entire loop: 
+	
+
+	int z = 0; 
+	int test = 1; 
+	for (int i = 0; i < 100000000; i++) 
+	{ 
+		z = i + RunIf(test) + z; 
+	} 
+	TimeSpan span = DateTime.Now.Subtract(start); 
+	Console.WriteLine(span.TotalMilliseconds); 
+	Console.WriteLine("meaningless final value: {0}", z); 
+
+With those code changes, on my system, I get: 
+
+ * test = 1: 515.6118 or 531.2364ms 
+ * test = 2: 593.7348 or 609.3594ms
+ * test = 3: 593.7348 or 609.3594ms
+ 
+Analysis: 
+ *  Clearly the resolution of the timer is 15.6246ms -- all the times are multiples of that value (ie, test =1 took either 38 or 39 ticks of the clock). 
+ *  Test=2 & Test=3 took the same amount of time, as you'd expect, as it's just taking one branch or the other. 
+ * Test=1 fast faster because it only required one comparison, while test =2 & test =3 each required 2. 
+ *  The second comparison (and the jump associated with it) took approx 78ms. Assuming the first comparison & jump also took 78ms, then we have approx 440ms overhead to pass the parameter &; call the function. 
+
+This does leave open the question why "jelly" & "other" had different values in your tests. The next step would be to look at the generated code using Ildasm.exe or Reflector, and see what it's doing differently.
+
+Putting the strings back into the test harness, I was able to duplicate your results. This makes no sense what so ever. Consider, you can tell two string are different faster than you can determine that they are the same (looking at one letter from each versus looking at 5 letters from each). 
+
+So, I dug a bit further. The trick is in how String::Equals is implemented. First it does a Object::ReferenceEquals, and then, only if that fails, does it do the character-by-character comparison. So, when you code it as you did, it's the same as: 
+
+	const string Hello = "hello"; 
+	// : 
+	RunIf(Hello); 
+	//: 
+	if (input == Hello)	
+
+Everything's pointing to the same string so the ReferenceEquals comes back true. So, in your example, here's what was happening: 
+
+ * input = "hello": One reference comparison (true), one branch (not taken) and one return. 
+ * input = "jelly": One reference comparison (false), one letter-by-letter comparison (false), one branch (taken), another reference comparison (true), another branch (not taken) and one return. 
+ * input = "other" : One reference comparison (false), one letter-by-letter comparison (false), one branch (taken), another reference comparison (false), another letter-by-letter comparison (false), another branch (not taken) and one return. 
+ 
+ To see the effect, change the test to :  
+
+	string n1 = "je"; 
+	string test = n1 + "lly"; 
+	for (int i = 0; i < 100000000; i++) 
+	{ 
+		z = i + RunIf(test) + z; 
+	} 
+	
+(It has to be like that. "je" + "lly" won't fool the compiler). This way, the "jelly" comes out a bit slower that "other". 
