@@ -8,21 +8,32 @@ As i was planning my rewrite of NJTheater.com I looked at a couple different Obj
 
 To understand the problem, consider the main page of NJTheater.com, which on your average day looks something like this:
 
-<strong>The Blue Bird (11/27/2007 - 12/31/2007)      
-by Shakespeare Theatre of New Jersey (at F.M. Kirby Theater in Madison) </strong>
+**The Blue Bird (11/27/2007 - 12/31/2007)      
+by Shakespeare Theatre of New Jersey (at F.M. Kirby Theater in Madison)**
 
-<strong>Doubt (11/27/2007 - 12/23/2007)      
-by George Street Playhouse (at George Street Playhouse in New Brunswick) </strong>
+**Doubt (11/27/2007 - 12/23/2007)      
+by George Street Playhouse (at George Street Playhouse in New Brunswick)**
 
-<strong>Seussical: The Musical (12/1/2007 - 12/23/2007)      
-by Bergen County Players (at Little Firehouse Theatre in Oradell) </strong>
+**Seussical: The Musical (12/1/2007 - 12/23/2007)      
+by Bergen County Players (at Little Firehouse Theatre in Oradell)**
 
 The database is heavily normalized, so to retrieve that data, I need an SQL query that looks like this: 
 
-<font face="Courier New">Select pl.Title, p.StartDate, p.EndDate, t.Name, v.Name, v.City      <br /></font><font face="Courier New">From Productions P      <br /></font><font face="Courier New">inner join Troupes T on p.TroupeID = t.TroupeID      <br /></font><font face="Courier New">inner join Venues V on p.VenueID = v.VenueID      <br /></font><font face="Courier New">inner join Plays pl on p.PlayID = pl.PlayID      <br /></font><font face="Courier New">where p. FirstDate &gt;= GetDate() and p.FirstDate &lt;= GetDate() + 7</font></p> p&gt;The actual query is a bit more complicated, but we'll go with that for now.   <p>That's one SQL statement which returns 3 to 30 rows (depending on the week) which holds all the data to be displayed.</p>  <p>Which brings us to the problem.  Most ORM systems would have me translate that into something like</p>  <p><font face="Courier New">ProductionList productions = db.Productions.WhereBetween("StartDate", datetime.Now, DateTime.Now.AddDay(7));</font>
+<script src="https://gist.github.com/jamescurran/5472612.js">   </script>
+
+The actual query is a bit more complicated, but we'll go with that for now.   <p>That's one SQL statement which returns 3 to 30 rows (depending on the week) which holds all the data to be displayed.
+
+Which brings us to the problem.  Most ORM systems would have me translate that into something like
+
+     ProductionList productions = db.Productions.WhereBetween("StartDate", datetime.Now, DateTime.Now.AddDay(7));
 
 And then use it like this:
-<font face="Courier New">foreach (Production prod in productions)      <br />     Print prod.Play.Title +" ( " +prod.StartDate + " - " + prod.EndDate + ")"       <br />     Print "by " + prod.Troupe.Name " (at " + prod.Venue.Name + " in "+ prod.Venue.City +")"</font></p>  <p>(I made that syntax up, but it's fairly typical.)
+
+	foreach (Production prod in productions)     
+		Print prod.Play.Title +" ( " +prod.StartDate + " - " + prod.EndDate + ")"  
+		Print "by " + prod.Troupe.Name " (at " + prod.Venue.Name + " in "+ prod.Venue.City +")"
+
+(I made that syntax up, but it's fairly typical.)
 
 Which brings us to the problem.  The first line would generate one SQL query  which would look something like this:
 

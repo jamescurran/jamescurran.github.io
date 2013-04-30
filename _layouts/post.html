@@ -11,7 +11,7 @@
                 {{ page.date | date_to_string }}
                 </time>
               </span>
-			  <div>Tags: <ul>{% for category in page.categories %}
+			  <div class="category-list">Tags: <ul>{% for category in page.categories %}
 			  <li><a href="/categories/{{category}}.html">{{category}}</a></li>
 						{% endfor %}</ul>
 			  </div>
