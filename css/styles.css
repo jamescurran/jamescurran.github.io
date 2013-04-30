@@ -256,8 +256,11 @@ footer {
 
 .category-list
 {
-	float: right;
-	background-color:lightcoral;
+	float: left;
+    display:inline;
+    list-style:none;
+
+	background-color:#f5f5f5;
 	
    
 }
