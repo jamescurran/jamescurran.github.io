@@ -254,7 +254,7 @@ footer {
   }
 }
 
-.category-list
+.category-list li
 {
 	float: left;
     display:inline;
