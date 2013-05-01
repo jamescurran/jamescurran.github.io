@@ -4,7 +4,7 @@ title: Predicted
 categories: politics
 tags: politics
 ---
-Way back into March, my best friend Chris and I made our predictions for the [presidential election]({% blog_url 2008-03-25-predictions%}).  Since the election is now over (mostly), it's time to review have well we did:
+Way back into March, my best friend Chris and I made our predictions for the [presidential election]({% post_url 2008-03-25-predictions%}).  Since the election is now over (mostly), it's time to review have well we did:
  
 <table border="1" cellspacing="0" cellpadding="2">
      <tr>

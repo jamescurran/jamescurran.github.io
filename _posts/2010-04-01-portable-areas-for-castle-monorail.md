@@ -7,7 +7,7 @@ tags: code c# .net programming dotnet csharp castle monorail
 
 Recently I had read a blogger comparing Castle Monorail with ASP.NET MVC.  He chose ASP.NET mainly because it supported Portable Areas while Monorail did not.  As a supporter of Monorail, I was very offended by this, and decided to correct the problem.  The first step... finding out exactly what a "portable area" was.
 
-A Portable Area is a piece of functionality, with all pieces bundled up into a single assembly, which can be just "dropped into" an existing website.  Think of a forum or a wiki.  The idea is basically, I could just add wiki.dll to my site, and suddenly `<a href="http://www.mysite.com/wiki">www.mysite.com/wiki</a>` just works.
+A Portable Area is a piece of functionality, with all pieces bundled up into a single assembly, which can be just "dropped into" an existing website.  Think of a forum or a wiki.  The idea is basically, I could just add wiki.dll to my site, and suddenly `www.mysite.com/wiki` just works.
 
 Now, having a controller and its actions together in a single assembly is a basic design principle of Monorail (and essentially all of MVC design), so that part was done before I even began.  The rest was a bit trickier.
 
@@ -27,53 +27,11 @@ With that, all the pieces were in place, I just had a wee bit of code to tie the
 
 The first step was to override the Initialize() method, so that I could add this assembly to the list searched by FileAssemblyViewSourceLoader.  The only trick here is we must make sure that the assembly is only added once, regardless of how many times the controller is initialized.    And, while we are at it, we'll also get the assembly name and a list of the resources and save them for later.
 
-<pre class="csharpcode">
-  <span class="kwrd">private</span> <span class="kwrd">string</span>[] resourceNames;
-<span class="kwrd">private</span> <span class="kwrd">string</span> asmName;
-
-<span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">void</span> Initialize()
-{
-    <span class="kwrd">base</span>.Initialize();
-    var asm = <span class="kwrd">this</span>.GetType().Assembly;
-    resourceNames = asm.GetManifestResourceNames();
-    asmName = asm.GetName().Name;
-    var asminfo = <span class="kwrd">new</span> AssemblySourceInfo(asm, asmName.ToLower());
-    <span class="kwrd">if</span> (!<span class="kwrd">this</span>.Context.Services.ViewSourceLoader.AssemblySources.Cast&lt;AssemblySourceInfo&gt;()<br />                            .Any(asi=&gt;asi.AssemblyName==asminfo.AssemblyName))
-        <span class="kwrd">this</span>.Context.Services.ViewSourceLoader.AddAssemblySource(asminfo);
-}</pre>
+<script src="https://gist.github.com/jamescurran/5493755.js">    </script>
 
 Next is the DefaultAction.  The idea here is that you request somefile.jpg.rails, and we pull somefile.jpg out of the resources, and stream it to the browser.  In Monorail, a DefaultAction is a method which is called when no other method in the controller matches the action.  In our DefaultAction, we'll generate a resource name from the assembly name and the Action name.  The Action is basically, the name of the "file" requested without the ".rails" extension, so if we ask for file "`http://mysite.com/portable/myimage.gif.rails`", then the pseudo-file we are requesting is "myimage.gif.rails" which makes the Action "myimage.gif" which just happens to be the file we really want.  The only tricky part here is the GetContentTypeFromExt() function.  The problem is that there is a very simple way to do this --- which only works under Windows.  Now, while the vast majority of web servers running Monorail are Windows based, Monorail is designed to also run under Mono (Linux).   I couldn't find a good portable way to handle this, so I just punted (check the source for dirty secrets).
 
-<p>[DefaultAction] 
-  <br /><span class="kwrd">public</span> <span class="kwrd">void</span> DefaultAction() 
-
-  <br />{ 
-
-  <br />    <span class="kwrd">string</span> filename = asmName + <span class="str">"."</span> + Action; 
-
-  <br />    var resourceName = resourceNames.FirstOrDefault(rn=&gt; rn.Equals(filename,StringComparison.InvariantCultureIgnoreCase)); 
-
-  <br />    <span class="kwrd">if</span> (resourceName!= <span class="kwrd">null</span>) 
-
-  <br />    { 
-
-  <br />        <span class="kwrd">string</span> ext = Path.GetExtension(filename); 
-
-  <br />        <span class="kwrd">this</span>.Response.ContentType = GetContentTypeFromExt(ext); 
-
-  <br />
-
-  <br />        Stream contents = <span class="kwrd">this</span>.GetType().Assembly.GetManifestResourceStream(resourceName); 
-
-  <br />        <span class="kwrd">this</span>.Response.BinaryWrite(contents); 
-
-  <br />        CancelView(); 
-
-  <br />    } 
-
-  <br />} 
-
-  <br /></p>
+<script src="https://gist.github.com/jamescurran/5493750.js">    </script>
 
 This method is the controller's Default action by virtue of the [DefaultAction] attribute.  The name is arbitrary - DefaultAction just kept things simple.
 

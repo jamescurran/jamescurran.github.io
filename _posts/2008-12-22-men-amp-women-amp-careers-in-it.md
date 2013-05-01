@@ -30,9 +30,9 @@ Star doctors save lives; star athletes fill stadiums, and as such deserve huge s
   
 We have a profession that is not respected, is not considered a learnable skill, where experience counts for little, has little job security, whose average salary becomes more mediocre with each passing year, which management believes can be out-sourced to third-world countries.
 
->[side note: The trend to outsourcing that's been underway since the 90's has an interesting dynamic.  It seems hiring has been based on the theory: "Who better to work on the Black Art of programmer than people from the *mystical* lands of India and the Orient ".  Now, India does have one of the best Engineering schools in the world, but only a very tiny percentage of the population attends.  It's much like assuming that because I'm American, I must have attended Harvard .  In fact, a far greater percentage of American are Harvard grads than Indians who have graduated from the Indian Institute of Technology.  On the other hand, tall tales of the Far East Mysticism go back nearly a millennium.  So, it seems that hiring has gone from being based on sexism, to being based on racism.]
+> side note: The trend to outsourcing that's been underway since the 90's has an interesting dynamic.  It seems hiring has been based on the theory: "Who better to work on the Black Art of programmer than people from the *mystical* lands of India and the Orient?".  Now, India does have one of the best Engineering schools in the world, but only a very tiny percentage of the population attends.  It's much like assuming that because I'm American, I must have attended Harvard .  In fact, a far greater percentage of American are Harvard grads than Indians who have graduated from the Indian Institute of Technology.  On the other hand, tall tales of the Far East Mysticism go back nearly a millennium.  So, it seems that hiring has gone from being based on sexism, to being based on racism.
  
-So, the real question is, not "*Why so few Women *", but actually, "*Why so many men *".  
+So, the real question is, not "*Why so few Women?*", but actually, "*Why so many men?*".  
 
 From what I've seen answering question on various programming forums, it appears that every young boy that want to start programming, does so, so that he can write, as his very first program, a First-Person Shooter game.   And why not  Programming is Black Magic.  Writing **Grand Thief Auto** is no more difficult than writing **Hello World,** right   Recently on StackOverflow, someone asked about writing a game.  He mentioned that he wanted to write everything himself, instead of using a framework, because he "wanted it to be fast".  I had to explain the game frameworks were written by teams of experts in the field with, collectively, decades of experience on micro-optimizations to squeeze every last cycle out of each video card, so if he had any hope of it being fast, he'd better use a framework.
   
@@ -40,7 +40,7 @@ So, where are most women and many men turning to instead of software
 
  Well, if the Reagan/Bush/Bush era (and to a lesser, but still real extent, the Clinton era) has taught us anything, it's that *workers are scum*.  Only the very top of the ladder has any hope to true success.  When evaluating career paths, unless someone has a "calling" into a particular job (actor, teacher, priest), based on career potential, the choices basically run : Doctor, lawyer, CEO.  That where the money is.  Developer has become a job you "fall into" -- just slightly above being promoted from store clerk to assistant manger.
 
-So, what can we do about this   
+So, what can we do about this?
      
 Damned if I know.
 

@@ -14,7 +14,7 @@ Next, is Skip.  This is essentially the reverse of Take: Given a collection, we 
 
 <script src="https://gist.github.com/jamescurran/5472384.js">   </script>
 
-Now, once we have Skip, SkipFirst ([which we discussed before]({% blog_url 2007-02-05-c-code-adding-skip-first-to-foreach%})) just becomes an instance of that. 
+Now, once we have Skip, SkipFirst ([which we discussed before]({% post_url 2007-02-05-c-code-adding-skip-first-to-foreach%})) just becomes an instance of that. 
 
 	static public IEnumerable<T> SkipFirst<T>(IEnumerable<T> enm)
 	{
