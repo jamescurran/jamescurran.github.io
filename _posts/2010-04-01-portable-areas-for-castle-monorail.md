@@ -33,7 +33,7 @@ Next is the DefaultAction.  The idea here is that you request somefile.jpg.rails
 
 <script src="https://gist.github.com/jamescurran/5493750.js">    </script>
 
-This method is the controller's Default action by virtue of the [DefaultAction] attribute.  The name is arbitrary - DefaultAction just kept things simple.
+This method is the controller's Default action by virtue of the `[DefaultAction]` attribute.  The name is arbitrary - DefaultAction just kept things simple.
 
 And with that, everything you need to write a portable area in Monorail is neatly contained in a simple base class.  Everything we've just gone over, you can now completely ignore.   
 

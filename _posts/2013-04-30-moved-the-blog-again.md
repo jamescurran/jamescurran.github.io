@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moved the blog again : GitHub Pages
+title: Moved the blog again - GitHub Pages
 categories: website my-life
 tags: website my-life
 ---
