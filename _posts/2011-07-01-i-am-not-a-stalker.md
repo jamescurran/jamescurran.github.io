@@ -12,4 +12,7 @@ This reminded me of something which happened a few years ago, when I worked a bi
 Which bring as back to today, and the possibly pretty woman walking a few steps ahead of me up 8th Ave, and who was still there as I ended my daydream about past cycling adventures, as I approached my office building, this time a mere 5 blocks from Penn Station at 38th street.  And as I silently bid her back a farewell as I prepared to turn into the door of the building--she did something surprising.  She turned into the building as well.
   
 The elevator ride up demonstrated that she works five floors below me - and that she really was pretty when viewed from the front.  Didn't speak to her either.
+
+
+
   
