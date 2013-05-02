@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moved the blog again : GitHub Pages
+title: Moved the blog again - GitHub Pages
 tags: website my-life
 ---
 "*What*?" you say.  "Another blog post *already*? --- It's only been 11 months since the last one....."
