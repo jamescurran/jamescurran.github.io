@@ -25,7 +25,7 @@ Our first sample is this:
                 return (T)value;
         }
 
-Background: In the article, we are reading data from a database, and putting it into strongly typed class.  This method is part of the low-level code to convert a most likely boxed value into an hard number.   It would be used like:
+Background: In the article, we are reading data from a database, and putting it into strongly typed class.  This method is part of the low-level code to convert a boxed value into an hard number.   It would be used like:
 
 	foreach (DataRow dr in dt.Rows)
 	{
@@ -37,7 +37,7 @@ Background: In the article, we are reading data from a database, and putting it 
 		entity.Cost =
 			DataConvert.ConvertTo<decimal>(dr["Cost"],  default(decimal));         
 
-Now the odd thing about the way Paul wrote it, is that we *know* second parameter needs to be the same type as we are return, *and* that it will always be a value type.  Nevertheless, it's being passed as an object, requiring a pointless boxing & unboxing.
+Now the odd thing about the way Paul wrote it, is that we *know* the second parameter needs to be the same type as we are returning, *and* that it will always be a value type.  Nevertheless, it's being passed as an object, requiring a pointless boxing & unboxing.
 
 So, we know it's type T, let's use that:
 
@@ -73,6 +73,7 @@ Ok, now let's work on the DataConvert part.  It's ugly and requires too much typ
 
 		entity.Cost =
 			dr["Cost"].ConvertTo<decimal>(); 
+            
 but that would require putting the extension method on object, which is evil, so let's go another way -- adding it to DataRow:
 
 	public static T ConvertTo<T>(this DataRow dr, string colName,, T defaultValue = default(T))
@@ -82,6 +83,7 @@ but that would require putting the extension method on object, which is evil, so
             // etc 
             
 Now we'd write that line as:
+
 		entity.Cost = dr.ConvertTo<decimal>("Cost");
 
 But wait, now the name is confusing, OK, one more change:
@@ -89,11 +91,12 @@ But wait, now the name is confusing, OK, one more change:
 <script src="https://gist.github.com/jamescurran/5495409.js">     </script>
 
 With that, the line becomes:
+
 		entity.Cost = dr.ReadAs<decimal>("Cost");
 
 ----
 
-Next, Paul gives us a longer function to read in a collection of object from a database:
+Next, Paul gives us a longer function to read in a collection of objects from a database:
 
     public class ManagerBase
     {
@@ -128,7 +131,7 @@ Next, Paul gives us a longer function to read in a collection of object from a d
       }
     }
 
-(note: Here Paul is using a rather cool technique using reflection to fill the object, which to understand, you really should read the [article](http://www.code-magazine.com/article.aspx?quickid=1305031&page=1). )
+(note: Here Paul has a rather cool technique using reflection to fill the object, which to understand you really should read the [article](http://www.code-magazine.com/article.aspx?quickid=1305031&page=1). )
 
 So, what needs to be fixed fix?  Again, the problem is using generics, but not using them enough.  You'll see that we have a type parameter, `T`, and a parameter which is a Type, `typ`.  They have to refer to the  same type, or bad things happen.  So, why are we specifying the same type two different ways?  
 
@@ -140,23 +143,24 @@ We could restate that as:
 
         PropertyInfo[] props = typeof(T).GetProperties();
  
- and eliminate the need for `typ` altogether.  
+and eliminate the need for `typ` altogether.  
  
- Another change I'd like to make is this line:
+Another change I'd like to make is this line:
  
 	 entity = Activator.CreateInstance<T>();
 to:
-         entity =  new T();
-         
-The change has no effect on the method at all (the two versions would even generate the same IL code), but I like the second version better because I figure most programmers would be more familiar with the `new` syntax rather than the `CreateInstance` syntax.  But what I did that, Visual Studio showed me another reason it should be changed --- It gave me a red squiggly line.
 
-Both lines require that T have a public constructor that takes no parameters.  But with the new syntax, the compile can realize that restriction; the `CreateInstance` syntax hide it. So, we need to add:
+    entity =  new T();
+         
+The change has no effect on the method at all (the two versions would even generate the same IL code), but I like the second version better because I figure most programmers would be more familiar with the `new` syntax rather than the `CreateInstance` syntax.  But when I did that, Visual Studio showed me another reason it should be changed --- It gave me a red squiggly line.
+
+Both lines require that T have a public constructor that takes no parameters.  But with the new syntax, the compiler can realize that restriction; the `CreateInstance` syntax hid it. So, we need to add:
 
 	where T : new()
 	
-to the method signature.  And while we are messing with the signature, there are a couple other makes to change.
+to the method signature.  And while we are messing with the signature, there are a couple other things to change.
 
-In Paul's version, them method lives in a common base class you would derive your Data Access classes from.  This is a bit messy.  Why not make it an extension method too?  We can add it to` SqlDataReader` or better yet, `IDataReader`.  And, again it'll need a new name to better convey it usage:
+In Paul's version, this method lives in a common base class you would derive your Data Access classes from.  This is a bit messy.  Why not make it an extension method too?  We can add it to` SqlDataReader` or better yet, `IDataReader`.  And, again it'll need a new name to better convey it usage:
 
 <script src="https://gist.github.com/jamescurran/5494793.js">    </script>
 
@@ -164,7 +168,7 @@ So now instead of writing:
 
 	ret = BuildCollection<Product>(typeof(Product), rdr);
 
-We'd use it by writing 
+We'd use it by writing:
 
 	ret = rdr.ReadCollection<Product>();
 
