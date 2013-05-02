@@ -172,3 +172,6 @@ We'd use it by writing:
 
 	ret = rdr.ReadCollection<Product>();
 
+
+The full source code, with examples and everything, can be found on GitHub:
+[https://github.com/jamescurran/HonestIllusion/tree/master/DataConvert](https://github.com/jamescurran/HonestIllusion/tree/master/DataConvert)
