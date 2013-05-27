@@ -51,7 +51,7 @@ And with that, we're done.  Since the original List is now shuffled, we could re
 
 So, How does it work    Here's a quick example, showing off some of it's new abilities:
 
-        string[] A = {"A", "B", "C", "D", "E", "F", "G"};
+        string\[\] A = {"A", "B", "C", "D", "E", "F", "G"};
         A.Shuffle().Print();
 
        output: D-F-A-G-B-E-C-

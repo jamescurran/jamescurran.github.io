@@ -27,7 +27,7 @@ ViewComponentEx derives from ViewComponent, and can be used as a "drop-in" repla
 
 >Get the text of the body of a block component (without section)</p>
 
-**void RenderTextFormat(string format, params object[] args);**
+**void RenderTextFormat(string format, params object\[\] args);**
 
 >Renders the text, formatted. Just like String.Format() 
 

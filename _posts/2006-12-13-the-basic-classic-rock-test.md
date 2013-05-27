@@ -14,7 +14,7 @@ I had stopped posting my results of online quizzes -- mainly because I'd stopped
 		
 > You damn rock star. You know all the basics, and if you got any wrong, I bet it was that stupid Traveling Wilburys question. Your friends are probably intimidated by your knowledge of classic rock and envy your impressive collection. When a classic rock song comes on the radio, you can probably identify it before the vocals kick in most of the time. You probably get good scores on the "maiden name of Clapton's mom" tests, too. 
 
-		![](http://is1.okcupid.com/users/102/306/1023073104876057970/mt1115192032.jpg)
+		!\[\](http://is1.okcupid.com/users/102/306/1023073104876057970/mt1115192032.jpg)
 
 My test tracked 1 variable How you compared to other people *your age and gender*: 
 

@@ -94,7 +94,7 @@ Which brings us to the third section of the email, where the writer just goes of
   
 Of that long list of taxes we didn't have "a hundred years ago", many, granted, we didn't have, but mainly because for the most part, the thing being taxed didn't exist (Phones, Social Security, Motor Vehicles etc).  And we really didn't have an income tax in 1908 -- That came about in 1912.  But, as for the rest -- Real estate, alcohol, tobacco,  marriage licenses etc --- They pretty much all were taxed.  
   
-It's also a bit questionable if we were "*the most prosperous [nation] in the world*" in 1908, as we really didn't start moving past England, France and German until after WWI.
+It's also a bit questionable if we were "*the most prosperous \[nation\] in the world*" in 1908, as we really didn't start moving past England, France and German until after WWI.
   
 His assertion that "*We had absolutely no national debt...*" is total fantasy.  In 1908, the national debt was [$2,626,806,271.54](http://www.treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo3.htm)  (adjusted for inflation that would be nearly $58 billion in 2008 dollars).  Granted, that's a lot less than the [$9.6 trillion it is now](http://www.treasurydirect.gov/NP/BPDLogin?application=np), but we'll get to that in a minute.   [The last time we paid off the debt was 1834.](http://www.treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo1.htm)
   

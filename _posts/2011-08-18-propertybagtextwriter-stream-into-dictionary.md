@@ -42,7 +42,7 @@ However, since we can't count on the Flush always being called when we need it, 
         if (disposing)
             Flush();
     }
-    public override void Write(char[] buffer, int index, int count)
+    public override void Write(char\[\] buffer, int index, int count)
     {
         base.Write(buffer, index, count);
         Flush();

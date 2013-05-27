@@ -32,7 +32,7 @@ But, at the same time, the compiler got brighter about figuring things out for i
 
 From there, we have just a few more refinements, for special (but common) cases, but for these we can no longer use Button Click as the destination of our method reference, so from here on out, we’ll be use Enumerator.Where on an int array.  The important point here is that the lambda we will be writing takes an int, and return a bool.  Within that environment, our last syntax would look like this:
 
-    int[] x = new int[] {1,2,3,4};
+    int\[\] x = new int\[\] {1,2,3,4};
     var y = x.Where((x)=>{return x % 2 == 0;}).ToList();
 
 But, if we have just one parameter, the compiler can figure out where it starts and ends, so we don’t need the parenthesis. 

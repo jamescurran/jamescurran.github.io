@@ -11,9 +11,9 @@ The essence of the C++ code is that given a templated collection, it will give y
  
 A bit more recently, some one wrote C# variant of this, and published it on [CodeProject](http://www.codeproject.com/csharp/circularlist.asp).  However, that one was a CircularList, which would be derived from a standard List.  In the [comments](http://www.codeproject.com/csharp/circularlist.asp?msg=1519678&mode=all&userid=2094#xx1519678xx), I created an IEnumerator class.  It could be used with any class the implemented IEnumerable, like this
  
- 	static void Main(string[] args)
+ 	static void Main(string[ ] args)
 	{
-		 int[] a = new int[] {1,2,3,4,5,6,7};
+		 int[ ] a = new int[ ] {1,2,3,4,5,6,7};
 	 
 		 foreach(int i in a)
 			Console.WriteLine("{0}", i);

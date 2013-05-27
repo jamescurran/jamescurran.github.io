@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Posts from Comments:QuickDataBind
-categories: code c# .net programming dotnet csharp
-tags: code c# .net programming dotnet csharp
+categories: code c# .net programming dotnet csharp code-tuneup
+tags: code c# .net programming dotnet csharp code-tuneup
 ---
 
 You may have noticed that I don't write on this blog much.  But the thing is I *do* write a lot on the inter-webs about technical matters --- I just don't to it here.  Usually, I find something interesting on someone else's blog, and then write an improvement in the comments.  So, my work goes to helping other people's pagerank.  I figure this has got to stop... To this end, I start a series where I turn comments I made on other blogs into posts on this one....

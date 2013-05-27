@@ -20,11 +20,11 @@ tags: code c# .net programming dotnet csharp castle monorail
 
 ---
 
-**void RenderComponent&lt;VC&gt;(params string[] componentParams) where VC : ViewComponentEx, new();**
+**void RenderComponent&lt;VC&gt;(params string\[\] componentParams) where VC : ViewComponentEx, new();**
 
 **void RenderComponent&lt;VC&gt;(IDictionary componentParams) where VC : ViewComponentEx, new();**
 
-**void RenderComponent(ViewComponentEx component, params string[] componentParams);**
+**void RenderComponent(ViewComponentEx component, params string\[\] componentParams);**
 
 **void RenderComponent(ViewComponentEx component, IDictionary componentParams);**
 

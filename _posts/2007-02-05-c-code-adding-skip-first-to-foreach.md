@@ -11,7 +11,7 @@ So, I figured, three years later, perhaps it's time I actually did implement the
 
 The idea was to allow developers to use foreach to iterator over a collection, in the case where the first or last item in the collection needed to be handled differently.   My first crack at it works like this:
 
-	int[] ary = new int[ 6 ] { 1, 2, 3, 4, 5, 6 };
+	int\[\] ary = new int[6] { 1, 2, 3, 4, 5, 6 };
 	foreach (int a in new SkipFirst<int>(ary))
 	{
 		Console.Write(a);  // Prints 23456
@@ -48,7 +48,7 @@ However, the problem with these is that they have a rather ugly syntax : You hav
 
 Now all we have to write is this: 
 
-	int[] ary = new int[ 6 ] { 1, 2, 3, 4, 5, 6 };
+	int\[\] ary = new int\[6\] { 1, 2, 3, 4, 5, 6 };
 	foreach (int a in Skip.First(Skip.Last(ary)))
 	{
 		Console.Write(a); // writes "2345"

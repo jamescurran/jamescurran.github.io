@@ -47,7 +47,7 @@ I used a number of .Net v3.5 features there -- notably extension methods and the
 
 With those, we can now write code like this:
 
-	int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int \[\] nums = new int\[\] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int sumOdds10 = nums.Filter(n => (n % 2) == 1)
 						.Map(n => n * 10)
 						.Reduce((n, a) => (n + a), 0);

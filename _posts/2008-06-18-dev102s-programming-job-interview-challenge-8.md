@@ -65,7 +65,7 @@ Now, to put this into C# code, we merely need a simple pre-initialize int array 
         
 And that's it.  Total state held between records: one integer.  Total work needed per record to determine pattern: one array lookup and one int comparison. 
   
-And the real beauty of this approach is that if we wanted to look for other patterns *at the same time*, it could be done. For example, by just changing the states[] array in the above to this
+And the real beauty of this approach is that if we wanted to look for other patterns *at the same time*, it could be done. For example, by just changing the states\[\] array in the above to this
         
              const int[,] states = new int [13,4]
              {
@@ -90,5 +90,5 @@ Then we'd be able to search for ABACB (as before, found when state = -1) and BBC
 
 1. (simple) Try to figure out the third pattern that can be found using that state table. (It's a sequence of 5 records using just A B &amp; C)
 
-1. (hopefully not possible)  Try to figure out a sequence of records that would cause the state machine to miss one of those patterns (Note: after one is found, we start over at state 0, so it's not intended to find overlapping sequences, such as "ABACBBCCA".  It's find the first but not the second.)
+1. (hopefully not possible)  Try to figure out a sequence of records that would cause the state machine to miss one of those patterns (Note: after one is found, we start over at state 0, so it's not intended to find overlapping sequences, such as "ABACBBCCA".  It'll find the first but not the second.)
   

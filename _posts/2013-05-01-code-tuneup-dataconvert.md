@@ -106,7 +106,7 @@ Next, Paul gives us a longer function to read in a collection of objects from a 
         T entity;
 
         // Get all the properties in Entity Class
-        PropertyInfo[] props = typ.GetProperties();
+        PropertyInfo\[\] props = typ.GetProperties();
 
         while (rdr.Read())
         {
@@ -137,11 +137,11 @@ So, what needs to be fixed fix?  Again, the problem is using generics, but not u
 
 We only use `typ` once, in the line:
 
-        PropertyInfo[] props = typ.GetProperties();
+        PropertyInfo\[\] props = typ.GetProperties();
 
 We could restate that as:
 
-        PropertyInfo[] props = typeof(T).GetProperties();
+        PropertyInfo\[\] props = typeof(T).GetProperties();
  
 and eliminate the need for `typ` altogether.  
  
