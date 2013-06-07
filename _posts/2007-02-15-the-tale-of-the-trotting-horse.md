@@ -37,3 +37,6 @@ Horse.exe is written in C#.
 Horse16 &amp; Horse32 use the win.ini (remember that?) to store their information.  Horse uses the registry.
 
 Due to the different method used to determine multiple instances, Horse32 &amp; Horse have an arbitrary limit of 100 instances at once.
+
+UPDATE:  Put the source code (for all three) on my Github page:
+[https://github.com/jamescurran/HonestIllusion/tree/master/Horse](https://github.com/jamescurran/HonestIllusion/tree/master/Horse)
