@@ -11,7 +11,7 @@ I recently came upon a blog post for an interesting bit of code-  ["LINQ example
 
 Here's the line of code:
 
-<script src="https://gist.github.com/jamescurran/5763353.js"></script>
+<script src="https://gist.github.com/jamescurran/5763353.js">   </script>
 
 The first thing that's a bit odd about it, is that while the article title talks about something being done "on a Property", no object properties are being used here.   Everything is referenced by the Field<> method, which suggests the next odd thing here --- LINQ being used on an untyped ADO.NET DataTable.  One would think, if you are going to use LINQ to process the data, you might as well use Linq2Sql or the Entity Framework to retrieve the data as a typed object.
 
@@ -102,7 +102,7 @@ Which gives us the output:
 
 That gives us nice strongly-typed objects to work with, but our final goal was a formatted string, so let's make that group object:
 
-<script src="https://gist.github.com/jamescurran/5763365.js"></script>
+<script src="https://gist.github.com/jamescurran/5763365.js">   </script>
 
 and that gives us basically what we had in the original:
 
@@ -121,4 +121,4 @@ and that gives us basically what we had in the original:
 
 As Promised, here's the GetDataTable() code.
 
-<script src="https://gist.github.com/jamescurran/5763372.js"></script>
+<script src="https://gist.github.com/jamescurran/5763372.js">   </script>
