@@ -36,7 +36,7 @@ What we need is a handle utility function which will take a method reference, or
     backgroundTask.StepCompleted += 
        ToUIThread<StepEventArgs>((s, ea) => statusMsg.Text = String.Format("Step #{0} Completed", ea.StepNo));
 
-The tricky part about this is that it must take a function as a parameter, and *return* a function. Plus, the compiler can't figure out the type of the second parameter by itself, so we have to give it some help.  And, we we'll need a non-generic version, for event which are defined as `EventHandle` instead of `EventHandler<TEventArgs>.`   Make it an extension method on Form, and we've got:
+The tricky part about this is that it must take a function as a parameter, and *return* a function. Plus, the compiler can't figure out the type of the second parameter by itself, so we have to give it some help.  And, we we'll need a non-generic version, for events which are defined as `EventHandle` instead of `EventHandler<TEventArgs>.`   Make it an extension method on Form, and we've got:
 
 <script src="https://gist.github.com/jamescurran/5452498.js">    </script>
 
