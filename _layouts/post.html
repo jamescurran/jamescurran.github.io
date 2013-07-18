@@ -1,9 +1,41 @@
-{% include header.html %}
+{% include header.html                   %}
+{%  assign lastpost = null               %}
+{%  assign nextpost = null               %}
+{%  assign Apost = null                 %}
+{%  assign Bpost = null                 %}
+{%  assign Cpost = null                 %}
+{%    for testpost in site.posts        %}
+{%        assign Apost = Bspost          %}
+{%        assign Bpost = Cpost           %}
+{%        assign Cpost = testpost        %}
+{%        if (Bpost.url == post.url)     %}
+{%            assign lastpost = Apost    %}
+{%            assign nextport = Cpost    %}
+{%            break                      %}
+{%          endif                        %}
+{%        if (Cpost.url = post.url)      %}
+{%          assign lastpost = Bpost      %}
+{%         endif                         %}
+{%    endfor                             %}
+
     <div class="container content">
       <div class="row">
         <div class="span9">
           <article class="post">
 		  <h1>{{page.title}}</h1>
+          <table>
+            <tr>
+                <td style="width:25%">
+                {% if prevpost != null  %}
+                 &lt;&lt;= Previous article: <a href="{{ prevpost.url }}">{{ prevpost.title }}</a>
+                {% endif %}
+                </td>
+                <td style="width:50%">&nbsp;</td>
+                <td style="width:25%">
+                {% if nextpost != null  %}
+                Next article: <a href="{{ nextpost.url }}">{{ nextpost.title }} =&gt;&gt;</a>
+                {% endif %}
+                </td>
             <p>{{ content }}</p>
             <div>
               <span class="badge badge-inverse">
