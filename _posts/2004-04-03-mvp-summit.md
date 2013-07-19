@@ -1,6 +1,6 @@
 ---
- layout: default
- title: MVP Summit
+layout: default
+title: MVP Summit
 categories: my-life mvp
 tags: my-life mvp
 ---
