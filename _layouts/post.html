@@ -4,17 +4,25 @@
 {%  assign Apost = null                 %}
 {%  assign Bpost = null                 %}
 {%  assign Cpost = null                 %}
+<!-- page : {{ page.title }}		-->
+<!-- page : {{ page.url }}		-->
+
 {%    for testpost in site.posts        %}
-{%        assign Apost = Bspost          %}
+{%        assign Apost = Bpost          %}
 {%        assign Bpost = Cpost           %}
 {%        assign Cpost = testpost        %}
-{%        if (Bpost.url == post.url)     %}
-{%            assign lastpost = Apost    %}
-{%            assign nextport = Cpost    %}
-{%            break                      %}
+<!-- Bpost : {{ Bpost.title }}		-->
+<!-- Bpost : {{ Bpost.url }}		-->
+
+{%        if Bpost.url == page.url     %}
+{%            assign nextpost = Apost    %}
+{%            assign lastpost = Cpost    %}
+<!-- nextpost-B : {{ nextpost.title }}		-->
+<!-- lastpost-B : {{ lastpost.title }}		-->
 {%          endif                        %}
-{%        if (Cpost.url = post.url)      %}
-{%          assign lastpost = Bpost      %}
+{%        if Cpost.url == page.url      %}
+{%          assign nextpost = Bpost      %}
+<!-- nextpost-C : {{ nextpost.title }}		-->
 {%         endif                         %}
 {%    endfor                             %}
 
