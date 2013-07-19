@@ -1,29 +1,9 @@
 {% include header.html                   %}
-{%  assign lastpost = null               %}
-{%  assign nextpost = null               %}
-{%  assign Apost = null                 %}
-{%  assign Bpost = null                 %}
-{%  assign Cpost = null                 %}
-<!-- page : {{ page.title }}		-->
-<!-- page : {{ page.url }}		-->
-
-{%    for testpost in site.posts        %}
-{%        assign Apost = Bpost          %}
-{%        assign Bpost = Cpost           %}
-{%        assign Cpost = testpost        %}
-<!-- Bpost : {{ Bpost.title }}		-->
-<!-- Bpost : {{ Bpost.url }}		-->
-
-{%        if Bpost.url == page.url     %}
-{%            assign nextpost = Apost    %}
-{%            assign lastpost = Cpost    %}
-<!-- nextpost-B : {{ nextpost.title }}		-->
-<!-- lastpost-B : {{ lastpost.title }}		-->
-{%          endif                        %}
-{%        if Cpost.url == page.url      %}
-{%          assign nextpost = Bpost      %}
-<!-- nextpost-C : {{ nextpost.title }}		-->
-{%         endif                         %}
+{%  assign prevpost = null %}{%  assign nextpost = null  %}{%  assign Apost = null  %}{%  assign Bpost = null  %}{%  assign Cpost = null %}
+{%    for testpost in site.posts  		%}
+{%          assign Apost = Bpost %}{% assign Bpost = Cpost %}{% assign Cpost = testpost %}
+{%        if Bpost.url == page.url     %}{% assign nextpost = Apost  %}{%  assign prevpost = Cpost %}
+{%        elsif Cpost.url == page.url     %}{% assign nextpost = Bpost  %}{%  endif %}
 {%    endfor                             %}
 
     <div class="container content">
@@ -41,9 +21,11 @@
                 <td style="width:50%">&nbsp;</td>
                 <td style="width:25%">
                 {% if nextpost != null  %}
-                Next article: <a href="{{ nextpost.url }}">{{ nextpost.title }} =&gt;&gt;</a>
+                Next article: <a href="{{ nextpost.url }}">{{ nextpost.title }}</a> =&gt;&gt;
                 {% endif %}
                 </td>
+			</tr>
+			</table>
             <p>{{ content }}</p>
             <div>
               <span class="badge badge-inverse">
