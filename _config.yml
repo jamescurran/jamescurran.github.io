@@ -1,4 +1,22 @@
- exclude: safe
- pygments: true
- permalink: /blog/:year/:month/:day/:title/
- safe: false
+lsi: false
+pygments: true
+exclude: [safe]
+permalink: /blog/:year/:month/:day/:title/
+
+future:      true
+lsi:         false
+markdown:    kramdown
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+  
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
