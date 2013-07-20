@@ -13,19 +13,36 @@
 		  <h1>{{page.title}}</h1>
           <table>
             <tr>
-                <td style="width:25%">
+                <td style="width:33%">
                 {% if prevpost != null  %}
-                 &lt;&lt;= Previous article: <a href="{{ prevpost.url }}">{{ prevpost.title }}</a>
+                 &lt;&lt;= Previous article:
                 {% endif %}
                 </td>
-                <td style="width:50%">&nbsp;</td>
-                <td style="width:25%">
+                <td style="width:33%">&nbsp;</td>
+                <td style="width:33%">
                 {% if nextpost != null  %}
-                Next article: <a href="{{ nextpost.url }}">{{ nextpost.title }}</a> =&gt;&gt;
+                Next article: =&gt;&gt;
+                {% endif %}
+                </td>
+			</tr>
+                <td style="width:33%">
+                {% if prevpost != null  %}
+                 <a href="{{ prevpost.url }}">{{ prevpost.title }}</a>
+                {% endif %}
+                </td>
+                <td style="width:33%">&nbsp;</td>
+                <td style="width:33%">
+                {% if nextpost != null  %}
+                <a href="{{ nextpost.url }}">{{ nextpost.title }}</a>
                 {% endif %}
                 </td>
 			</tr>
 			</table>
+              <span class="badge badge-inverse">
+                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
+                {{ page.date | date_to_string }}
+                </time>
+              </span>
             <p>{{ content }}</p>
             <div>
               <span class="badge badge-inverse">
