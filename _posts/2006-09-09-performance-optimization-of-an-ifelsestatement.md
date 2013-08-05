@@ -49,6 +49,7 @@ With those code changes, on my system, I get:
  * test = 3: 593.7348 or 609.3594ms
  
 Analysis: 
+
  *  Clearly the resolution of the timer is 15.6246ms -- all the times are multiples of that value (ie, test =1 took either 38 or 39 ticks of the clock). 
  *  Test=2 & Test=3 took the same amount of time, as you'd expect, as it's just taking one branch or the other. 
  * Test=1 fast faster because it only required one comparison, while test =2 & test =3 each required 2. 
