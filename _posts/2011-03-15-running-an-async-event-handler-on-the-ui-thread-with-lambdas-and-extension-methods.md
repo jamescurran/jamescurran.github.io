@@ -29,14 +29,14 @@ And that's with always marshaling it.  If the event could be fired from both a b
 <script src="https://gist.github.com/jamescurran/5452468.js">   </script>
 
 
-Yech!  We have a lambda, but it we're using it for the boiler-plate code and that we will probably have to repeat.  And the real method we want to perform is in a separate function.
+Yech!  We have a lambda, but we're using it for the boiler-plate code and that we will probably have to repeat.  And the real method we want to perform is in a separate function.
 
-What we need is a handle utility function which will take a method reference, or, better yet, a lambda, and package it up as we need it. Then we could write it like: 
+What we need is a handy utility function which will take a method reference, or, better yet, a lambda, and package it up as we need it. Then we could write it like: 
 
     backgroundTask.StepCompleted += 
        ToUIThread<StepEventArgs>((s, ea) => statusMsg.Text = String.Format("Step #{0} Completed", ea.StepNo));
 
-The tricky part about this is that it must take a function as a parameter, and *return* a function. Plus, the compiler can't figure out the type of the second parameter by itself, so we have to give it some help.  And, we we'll need a non-generic version, for events which are defined as `EventHandle` instead of `EventHandler<TEventArgs>.`   Make it an extension method on Form, and we've got:
+The tricky part about this is that it must take a function as a parameter, and *return* a function. Plus, the compiler can't figure out the type of the second parameter by itself, so we have to give it some help.  And, we'll need a non-generic version, for events which are defined as `EventHandle` instead of `EventHandler<TEventArgs>.`   Make it an extension method on Form, and we've got:
 
 <script src="https://gist.github.com/jamescurran/5452498.js">    </script>
 

@@ -98,7 +98,7 @@ It's also a bit questionable if we were "*the most prosperous \[nation\] in the 
   
 His assertion that "*We had absolutely no national debt...*" is total fantasy.  In 1908, the national debt was [$2,626,806,271.54](http://www.treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo3.htm)  (adjusted for inflation that would be nearly $58 billion in 2008 dollars).  Granted, that's a lot less than the [$9.6 trillion it is now](http://www.treasurydirect.gov/NP/BPDLogin?application=np), but we'll get to that in a minute.   [The last time we paid off the debt was 1834.](http://www.treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo1.htm)
   
-  As for "*We had the largest middle class in the world... *", again, hard to measure --- Do you count raw number of people (we probably win), or percent of population  (in which case you have to look at England, France and German again).
+  As for *"We had the largest middle class in the world... "*, again, hard to measure --- Do you count raw number of people (we probably win), or percent of population  (in which case you have to look at England, France and German again).
   
   "*Mom stayed home to raise the kids.*" -- Well, mom did stay at home then, but mostly to run the household, which didn't have electricity, nor, most often, running water.  She had to do this because her husband was working 10 hours a day, 6 days a week at a factory -- earning about a dollar a day.  She didn't spend that much time raising the kids -- because, starting at about age 9 or 10, [they were with the father in the factory](http://www.historyplace.com/unitedstates/childlabor/).
   
