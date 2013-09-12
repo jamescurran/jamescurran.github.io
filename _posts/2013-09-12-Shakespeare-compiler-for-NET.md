@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ".NET that shall enmesh them all" - Shakespeare compiler  for .NET
+title: .NET that shall enmesh them all - Shakespeare compiler for .NET
 categories: code c# .net programming dotnet csharp irony runsharp
 tags: code c# .net programming dotnet csharp irony runsharp
 ---
+
 > >*And out of her own goodness make the NET
 > > that shall enmesh them all*.
-
+ 
 > > > > Iago, *Othello*, Act II, Scene 3
 
 ### Writing a compiler using C#, Irony, and RunSharp
-
 
 About a month ago, I stumbled upon the [Shakespeare programming language](http://shakespearelang.sourceforge.net/).  It&apos;s a particularly silly language, where the source code is intended to look much like a Shakespearean play.  Here&apos;s a sample:
   
