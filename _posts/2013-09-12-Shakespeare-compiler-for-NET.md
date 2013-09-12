@@ -12,21 +12,21 @@ tags: code c# .net programming dotnet csharp irony runsharp
 ### Writing a compiler using C#, Irony, and RunSharp
 
 
-About a month ago, I stumbled upon the [Shakespeare programming language](http://shakespearelang.sourceforge.net/).  It's a particularly silly language, where the source code is intended to look much like a Shakespearean play.  Here's a sample:
+About a month ago, I stumbled upon the [Shakespeare programming language](http://shakespearelang.sourceforge.net/).  It&apos;s a particularly silly language, where the source code is intended to look much like a Shakespearean play.  Here&apos;s a sample:
   
 <script src="https://gist.github.com/jamescurran/6459634.js"></script>
   
-Yes, that's real source code.   The characters in the play are the variables (and the only variable type is a stack of integers).    When Othello tells Lady Macbeth "*You are nothing*", it means set variable Lady Macbeth  to zero (which really mean push 0 onto the `lady_macbeth` stack-- got that?).  Numbers are defined by how many adjective proceed a noun.  Input & output is limited to one integer or one *character* at a time.
+Yes, that&apos;s real source code.   The characters in the play are the variables (and the only variable type is a stack of integers).    When Othello tells Lady Macbeth "*You are nothing*", it means set variable Lady Macbeth  to zero (which really mean push 0 onto the `lady_macbeth` stack-- got that?).  Numbers are defined by how many adjective proceed a noun.  Input & output is limited to one integer or one *character* at a time.
   
-Since the compiler was written in YACC, generated C source code, and hadn't been touched in 14 years, I felt the need to modernize it.  YACC, for those unaware, stands for "Yet Another Compiler Compiler".  It's source code looks much like a Backus-Naur Form grammar definition of a language, so it became the standard for people creating compilers for new languages.   It's output is C code, which you would then use as the parser in your full compiler for your language.  If your language was simple enough, you could attach the output directly to the grammar rules, in which case, the C code output would be the complete compiler.  This was the case with the Shakespeare YACC code.
+Since the compiler was written in YACC, generated C source code, and hadn&apos;t been touched in 14 years, I felt the need to modernize it.  YACC, for those unaware, stands for "Yet Another Compiler Compiler".  It&apos;s source code looks much like a Backus-Naur Form grammar definition of a language, so it became the standard for people creating compilers for new languages.   It&apos;s output is C code, which you would then use as the parser in your full compiler for your language.  If your language was simple enough, you could attach the output directly to the grammar rules, in which case, the C code output would be the complete compiler.  This was the case with the Shakespeare YACC code.
   
-Now, the problem with YACC is that the output is  **really** ugly C source code.    Total 70's era spaghetti code.  Lot's of global variables with names in the form "_yythingie".  Now, this shouldn't be a problem, since one would only be expected to modify the YACC source, and never actually deal directly with the C code, but it never worked out like that.  Eventually,  for one reason or another (usually porting to a new system) programmers would have to modify the C code, and curse a lot.
+Now, the problem with YACC is that the output is  **really** ugly C source code.    Total 70&apos;s era spaghetti code.  Lot&apos;s of global variables with names in the form "_yythingie".  Now, this shouldn&apos;t be a problem, since one would only be expected to modify the YACC source, and never actually deal directly with the C code, but it never worked out like that.  Eventually,  for one reason or another (usually porting to a new system) programmers would have to modify the C code, and curse a lot.
   
-I remember working with the source code to nVelocity, which clearly originated in YACC, and then the C output was ported to C++ and then ported to Java and finally ported to C#.  You can see every step of the evolution along that path in the code -- it's really scary to deal with.
+I remember working with the source code to nVelocity, which clearly originated in YACC, and then the C output was ported to C++ and then ported to Java and finally ported to C#.  You can see every step of the evolution along that path in the code -- it&apos;s really scary to deal with.
   
-So, I figured, let's try writing a compiler in C#.   And, I figured, I might as well have the output by C# code as well, in addition to the C code.  And, since this bit about having a compiler generate source code in cheating, I wanted a version that would directly produce a .NET executable.   
+So, I figured, let&apos;s try writing a compiler in C#.   And, I figured, I might as well have the output by C# code as well, in addition to the C code.  And, since this bit about having a compiler generate source code in cheating, I wanted a version that would directly produce a .NET executable.   
   
-Now determined to write three compiler, when I've never written even one before, means I'd need lots of help.  Fortunately, I've been interested in compiler design for a while, and knew of open-source tools available.
+Now determined to write three compiler, when I&apos;ve never written even one before, means I&apos;d need lots of help.  Fortunately, I&apos;ve been interested in compiler design for a while, and knew of open-source tools available.
   
 #### The Language Grammar with Irony
 
@@ -55,26 +55,26 @@ That line, along with all the other grammar rules are contained in the ctor for 
 
 Writing a grammar for Shakespeare posed a few interesting challenges.  
  
-- There are a very large number of keywords, many of which are aliases for another.  For example, there are 25 different keywords each meaning '-1' . And 36 different words which mean "multiply by 2".
+- There are a very large number of keywords, many of which are aliases for another.  For example, there are 25 different keywords each meaning '-1&apos; . And 36 different words which mean "multiply by 2".
 -  Many of these keywords are more than one word long.
-- It has exactly 152 specific allowable variable names. (The name of actual characters in Shakespeare's plays).  Many of those are more than one word as well.
+- It has exactly 152 specific allowable variable names. (The name of actual characters in Shakespeare&apos;s plays).  Many of those are more than one word as well.
 - The C source code scanner (the first step in parsing) is generated by running a separate C program, which read all those keyword variations from text files.
-- So, to build the original Shakespeare compiler, You'd have to compile the `makescanner.c` file, which produced a `scanner.c` file.  Then take the YACC source code, run it through a YACC compiler, producing a `parser.c` file.  Then take the scanner.c & the parser.c and compile & link them together, to get an executable.
+- So, to build the original Shakespeare compiler, You&apos;d have to compile the `makescanner.c` file, which produced a `scanner.c` file.  Then take the YACC source code, run it through a YACC compiler, producing a `parser.c` file.  Then take the scanner.c & the parser.c and compile & link them together, to get an executable.
 - Irony wants you to have one production rule for each non-terminal.  YACC allows a different production rule for each clause of the non-terminals.
 
-The first step was to create the grammar.  This was helped quite a bit by Irony's GrammarExplorer tool, and fortunately, this part of Irony is fairly well-documented .   After figuring out how to handle the the multi-word terminals (neatly handled in the method, MultiWordTermial, the rest was quite straight-forward)  The complete grammar /parser is in the **Shakespeare.Grammar** project in the GitHub repository.
+The first step was to create the grammar.  This was helped quite a bit by Irony&apos;s GrammarExplorer tool, and fortunately, this part of Irony is fairly well-documented .   After figuring out how to handle the the multi-word terminals (neatly handled in the method, MultiWordTermial, the rest was quite straight-forward)  The complete grammar /parser is in the **Shakespeare.Grammar** project in the GitHub repository.
   
 #### The first Back-end : C Code
 
-The next step was to take the parser, and figure a way to use it to actually produce object code.   This was much harder as this aspect of Irony is not well documented at all.  Fortunately, Irony's author, Roman Ivantsov, is *very* active on the project's CodePlex discussion board, although he doesn't always grasp that the other users of Irony don't have the understanding of the framework code that he does.
+The next step was to take the parser, and figure a way to use it to actually produce object code.   This was much harder as this aspect of Irony is not well documented at all.  Fortunately, Irony&apos;s author, Roman Ivantsov, is *very* active on the project&apos;s CodePlex discussion board, although he doesn&apos;t always grasp that the other users of Irony don&apos;t have the understanding of the framework code that he does.
   
-Essentially, I'm creating a AST tree for the code to be complied, and then walking that, ouputting code along the way.  That sounds like the right thing to do, and it works, but I keep thinking it misusing the tools, and that there's a better way.
+Essentially, I&apos;m creating a AST tree for the code to be complied, and then walking that, ouputting code along the way.  That sounds like the right thing to do, and it works, but I keep thinking it misusing the tools, and that there&apos;s a better way.
   
 My first problem here was how to pass information from one AST node to the next.  The Irony framework has a method on every AST node, `DoEvaluate()`,  which is call as you walk the tree, but it only has a `ScriptThread` passed to it, and `ScriptThread` is defined by the framework. 
 
-Since I'd already defined a `AstNode` derived class which I used as a base class for all the AST node in my compiler, I just added a new virtual method to it, ` OutputTo(TetWrite)`  which allowed me to create a TextWriter object in the root level node, and walk the tree called OutputTo on the node instead of DoEvaluate.  This later proved to be a bad decision.
+Since I&apos;d already defined a `AstNode` derived class which I used as a base class for all the AST node in my compiler, I just added a new virtual method to it, ` OutputTo(TetWrite)`  which allowed me to create a TextWriter object in the root level node, and walk the tree called OutputTo on the node instead of DoEvaluate.  This later proved to be a bad decision.
 
-Here's an excerpt of the output from the program given above:
+Here&apos;s an excerpt of the output from the program given above:
 
 	#include "spl.h"
 	int main(void)
@@ -105,11 +105,11 @@ Fortunately, Irony has another (largely undocumented) means of creating AST node
   
 #### The second back-end: C-Sharp
 
-With that, I set about writing the second compiler back-end for this project, **Shakespeare2CS**, which would produce C# code.  But first, there was another task I needed to take care of.   The C code produced by this compiler needed to be linked with a run-time library called libspl.c.   I needed a .NET version of that, and if I could make it a bit less spaghetti - codey in the process, all the better.  The result of that is **Shakespeare.Support**, and it needed to be referenced by the CS code produced here.   You'll note that Shakespeare.Support is a Portable Class Library -- in case you want to write a Windows Phone App in Shakespeare (You won't).
+With that, I set about writing the second compiler back-end for this project, **Shakespeare2CS**, which would produce C# code.  But first, there was another task I needed to take care of.   The C code produced by this compiler needed to be linked with a run-time library called libspl.c.   I needed a .NET version of that, and if I could make it a bit less spaghetti - codey in the process, all the better.  The result of that is **Shakespeare.Support**, and it needed to be referenced by the CS code produced here.   You&apos;ll note that Shakespeare.Support is a Portable Class Library -- in case you want to write a Windows Phone App in Shakespeare (You won&apos;t).
   
-After that, the C# compiler was largely just taking the C compiler, and slightly changing the text it's output.   
+After that, the C# compiler was largely just taking the C compiler, and slightly changing the text it&apos;s output.   
 
-Here's an excerpt of the C# output for the above program:
+Here&apos;s an excerpt of the C# output for the above program:
 
 	using System;
 	using Shakespeare.Support;
@@ -142,13 +142,13 @@ Here's an excerpt of the C# output for the above program:
 			Assign(13, 0);
 
 
-But, now that there were two back-ends, we had a new problem.  Up to this point, I've been using the Grammar.Explorer tool that comes with Irony.  But, it only directly loads the parser, and was able to load & run the back-end only because it was referenced by the grammar.  Once I'd broken that connection, I needed a mean of telling it to load one or the another back-end.   I was also going to eventually need a way of running the compiler like a compiler,  without going through Grammar.Explorer.  I would need a command-line interface.  
+But, now that there were two back-ends, we had a new problem.  Up to this point, I&apos;ve been using the Grammar.Explorer tool that comes with Irony.  But, it only directly loads the parser, and was able to load & run the back-end only because it was referenced by the grammar.  Once I&apos;d broken that connection, I needed a mean of telling it to load one or the another back-end.   I was also going to eventually need a way of running the compiler like a compiler,  without going through Grammar.Explorer.  I would need a command-line interface.  
   
 #### The Command-Line  Compiler 
 
 Here, again, I found a more that adequate open-source tool in [nConsoler](http://nconsoler.csharpus.com/) (And, unlike the other two packages I used, nConsoler is installable via NuGet, and comes with excellent documentation)  This is handled by the project, **ShakeCL**.
 
-The key problem needing to be address here is, given a parser,  how to we use it to parse the text of our source code, and then given the parse tree that produces,  how to use that to kick off  generation of  our object code.   These were handled deep with Grammar.Explorer, and oddly, not documented anywhere that I could find.   After studying the Grammar.Explorer source code, I came up with this as the basic form (It'll get a bit more complicated in a moment)
+The key problem needing to be address here is, given a parser,  how to we use it to parse the text of our source code, and then given the parse tree that produces,  how to use that to kick off  generation of  our object code.   These were handled deep with Grammar.Explorer, and oddly, not documented anywhere that I could find.   After studying the Grammar.Explorer source code, I came up with this as the basic form (It&apos;ll get a bit more complicated in a moment)
 
 	var grammar = new ShakespeareGrammar();
 	var parser = new Parser(grammar);
@@ -159,11 +159,11 @@ The key problem needing to be address here is, given a parser,  how to we use it
 	var thread = new ScriptThread(app);
 	tree.Root.AstNode.Evaluate(thread);
 
-  `nConsoler` handled  parsing the command line into neat options I defined: source filename,  compiler choice, and whether or not to include debug information.    You'll note that the compiler choice doesn't appear in the code snippet just above.  Like I said, it's about to get more complicated.
+  `nConsoler` handled  parsing the command line into neat options I defined: source filename,  compiler choice, and whether or not to include debug information.    You&apos;ll note that the compiler choice doesn&apos;t appear in the code snippet just above.  Like I said, it&apos;s about to get more complicated.
   
   #### The third back-end: direct MSIL creation.
   
-Having a back-end just split out text is easy.  I wanted one that would directly create an actual assembly.  I'd seen a couple tools that would do that over the years, and the one that seemed the best was **[RunSharp](https://code.google.com/p/runsharp/)**, which had a very nice fluent syntax, and generated code efficiently via .NET's Reflection.Emit system.   This is handled in **Shakespeare2MSIL**.
+Having a back-end just split out text is easy.  I wanted one that would directly create an actual assembly.  I&apos;d seen a couple tools that would do that over the years, and the one that seemed the best was **[RunSharp](https://code.google.com/p/runsharp/)**, which had a very nice fluent syntax, and generated code efficiently via .NET&apos;s Reflection.Emit system.   This is handled in **Shakespeare2MSIL**.
 
 The syntax paralleled the C# code that would produce the same output.  For example, the IL code produced from C# code like this:
 
@@ -194,11 +194,11 @@ would be generated by RunSharp like this:
 
  So creating code-generator was much like the other two, with an almost one-to-one correspondence between the text produced by the earlier back-ends and the RunSharp commands used by this one.
  
- But one key difference, was that, for the text-producing compilers, the only common object I needed to pass around was a TextWriter.  Here, I'd need at least three, one representing the assembly being built, one for the class, and one for the method this code is being written to.  I had handled the TextWriter by creating a new virtual method implemented in all the AST node.  I didn't want to create another method needing to be implemented everywhere, particularly when the Irony framework already provided a virtual method, `Evaluate()` which was designed for walking the tree.  I needed to write this back-end (and then rewrite the others) to use `Evaluate()`.
+ But one key difference, was that, for the text-producing compilers, the only common object I needed to pass around was a TextWriter.  Here, I&apos;d need at least three, one representing the assembly being built, one for the class, and one for the method this code is being written to.  I had handled the TextWriter by creating a new virtual method implemented in all the AST node.  I didn&apos;t want to create another method needing to be implemented everywhere, particularly when the Irony framework already provided a virtual method, `Evaluate()` which was designed for walking the tree.  I needed to write this back-end (and then rewrite the others) to use `Evaluate()`.
  
  The problem here was that the only thing passed to the `Evaluate` method is a `ScriptThread` object, which was defined by the Irony framework.  How do I get my variables passed along with it.  Well, buried deep within a ScriptThread is a dictionary which can be used to pass random objects while recursing through the parse tree.
  
- However, all is not well, yet.  I needed a way of putting different objects into the dictionary based on which compiler had been chosen.   To handle this, I created the IHasPerpareScope interface.  It has just one member, a PrepareScope method.   The CompilerLoader class, while it's scanning all the classes in an assembly for AstNode-derived classes, will now also look for a class implementing IHasPrepareScope, and if one is found, instantiate the object and call PrepareScope on it.   So, by just creating such a class, it's called at the right time.
+ However, all is not well, yet.  I needed a way of putting different objects into the dictionary based on which compiler had been chosen.   To handle this, I created the IHasPerpareScope interface.  It has just one member, a PrepareScope method.   The CompilerLoader class, while it&apos;s scanning all the classes in an assembly for AstNode-derived classes, will now also look for a class implementing IHasPrepareScope, and if one is found, instantiate the object and call PrepareScope on it.   So, by just creating such a class, it&apos;s called at the right time.
  
  Handling this, required stepping up our command-line interface a bit:
  
@@ -206,24 +206,24 @@ would be generated by RunSharp like this:
  
  The attribute-laden method signature is all that is needed for nConsoler to parse the command-line options, set defaults, warn of missing required elements, and generate a help display.
  
- But the key portions are where we load the compiler based on the command-line option, and then pass it to the grammar's ctor.  This allows us to to set all the AST nodes to the proper types without directly referencing the compiler assembly.
+ But the key portions are where we load the compiler based on the command-line option, and then pass it to the grammar&apos;s ctor.  This allows us to to set all the AST nodes to the proper types without directly referencing the compiler assembly.
  
  Similarly, we call the PrepareScope on comp, to add to the dictionary the needed object for that compiler.
  
-#### And, yes, it's all open-sourced.
+#### And, yes, it&apos;s all open-sourced.
 
-All the code I've described here is available on my GitHub repository. [https://github.com/jamescurran/ShakespeareCompiler](https://github.com/jamescurran/ShakespeareCompiler)
+All the code I&apos;ve described here is available on my GitHub repository. [https://github.com/jamescurran/ShakespeareCompiler](https://github.com/jamescurran/ShakespeareCompiler)
 
-And even if you are interested in programming in Shakespeare, it does give a good example of building a moderately complicate language grammar in Irony,  and it's a rare example of a working back-end for an Irony grammar.  Taking the CompilerLoader, IHasPrepareScope and the ShakeCL code may prove useful for any Irony based compiler.  And Shakespear2MSIL gives a good example of using RunSharp.
+And even if you are interested in programming in Shakespeare, it does give a good example of building a moderately complicate language grammar in Irony,  and it&apos;s a rare example of a working back-end for an Irony grammar.  Taking the CompilerLoader, IHasPrepareScope and the ShakeCL code may prove useful for any Irony based compiler.  And Shakespear2MSIL gives a good example of using RunSharp.
 
-**NOTE:** Shakespeare creates very spaghetti-y code, and requires `goto`s.  The current official release of RunSharp doesn't provide for this so I created my own fork.  The modified assemblies are include in the github repository.  Until I get around to making a pull-release (and RunSharp's owner chooses to merge it), Shakespeare cannot to built using the standard RunSharp assemblies.
+**NOTE:** Shakespeare creates very spaghetti-y code, and requires `goto`s.  The current official release of RunSharp doesn&apos;t provide for this so I created my own fork.  The modified assemblies are include in the github repository.  Until I get around to making a pull-release (and RunSharp&apos;s owner chooses to merge it), Shakespeare cannot to built using the standard RunSharp assemblies.
 
-#### What's Next?
+#### What&apos;s Next?
 
- Well, having finally fulfilled my life's goal of writing a compiler, I'm ready to retire.  
+ Well, having finally fulfilled my life&apos;s goal of writing a compiler, I&apos;m ready to retire.  
  
- But, in my retirement, I'll have more time to work on projects like this, so I guess there's more that could be done.  
-  - I imagine I really should find out it I'm actually using Irony's back-end features correctly.
+ But, in my retirement, I&apos;ll have more time to work on projects like this, so I guess there&apos;s more that could be done.  
+  - I imagine I really should find out it I&apos;m actually using Irony&apos;s back-end features correctly.
   - As I said, outputting text is particularly cumbersome, so I was thinking of adding a new (set of) keywords : `Proclaim` for outputting a string at once.
   - Any other ideas?  Let me know in the comments.
  
