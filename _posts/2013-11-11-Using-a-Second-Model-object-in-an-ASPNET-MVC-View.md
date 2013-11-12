@@ -11,7 +11,7 @@ And this is just fine, if the entirety of what needs to be displayed is logicall
 
 Say for example, you are displaying a personnel record.  It would be logical from your model to be a `Employee` object.  But, perhaps, instead of just displaying that person&apos;s department, you want to include a drop-down listbox, containing all the department names, so you could re-deploy him.  The list of departments wouldn&apos;t be part of the `Employee` object, so we&apos;d need a different way to get it to the page. 
 
-Basically, there are two way : The quick and easy and "bad" way (ViewBag), and the difficult and "correct" (a ViewModel object).
+Basically, there are two ways - The quick and easy and "bad" way (ViewBag), and the difficult and "correct" (a ViewModel object).
 
 The "correct" way would be to create a new class, say DisplayEmployeeViewModel, which has two properties, `Employee` and `Departments`, and you return that from the controller as your model. 
 
@@ -42,7 +42,5 @@ then in our view, we use a normal `@model` directive plus duplicating the effect
 	@{
 			var DepartmentModel = ViewBag.departments as List<Department>;
 	}
-       
+
 Now, we can use `Model` just for the Employee object like we always wanted, and we can use `DepartmentModel` -- which is just as "strongly-typed" as Model itself -- as if it were the sole Model on the page.
-
-
