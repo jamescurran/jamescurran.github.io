@@ -13,7 +13,7 @@ Except they aren't.  That's merely what I *thought* they were singing.  It actua
 
 >  **Once I rose above the noise and confusion   
 >  Just to get a glimpse *beyond the illusion***
->
+
 
 (You can hear a bit of the song --- right up to just before the critical phrase-- and even buy the album (*Leftoverture*) it if you like, on [Amazon](http://www.amazon.com/exec/obidos/ASIN/B00005JA2B/njtheatercom-20/) )
 
