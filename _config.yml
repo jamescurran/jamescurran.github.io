@@ -5,7 +5,8 @@ permalink: /blog/:year/:month/:day/:title/
 
 future:      true
 lsi:         false
-markdown:    kramdown
+markdown: redcarpet
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
