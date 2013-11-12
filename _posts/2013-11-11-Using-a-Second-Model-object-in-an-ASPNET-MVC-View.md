@@ -22,25 +22,3 @@ But, what about the "Bad" way -- just stuffing the other data into the `ViewBag`
 However, a quick peek at what&apos;s going on under the covers reveals that&apos;s not really the case, and provides a simple solution to our problem.
 
 You see, when you return an object from a controller as the model, all the ASP.NET MVC does is put it into the ViewBag as a property named `model`.   And when you add the directive:
-
-	@model Employee
-
-it treats it as if you had written
-
-	@{ var Model = ViewBag.model as Employee; }
-
-Now, going back to our example, if we were to just use the `ViewBag` in our controller, for the list of departments, as well as use the return value to set the employee record as the model:
-
-		// :
-		ViewBag.departments = GetListOfDepartments();
-		return View(employee);
-		}
-
-then in our view, we use a normal `@model` directive plus duplicating the effect for the other object:
-
-	@model  Employee
-	@{
-			var DepartmentModel = ViewBag.departments as List<Department>;
-	}
-
-Now, we can use `Model` just for the Employee object like we always wanted, and we can use `DepartmentModel` -- which is just as "strongly-typed" as Model itself -- as if it were the sole Model on the page.
