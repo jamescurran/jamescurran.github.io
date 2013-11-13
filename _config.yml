@@ -5,7 +5,7 @@ permalink: /blog/:year/:month/:day/:title/
 
 future:      true
 lsi:         false
-markdown: redcarpet
+markdown: maruku
 
 kramdown:
   auto_ids: true
