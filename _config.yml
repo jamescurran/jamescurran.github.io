@@ -2,10 +2,24 @@ lsi: false
 pygments: true
 exclude: [safe]
 permalink: /blog/:year/:month/:day/:title/
+safe: true
 
 future:      true
-lsi:         false
 markdown: maruku
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: []
+
+
+redcarpet:
+  extensions: ["gh_blockcode", "fenced_code"]
 
 kramdown:
   auto_ids: true
