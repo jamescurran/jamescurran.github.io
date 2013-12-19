@@ -1,8 +1,8 @@
 ---
 layout: post
 title: C# Code:Adding Skip First to Foreach
-categories: code c# .net programming generics-without-collections
-tags: code c# .net programming generics-without-collections
+categories: code csharp .net programming generics-without-collections
+tags: code csharp .net programming generics-without-collections
 ---
 
 A couple years back, I made a [proposal online](http://groups.google.com/group/microsoft.public.dotnet.languages.csharp/browse_thread/thread/412fd19c65ea81de) for a new feature in C#.  It gathered some interest in the newsgroup.  I later emailed it to someone on the C# team at Microsoft (I believe it was [Eric Gunnerson](http://blogs.msdn.com/ericgu/default.aspx) but I'd really have to look it up), who emailed back a very nice response saying basically, "We thought about something like this, but decided again it, because it can be done with the Iterators we're adding to C# v2.0".
@@ -11,7 +11,7 @@ So, I figured, three years later, perhaps it's time I actually did implement the
 
 The idea was to allow developers to use foreach to iterator over a collection, in the case where the first or last item in the collection needed to be handled differently.   My first crack at it works like this:
 
-	int\[\] ary = new int[6] { 1, 2, 3, 4, 5, 6 };
+	int[] ary = new int[6] { 1, 2, 3, 4, 5, 6 };
 	foreach (int a in new SkipFirst<int>(ary))
 	{
 		Console.Write(a);  // Prints 23456
@@ -48,7 +48,7 @@ However, the problem with these is that they have a rather ugly syntax : You hav
 
 Now all we have to write is this: 
 
-	int\[\] ary = new int\[6\] { 1, 2, 3, 4, 5, 6 };
+	int[] ary = new int[6] { 1, 2, 3, 4, 5, 6 };
 	foreach (int a in Skip.First(Skip.Last(ary)))
 	{
 		Console.Write(a); // writes "2345"

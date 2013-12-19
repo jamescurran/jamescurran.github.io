@@ -56,7 +56,7 @@ Next, we have a simple internal class defined within BuzzFuzz class, to hold the
 		private int _end = Int32.MaxValue;
 		private readonly List<Substitution> _substitutions = new List<Substitution>();
 
-Note that _end is preset to MaxValue, so until you set the ending  value, it'll keep going for a long time.
+Note that `_end` is preset to MaxValue, so until you set the ending  value, it'll keep going for a long time.
  
  The constructors are straightforward:
  
@@ -100,7 +100,7 @@ Finally we get to the real meat of the class:
 
 `MoveNext` has three tasks to do: Advance to the next item in the sequence, Set the object `Current` to the value, and Return true/false as to whether there are any more in the sequence.
 
-Since `_num` starts at the first "next" value, the actual advance come at the end, after we've set `Current`.  And we begin by setting `Current` to the current _num value (as a string.  It's the default value we use if none of the substitutions fire, and we'll need it represented as string, so we lose nothing by setting it up front.
+Since `_num` starts at the first "next" value, the actual advance come at the end, after we've set `Current`.  And we begin by setting `Current` to the current `_num` value (as a string.  It's the default value we use if none of the substitutions fire, and we'll need it represented as string, so we lose nothing by setting it up front.
 
 Then we test each substitutions, first for a multiple and then (if it's just a single digit) if that digit is contained in the string.
 
