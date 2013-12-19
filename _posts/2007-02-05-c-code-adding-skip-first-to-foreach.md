@@ -54,6 +54,4 @@ Now all we have to write is this:
 		Console.Write(a); // writes "2345"
 	}
 
-Somewhat enhanced source code is available <a href="/files/Skip.cs">here</a>.
-
-<a href="http://www.dotnetkicks.com/kick/?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://honestillusion.com/blogs/blog_0/archive/2007/02/05/c-code-adding-skip-first-to-foreach.aspx" border="0" /></a>
+Somewhat [enhanced source code is available](/files/Skip.cs).
