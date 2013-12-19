@@ -7,7 +7,7 @@ tags: code csharp .net programming generics-without-collections
 
 A couple years back, I made a [proposal online](http://groups.google.com/group/microsoft.public.dotnet.languages.csharp/browse_thread/thread/412fd19c65ea81de) for a new feature in C#.  It gathered some interest in the newsgroup.  I later emailed it to someone on the C# team at Microsoft (I believe it was [Eric Gunnerson](http://blogs.msdn.com/ericgu/default.aspx) but I'd really have to look it up), who emailed back a very nice response saying basically, "We thought about something like this, but decided again it, because it can be done with the Iterators we're adding to C# v2.0".
 
-So, I figured, three years later, perhaps it's time I actually did implement them using iterator.
+So, I figured, three years later, perhaps it's time I actually did implement them using iterators.
 
 The idea was to allow developers to use foreach to iterator over a collection, in the case where the first or last item in the collection needed to be handled differently.   My first crack at it works like this:
 

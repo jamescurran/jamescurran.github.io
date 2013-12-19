@@ -5,7 +5,7 @@ permalink: /blog/:year/:month/:day/:title/
 safe: true
 
 future:      true
-markdown: maruku
+markdown: rdiscount
 
 maruku:
   use_tex:    false
