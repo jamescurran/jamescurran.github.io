@@ -44,3 +44,7 @@ then in our view, we use a normal `@model` directive plus duplicating the effect
 	}
 
 Now, we can use `Model` just for the Employee object like we always wanted, and we can use `DepartmentModel` -- which is just as "strongly-typed" as Model itself -- as if it were the sole Model on the page.
+
+<a rev="vote-for" href="http://dotnetshoutout.com/Using-a-Second-Model-object-in-an-ASPNET-MVC-View-HonestIllusionCom">
+<img alt="Shout it" src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fhonestillusion.com%2Fblog%2F2013%2F11%2F11%2FUsing-a-second-model-object-in-an-aspnet-mvc-view%2F" style="border:0px"/>
+</a>
