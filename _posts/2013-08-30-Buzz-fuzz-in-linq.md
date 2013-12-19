@@ -10,4 +10,4 @@ I'm working on this really big project, which I'll be writing on shortly, but in
 
 You'll note that this handles the correct rules of the game ("Replace all number divisible by 7 ***or containing 7***, with '*Fuzz*'")
 
-If my other project continues to drone on, before being blog-able, I'll write up my version of BuzzFuzz following the SOLID principles. 
+If my other project continues to drone on before being blog-able, I'll write up my version of Buzz-Fuzz following the SOLID principles. 
