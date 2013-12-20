@@ -14,7 +14,7 @@ layout: nil
    <email>james.curran@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in site.posts  limit: 15 %}
  <entry>
    <title>{{ post.title | xml_escape  }}</title>
    <link href="http://HonestIllusion.com{{ post.url }}"/>
