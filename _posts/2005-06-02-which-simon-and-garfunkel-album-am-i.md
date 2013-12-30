@@ -5,6 +5,7 @@ categories: my-life random-thoughts quizes
 tags: my-life random-thoughts quizes
 ---
 
+
   <IMG src="http://sglyrics.myrmid.com/bridgequiz.png" />
   <BR />
   <FONT size="+0">

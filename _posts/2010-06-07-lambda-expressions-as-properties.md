@@ -50,13 +50,13 @@ So, let's try three different discounting schemes, and come up with three means 
     if (sup is IOffersFreeShipping)
 	 ProcessFreeShipping();
 
- #3 - One supplier offers 10% off total orders over $100. Another offers 15% off individual items over $25. And a third offers a $1 shipping surcharge on items over 20 lb.
+ #3 - One supplier offers 10% off total orders over $100. Another offers 15% off individual items over $25. And a third charges a $1 shipping surcharge on items over 20 lb.
 
 Basically,  every supplier offers something different, and each is complex.  We'd think we'd need derived classes with overridden methods here to keep this object-oriented.  But that is exactly "the first step to multiple inheritance or an unmaintainable set of interfaces" which Peter was afraid of.
 
-  *(My laptop has an interesting way of telling me that I haven't saved in a while --- the battery falls out.  I've now - too late -- discovered Windows Live Writer's auto-save feature.  Now let's see if I can recreate what I just lost......).*
+> *(My laptop has an interesting way of telling me that I haven't saved in a while --- the battery falls out.  I've now - too late -- discovered Windows Live Writer's auto-save feature.  Now let's see if I can recreate what I just lost......).*
 
-And besides that, creating a subclass specifically for one instance of a class just feels wrong --- particularly when we would be creating multiple subclass, one for each of several instances.  But how can be package instances of distinct functionality in individual instances of an object.
+And besides that, creating a subclass specifically for one instance of a class just feels wrong --- particularly when we would be creating multiple subclass, one for each of several instances.  But how can we package instances of distinct functionality in individual instances of an object.
 
 By using **Lambda Expressions as Properties**. 
 
@@ -85,8 +85,11 @@ Note that the constructor takes a Action delegate, and stores it in the PerItem 
 Next, define our instances like this:
 
 	Supplier Company1 = new Supplier(PublicIds.Company1);
-	Supplier MyCompany = new Supplier(PublicIds.MyCompany, oi=> { if (oi.Price > 25m) oi.Discount = oi.Price * 0.15m;});
-	Supplier ThatOtherCompany = new Supplier(PublicIds.ThatOtherCompany, oi=> {if (oi.Weight >=20) oi.Shipping = 1m;});
+	Supplier MyCompany = new Supplier(PublicIds.MyCompany,
+                 oi=> { if (oi.Price > 25m) oi.Discount = oi.Price * 0.15m;});
+
+	Supplier ThatOtherCompany = new Supplier(PublicIds.ThatOtherCompany, 
+                 oi=> {if (oi.Weight >=20) oi.Shipping = 1m;});
 
 
 	List< OrderItems > items = new List< OrderItems >();    
@@ -102,6 +105,7 @@ Next, define our instances like this:
 No Problem, we just go back to out (new) old friend: Lambda Expression as Properties:
 
 This time, we'll create static properties in the Order class:
+
 	public class Order
 	{
 		List< OrderItem > items = new List< OrderItem >();    
@@ -140,14 +144,15 @@ This time, we'll create static properties in the Order class:
 And we can now define out Supplier instances like this:
 
 	Supplier Company1 = new Supplier(PublicIds.Company1);
+
 	Supplier MyCompany = new Supplier(PublicIds.MyCompany, Order.Discount15on25);
+
 	Supplier ThatOtherCompany = new Supplier(PublicIds.ThatOtherCompany, Order.Shipping1Over20);
 
 So, what have we accomplished 
 
 * We've distinct behavior amongst the different suppliers, without resorting to subclasses or switch/case blocks 
 * We've all the Order processing code in the Order class.
-
 * We've neat &amp; tidy Supplier instance definitions, which nevertheless indicates the special features of that supplier. 
 
  * And we have those special features as part of the Supplier object. 

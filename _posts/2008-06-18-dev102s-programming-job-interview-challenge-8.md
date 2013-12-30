@@ -54,7 +54,7 @@ Now, to put this into C# code, we merely need a simple pre-initialize int array 
         bool MatchFound(Record newRecord)
        {
          // returns 0,1,2 or 3 for record type A,B,C or D respectively. 
-        // can be assumed to be present, as per the spec. 
+        // Can be assumed to be present, as per the spec. 
         
              int type = GetRecordType(newRecord);
              

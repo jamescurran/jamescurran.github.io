@@ -4,7 +4,6 @@ title: Ok, One more quiz...Commonly Confused Words Test
 categories: my-life quizes
 tags: my-life quizes
 ---
-
   
 <table cellpadding="20" align="center">  <tr> <td align="middle"><font size="5"><b>English Genius</b></font><br />You scored 92% Beginner, 92% Intermediate, 100% Advanced, and 100% Expert! </td></tr> <tr> <td>You did so extremely well, even <i>I</i> can't find a word to describe your excellence! You have the uncommon intelligence necessary to understand things that most people don't. You have an extensive vocabulary, and you're not afraid to use it properly! Way to go!  <p>Thank you so much for taking my test. I hope you enjoyed it! </p> <p>For the complete Answer Key, visit my blog: http://shortredhead78.blogspot.com/. </p></td></tr> <tr> <td align="middle"></td></tr></table>
 <br />
