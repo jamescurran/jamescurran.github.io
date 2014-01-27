@@ -5,6 +5,8 @@ categories: code c# .net programming dotnet csharp aspnet mvc aspnetmvc
 tags: code c# .net programming dotnet csharp aspnet mvc aspnetmvc
 ---
 
+> [**UPDATE**: 27-Jan-2014: Since this page is now getting a freakish amount of traffic (from 3 hits a day to 500) due to it's being featured on ASP.NET's Spotlight (*Thanks Guys!*), might I interest some of my new readers in some of my other articles?  I personally think the next two articles (and the previous two) are quite interesting as well. You can use the Next/Prev article links at the top of the page.]
+
 The "correct" way to pass information to an ASP.NET MVC view page is by way of the "model", which is returned by the controller (as a System.Object) and is given a type within the view by the Razor `@model` directive.
 
 And this is just fine, if the entirety of what needs to be displayed is logically one object, but breaks down if you need some other information on the page.  

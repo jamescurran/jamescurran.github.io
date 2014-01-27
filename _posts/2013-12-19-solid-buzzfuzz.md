@@ -6,8 +6,8 @@ tags: code csharp .net programming dotnet csharp buzzfuzz
 ---
 Buss-Fuzz has become a staple of job interview screening in the last few years.  A few weeks ago, I posted the simplest version of it I could -- [one line of LINQ code](http://honestillusion.com/blog/2013/08/30/Buzz-fuzz-in-linq/)), and at the time, I mentioned my version of Buzz-Fuzz following the SOLID principles.  And so, it's time for that...
 
->> *Quick recap for the few unaware of Buzz-Fuzz: The goal is to write a program which will display the numbers 1 through 100, but replacing any number which is a multiple of 5 or contains a 5 with "Buzz", any which is a multiple of 7 or contains a 7 with "Fuzz", and any which are both with "BuzzFuzz".*  
->> So "`1 2 3 4 Buzz 6 Fuzz 8 9 Buzz 11 12 13 Fuzz BuzzFuzz 16"` etc.
+> *Quick recap for the few unaware of Buzz-Fuzz: The goal is to write a program which will display the numbers 1 through 100, but replacing any number which is a multiple of 5 or contains a 5 with "Buzz", any which is a multiple of 7 or contains a 7 with "Fuzz", and any which are both with "BuzzFuzz".*  
+> So "`1 2 3 4 Buzz 6 Fuzz 8 9 Buzz 11 12 13 Fuzz Buzz 16 Fuzz"` etc.
 
 And the SOLID Principles go like this:
 
