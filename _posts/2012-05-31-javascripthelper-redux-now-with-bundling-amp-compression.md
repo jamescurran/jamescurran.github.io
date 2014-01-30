@@ -59,6 +59,3 @@ This haven't changed since the last article.  I think there's still a bit more t
   The source code is available (under the Apache license) from my GitHub library:
   [http://github.com/jamescurran/JavascriptHelper](http://github.com/jamescurran/JavascriptHelper)
 
-
-<a href="http://dotnetshoutout.com/JavascriptHelper-Redux-Now-with-Bundling-Compression">
-<img style="border-right-width:0px;border-top-width:0px;border-bottom-width:0px;border-left-width:0px;" alt="Shout it" src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fhonestillusion.com%2Fblogs%2Fblog_0%2Farchive%2F2012%2F05%2F31%2Fjavascripthelper-redux-now-with-bundling-compression.aspx" /></a>
