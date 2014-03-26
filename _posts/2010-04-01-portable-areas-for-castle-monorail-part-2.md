@@ -21,7 +21,7 @@ For the purposes of this example, the controller isn't going to do anything usef
 }</PRE>
 
 
-That's our minimalistic example.  If it looks a lot like an ordinary Monorail controller, that's the idea.    "PATest" is the name of the controller, which in the case of a Portable Area, is the name of the entire feature, so it's be something like CoolWiki or MyForum. 
+That's our minimalistic  example.  If it looks a lot like an ordinary Monorail controller, that's the idea.    "PATest" is the name of the controller, which in the case of a Portable Area, is the name of the entire feature, so it's be something like CoolWiki or MyForum. 
 
 The Action methods are identical to what you'd have in a normal controller.  In fact, everything in the portable controller is just like it would be if this were a intrinsic part of a website.  
 

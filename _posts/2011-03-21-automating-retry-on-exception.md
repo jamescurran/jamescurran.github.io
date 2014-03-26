@@ -33,50 +33,33 @@ OK, this has very weird semantics.  A call will look something like this:
  * The  fourth parameter (made optional by way of an overload) is a function (or lambda expression) taking an exception as a parameter, and returning nothing.  Can be used to log the final exception when it gives up retrying.
  * 
 The last parameter is a function (or lambda expression) taking no parameters, which performs the actual work which may need to be retried. 
-  <br /></p>
+  
 
-<p>The code looks like this:</p>
+The code looks like this:
 
-<div class="csharpcode">
-  <pre class="alt"><span class="kwrd">static</span> <span class="kwrd">public</span> T Retry&lt;T&gt;(<span class="kwrd">int</span> retries, <span class="kwrd">int</span> secsDelay, Func&lt;T&gt; errorReturn,   Action&lt;Exception&gt; onError,  Func&lt;T&gt; code)</pre>
+    static public  T Retry<T>(int retries, int secsDelay, Func<T> errorReturn,
+                              Action<Exception> onError,  Func<T> code)
+    {
+        Exception ex = null;
+        do
+        {
+             try
+             {
+                  return code();
+             }
+             catch(Exception dde)
+             {
+				ex = dde;
+               retries--;
+               Thread.Sleep(secsDelay * 1000);
+			}
 
-  <pre>{</pre>
+      } while(retries > 0);
 
-  <pre class="alt">    Exception ex = <span class="kwrd">null</span>;</pre>
+  	   onError(ex);
 
-  <pre>    <span class="kwrd">do</span></pre>
+       return errorReturn();
 
-  <pre class="alt">    {</pre>
-
-  <pre>        <span class="kwrd">try</span></pre>
-
-  <pre class="alt">        {</pre>
-
-  <pre>            <span class="kwrd">return</span> code();</pre>
-
-  <pre class="alt">        }</pre>
-
-  <pre>        <span class="kwrd">catch</span> (Exception dde)</pre>
-
-  <pre class="alt">        {</pre>
-
-  <pre>            ex = dde;</pre>
-
-  <pre class="alt">            retries--;</pre>
-
-  <pre>            Thread.Sleep(secsDelay * 1000);</pre>
-
-  <pre class="alt">        }</pre>
-
-  <pre>    } <span class="kwrd">while</span> (retries &gt; 0);</pre>
-
-  <pre class="alt">    onError(ex);</pre>
-
-  <pre>    <span class="kwrd">return</span> errorReturn();</pre>
-
-  <pre class="alt">}</pre>
-</div>
+    }
 
 The full source code (with comments and everything!) is  [here](http://honestillusion.com/files/folders/c-sharp/entry8103.aspx)
-
-<a href="http://dotnetshoutout.com/Honest-Illusion-Automating-Retry-on-Exception"><img alt="Shout it" style="border:0px;" src="http://dotnetshoutout.com/image.axd url=http%3A%2F%2Fhonestillusion.com%2Fblogs%2Fblog_0%2Farchive%2F2011%2F03%2F21%2Fautomating-retry-on-exception.aspx" /></a>

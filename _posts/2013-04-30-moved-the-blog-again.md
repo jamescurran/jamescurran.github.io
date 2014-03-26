@@ -5,7 +5,7 @@ tags: website my-life
 ---
 "*What*?" you say.  "Another blog post *already*? --- It's only been 11 months since the last one....."
 
-Yeah, Yeah, Yeah.... I've been busy.  In addition to the exciting career in software development, I've been studying Massage Therapy -- I've be a Licensed Massage Therapist is a couple months.   And with the weekends often taken up with photography, there's not much time left for blogging.
+Yeah, Yeah, Yeah.... I've been busy.  In addition to the exciting career in software development, I've been studying Massage Therapy -- I'll be a Licensed Massage Therapist is a couple months.   And with the weekends often taken up with photography, there's not much time left for blogging.
 
 I've also switched my ISP, and no longer have a fixed IP address, which meant I could no longer host the site from my home computer.  Just as well, I had a lot of stability problems doing that.
 

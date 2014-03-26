@@ -11,8 +11,7 @@ First we have a function to put a string into "Title Case" (which the author ref
 
 <script src="https://gist.github.com/jamescurran/5437884.js">   </script>
 
-What wrong here   Lot's of really bad string handling.  Remember, strings are 
-immutable, so any action on one creates a new string.  So, `strParam.Substring(iIndex, 1)` creates a new string. `strParam.Substring(iIndex, 1).ToUpper()` create two new strings, and `strProper += strParam.Substring(iIndex, 1).ToUpper();` creates three new strings.  And, that's within a loop.   And, since Substring is always used here to create a one-character string, it's easier to just use a char --- except apparently, this book author doesn't know how to.   Nor, doesn't he apparently know about StringBuilder.  Then, we get to the algorithm itself, where he does such bizarre things as pointlessly treat the first character as a special case, in two different places. 
+What wrong here? Lot's of really bad string handling.  Remember, strings are immutable, so any action on one creates a new string.  So, `strParam.Substring(iIndex, 1)` creates a new string. `strParam.Substring(iIndex, 1).ToUpper()` create two new strings, and `strProper += strParam.Substring(iIndex, 1).ToUpper();` creates three new strings.  And, that's within a loop.   And, since `Substring` is always used here to create a one-character string, it's easier to just use a char --- except apparently, this book author doesn't know how to.   Nor, doesn't he apparently know about `StringBuilder`.  Then, we get to the algorithm itself, where he does such bizarre things as pointlessly treat the first character as a special case, in two different places. 
 
 Ok, now let's see the revision:
 
@@ -22,7 +21,7 @@ First we start with a string builder, preallocated to the size of the string we 
 
 Next, since we are going to capitalize every letter after a period, and also the first letter, why not just pretend the mythical initial "last" character was a period   Suddenly, the first letter is no longer a special case, and we still get what we want.
 
-Then, we just loop through the letters, raising or lowering letter as we need. Note that it works on characters and not strings, and uses the build-in IsWhitespace method, instead of using a  hardcoded list of a subset of them.  A for() loop can in certain cases (however, not the one used in the original) be faster than a foreach(), but here I figured it was safe to sacrifice a tiny bit of speed for clearer code.
+Then, we just loop through the letters, raising or lowering letter as we need. Note that it works on characters and not strings, and uses the build-in `IsWhitespace` method, instead of using a  hardcoded list of a subset of them.  A for() loop can in certain cases (however, not the one used in the original) be faster than a foreach(), but here I figured it was safe to sacrifice a tiny bit of speed for clearer code.
 
 Next up, Reversing a String.  The Original:
 
@@ -34,7 +33,7 @@ Again we have lots of string manipulation to accomplish something simple --- whe
 
 <script src="https://gist.github.com/jamescurran/5437955.js">   </script>
 
-**UPDATE:** One commentator (quite rightly) noted that my Reverse() method would only work for strings of ASCII characters and will fail if there are any Unicode characters.   I knew that at the time, but I was hoping no one else would notice.  The problem was I needed a method which converted a string into an array of characters, and being unable to find one in the CLR, I substituted a string to byte array method instead.   I guess this is one of those times where you just have to step away for a while and come back to it, because now, I found the right method in a few seconds:
+**UPDATE:** One commentator (quite rightly) noted that my Reverse() method would only work for strings of ASCII characters and will fail if there are any Unicode characters. I knew that at the time, but I was hoping no one else would notice. The problem was I needed a method which converted a string into an array of characters, and being unable to find one in the CLR, I substituted a string to byte array method instead.   I guess this is one of those times where you just have to step away for a while and come back to it, because now, I found the right method in a few seconds:
 
 <script src="https://gist.github.com/jamescurran/5437971.js">   </script>
 
@@ -44,7 +43,7 @@ Next, we have a simple function to count the occurrences of a substring.
 
 <script src="https://gist.github.com/jamescurran/5437981.js">   </script>
 
-The revision isn't much different but the subtle difference is important.  Instead of creating a new, shorter string to search, we tell it to just start looking after the last match.  Instead we now merely look at the string.</P>
+The revision isn't much different but the subtle difference is important.  Instead of creating a new, shorter string to search, we tell it to just start looking after the last match.  Instead we now merely look at the string.
 
 <script src="https://gist.github.com/jamescurran/5437995.js">   </script>
 
@@ -52,7 +51,7 @@ The next one has a special problem --- It doesn't do what it claims to do!
 
 <script src="https://gist.github.com/jamescurran/5438000.js">   </script>
 
-Now, it says that it should remove repeated space, so that there is only one space between words. However, what it actually does it to remove all spaces.  This gives us a problem: Should my rewritten function do what it claims to do, or what it actually does   I decided to give you one of each.
+Now, it says that it should remove repeated spaces, so that there is only one space between words. However, what it actually does it to remove all spaces.  This gives us a problem: Should my rewritten function do what it claims to do, or what it actually does? I decided to give you one of each.
 
 Duplicating the result is quite straightforward:
 
