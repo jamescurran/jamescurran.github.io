@@ -9,7 +9,7 @@ Over on CodeProject, I spotted an article by Mahdi Yousefi called "[Creating an 
 
 <script src="https://gist.github.com/jamescurran/5439129.js">   </script>
 
-So, what's wrong with this   Well, let's see:
+So, what's wrong with this? Well, let's see:
 
  * It takes a `List` as a parameter and returns a list.  This is rather limiting.  What if we have array we want to shuffle? 
 
@@ -19,7 +19,7 @@ So, what's wrong with this   Well, let's see:
 
  * It creates a new list for output.  This  is a problem only in that it's a time expense we might as well avoid if possible.  It also builds this list by repeated calls to Add(), but without specifying an initial size, meaning that Add() will frequently have to resize the list to keep expanding it.  The fix to this would be trivial.  Just create the new list as "`new List<int>(input.Count);`".  But as you'll see, this won't be necessary.
 
- * It destroys the list input.  In fact, it destroys it three times over: First by removing all of it's items.  Then by calling Clear() on the empty list.  Then by setting the local reference to null.  That last one might cause it to be garbage-collected a couple microseconds earlier - if the calling routine wasn't holding a reference to it. I don't want to claim this as a "Problem", as much as a "Behavior" - It's just something it does, so if our replacement does that as well (as it will), we haven't lost anything.  But, if you nevertheless thing that _is_ a problem, don't worry, we'll address that to.
+ * It destroys the list input.  In fact, it destroys it three times over: First by removing all of it's items.  Then by calling Clear() on the empty list.  Then by setting the local reference to null.  That last one might cause it to be garbage-collected a couple microseconds earlier - if the calling routine wasn't holding a reference to it. I don't want to claim this as a "Problem", as much as a "Behavior" - It's just something it does, so if our replacement does that as well (as it will), we haven't lost anything.  But, if you nevertheless think that _is_ a problem, don't worry, we'll address that too.
 
  * It removes that items from the list using Remove() - This is a very time-consuming method on Lists (which, contrary to popular belief are not linked-lists, but are internally implement as arrays).  One call to `List.Remove()` is *O(N)* by itself.  Since it's called in a loop, that makes the complicity of this method *O(N^2)*.  Clearly that's something we should avoid.
 
@@ -63,7 +63,7 @@ But, you said you didn't want the original list destroyed. (Yes, you did in fact
 
      return new List<T>(input).Shuffle();
 
-But that brings us to another key point.  The only thing that the input is being used for is to seed the new List, and that ctor doesn't take an` IList<>`, it takes the much more common `IEnumerable<>` (which `IList` just happens to be a descendant of).  So, we might as well make that our input parameter.
+But that brings us to another key point.  The only thing that the input is being used for is to seed the new List, and that ctor doesn't take an` IList<>`, it takes the much more common `IEnumerable<>` (which `IList` just happens to be a extension of).  So, we might as well make that our input parameter.
 
     public static IList<T> ShuffleCopy<T>(this IEnumerable<T> input)
     {        return new List<T>(input).Shuffle();    }
