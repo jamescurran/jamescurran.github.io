@@ -17,7 +17,7 @@ First we have the bits that are common to both and with the possible except of t
 
 The `ICharStream` interface was provided by Hare for the puzzle.  And `CharStream` is my simpleminded implementation of it.
 
-My idea basically, was to keep a linked list of non-repeated characters, and store the list node (not just the value, but the whole node) in a HashSet.  Then as each new character comes into, I can quickly find the node it represents (lookup in the HashSet), quickly remove repeats from the linked list (because I have the node, with the front & back pointers), and quickly find the first remaining node (because it will be the head of the linked list).
+My idea basically, was to keep a linked list of non-repeated characters, and store the list node (not just the value, but the whole node) in a Dictionary mapping the character to the node.  Then as each new character comes into, I can quickly find the node it represents (lookup in the Dictionary), quickly remove repeats from the linked list (because I have the node, with the front & back pointers), and quickly find the first remaining node (because it will be the head of the linked list).
 
 Here is that implementation:
 
