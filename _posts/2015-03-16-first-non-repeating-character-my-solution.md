@@ -2,7 +2,7 @@
 layout: post
 title: First Non-Repeating Character - My Solution
 categories: code C# csharp programming ASP.NET aspnet MVC javascriptloader
-tags: code C# csharp programming ASP.NET aspnet MVC javascriptloader
+tags: code C# csharp programming
 ---
  
 Over on GeeksWithBlog.com, James Michael Hare posted a "Little Puzzler" : [First Non-Repeating Character](http://geekswithblogs.net/BlackRabbitCoder/archive/2015/03/09/little-puzzlers-first-non-repeating-character.aspx).  As I write this, he seems to have posted his solution, but that page isn't coming up for me, so before I see that, let me post mine.  
