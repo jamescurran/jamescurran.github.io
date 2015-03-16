@@ -7,7 +7,7 @@ tags: code C# csharp programming
  
 Over on GeeksWithBlog.com, James Michael Hare posted a "Little Puzzler" : [First Non-Repeating Character](http://geekswithblogs.net/BlackRabbitCoder/archive/2015/03/09/little-puzzlers-first-non-repeating-character.aspx).  As I write this, he seems to have posted his solution, but that page isn't coming up for me, so before I see that, let me post mine.  
 
-For the full problem spec, see James Michael's post linked above, but basically, given a stream (of unknown size) of characters (later clarified to upper case letters only), find of value & position of the first character that isn't repeated anywhere in the sequence.
+For the full problem spec, see James Michael's post linked above, but basically, given a stream (of unknown size) of characters (later clarified to upper case letters only), find this value & position of the first character that isn't repeated anywhere in the sequence.
 
 This led to a lively discussion in the comments, and through them, after I'd formulated one solution, I was able to come up with a second.  So, let's get to them...
 
