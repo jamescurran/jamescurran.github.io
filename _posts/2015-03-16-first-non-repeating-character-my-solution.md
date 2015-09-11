@@ -23,7 +23,7 @@ Here is that implementation:
 
 <script src="https://gist.github.com/jamescurran/703f7345c46d4a3ee598.js">   </script>
 
-However, in the comments, one reader (using only the handle "Wizou"), suggested using an array to keep track of repeated characters.  This worked fine for one part of the problem, but left other requirement out:  You have to scan the entire array to first out which characters weren't repeated, and you'd still have no idea which was first.
+However, in the comments, one reader (using only the handle "Wizou"), suggested using an array to keep track of repeated characters.  This worked fine for one part of the problem, but left other requirement out:  You have to scan the entire array to find out which characters weren't repeated, and you'd still have no idea which was first.
 
 However, when the range of characters was limited to just the upper case letters, the array become only 26 elements long, so scanning it (even repeated times) isn't really a problem, which lead me to this solution:
 
