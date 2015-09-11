@@ -39,4 +39,5 @@ kramdown:
     coderay_css: style
 gems:
   - jekyll-sitemap
+gems:
   - jekyll-feed  
