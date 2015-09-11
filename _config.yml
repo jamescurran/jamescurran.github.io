@@ -38,6 +38,5 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: style
 gems:
-  - jekyll-feed
   - jekyll-sitemap
-  
+  - jekyll-feed  
