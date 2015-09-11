@@ -1,3 +1,5 @@
+---
+---
 lsi: false
 pygments: true
 exclude: [safe]
@@ -37,3 +39,5 @@ kramdown:
     coderay_css: style
 gems:
   - jekyll-feed
+  - jekyll-sitemap
+  
