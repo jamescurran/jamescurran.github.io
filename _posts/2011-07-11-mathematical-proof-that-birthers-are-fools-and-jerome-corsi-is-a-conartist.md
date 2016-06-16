@@ -11,7 +11,7 @@ His latest book tries to "prove" President Obama's short-form birth certificate 
   
 To that end, he's posted in his column on WorldNetDaily  [Mathematical 'proof' Obama birth certificate a forgery](http://www.wnd.com/index.php?fa=PAGE.view&pageId=319221).
   
-In the article, Corsi quotes "a prominent software engineer who works as a high-level programmer for a state government", who __refuses to be named__  because he fears he'll lose his job --- which I think is a legitimate concern, since publicly slandering someone with obviously manufactured evidence is frequently a firing offense.
+In the article, Corsi quotes "a prominent software engineer who works as a high-level programmer for a state government", who __refuses to be named__  because he fears he'll lose his job --- which I think is a legitimate concern, since publicly slandering someone with obviously manufactured evidence is frequently a firing offense.  
   
 So, I am also a "prominent software engineer" who is, however, willing to be named (James Curran, in case you missed the masthead) and can even prove his prominence with a [resume](http://www.noveltheory.com/resume) of top-level jobs, magazine articles, user group talks, and industry awards. And I going to prove that Corsi and his fanciful "prominent software engineer" are liars.
 
@@ -47,4 +47,6 @@ So, what is done when you "Pixelate"?  Well, the fact that it's in the "Distort"
   
 And I think that should be our new slogan for Jerome Corsi and WorldNetDaily: *"4% truth and 96% lies"*
   
+[Update 16-Jun-2016, I've recently learned that that UPSE is most likely Mara Zebest, who is Corsi's favorite "expert" on these matters.  She is a graphic artist and contributor to the book *Inside Photoshop* for editions prior to 2003.  Which means a) she's not really a "software engineer" as the term is used, b) she clearly knows enough about Photoshop to distort the image as I described, and c) she clearly knew that she was distorting the image, not enhancing it.  But I do apologize for using the wrong pronoun for her.]  
+
   
