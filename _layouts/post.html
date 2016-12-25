@@ -40,17 +40,23 @@
 			</tr>
 			</table>
               <span class="badge badge-inverse">
+                {{ page.date }}
+{% comment %} 			  
                 <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
                 {{ page.date | date_to_string }}
                 </time>
+{% endcomment %} 
               </span>
             <p>{{ content }}</p>
 			<a href="javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','//geekli.st/javascript/bookmarklet/bookmarklet.js')"><img src="//geekli.st/images/assets/GeekIt_wFace.png"></a>
             <div>
               <span class="badge badge-inverse">
+                {{ page.date }}
+			  {% comment %} 	
                 <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
                 {{ page.date | date_to_string }}
                 </time>
+				{% endcomment %} 	
               </span>
 			  <div class="category-list">Tags: <ul>{% for category in page.categories %}
 			  <li><a href="/categories/{{category}}.html">{{category}}</a></li>
