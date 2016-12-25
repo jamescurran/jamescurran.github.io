@@ -41,9 +41,7 @@
 			</table>
               <span class="badge badge-inverse">
                 <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
-{% comment %} 			  
-                {{ page.date | date_to_string }}
-{% endcomment %} 
+                {{ page.date | date: "%-d %B %Y"}}
                 </time>
               </span>
             <p>{{ content }}</p>
