@@ -12,25 +12,25 @@ Buss-Fuzz has become a staple of job interview screening in the last few years. 
 And the SOLID Principles go like this:
 
 ### S - Single responsibility principle (SRP)
-#### A class should have only a single responsibility.
+### A class should have only a single responsibility.
 
 At first I thought this was going to be a gimme, as I was only writing one class and it was only going to do one thing. The I realized it's actually doing two things: The count itself, plus building the parameters for the count.  However, I don't feel the latter truly counts as a responsibility, so I'm going to let it slide.  If you disagree, make your case in the comments, and maybe I'll rewrite it.
 
 ### O - Open/closed principle (OCP)
-#### "software entities...should be open for extension, but closed for modification".
+### "software entities...should be open for extension, but closed for modification".
 
 Fulfilling this one caused the problem in the previous paragraph.  First of all, I'm not sure how to make it "closed for modification".  I could make it `sealed` but that just seems rude.  The only way I could think of is to make it "open for extension" to the point that there is no reason for modifications.  To that end, you can specific the starting &amp; ending numbers, and add additional substitutions (e.g., replace 8s with "Wow").  I wrote a fluent interface for this, which added a number of methods to the class.  I could have done the same thing with a couple overloads to the constructor, and that would probably keep the people complaining about the SRP violation happy, but whether I set the values via the ctor or the fluent interface doesn't fundamentally change the utility of the object, so I figure I'm on solid ground (pun not intended, but I still left it after I realized it...)
 
 ### L - Liskov substitution principle (LSP)
-#### "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program".
+### "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program".
 
 ### I - Interface segregation principle (ISP)
-#### "many client-specific interfaces are better than one general-purpose interface."
+### "many client-specific interfaces are better than one general-purpose interface."
 
 I'm going to do these together, since their related here.  Once configured, the object will have one task -- to return the next item in the sequence (as a string) when called upon.    I would create an interface for that, except there already exists such an interface.  It's called` IEnumerable<string>`.  It's very specific to the task at hand.   So, all I need do is implement that, and we've handled ISP, and, since it can how be used anywhere we need an `IEnumerable<String>` (such as anything using LINQ), taking care of LSP.
 
 ### D - Dependency inversion principle (DIP)
-#### One should "Depend upon Abstractions. Do not depend upon concretions."
+### One should "Depend upon Abstractions. Do not depend upon concretions."
  
 OK, home stretch now.    This is a bit tricky, as the principle is intended more for overall systems rather than individual components.   A small class like this is rather self-contained, so it's not really "depending" on anything.  It's something that other components depend upon, so we just need to allow them to depend on it via abstraction, which we've largely covered in the last section.   Once a BuzzFuzz object is configured, it can be passed around as a parameter, or stored in an IoC container, until it's called upon to produce it's sequence.
 
@@ -38,8 +38,8 @@ OK, home stretch now.    This is a bit tricky, as the principle is intended more
 ### And now, the code....
 As promised, we define the class as implementing IEnumerator of string.  I cheated a tiny bit and made it also an IEnumerable, because you really need one of each, and it's such a minor interface, it's easiest it stick it here.
 
-	public class BuzzFuzz : IEnumerator<string>, IEnumerable<string>
-       {
+		public class BuzzFuzz : IEnumerator<string>, IEnumerable<string>
+		{
  
 Next, we have a simple internal class defined within BuzzFuzz class, to hold the word substitutions:
 
@@ -60,7 +60,7 @@ Note that `_end` is preset to MaxValue, so until you set the ending  value, it'l
  
  The constructors are straightforward:
  
- 		public BuzzFuzz(int start)
+		public BuzzFuzz(int start)
 		{
 			_start = start;
 			_substitutions.Add(new Substitution {Digit = 5, Word = "Buzz"});
@@ -114,7 +114,7 @@ Here is the implement of IEnumerable.  It's funny that this is probably a bigger
  
  The oft-mentioned fluent interface is rather straightforward.   The key is to return `this`, so that the method can be chained together.
  
- 		public BuzzFuzz Add(int digit, string word)
+		public BuzzFuzz Add(int digit, string word)
 		{
 			_substitutions.Add(new Substitution {Digit = digit, Word = word});
 			return this;
@@ -143,17 +143,17 @@ Here is the implement of IEnumerable.  It's funny that this is probably a bigger
  
  We end with a little bit of fluff I throw in because I thought writing `foreach(var num in new BuzzFuzz())` looked ugly.   So I added a class who entire purpose is just to create a BuzzFuzz object, neatly:
  
- 	internal class Buzz
-	{
-		public static BuzzFuzz Fuzz
+		internal class Buzz
 		{
-			get { return new BuzzFuzz(); }
+			public static BuzzFuzz Fuzz
+			{
+				get { return new BuzzFuzz(); }
+			}
 		}
-	}
 
 So now we can write `foreach( var num in Buzz.Fuzz)`   Or with the full fluent syntax:
 
-    foreach(var num in Buzz.Fuzz.StartAt(1).EndAt(100).Add(6, "Sass"))
+		foreach(var num in Buzz.Fuzz.StartAt(1).EndAt(100).Add(6, "Sass"))
     
  
  
