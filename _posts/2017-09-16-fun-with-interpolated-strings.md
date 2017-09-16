@@ -22,7 +22,8 @@ First, you can combine interpolated strings with literal strings:
     var fname = "fullname.txt";
     var pathname = $@"C:\Temp\{fname}";
     
-Next, inside the brace, you can put real code -- by quotes there are not escaped.
+Next, inside the brace, you can put real code -- but quotes there are not escaped.
 
     var fname = "fullname.txt";
     var pathname = $@"C:\Temp\{fname.Replace(".txt", ".out")}";
+    
