@@ -1,7 +1,6 @@
 ﻿---
 layout: post
 title: Fun With Interpolated Strings
-categories: code programming csharp
 tags: code programming csharp
 ---
 

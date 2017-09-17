@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The SOLID Buzz-Fuzz
-categories: code csharp .net programming dotnet csharp buzzfuzz
 tags: code csharp .net programming dotnet csharp buzzfuzz
 ---
 
