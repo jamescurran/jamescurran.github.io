@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A C# (Over-)Engineering Project - CodeTextAdapter
-categories: code C# csharp programming ASP.NET aspnet MVC javascriptloader
 tags: code C# csharp programming
 ---
 

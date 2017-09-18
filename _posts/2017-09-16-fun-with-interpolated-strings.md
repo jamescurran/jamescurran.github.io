@@ -4,6 +4,7 @@ title: Fun With Interpolated Strings
 tags: code programming csharp
 ---
 
+
 Hard to believe it's been over two years since my last blog post.   
 
 I've been busy...
