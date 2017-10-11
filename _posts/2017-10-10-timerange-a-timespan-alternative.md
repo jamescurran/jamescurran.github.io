@@ -3,6 +3,7 @@ layout: post
 title: TimeRange - a TimeSpan alternative
 tags: code programming csharp
 ---
+
 ## TimeRange - a TimeSpan alternative.
 
 Today I wrote a class to build a report.  It has a method to retrieve data over a given range of dates. 
@@ -120,4 +121,8 @@ Now, can we get rid of those `Add` and `Subtract` methods and use plus & minus, 
 A word about comparibility: I tried to make a `TimeRange` `IComaprable`.  Couldn't do it. Any two lambdas are equal if their signatures match. I'd have to add another field which would state the type (Day/month/year), but then, we'd either have to make 24*TimeRange.OneMonth less than TimeRange.OneYear or add a whole bunch more logic to work out which is more --- which was the original problem this set out to avoid.
 
 
-Full source code on my Githib:  https://github.com/jamescurran/TimeRange
+Full source code on my Githib:  [https://github.com/jamescurran/TimeRange](https://github.com/jamescurran/TimeRange)
+
+---
+Side Note:  This website is hosted on Github.  Each page is written in "YAML" which is Markdown with a header.  The header gives the title and tags.  _**AND**_ on this site, about half the time (like this page) github is displaying the header when it shouldn't.  Anyone have any idea what causes that and how to fix it?  
+
