@@ -1,5 +1,5 @@
 ---
 layout: categories
-title: site
+title: irony
 ---
 *not used

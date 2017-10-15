@@ -1,5 +1,5 @@
 ---
 layout: categories
-title: site
+title: church-of-stop-shopping
 ---
 *not used

@@ -1,5 +1,5 @@
 ---
 layout: categories
-title: site
+title: linq
 ---
 *not used

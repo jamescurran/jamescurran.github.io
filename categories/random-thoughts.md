@@ -1,5 +1,5 @@
 ---
 layout: categories
-title: site
+title: random-thoughts
 ---
 *not used
