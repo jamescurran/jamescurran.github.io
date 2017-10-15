@@ -7,8 +7,8 @@
 
 <div class="postmeta extract">
               <span class="badge badge-inverse">
-                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
-                {{ page.date | date: "%-d %B %Y"}}
+                <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+                {{ post.date | date: "%-d %B %Y"}}
                 </time>
               </span>
 </div>
@@ -23,8 +23,7 @@
 	<div class="blocked tags">
 <p>
 	{% for tag in post.categories %}
-	<a href="/categories/{{ tag}}.html"></a>
-,
+	<a href="/categories/{{ tag}}.html">{{ tag}}</a>,
 	{% endfor %}
 </p>
 	</div>
