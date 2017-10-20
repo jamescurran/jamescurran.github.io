@@ -123,6 +123,3 @@ A word about comparibility: I tried to make a `TimeRange` `IComaprable`.  Couldn
 
 Full source code on my Githib:  [https://github.com/jamescurran/TimeRange](https://github.com/jamescurran/TimeRange)
 
----
-Side Note:  This website is hosted on Github.  Each page is written in "YAML" which is Markdown with a header.  The header gives the title and tags.  _**AND**_ on this site, about half the time (like this page) github is displaying the header when it shouldn't.  Anyone have any idea what causes that and how to fix it?  
-
