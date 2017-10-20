@@ -2,7 +2,6 @@
 layout: post
 title: Forgotten .NET Gem --- StringDictionary
 tags: code csharp .net programming dotnet csharp 
-categories: code csharp .net programming dotnet csharp 
 ---
 
 ## Forgotten .NET Gem --- StringDictionary

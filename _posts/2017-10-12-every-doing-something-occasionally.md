@@ -2,7 +2,6 @@
 layout: post
 title: Every --- Doing Something Occasionally
 tags: code programming csharp
-categories: code programming csharp
 ---
 
 ## Every --- Doing Something Occasionally
