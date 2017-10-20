@@ -1,7 +1,6 @@
 ---
 layout: post
 title: First Non-Repeating Character - My Solution
-categories: code C# csharp programming ASP.NET aspnet MVC javascriptloader
 tags: code C# csharp programming
 ---
  
