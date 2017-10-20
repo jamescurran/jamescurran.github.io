@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Fun With Interpolated Strings
 tags: code programming csharp

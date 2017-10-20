@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TimeRange - a TimeSpan alternative
 tags: code programming csharp
