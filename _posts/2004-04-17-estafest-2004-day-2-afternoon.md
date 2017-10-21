@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ESTAFest 2004 (Day 2 - Afternoon)
-categories: theater
 tags: theater
 ---
 Sorry about cutting that short but I was late for dinner.

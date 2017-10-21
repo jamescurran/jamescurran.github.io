@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Growing &amp; Shrinking Freeze Tag
-categories: my-life theater
 tags: my-life theater
 ---
 

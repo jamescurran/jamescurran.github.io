@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Tax Cut
-categories: politics
 tags: politics
 ---
 

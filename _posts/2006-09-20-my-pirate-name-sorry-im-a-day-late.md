@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My Pirate Name (Sorry, I'm a day late.....)
-categories: my-life
 tags: my-life
 ---
     <div style="padding-right:10px;padding-left:10px;left:50%;padding-bottom:0pt;margin:25px 0pt 25px -200px;width:400px;padding-top:0pt;font-family:serif;position:relative;text-align:center;border:1px solid;">

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ASP.NET MVC Helper - MoreLessText
-categories: code C# csharp programming ASP.NET aspnet MVC javascriptloader
 tags: code C# csharp programming ASP.NET aspnet MVC javascriptloader
 ---
 

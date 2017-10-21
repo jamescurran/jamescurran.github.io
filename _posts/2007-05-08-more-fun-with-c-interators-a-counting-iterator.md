@@ -1,7 +1,6 @@
 ---
 layout: post
 title: More Fun with C# Interators:A Counting Iterator
-categories: 
 tags: 
 ---
 [Michael Herman](http://www.dotnetjunkies.com/WebLog/mwherman2000/default.aspx) recently discovered a 

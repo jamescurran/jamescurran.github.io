@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Right Personality
-categories: random-thoughts
 tags: random-thoughts
 ---
 It seems lots of programmer/blogger folks ( [ScottW](http://scottwater.com/blog/posts/9852.aspx), [Chris Sells](http://www.sellsbrothers.com/news/showTopic.aspx?ixTopic=796), [Duncan Mackenzie](http://weblogs.asp.net/duncanma/posts/27108.aspx), [Kent Sharkey](http://weblogs.asp.net/ksharkey/posts/27210.aspx), [GAD](http://weblogs.asp.net/gad/posts/27239.aspx) ) are taking an online Myers-Briggs [personality test](http://www.humanmetrics.com/cgi-win/JTypes2.asp), and all coming up as type "ENTJ" (that's "Extroverted Intuitive Thinking Judging" for those not hip to the Myers-Briggs lingo), and since many of those bloggers work for Microsoft, they were speculating if that should be a requirement for employment. 

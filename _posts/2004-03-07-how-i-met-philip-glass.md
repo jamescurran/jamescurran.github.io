@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How I met Philip Glass
-categories: my-life
 tags: my-life
 ---
 Some time ago, Raymond Chen blogged about the [Glass Engine](http://blogs.msdn.com/oldnewthing/archive/2004/02/04/67385.aspx), and asked [Marc Miller](http://weblogs.asp.net/marcmill) to tell the story of how he met Philip Glass. It appears that Marc never did, so I'll post my story.

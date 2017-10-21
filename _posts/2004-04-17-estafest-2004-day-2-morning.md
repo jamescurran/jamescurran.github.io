@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ESTAFest 2004 - Day 2 (Morning)
-categories: theater
 tags: theater
 ---
 After breakfast, I went over to the college for the morning workshop session. Actually, this one was a repeat of the one I came in at the end of yesterday: "Script Analyst: Understanding the playwright's scenario" by Ward Dales, who is one of the adjudicators.  I thought it was kind-a interesting, considering I don't act or direct, and it was for directors dealing with actors.   

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Dev102's Challenge 12:Managed &amp; unmanaged
-categories: code dotnet csharp
 tags: code dotnet csharp
 ---
 

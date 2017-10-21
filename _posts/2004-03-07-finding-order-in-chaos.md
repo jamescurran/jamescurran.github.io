@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Finding order in Chaos....
-categories: 
 tags: 
 ---
 Every day on my way home from work, I have to wait for a PATH train.  When I see a train going in the opposite direction stop across the tracks, my subconscious thinks that means a train going my way is seconds away, so the trains align at the stop.  Of course, immediately, my conscious jumps in and points out that as the trains are moving in different directions, they could only align at one point along the route, and there's not reason for that point to be here.  Nevertheless, most of the time, a south-bound train **does** arrive before the north-bound train leaves.  (And my subconscious laughs mockingly at my conscious mind).  

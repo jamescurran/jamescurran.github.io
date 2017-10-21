@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Blackout.
-categories: my-life
 tags: my-life
 ---
 I was at my desk at work when my computer monitor flickered out, and I noticed that the overhead lights were out.  We soon discovered that the rest on the office was dark, and from the yells of the people in the elevator, the whole building had no power.  We tried to figure out how wide the power outage was.  On a sunny day, one can't really tell if the lights are on in the building across the street.  And from the 13th floor, you can't really tell if the traffic lights are working.  (BTW, we really work on one of these rare 13th floors that's actually called the 13th floor).

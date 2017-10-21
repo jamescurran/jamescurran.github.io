@@ -1,7 +1,6 @@
 ---
 layout: post
 title: What's inside a foreach() statement 
-categories: code c# .net programming
 tags: code c# .net programming
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: DEV102's Programming Job Interview Challenge 6 
-categories: code c# .net dotnet csharp
 tags: code c# .net dotnet csharp
 ---
 
@@ -20,7 +19,7 @@ Anyway, time to move on to [this week's question](http://www.dev102.com/2008/06/
     b.Add(2.0);
    
     Console.WriteLine((a[0] == b[0]));
-    Console.WriteLine((a\[1\] == b\[1\]));
+    Console.WriteLine((a[1] == b[1]));
   
   
 > *What will be typed into the console  And **WHY**?*
@@ -31,7 +30,7 @@ This answer is short enough that we can use the cool "white-on-white; select to 
 
 
 <div style="color:white;">
-ArrayList is deep-down, just an object\[\].  To store an valuetype, like an int or float, in an ArrayList, that value would first have to be boxed.  Each valuetype is boxed separately, in distinct objects, even if they do happen to have the same value. When we get to the WriteLines, we are just performing (object) == (object) (actually, Object.ReferenceEquals(object1, object2); )  ReferenceEquals knows nothing about unboxing.  It just asks, "Are these two references pointing to the exact same object ".  For any two boxed objects, regardless of their value, the answer would be "No".  Hence, both lines print "False".
+ArrayList is deep-down, just an object[].  To store an valuetype, like an int or float, in an ArrayList, that value would first have to be boxed.  Each valuetype is boxed separately, in distinct objects, even if they do happen to have the same value. When we get to the WriteLines, we are just performing (object) == (object) (actually, `Object.ReferenceEquals(object1, object2);` )  ReferenceEquals knows nothing about unboxing.  It just asks, "Are these two references pointing to the exact same object ".  For any two boxed objects, regardless of their value, the answer would be "No".  Hence, both lines print "False".
 </div>
 
  (select the blank space above)

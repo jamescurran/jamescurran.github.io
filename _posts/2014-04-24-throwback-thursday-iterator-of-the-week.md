@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Throwback Thursday - C++ Iterator of the Week
-categories: code cpp C++ programming 
 tags: code c# .net programming 
 ---
 The *Throwback Thursday* concept is to post on old picture on Facebook on Thursdays.  But we do code here, so let's post some old code: 

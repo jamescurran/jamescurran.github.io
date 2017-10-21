@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Generics without Collections
-categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections
 ---
 Having moved to C# after years of being a C++ programmer, I was quite happy when generics were added to C#. I could finally do some of the things I was doing before with C++'s templates. 

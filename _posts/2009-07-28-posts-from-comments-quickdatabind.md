@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Posts from Comments:QuickDataBind
-categories: code c# .net programming dotnet csharp code-tuneup
 tags: code c# .net programming dotnet csharp code-tuneup
 ---
 

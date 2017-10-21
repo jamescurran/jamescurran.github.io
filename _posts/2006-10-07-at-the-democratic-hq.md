@@ -1,7 +1,6 @@
 ---
 layout: post
 title: At the Democratic HQ
-categories: politics my-life video
 tags: politics my-life video
 ---
 I volunteer for the Menendez Campaign.  He came by the this morning.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Wordwrapping in C#
-categories: code c# .net programming
 tags: code c# .net programming
 ---
 

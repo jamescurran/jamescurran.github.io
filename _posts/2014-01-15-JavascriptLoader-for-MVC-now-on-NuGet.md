@@ -1,7 +1,6 @@
 ---
 layout: post
 title: JavascriptLoader for MVC now on NuGet
-categories: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 tags: code c# .net javascript programming dotnet csharp aspnetmvc codeproject
 ---
 

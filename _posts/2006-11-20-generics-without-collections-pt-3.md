@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Generics without Collections, Pt. 3
-categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections
 ---
 Over the weekend, I attended the third [NJ Code Camp](http://www.njcodecamp.org/).  And since the moderators asked nicely, I presented this series as a talk.  Overall, the lecture didn't go well. (I was too nervous and talk too quickly.  Oddly, on one of the evaluation sheets, someone complained that I was talking too loudly, which I first is the first time in my life that was ever said about me)

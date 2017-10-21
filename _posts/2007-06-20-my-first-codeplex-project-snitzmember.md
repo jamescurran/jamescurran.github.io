@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My First CodePlex Project:SnitzMember
-categories: 
 tags: 
 ---
 After many months to checking out the new projects on CodePlex almost daily, it's finally time for me to create one. 

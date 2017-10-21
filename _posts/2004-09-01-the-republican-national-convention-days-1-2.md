@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Republican National Convention, Days 1 &amp; 2.
-categories: politics my-life
 tags: politics my-life
 ---
 Being that I work in Midtown Manhattan ( * ) and am quite opposed to the crook currently in the White House, I felt the need to join in on the protests going on around town.

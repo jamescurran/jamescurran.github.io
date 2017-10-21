@@ -1,7 +1,6 @@
 ---
 layout: post
 title: I am NOT a stalker.
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 

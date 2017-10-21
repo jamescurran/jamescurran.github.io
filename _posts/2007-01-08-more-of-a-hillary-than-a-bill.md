@@ -1,7 +1,6 @@
 ---
 layout: post
 title: More of a Hillary than a Bill....
-categories: 
 tags: 
 ---
 

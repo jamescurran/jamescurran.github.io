@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Scoble Watch, Day 1
-categories: my-life mvp
 tags: my-life mvp
 ---
 

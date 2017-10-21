@@ -1,7 +1,6 @@
 ---
 layout: post
 title: More Rev. Billy Videos!
-categories: 
 tags: 
 ---
 

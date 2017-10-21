@@ -1,7 +1,6 @@
 ---
 layout: post
 title: RockStar:Supernova
-categories: my-life random-thoughts tv music
 tags: my-life random-thoughts tv music
 ---
 

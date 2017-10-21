@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Get an ApplicationBarIconButton by name (Redux)
-categories: code c# .net generics-without-collections dotnet csharp codeproject
 tags: code c# .net generics-without-collections dotnet csharp codeproject
 ---
 Yesterday, I read a blog post on [getting an ApplicationBarIconButton by name](http://www.ariankulp.com/get-an-applicationbariconbutton-by-name).  The author made a couple minor errors in the code, which I was going to leave a comment about, except his comment page is broken. So, another excuse to write something for my own blog.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: This weekend's theater.
-categories: theater
 tags: theater
 ---
 I just remember that I added a "Theater" category, but I keep forgetting to use it.   This past weekend, I was:

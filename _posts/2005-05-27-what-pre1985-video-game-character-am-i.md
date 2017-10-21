@@ -1,7 +1,6 @@
 ---
 layout: post
 title: What Pre-1985 Video Game Character Am I 
-categories: my-life quizes
 tags: my-life quizes
 ---
 <P>Ya'know.... As long as I keep finding these quizes, I may be able to keep posting here occasionally, without effort....</P>

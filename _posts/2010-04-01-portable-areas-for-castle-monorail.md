@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Portable Areas for Castle Monorail
-categories: code c# .net programming dotnet csharp castle monorail
 tags: code c# .net programming dotnet csharp castle monorail
 ---
 

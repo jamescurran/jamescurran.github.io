@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The BASIC classic Rock Test
-categories: 
 tags: 
 ---
 

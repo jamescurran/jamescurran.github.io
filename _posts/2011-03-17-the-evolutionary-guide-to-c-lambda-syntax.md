@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Evolutionary Guide to C# Lambda Syntax
-categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
 Originally (.NET V1.1), we had to explicitly create a Delegate object to wrap a method reference to use it as a callback method, and that method had to named.

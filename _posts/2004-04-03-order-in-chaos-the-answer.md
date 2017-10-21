@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Order in Chaos, the Answer...
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 Ok, before I get to anything else (and there will be a bit), I'd better answer the question I posed last month  (BTW, notice that I've never let a full month go by without a blog entry -- I'll get the hang of this thing yet....)

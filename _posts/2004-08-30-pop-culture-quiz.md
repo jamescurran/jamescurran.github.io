@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Pop (Culture) Quiz
-categories: books
 tags: books
 ---
 OK, pop quiz.. Name the book:

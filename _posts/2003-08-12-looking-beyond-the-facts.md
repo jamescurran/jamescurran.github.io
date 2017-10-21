@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Looking beyond the "Facts"
-categories: random-thoughts
 tags: random-thoughts
 ---
 From 13-Feb-2003:

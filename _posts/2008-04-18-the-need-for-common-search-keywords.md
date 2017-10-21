@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Need for Common Search Keywords.
-categories: 
 tags: 
 ---
 

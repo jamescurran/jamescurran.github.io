@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The weekend's theater
-categories: theater
 tags: theater
 ---
 I'm a bit behind on this, aren't I?

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Yep, I'm a socialist....
-categories: 
 tags: 
 ---
 

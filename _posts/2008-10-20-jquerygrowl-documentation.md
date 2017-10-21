@@ -1,8 +1,7 @@
 ---
 layout: post
 title: jQuery.growl Documentation
-categories: 
-tags: 
+tags: code javascript programming 
 ---
 
 Right now, I'm in the midst of a long-running project to rewrite my other website, [NJTheater.com](http://www.njtheater.com).  In the process, I've discovered jQuery, the hot new javascript library that all the kids are using today.   One of it's key selling points is it's well designed plugin system, which has led to a host of add-ons being written for it. 

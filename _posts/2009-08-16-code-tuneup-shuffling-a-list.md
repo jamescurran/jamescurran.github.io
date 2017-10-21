@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Code Tune-Up:Shuffling a List
-categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
 Over on CodeProject, I spotted an article by Mahdi Yousefi called "[Creating an ASP.NET captcha using jQuery and s3capcha](http://www.codeproject.com/KB/validation/aspnet_capcha.aspx)", which include this routine to shuffle a `List<>` of integers.

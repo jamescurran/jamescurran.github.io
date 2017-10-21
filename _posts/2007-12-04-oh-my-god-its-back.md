@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Oh My God! It's back!
-categories: 
 tags: 
 ---
 
@@ -20,7 +19,7 @@ Map of PCs:
  - pcE - Work machine (generic PC, circa 2006)
  - pcF - HomeServer Beta 2 (generic PC, circa 2007)
 
-Now, pcB had been decommissioned, by was still was on the table with the others. pcC died, which is why the blog went down.   I tried moving the disk to pcA, which then proceeded to die itself.  I move the system disk from pcA to pcB to regain access to the Internet.  (Complication -- they had different NIC cards).  I then had to install the other apps that were running on pcC (notably my mail server). In midst of all this disk swapping, twice I forgot to power down the PC before pulled &amp; reattaching a ribbon cable to a disk -- which killed the disks, one of which was the system disk to pcC.
+Now, pcB had been decommissioned, but was still was on the table with the others. pcC died, which is why the blog went down.   I tried moving the disk to pcA, which then proceeded to die itself.  I move the system disk from pcA to pcB to regain access to the Internet.  (Complication -- they had different NIC cards).  I then had to install the other apps that were running on pcC (notably my mail server). In midst of all this disk swapping, twice I forgot to power down the PC before pulling &amp; reattaching a ribbon cable to a disk -- which killed the disks, one of which was the system disk to pcC.
 
 So, all I needed to do now was to restore the back up of pcC from HomeServer onto a new hard disk.  pcA seemed to recover and I bought a new HD at a computer show, so, mid-August, you would think I was good to go.  No such luck.  HomeServer refused to restore the disk.  Which was crazy, as I had already restore that disk a few weeks earlier -- You'll recall that I said that pcC had been flaky for a while; one of those acts of flakiness was crashing it's hard disk.
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The party & The crash
-categories: my-life
 tags: my-life
 ---
 The funny  thing about not posting all month is that I've had something I wanted to write about for 3 week; I just never got a chance.

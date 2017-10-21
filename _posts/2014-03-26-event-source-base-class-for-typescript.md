@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Event Source Base class for Typescript
-categories: code javascript programming typescript
 tags: code javascript programming typescript
 ---
 

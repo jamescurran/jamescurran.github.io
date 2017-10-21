@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Republican National Convention, Day 4.
-categories: politics my-life
 tags: politics my-life
 ---
 Not as many photos today, partial because what I did wasn't as photogenic, but mostly because, for the second time in three days, I let the battery on my camera run down.

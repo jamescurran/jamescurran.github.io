@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Lesbian Porn
-categories: random-thoughts
 tags: random-thoughts
 ---
 Ok, so this is blantant Google-bait, but my treatise on Britney's breast isn't getting that many hits lately.

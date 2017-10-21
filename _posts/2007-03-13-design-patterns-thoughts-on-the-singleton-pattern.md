@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Design Patterns:Thoughts on the Singleton Pattern
-categories: code c# .net programming
 tags: code c# .net programming
 ---
 (Note: I started writing this a couple days ago --- a short while before Andrew Matthews published his own very similar <a href="http://aabs.wordpress.com/2007/03/08/singleton-%e2%80%93-the-most-overused-pattern/">article</a>.  He, of course, finished his first...)

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Surveying a Fact
-categories: politics
 tags: politics
 ---
 My actual very first Blog entry (8-Feb-2003)

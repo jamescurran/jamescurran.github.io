@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Office Football pool
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 Like pretty much every office in the country, mine has a pool of the Superbowl.  Since we don't have enough employee to fill 100 boxes, each person got four combinations.  Mine are ` 6-0, 5-0, 1-7, 2-3`. (Patriot's scores listed first).  So, given that, here my prediction for the game:

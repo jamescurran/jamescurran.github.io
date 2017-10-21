@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Billions &amp; Billions
-categories: 
 tags: 
 ---
 

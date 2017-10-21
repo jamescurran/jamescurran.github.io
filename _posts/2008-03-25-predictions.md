@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Predictions
-categories: 
 tags: 
 ---
 

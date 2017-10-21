@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AACT Festival Day 1 (Wed, June 25)
-categories: theater
 tags: theater
 ---
 Ok, seems that my hotel doesn't have Internet access, so I'm going to have to write these off line and upload them to the website when I get home.

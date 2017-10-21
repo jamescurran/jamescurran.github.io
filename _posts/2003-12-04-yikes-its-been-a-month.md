@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Yikes... It's been a month.
-categories: my-life theater mvp
 tags: my-life theater mvp
 ---
 

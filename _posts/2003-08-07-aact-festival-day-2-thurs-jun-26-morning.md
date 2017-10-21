@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AACT Festival Day 2 (Thurs, Jun 26 Morning)
-categories: theater
 tags: theater
 ---
 Oh, forgot to mention something yesterday. Somehow I didn't notice it when I first checked in (but then I was just in the room for two minutes to drop off my bags), but despite being in the dirt cheap Days Inn, I apparently got the honeymoon suite, because it has a heart-shaped jazucci.

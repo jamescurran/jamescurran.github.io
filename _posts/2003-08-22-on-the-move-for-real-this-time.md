@@ -1,7 +1,6 @@
 ---
 layout: post
 title: On the Move, for real this time.
-categories: site
 tags: site
 ---
 That seemed to go well. It still can't download the category list, but I can deal with that.

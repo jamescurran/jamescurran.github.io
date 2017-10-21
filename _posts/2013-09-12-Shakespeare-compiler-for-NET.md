@@ -1,7 +1,6 @@
 ---
 layout: post
 title: .NET that shall enmesh them all - Shakespeare compiler for .NET
-categories: code c# .net programming dotnet csharp irony runsharp
 tags: code c# .net programming dotnet csharp irony runsharp
 ---
 

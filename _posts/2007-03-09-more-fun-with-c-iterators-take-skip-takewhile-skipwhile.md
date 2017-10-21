@@ -1,7 +1,6 @@
 ---
 layout: post
 title: More Fun with C# Iterators:Take, Skip, TakeWhile, SkipWhile
-categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections
 ---
 As I was reading <a href="http://gbarnett.org/archive/2007/03/08/linq-standard-query-operators-part-3.aspx">this article by Granville Barnett</a> on some of the new operators available on LINQ queries, I thought, "That's all well and good, but for the time being, we're living in a .Net 2.0 world.  I wonder if I could emulate those with just generics &amp; iterators "  As it turned out, it was quite easy.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Naked Came The Null Delegate:Chapter 1 - "I, Disposable !"
-categories: fiction fun
 tags: fiction fun
 ---
 
@@ -33,7 +32,5 @@ And then, he left the office for his single threaded apartment, wondering if he 
 
 For links to all the parts, and the story behind the story, visit: <A title="http://nakedcamethenulldelegate.wordpress.com/2010/10/07/the-story/" href="http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/">http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/</A>
 
-
-<A href="http://dotnetshoutout.com/Honest-Illusion-Naked-Came-The-Null-Delegate-Chapter-1-I-Disposable-"><IMG style="BORDER-BOTTOM:0px;BORDER-LEFT:0px;BORDER-TOP:0px;BORDER-RIGHT:0px;" alt="Shout it" src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fhonestillusion.com%2Fblogs%2Fblog_0%2Farchive%2F2010%2F10%2F09%2Fnaked-came-the-null-delegate-chapter-1-i-disposable.aspx" /></A>
 
  <A href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f10%2f09%2fnaked-came-the-null-delegate-chapter-1-i-disposable.aspx"><IMG border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f10%2f09%2fnaked-came-the-null-delegate-chapter-1-i-disposable.aspx" /></A>

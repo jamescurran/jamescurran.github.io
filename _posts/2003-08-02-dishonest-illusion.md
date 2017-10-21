@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Dishonest Illusion.
-categories: site
 tags: site
 ---
 Well, a couple years ago, when I first thought about getting the domain, honestillusion.com, I naturally first checked to see if anyone else was using the domain (which no one was), or using the term at all --- and to my surprise -- someone was.

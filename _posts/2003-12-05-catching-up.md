@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Catching up....
-categories: my-life
 tags: my-life
 ---
 Ok, so where was I in filling you in on what I did last month?  Oh, yes.  Thanksgiving.

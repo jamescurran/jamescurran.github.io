@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Midway through conversion
-categories: site
 tags: site
 ---
 Right now, honestillusion.com is the old .Text blog<

@@ -1,7 +1,6 @@
 --- 
 layout: post 
 title: Kinda Sad Actually..... 
-categories: my-life random-thoughts quizes 
 tags: my-life random-thoughts quizes 
 ---
 <table>

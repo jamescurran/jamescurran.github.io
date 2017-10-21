@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Generics without Collections, pt. 2
-categories: code c# .net programming generics-without-collections
 tags: code c# .net programming generics-without-collections
 ---
 

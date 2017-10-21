@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Rev. Billy Videos!
-categories: politics videos rev-billy stop-shopping
 tags: 
 ---
 

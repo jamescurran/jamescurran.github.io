@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AACT Festival Day 2 (Thurs, Jun 26 Evening)
-categories: theater
 tags: theater
 ---
 Well, after typing up my comments on the Afternoon session, I went looking for food. I was planning to stop by the Burger King across the street, but in the parking lot I met some people from the Venice Little Theater in Florida, and ended up going to dinner with them.

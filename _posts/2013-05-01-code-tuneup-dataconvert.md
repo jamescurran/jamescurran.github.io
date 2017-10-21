@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Code Tuneup - DataConvert
-categories: csharp dotnet code-tuneup
 tags: csharp dotnet code-tuneup
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: It's been a month (Part II)
-categories: my-life theater random-thoughts
 tags: my-life theater random-thoughts
 ---
 On Nov 19th, I started my new job at [PartSearch Technologies](http://www.partsearch.com).

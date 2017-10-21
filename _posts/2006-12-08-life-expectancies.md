@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Life Expediencies
-categories: random-thoughts
 tags: random-thoughts
 ---
 

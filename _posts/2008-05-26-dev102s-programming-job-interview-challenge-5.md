@@ -1,8 +1,7 @@
 ---
 layout: post
 title: DEV102's Programming Job Interview Challenge 5
-categories: 
-tags: 
+tags: code c# .net dotnet csharp
 ---
 
 DEV102 announced the [correct responses to last weeks challenge](http://www.dev102.com/2008/05/26/a-programming-job-interview-challenge-5-records-sorting/) today.  Since I answered in my blog I got a prominent spot in their post, which is good considering I was one of about 10,000 correct answers and I gave it rather late in the process.  Hopefully, I can improve on both those areas this week.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AACT Festival Day 3 (Fri, June 27)
-categories: theater
 tags: theater
 ---
 After partying with the folks of Players Theater, then backtracking the 9 miles from their hotel to mine, I got to bed it 2AM.

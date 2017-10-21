@@ -1,7 +1,6 @@
 ---
 layout: post
 title: C# Code:Adding Skip First to Foreach
-categories: code csharp .net programming generics-without-collections
 tags: code csharp .net programming generics-without-collections
 ---
 

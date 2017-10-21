@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Lists:Filter, Map and Reduce - and the Magic of IEnumerator.
-categories: 
-tags: 
+tags: code c# .net programming dotnet csharp code-tuneup
 ---
 
 I have this bad habit.  I will frequently stumble upon a blog post describing some new technique, to which I will post a brilliant comment offering an improvement, which, of course, will get lost in the flotsam and jetsam of the blogosphere.  I have to keep reminding myself that is what I have my own blog for.

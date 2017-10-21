@@ -1,7 +1,6 @@
 ---
 layout: post
 title: And Now For Some Politics... What If John McCain Had Been Elected 
-categories: politics
 tags: politics
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Republican National Convention, Day 3.
-categories: politics my-life
 tags: politics my-life
 ---
 Lots'o'photos today.  Partial because I did a lot, and partial because one event lent itself to photographing everything.  As usually, images are on [flickr](http://www.flickr.com/photos/49188839@N00/sets/72157633703650828/) 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Joins - LINQ's critical, overlooked feature.
-categories: csharp programming code linq dotnet
-tags: 
+tags: code c# .net programming 
 ---
 As i was planning my rewrite of NJTheater.com I looked at a couple different Object-Relationship Mappers (mostly code generators which examined a database schema and produced one class per table to read and write rows to it.  All seemed particularly lacking because of this.  Then I find LINQ, and realized that I had found exact the system I was looking for.
 

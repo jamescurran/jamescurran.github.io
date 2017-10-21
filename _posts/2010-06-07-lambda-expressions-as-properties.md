@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Lambda Expressions as Properties
-categories: code c# .net programming dotnet csharp codeproject
 tags: code c# .net programming dotnet csharp codeproject
 ---
 Peter recently caused a bit of a stir with his article "[Sometimes an enum is not the best idea](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/05/30/sometimes-an-enum-is-not-the-best-idea.aspx)".  In it, he had a very specific problem: When an enum is passed to a method as an Object, and that method converts it to a usable value by calling `ToString()`, you get that enum's name and not it's value.  And he gave a gave very specific solution to that problem.  Peter wanted an simple ad hoc solution that he could just drop into his code.  Peter's idea was basically a quick fix to replace a bad design with something slightly less bad.   The problem arose when readers inferred that it was intended as a far more general solution, and pointed out different, more architectural solutions.  Bickering started in the comments.

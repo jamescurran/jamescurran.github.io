@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Lightning....
-categories: site random-thoughts
 tags: site random-thoughts
 ---
 This probably should be included as part of the "back-fill" since it relates to something that happened last week, but I'm figuring no one is actually going to read anything but the new stuff, so I'll date it today.

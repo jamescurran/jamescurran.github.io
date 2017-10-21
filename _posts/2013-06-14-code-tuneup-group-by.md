@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Code Tune-up - LINQ example with GroupBy clause on a property in object
-categories: code c# .net programming dotnet csharp code-tuneup
 tags: code c# .net programming dotnet csharp code-tuneup
 published: true
 ---

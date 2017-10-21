@@ -1,7 +1,6 @@
 ---
 layout: post
 title: DEV102's Programming Job Interview Challenge 8
-categories:  code c# .net dotnet csharp
 tags:  code c# .net dotnet csharp
 ---
 <style>
@@ -31,11 +30,11 @@ State 3 ("found ABA, looking for C"), is a bit tricky again.  If we find a C, na
     
 <div align="center">   <table border="1"  cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State &dArr;</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>3</td>          <td>1</td>          <td>2</td>          <td>4</td>          <td>0</td>       </tr>     </table> </div>
    
-At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("*Let loose the pigeons!*").  If it's an A, we go to state 1 (as usually). Anything else, and we start over at state 0.
+At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("*Let loose the pigeons!*").  If it's an A, we go to state 1 (as usual). Anything else, and we start over at state 0.
      
 <div align="center">   <table  border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State &dArr;</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>3</td>          <td>1</td>          <td>2</td>          <td>4</td>          <td>0</td>       </tr>        <tr>         <td>4</td>          <td>1</td>          <td><strong>*</strong></td>          <td>0</td>          <td>0</td>       </tr>     </table> </div> 
        
-Now, to put this into C# code, we merely need a simple pre-initialize int array following the structure of the chart we just built, and start with our state at 0.
+Now, to put this into C# code, we merely need a simple pre-initialized int array following the structure of the chart we just built, and start with our state at 0.
       
 
           const int[,] states = new int [5,4]

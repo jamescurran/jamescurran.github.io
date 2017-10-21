@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Back Fill
-categories: site
 tags: site
 ---
 I'm actually writing this on August 21st.  However, shortly after I complete this, I'm going the futz around with the database so that it appears to have been written a bit earlier in the month.  The reason being that starting back in February, I began writing articles that I'd planned on putting in a blog, I just didn't expect it would take me this long to actual get one going. 

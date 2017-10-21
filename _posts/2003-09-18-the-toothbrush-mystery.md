@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Toothbrush Mystery
-categories: random-thoughts
 tags: random-thoughts
 ---
 Yesterday I was thinking about the little things we all do without quite thinking about them.  One example would be how I get into my condo.  It takes two key; one for the outer door to the building, and another, for the door to my apartment.  I get out my key-ring, find the first key,and open the outer door.  Then, as I am walking up the stairs to my apartment, somehow the other key (which is right next to it on the ring) is in my hand by the time I reach the door.

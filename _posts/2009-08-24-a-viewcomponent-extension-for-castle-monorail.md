@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A ViewComponent extension for Castle MonoRail
-categories: code c# .net programming dotnet csharp castle monorail
 tags: code c# .net programming dotnet csharp castle monorail
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: JavascriptHelper (Redux) - Now with Bundling &amp; Compression!
-categories: code c# .net javascript programming dotnet csharp aspnetmvc
 tags: code c# .net javascript programming dotnet csharp aspnetmvc
 ---
 

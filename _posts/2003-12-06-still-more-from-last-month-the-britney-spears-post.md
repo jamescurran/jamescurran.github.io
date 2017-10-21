@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Still more from last month.... (the Britney Spears post)
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 OK, I'll get to Thanksgiving soon. But I've still more it talk about from before that...

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The other books....
-categories: books
 tags: books
 ---
 OK, now that I've trashed &#8220;Joshua&#8221;, I might as well discuss the other books in the book club this year.  (Note, the club is run by St Valentines Roman Catholic Church is Bloomfield, NJ, so you might sense a theme in them).

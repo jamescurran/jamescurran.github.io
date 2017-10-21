@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Last Night's Theater..
-categories: theater
 tags: theater
 ---
 Let's see if I can actually make it up to three posts in two day!

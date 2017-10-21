@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The New Season
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 I noticed something interesting today. With the passing of Labor day, summer's over, and September's here, and, in lower Manhattan at least, it's now, apparently, **World Trade Center Memorial Season**.

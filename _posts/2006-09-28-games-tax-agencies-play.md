@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Games Tax Agencies Play
-categories: my-life random-thoughts
 tags: my-life random-thoughts
 ---
 

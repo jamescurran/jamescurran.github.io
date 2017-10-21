@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Life expectencies, II (really short ones)
-categories: random-thoughts
 tags: random-thoughts
 ---
 

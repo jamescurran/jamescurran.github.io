@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Rockstar:Recap
-categories: my-life tv music
 tags: my-life tv music
 ---
 
