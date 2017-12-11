@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: An Exercise in Refactoring.
+title: An Exercise in Refactoring - Specification Pattern
 tags: code programming csharp
 ---
 This post is the eleventh installment of the [2017 C# Advent Calendar](https://crosscuttingconcerns.com/The-First-C-Advent-Calendar) operated by [Matthew Groves](https://crosscuttingconcerns.com/). Thanks for letting me participate!
