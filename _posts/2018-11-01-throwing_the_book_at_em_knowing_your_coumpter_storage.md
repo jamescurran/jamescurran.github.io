@@ -1,7 +1,8 @@
+---
 layout:post
 title: Throwing the book at 'em - Knowing Your  storage
 tags: programming, dotnet, csharp
-------------
+---
 
 I just signed up for the 2018 C# Advent Calendar blog cycle --- and realized I’d hadn't written anything since the 2017 edition.  So, I figured I need a bit of a warm up before I get to the big one.   And since that one will also be dealing with memory issues, this will be a warm up in more ways than one.
 
