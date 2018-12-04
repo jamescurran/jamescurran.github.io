@@ -14,12 +14,12 @@ A indiscreet message "accidentally" emailed to the whole department from her acc
 
 Deleting some of her completed work would be step one --- she probably won't notice the missing reports until it was time to present them tomorrow. And, locking her out of a needed network would drag the remaining unfinished work out a few extra hours. With a few deft strokes, his work was done, and he was about to leave the PC just as he found it, when she received an (unsigned) email:
 
-> Vissa, Darling,
-
-> Your schema is excellent.
-
->  We must meet soon, by the service port, to enumerate your assertions.
->   We mustn't name pipes.
+>Vissa, Darling,
+>
+>Your schema is excellent.
+>
+>>We must meet soon, by the service port, to enumerate your assertions.
+>>We mustn't name pipes.
 
 Sey forwarded the strange message to his account and then deleted her copy. He then hid by his own desk for a few minutes until Vissa returned to hers. Sey then strolled up to her.
 "Vissa ... How go the reports "
@@ -32,4 +32,3 @@ And then, he left the office for his single threaded apartment, wondering if he 
 
 For links to all the parts, and the story behind the story, visit: [http://nakedcamethenulldelegate.wordpress.com/2010/10/07/the-story/](http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/)
 (Note that over time, some of the "Next Chapter" links at the end of some posts have broken.  The links on the WordPress page have been updated)
-
