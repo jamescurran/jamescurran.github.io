@@ -28,9 +28,8 @@ She looked a bit frazzled, and it was clear the her predicate was in a unsatisfi
 "Well, then, keep it up.... We need those first thing in the morning ---- But don't stay too late. You look tired. You should get to bed......."
 And then, he left the office for his single threaded apartment, wondering if he had played this right. Perhaps he could have been the ternary operator....
 
-(Continued: [Chapter 2 : "Unhandled Exception" - By Charles Petzold @ charlespetzold.com](http://www.charlespetzold.com/blog/2010/10/Naked-Came-the-Null-Delegate-Chapter-2-Unhandled-Exception.htm) )
+(Continued: [Chapter 2 : "Unhandled Exception" - By Charles Petzold @ charlespetzold.com](http://charlespetzold.com/blog/2010/10/Naked-Came-the-Null-Delegate-Chapter-2-Unhandled-Exception.html) )
 
-For links to all the parts, and the story behind the story, visit: <A title="http://nakedcamethenulldelegate.wordpress.com/2010/10/07/the-story/" href="http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/">http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/</A>
+For links to all the parts, and the story behind the story, visit: [http://nakedcamethenulldelegate.wordpress.com/2010/10/07/the-story/](http://nakedcamethenulldelegate.wordpress.com/2010/10/09/the-story/)
+(Note that over time, some of the "Next Chapter" links at the end of some posts have broken.  The links on the WordPress page have been updated)
 
-
- <A href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f10%2f09%2fnaked-came-the-null-delegate-chapter-1-i-disposable.aspx"><IMG border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2010%2f10%2f09%2fnaked-came-the-null-delegate-chapter-1-i-disposable.aspx" /></A>
