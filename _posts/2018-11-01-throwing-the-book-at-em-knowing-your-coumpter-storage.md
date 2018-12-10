@@ -23,4 +23,3 @@ Information on your hard disk is like having it *In a book that's in a bookcase,
 And a cloud drive (or a webservice), is like have that information is *a book that's in a library across town.*
 
 (If anyone wishes to throw any other form of storage into the metaphor, please add it in the comments below)
-
