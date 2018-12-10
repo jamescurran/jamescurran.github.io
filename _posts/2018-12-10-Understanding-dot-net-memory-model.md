@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Here, There & Everywhere - A simple look at .NET memory model
+title: Here, There and Everywhere - A simple look at .NET memory model
 tags: code programming csharp dotnet
 ---
 
