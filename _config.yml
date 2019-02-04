@@ -4,10 +4,21 @@ lsi: false
 highlighter: true
 exclude: [safe]
 permalink: /blog/:year/:month/:day/:title/
-safe: true
 
 future:      true
-markdown: rdiscount
+markdown:    kramdown
+
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+    noscript: false
+kramdown:
+    math_engine: mathjax
+    syntax_highlighter: rouge
+
+
 
 maruku:
   use_tex:    false
@@ -16,8 +27,6 @@ maruku:
   png_dir:    images/latex
   png_url:    /images/latex
 
-#rdiscount:
-#  extensions: []
 
 
 redcarpet:
@@ -30,11 +39,3 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
   
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
- 
