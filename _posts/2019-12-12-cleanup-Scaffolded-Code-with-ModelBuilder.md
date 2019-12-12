@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FCleanup Schaffolded Code with modelbuild
+title: Cleanup Scaffolded Code with modelbuild
 tags: site
 ---
 
