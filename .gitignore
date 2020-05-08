@@ -15,6 +15,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+css/Lux/
 
 # External tool builders
 .externalToolBuilders/
