@@ -1,6 +1,6 @@
 ---
 layout: post
-title:TimeThis! - Simple timings for code blocks (Fun with IDisposable)
+title: TimeThis! - Simple timings for code blocks (Fun with IDisposable)
 tags: code programming csharp dotnet
 ---
 
