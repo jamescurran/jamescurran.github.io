@@ -7,8 +7,7 @@ After breakfast, I went over to the college for the morning workshop session. Ac
 
 In the next session, I attended a workshop on taking a show on the road, by Joe Musumeci, the other adjudicator.  This was also fun, although it had even less relevance to me --- everyone else enjoyed it because they had to pack up at least one show to bring it here to the festival.
 
-After lunch came the first play of the day, *Fin and Euba*, presented by the Silver Spring Stage of Maryland.  The author is a member of the troupe & played Fin.  The action takes place on a front porch in the Florida panhandle, and largely concerned two friends desires to leave that place conflicting with their reluctance to leave the safety of it.  If was the shortest play I'd seen at a festival, running only 27 minutes (they're allowed to take up to an hour).      
+After lunch came the first play of the day, *Fin and Euba*, presented by the Silver Spring Stage of Maryland.  The author is a member of the troupe & played Fin.  The action takes place on a front porch in the Florida panhandle, and largely concerned two friends desires to leave that place conflicting with their reluctance to leave the safety of it.  It was the shortest play I'd seen at a festival, running only 27 minutes (they're allowed to take up to an hour).      
 
-
-After some debate, it was agreed to split the difference and start a half hour earlier.   
+ 
 

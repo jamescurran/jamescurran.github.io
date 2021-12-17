@@ -5,7 +5,7 @@ tags: my-life random-thoughts tv music
 ---
 
   
-My guilty pleasure of the summer of watching the reality show "RockStar : Supernova".  It's the sequel/spin-off/second season of last year's "RockStar : INXS" where the surviving members of the band INXS selected a replacement for Michael Hutchence who had committed suicide some years ago. This year, not having a band wanting to replace a dead member handy (but see note below), they created a new band from scratch with three established rockers (notably Tommy Lee).
+My guilty pleasure of the summer of watching the reality show "RockStar : Supernova".  It's the sequel/spin-off/second season of last year's "RockStar : INXS" where the surviving members of the band INXS selected a replacement for Michael Hutchence, who had committed suicide some years ago. This year, not having a band wanting to replace a dead member handy (but see note below), they created a new band from scratch with three established rockers (notably Tommy Lee).
 
 The basic idea of it show is, each Tuesday, each of the remaining contestants sings a song (which they choose from among a collection selected each week by the producers), and gets feedback from the band.  Then there's a "world-wide" phone in vote, and then on Wednesday, the three contestants who got the fewest votes perform a song to attempt to redeem themselves (It would seem that they could choose any song, but as songs done on Tuesdays are frequently done as redemption songs, I'm guessing they are limited to just a larger pool of songs).  Then the band chooses among themselves who'll be cut.
 

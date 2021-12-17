@@ -51,14 +51,14 @@ Analysis:
 
  *  Clearly the resolution of the timer is 15.6246ms -- all the times are multiples of that value (ie, test =1 took either 38 or 39 ticks of the clock). 
  *  Test=2 & Test=3 took the same amount of time, as you'd expect, as it's just taking one branch or the other. 
- * Test=1 fast faster because it only required one comparison, while test =2 & test =3 each required 2. 
+ * Test=1 is faster because it only required one comparison, while test =2 & test =3 each required 2. 
  *  The second comparison (and the jump associated with it) took approx 78ms. Assuming the first comparison & jump also took 78ms, then we have approx 440ms overhead to pass the parameter &; call the function. 
 
-This does leave open the question why "jelly" & "other" had different values in your tests. The next step would be to look at the generated code using Ildasm.exe or Reflector, and see what it's doing differently.
+This does leave open the question why "jelly" & "other" had different values in the tests. The next step would be to look at the generated code using Ildasm.exe or Reflector, and see what it's doing differently.
 
-Putting the strings back into the test harness, I was able to duplicate your results. This makes no sense what so ever. Consider, you can tell two string are different faster than you can determine that they are the same (looking at one letter from each versus looking at 5 letters from each). 
+Putting the strings back into the test harness, I was able to duplicate Mad's results. This makes no sense what so ever. Consider, you can tell two string are different faster than you can determine that they are the same (looking at one letter from each versus looking at 5 letters from each). 
 
-So, I dug a bit further. The trick is in how String::Equals is implemented. First it does a Object::ReferenceEquals, and then, only if that fails, does it do the character-by-character comparison. So, when you code it as you did, it's the same as: 
+So, I dug a bit further. The trick is in how String::Equals is implemented. First it does a Object::ReferenceEquals, and then, only if that fails, does it do the character-by-character comparison. So, when you code it as he did, it's the same as: 
 
 	const string Hello = "hello"; 
 	// : 

@@ -23,5 +23,5 @@ Now, if we eliminate the differences between the two tests where the selection I
  * Dad drove to work while I take a train.
  * I get less sleep at night.
 
-I'm not even sure if #2 is a die sooner or die later choice.  So, is marriage &; sleep that much more important in live expectancy than not smoking, low blood pressure & weight.
+I'm not even sure if #2 is a die sooner or die later choice.  So, is marriage and sleep that much more important in life expectancy than not smoking, low blood pressure & weight.
 
