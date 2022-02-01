@@ -14,11 +14,11 @@ Anyway, on to [this week's puzzle](http://www.dev102.com/2008/05/26/a-programmin
   
   > *How can you sort the records under the described conditions?*
   
-The trick here is to do lots of merge sorts, but we'll get to that in a minute.  But first to prepare, we have to sort each page, hence, read one page, and sort it's records in memory.  Exactly how it's sorted is irrelevant. A page only has 100 10-byte records so Quicksort is probably overkill -- an Insertion sort is probably best. Then that page is written back to the file in place, and we more to the next one.
+The trick here is to do lots of merge sorts, but we'll get to that in a minute.  But first to prepare, we have to sort each page, hence, read one page, and sort it's records in memory.  Exactly how it's sorted is irrelevant. A page only has 100 10-byte records so Quicksort is probably overkill -- an Insertion sort is probably best. Then that page is written back to the file in place, and we move to the next one.
  
-When we finish sorting each page individually, then we begin the Mergesort.  Read two pages and merge them by comparing the first items in each list.  Once the new list fills a page, it's written to a new file.  Repeat this, and eventually, you have half as many segments, each two pages long. Then, do it all over again, merging two-page segments into four page segment.  The trick is, since the two-page segments are already sorted, they can be read in one page at a time, and the output can be written to disk as soon as a page is filled.
+When we finish sorting each page individually, then we begin the Mergesort.  Read two pages and merge them by comparing the first items in each list.  Once the new list fills a page, it's written to a new file.  Repeat this, and eventually, you have half as many segments, each two pages long. Then, do it all over again, merging two-page segments into four page segments.  The trick is, since the two-page segments are already sorted, they can be read in one page at a time, and the output can be written to disk as soon as a page is filled.
  
-Keep repeating the process, merge four-page segment into eight-page segments, 8-pages into 16-page, etc.  Eventually you will be merging two 512-page segments, and you're done.
+Keep repeating the process, merge four-page segment into eight-page segments, 8-pages into 16-pages, etc.  Eventually you will be merging two 512-page segments, and you're done.
   
 The process only requires three pages of physical memory, and we have a bit more, so some optimizing can be done, but that's essentially it.
   

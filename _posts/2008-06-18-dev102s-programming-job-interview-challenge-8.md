@@ -32,8 +32,17 @@ State 3 ("found ABA, looking for C"), is a bit tricky again.  If we find a C, na
    
 At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("*Let loose the pigeons!*").  If it's an A, we go to state 1 (as usual). Anything else, and we start over at state 0.
      
-<div align="center">   <table  border="1" cellspacing="0" cellpadding="2" align="center">       <tr>         <td> </td>          <td>Next state</td>          <td>when </td>          <td>record </td>          <td>found</td>       </tr>        <tr>         <td>Current State &dArr;</td>          <td>A</td>          <td>B</td>          <td>C</td>          <td>D</td>       </tr>        <tr>         <td>0</td>          <td>1</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>1</td>          <td>1</td>          <td>2</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>2</td>          <td>3</td>          <td>0</td>          <td>0</td>          <td>0</td>       </tr>        <tr>         <td>3</td>          <td>1</td>          <td>2</td>          <td>4</td>          <td>0</td>       </tr>        <tr>         <td>4</td>          <td>1</td>          <td><strong>*</strong></td>          <td>0</td>          <td>0</td>       </tr>     </table> </div> 
        
+  | | Next State | When | Record | Found 
+  -|----------|------|--------|-------
+  Current State &dArr; | A | B | C | D 
+  0	| 1 |	0 |	0 |	0 
+  1	| 1 |	2 |	0 |	0 
+  2 | 3 | 0 | 0 | 0 
+  3 | 1 | 2 | 4 | 0 
+  4 | 1 |__*__| 0 | 0 
+
+
 Now, to put this into C# code, we merely need a simple pre-initialized int array following the structure of the chart we just built, and start with our state at 0.
       
 
@@ -88,7 +97,7 @@ And the real beauty of this approach is that if we wanted to look for other patt
 
 Then we'd be able to search for ABACB (as before, found when state = -1) and BBCCA (found when state = -2), plus one more pattern (found when state = -3).
 
-###Class Homework
+#### Class Homework
 
 1. (simple) Try to figure out the third pattern that can be found using that state table. (It's a sequence of 5 records using just A B &amp; C)
 
