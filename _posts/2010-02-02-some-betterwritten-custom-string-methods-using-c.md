@@ -18,7 +18,7 @@ Ok, now let's see the revision:
 
 First we start with a string builder, preallocated to the size of the string we are building.  The method doesn't change the length of the string, so we know the length of the final string right from the start.
 
-Next, since we are going to capitalize every letter after a period, and also the first letter, why not just pretend the mythical initial "last" character was a period   Suddenly, the first letter is no longer a special case, and we still get what we want.
+Next, since we are going to capitalize every letter after a period, and also the first letter, why not just pretend the mythical initial "last" character was a period?   Suddenly, the first letter is no longer a special case, and we still get what we want.
 
 Then, we just loop through the letters, raising or lowering letter as we need. Note that it works on characters and not strings, and uses the build-in `IsWhitespace` method, instead of using a  hardcoded list of a subset of them.  A for() loop can in certain cases (however, not the one used in the original) be faster than a foreach(), but here I figured it was safe to sacrifice a tiny bit of speed for clearer code.
 
