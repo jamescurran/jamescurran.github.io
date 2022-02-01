@@ -10,7 +10,7 @@ Recently, I stumbled upon one such plugin, [jQuery Growl Plugin](http://www.frag
 
 But no sense in just complaining, or insulting a person who has contributed to the community.  The best thing to do in this case is for one to contribute himself.  And so, here's my documentation for the plugin
 
-##jQuery.growl
+## jQuery.growl
 
 The official calling syntax is:
 
@@ -26,138 +26,43 @@ Here we start getting into the bizarre part:  The replaceable keywords "%image%"
 
 The default template is rather minimalist, but functional:
 
-<pre class="xml">&lt;div class="notice"&gt;
-&lt;h3 style="margin-top: 15px"&gt;%title%&lt;/h3&gt;
-&lt;p&gt;%message%&lt;/p&gt;
-&lt;/div&gt;</pre>
+    <div class="notice">
+    <h3 style="margin-top: 15px">%title%</h3>
+    <p>%message%</p>
+    </div>
 
 An example of a more elaborate template would be:
 
-<pre class="xml">&lt;div&gt;
-  &lt;div style="float: right; background-image: url(normalTop.png); position: relative; width: 259px; height: 16px; margin: 0pt;"&gt;&lt;/div&gt;
-  &lt;div style="float: right; background-image: url(normalBackground.png); position: relative; display: block; color: #ffffff; font-family: Arial; font-size: 12px; line-height: 14px; width: 259px; margin: 0pt;"&gt;
-    &lt;img style="margin: 14px; margin-top: 0px; float: left;" src="%image%" /&gt;
-    &lt;h3 style="margin: 0pt; margin-left: 77px; padding-bottom: 10px; font-size: 13px;"&gt;%title%&lt;/h3&gt;
-    &lt;p style="margin: 0pt 14px; margin-left: 77px; font-size: 12px;"&gt;%message%&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div style="float: right; background-image: url(normalBottom.png); position: relative; width: 259px; height: 16px; margin-bottom: 10px;"&gt;&lt;/div&gt;
-&lt;/div&gt;';</pre>
+    <div style="float: right; background-image: url(normalTop.png); position: relative; width: 259px; height: 16px; margin: 0pt;"></div>
+    <div style="float: right; background-image: url(normalBackground.png); position: relative; display: block; color: #ffffff; font-family: Arial; font-size: 12px; line-height: 14px; width: 259px; margin: 0pt;"><img style="margin: 14px; margin-top: 0px; float: left;" src="%image%" /><h3 style="margin: 0pt; margin-left: 77px; padding-bottom: 10px; font-size: 13px;">%title%</h3>
+    <p style="margin: 0pt 14px; margin-left: 77px; font-size: 12px;">%message%</p>
+    </div>
+    <div style="float: right; background-image: url(normalBottom.png); position: relative; width: 259px; height: 16px; margin-bottom: 10px;"></div>
+    </div>
 
-(That one came from jQuery.growl's author, and we still haven't found a use for the priority parameter!)
+
+(That one came from jQuery.growl's author, and we still haven't found a use for the `priority` parameter!)
 
 The template is changed by setting the $.growl.settings.noticeTemplate field.
 
-	$.growl.settings.noticeTemplate = '&lt;div class="%priority%"&gt;&lt;div class="%priority%-heading"&gt;%title%&lt;/div&gt;&lt;div class="%priority%-message"&gt;%message%&lt;/div&gt;&lt;/div&gt;'</p>
+	  $.growl.settings.noticeTemplate = '<div class="%priority%"><div class="%priority%-heading">%title%</div><div class="%priority%-message">%message%</div></div>';
 
 The other setting that change be changed the same way are:
 
-<table cellspacing="0" cellpadding="2">
-    <tr>
-      <td>
-        <p align="center"><strong>Property</strong></p>
-      </td>
 
-      <td>
-        <p align="center"><strong>Description </strong></p>
-      </td>
+  Property | Description | Default|Type
+  ---------|-------------|--------|----
+  dockTemplate|Element in which the notices are created.|'&lt;div&gt;&lt;/div&gt;'|string
+  dockCss|Style elements applied on dock, generally used to specify it's position.|Fixed in the upper right corner of the browser window|object whose properties are feed to a css() method call.
+  noticeTemplate|Template for notice.|(see above)|string
+  noticeCss|Style elements applied on notice.|White on Green at 3/4 opacity.|object whose properties are fed to a css() method.
+  noticeFadeTimeout|How fast the notice fades out.|'slow'|String|Number, suitable for use in an animate() method call.
+  displayTimeout|Total time the notice displayed.|3500 milliseconds|number
+defaultImage|Value used for %image% when not specified in the call.|growl.jpg|string
+  defaultStylesheet|Gives the name of a stylesheet , which, if specified, is automatically loaded.|none|string.
 
-      <td>
-        <p align="center"><strong>Default</strong></p>
-      </td>
+The dock needs a bit more explanation.  It's basically where the notices are drawn, and there's probably little reason to change it from it's default of a vanilla div.  Note that whatever it is, it will have the attributes "id=growlDock" and "class=growl" added to it.
 
-      <td>
-        <p align="center"><strong>Type</strong></p>
-      </td>
-    </tr>
+If you want to change the look of the dock, and want more control of it than stuffing some html into a property, you can just define an element with an id=growlDock, and $.growl will use that.
 
-    <tr>
-      <td>dockTemplate</td>
-
-      <td>Element in which the notices are created.</td>
-
-      <td>'&lt;div&gt;&lt;/div&gt;'</td>
-
-      <td>string </td>
-    </tr>
-
-    <tr>
-      <td>dockCss</td>
-
-      <td>Style elements applied on dock, generally used to specify it's position.</td>
-
-      <td>Fixed in the upper right corner of the browser window</td>
-
-      <td>object whose properties are feed to a css() method call.</td>
-    </tr>
-
-    <tr>
-      <td>noticeTemplate</td>
-
-      <td>Template for notice.</td>
-
-      <td>(see above)</td>
-
-      <td>string</td>
-    </tr>
-
-    <tr>
-      <td>noticeCss</td>
-
-      <td>Style elements applied on notice.</td>
-
-      <td>White on Green at 3/4 opacity.</td>
-
-      <td>object whose properties are fed to a css() method.</td>
-    </tr>
-
-    <tr>
-      <td>noticeFadeTimeout</td>
-
-      <td>How fast the notice fades out.</td>
-
-      <td>'slow'</td>
-
-      <td>String|Number, suitable for use in an animate() method call.</td>
-    </tr>
-
-    <tr>
-      <td>displayTimeout</td>
-
-      <td>Total time the notice displayed.</td>
-
-      <td>3500 milliseconds</td>
-
-      <td>number</td>
-    </tr>
-
-    <tr>
-      <td>defaultImage</td>
-
-      <td>Value used for %image% when not specified in the call.</td>
-
-      <td>growl.jpg</td>
-
-      <td>string</td>
-    </tr>
-
-    <tr>
-      <td>defaultStylesheet</td>
-
-      <td>Gives the name of a stylesheet , which, if specified, is automatically loaded.</td>
-
-      <td>none</td>
-
-      <td>string.</td>
-    </tr>
-  </table>
-
-<p> </p>
-
-<p>The dock needs a bit more explanation.  It's basically where the notices are drawn, and there's probably little reason to change it from it's default of a vanilla div.  Note that whatever it is, it will have the attributes "id=growlDock" and "class=growl" added to it.  </p>
-
-<p>If you want to change the look of the dock, and want more control of it than stuffing some html into a property, you can just define an element with an id=growlDock, and $.growl will use that.</p>
-
-<p>However the dock is defined, the style elements defined in the dockCss property are then added to it, and it's append to the &lt;body&gt; of the page.</p>
-
-<p> </p>
-<a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f10%2f20%2fjquery-growl-documentation.aspx" border="0" /></a>
+However the dock is defined, the style elements defined in the dockCss property are then added to it, and it's append to the &lt;body&gt; of the page.

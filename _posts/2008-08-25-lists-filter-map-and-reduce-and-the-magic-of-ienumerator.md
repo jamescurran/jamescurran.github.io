@@ -46,7 +46,7 @@ I used a number of .Net v3.5 features there -- notably extension methods and the
 
 With those, we can now write code like this:
 
-	int \[\] nums = new int\[\] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int [] nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int sumOdds10 = nums.Filter(n => (n % 2) == 1)
 						.Map(n => n * 10)
 						.Reduce((n, a) => (n + a), 0);
@@ -73,4 +73,30 @@ Then Reduce moves on it the next value, which means calling B's MoveNext, which 
 
 In the end, we've only gone through the array once.
 
-<a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f08%2f25%2flists-filter-map-and-reduce-and-the-magic-of-ienumerator.aspx"><img alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fhonestillusion.com%2fblogs%2fblog_0%2farchive%2f2008%2f08%2f25%2flists-filter-map-and-reduce-and-the-magic-of-ienumerator.aspx" border="0" /></a>
+----
+**UPDATE** (1-Feb-2022):
+As I reviewed this post from years ago, I realize that it's completely unnecessary.  
+ - `Map` is the same as the standard Linq method `Select`.
+ - `Filter` is the same as the standard Linq method `Where`.
+ - `Reduce` is the same as the standard Linq method `Aggregate`.
+
+ So,
+
+ 	int sumOdds10 = nums.Filter(n => (n % 2) == 1)
+			.Map(n => n * 10)
+			.Reduce((n, a) => (n + a), 0);
+
+can be written as:
+
+ 	int sumOdds10 = nums.Where(n => (n % 2) == 1)
+			.Select(n => n * 10)
+			.Aggregate(0, (n, a) => (n + a));
+
+or even:
+
+ 	int sumOdds10 = (from n in nums
+	                where (n % 2) == 1)
+			select n * 10)
+			.Aggregate(0, (n, a) => (n + a));
+
+ 
