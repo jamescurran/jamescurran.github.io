@@ -9,9 +9,9 @@ thead { background-color: lightgrey;}
 th 
 {
     font-weight:bold;
-    border: 1 solid black;
+    border: 1px solid black;
 }
-table { border: 1 solid black;}
+table { border: 1px solid black;}
 </style>
 
 I skipped [last week's DEV102 challenge](http://www.dev102.com/net/a-programming-job-interview-challenge-7-coins-of-the-round-table/).   I didn't think my answer was right.  Turns out that it was. I was assuming that it had a limitation that would disqualify it.  I assumed that my solution would only work if you placed the coins in a tight grid with each newly-placed coin touching an existing coin.  As a practical matter, this is true.  It would be virtually impossible to properly place a coin mirroring the freely-placed previous coin without resorting to a tape measure and protractor.  And the placement would have to be exact for it to work.  So I suppressed my solution for lack of practicality, when all they really wanted was a theoretic solution. 
