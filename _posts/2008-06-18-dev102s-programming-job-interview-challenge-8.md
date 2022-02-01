@@ -4,14 +4,22 @@ title: DEV102's Programming Job Interview Challenge 8
 tags:  code c# .net dotnet csharp
 ---
 <style>
-td { text-align:center; }
+td 
+{ 
+  text-align:center; 
+  border: 1px solid black;
+}
 thead { background-color: lightgrey;}
 th 
 {
     font-weight:bold;
-    border: 1px solid black;
+    
 }
-table { border: 1px solid black;}
+table 
+{ 
+  border: 1px solid black; 
+  text-align:center; 
+  width: 80%}
 </style>
 
 I skipped [last week's DEV102 challenge](http://www.dev102.com/net/a-programming-job-interview-challenge-7-coins-of-the-round-table/).   I didn't think my answer was right.  Turns out that it was. I was assuming that it had a limitation that would disqualify it.  I assumed that my solution would only work if you placed the coins in a tight grid with each newly-placed coin touching an existing coin.  As a practical matter, this is true.  It would be virtually impossible to properly place a coin mirroring the freely-placed previous coin without resorting to a tape measure and protractor.  And the placement would have to be exact for it to work.  So I suppressed my solution for lack of practicality, when all they really wanted was a theoretic solution. 
@@ -22,22 +30,28 @@ Anyway, onward to [this week's challenge, #8](http://www.dev102.com/net/a-progra
 
 The answer is, of course, a [*Finite State Machine*](http://en.wikipedia.org/wiki/Finite_State_Machine). To explain how one works, we need to come up with a example expression to search for.  Let's say these records come it four formats: Type A, type B, type C and Type D, and we are looking a sequence of records in the following pattern: ABACB (if you'd like, you can assume that there are many record types, and Type D represents "any record that's not type A, B or C").  So, we start in state "0". State 0 can be called "looking for first A record".  At state 0, if we find an A record, we move into state 1 ("Found first A, looking for first B").  If we find any other kind of record, we stay in state 0.  This can be expressed in table form as:
 
+<div style="width:80%; text-align:center">
+
   | | Next State | When | Record | Found 
   -|----------|------|--------|-------
   Current State &dArr; | A | B | C | D 
   0	| 1 |	0 |	0 |	0 
-
+</div>
 Next when we are in state 1, if we find a B record, we move into state 2, but the other transitions are a bit trickier.  If we find a C or D, we're back to state 0 ("looking for 1st A"), but if we find another A, we have to stay in state 1.  Adding that to our graph:
  
-  | | Next State | When | Record | Found 
+<div style="width:80%; text-align:center">
+
+| | Next State | When | Record | Found 
   -|----------|------|--------|-------
   Current State &dArr; | A | B | C | D 
   0	| 1 |	0 |	0 |	0 
   1	| 1 |	2 |	0 |	0 
 
-   
+   </div>
 Ok, now, we are in state 2 ("found AB, looking for 2nd A"), Here if we find an A, we move on to state 3 --- anything else, and we're back to state 0.
    
+
+<div style="width:80%; text-align:center">
 
   | | Next State | When | Record | Found 
   -|----------|------|--------|-------
@@ -46,8 +60,11 @@ Ok, now, we are in state 2 ("found AB, looking for 2nd A"), Here if we find an A
   1	| 1 |	2 |	0 |	0 
   2 | 3 | 0 | 0 | 0 
 
+</div>
 State 3 ("found ABA, looking for C"), is a bit tricky again.  If we find a C, naturally, we move into state 4. And if we find a D, were back into state 0.  But, if we an A, we step back to state 1.  And if we find a B, we step back only to state 2 (ie, we've found "ABAB" and the second "AB" may be the start of the pattern we want.)
     
+
+<div style="width:80%; text-align:center">
 
 
   | | Next State | When | Record | Found 
@@ -58,8 +75,11 @@ State 3 ("found ABA, looking for C"), is a bit tricky again.  If we find a C, na
   2 | 3 | 0 | 0 | 0 
   3 | 1 | 2 | 4 | 0 
    
+</div>
 At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we're found "ABAC".  If the next record is a B, we have success ("*Let loose the pigeons!*").  If it's an A, we go to state 1 (as usual). Anything else, and we start over at state 0.
      
+
+<div style="width:80%; text-align:center">
        
   | | Next State | When | Record | Found 
   -|----------|------|--------|-------
@@ -70,7 +90,7 @@ At state 4, we enter the endgame.  We're trying to find "ABACB", and so far we'r
   3 | 1 | 2 | 4 | 0 
   4 | 1 |__*__| 0 | 0 
 
-
+</div>
 Now, to put this into C# code, we merely need a simple pre-initialized int array following the structure of the chart we just built, and start with our state at 0.
       
 
