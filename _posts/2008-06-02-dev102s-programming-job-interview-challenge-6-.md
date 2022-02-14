@@ -22,7 +22,7 @@ Anyway, time to move on to [this week's question](http://www.dev102.com/2008/06/
     Console.WriteLine((a[1] == b[1]));
   
   
-> *What will be typed into the console  And **WHY**?*
+> *What will be typed into the console? And **WHY**?*
 
 This one is fairly trivial (They seem to be alternating between difficult and easy questions).  And, as requested, I formulated my answer before typing it into VS (actually, I copy'n'pasted in SnippetCompiler), but the compiler DID confirm the answer I'd already theorized.
 

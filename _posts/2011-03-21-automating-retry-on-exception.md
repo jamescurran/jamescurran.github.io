@@ -17,7 +17,7 @@ OK, this has very weird semantics.  A call will look something like this:
 
                   if((DateTime.Now.Second & 7) != 7)
                       throw new Exception(("Bad");
-                  return  DateTime.Now.ToString();
+                  return DateTime.Now.ToString();
               });
 
 
@@ -36,7 +36,7 @@ The last parameter is a function (or lambda expression) taking no parameters, wh
 
 The code looks like this:
 
-    static public  T Retry<T>(int retries, int secsDelay, Func<T> errorReturn,
+    static public T Retry<T>(int retries, int secsDelay, Func<T> errorReturn,
                               Action<Exception> onError,  Func<T> code)
     {
         Exception ex = null;

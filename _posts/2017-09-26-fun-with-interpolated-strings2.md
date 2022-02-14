@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fun with Interpolated  Strings, Part II -- Putting FormattableString to work. 
+title: Fun with Interpolated Strings, Part II -- Putting FormattableString to work. 
 tags: code programming csharp
 ---
 

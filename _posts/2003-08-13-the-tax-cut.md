@@ -18,7 +18,7 @@ Finally, there's the keystone of the plan, the dividend tax cut. This is an *INC
 
 So, what's wrong with this?  **Everything!**
 
-Why would companies be more willing to offer dividends just because the recipients will get to keep more of it  What's is it to them  OK, the tax cut might encourage more people to invest to dividend offering company, raising their stock, which might encourage more companies to offer them, so he's not completely off the mark here ---but this is not really a good thing, as we'll get to in a moment.
+Why would companies be more willing to offer dividends just because the recipients will get to keep more of it?  What's is it to them?  OK, the tax cut might encourage more people to invest in dividend offering companies, raising their stock, which might encourage more companies to offer them, so he's not completely off the mark here ---but this is not really a good thing, as we'll get to in a moment.
 
 The next step in this scheme jumps to "small business owner", as if they are the only ones likely to benefit from this. Actually, they are the least likely.
 
@@ -38,7 +38,7 @@ Say you run a struggling business and suddenly you get, say, an extra $10,000 do
    
    B) Why am I wasting my time on this struggling business when I could be making big buck in the stock market?
    
-   C) Let me spend this money hiring more workers for my business to stand around next to the other worker who also have nothing to do because my business is failing...
+   C) Let me spend this money hiring more workers for my business to stand around next to the other workers who also have nothing to do because my business is failing...
 
 I'm guessing that (A) and (B) come to you long before (C) does. The big problem here is that it expects the money to cross the gulf between "personal assets" and "company assets". If their company's already on the ropes, not many will throw "good money after bad"
 
@@ -52,4 +52,4 @@ So, what would work?
 
 We must increase to total amount spend in the economy. This means to increase government spending plus increase the amount of money available to those who have none to spend now. A tax cut won't work, because, even if properly targeted (fat chance under a Republican administration) would necessitate reduced government spending. So, we need to *raise the minimum wage*. This increases the spending money for the common worker, PLUS increases tax revenue. Ignore the myth that it increases layoffs --- again, this is based on the faulty notion that companies hire expendable workers as charity (which they let go when they get too expensive). Nonsense, companies hire the workers they need. If a company needs workers it can't afford to pay, then it's mismanaged, and should go out of business.
 
-Next, we could try putting this "hire workers as charity" thing the Republicans insist happens, into practice. To do this, we must encourage companies to spend whatever extra cash they have on hand to hire new workers, instead of wasting it on, say, paying dividends!. In other words, we should be making the divided tax rate as **high** as possible!
+Next, we could try putting this "hire workers as charity" thing the Republicans insist happens, into practice. To do this, we must encourage companies to spend whatever extra cash they have on hand to hire new workers, instead of wasting it on, say, paying dividends! In other words, we should be making the divided tax rate as **high** as possible!

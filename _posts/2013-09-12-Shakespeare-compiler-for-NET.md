@@ -144,7 +144,7 @@ Here&apos;s an excerpt of the C# output for the above program:
 
 But, now that there were two back-ends, we had a new problem.  Up to this point, I&apos;ve been using the Grammar.Explorer tool that comes with Irony.  But, it only directly loads the parser, and was able to load & run the back-end only because it was referenced by the grammar.  Once I&apos;d broken that connection, I needed a mean of telling it to load one or the another back-end.   I was also going to eventually need a way of running the compiler like a compiler,  without going through Grammar.Explorer.  I would need a command-line interface.  
   
-#### The Command-Line  Compiler 
+#### The Command-Line Compiler 
 
 Here, again, I found a more that adequate open-source tool in [nConsoler](http://nconsoler.csharpus.com/) (And, unlike the other two packages I used, nConsoler is installable via NuGet, and comes with excellent documentation)  This is handled by the project, **ShakeCL**.
 

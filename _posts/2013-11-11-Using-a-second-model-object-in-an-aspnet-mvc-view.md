@@ -39,7 +39,7 @@ Now, going back to our example, if we were to just use the `ViewBag` in our cont
 
 then in our view, we use a normal `@model` directive plus duplicating the effect for the other object:
 
-	@model  Employee
+	@model Employee
 	@{
 			var DepartmentModel = ViewBag.departments as List<Department>;
 	}

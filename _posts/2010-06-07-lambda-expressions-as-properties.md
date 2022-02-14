@@ -43,7 +43,7 @@ So, let's try three different discounting schemes, and come up with three means 
     That's simple.  A discount rate property (getter only) in Supplier.  It could be an abstract property which is overridden in derived classes (one for each Supplier), or just set in Supplier's constructor.  (Could be set to zero for those suppliers not offering a discount).
     
  #2 -  Several suppliers offering (free shipping on orders over $100).
-       The "free shipping blah-blah-blah" part is handled entirely in the Order class.  The Supplier class just needs a way to say whether of not a particular supplier offers it.  This could be handled by a  Property as described above, or an attribute on the derived class, or by a marker interface (a marker interface has no members, and is just used in statements like:
+       The "free shipping blah-blah-blah" part is handled entirely in the Order class.  The Supplier class just needs a way to say whether of not a particular supplier offers it.  This could be handled by a Property as described above, or an attribute on the derived class, or by a marker interface (a marker interface has no members, and is just used in statements like:
 	
 
     if (sup is IOffersFreeShipping)
@@ -115,7 +115,7 @@ This time, we'll create static properties in the Order class:
 			//:
 		}    
 		
-		public static  Action< OrderItem > Discount15on25
+		public static Action< OrderItem > Discount15on25
 		{
 			get
 			{
@@ -127,7 +127,7 @@ This time, we'll create static properties in the Order class:
 			}
 		}
 		
-		public static  Action< OrderItem > Shipping1Over20
+		public static Action< OrderItem > Shipping1Over20
 		{
 			get
 			{
@@ -158,7 +158,7 @@ So, what have we accomplished
 
 But, wait.  You're probably saying that those properties we've defined on Order are rather specific to one particular trait.  Would it be nice to be able to have one general algorithm which is customizable   That can be done too, by just extending the general principle, which involves using a method instead of a property, but the basic idea is still the same:  instead of returning a value, we return a function:
 
-	  public static  Action< OrderItem > ShippingByWeight(int pounds, decimal cost)
+	  public static Action< OrderItem > ShippingByWeight(int pounds, decimal cost)
 	{
 		return oi=> 
 			{

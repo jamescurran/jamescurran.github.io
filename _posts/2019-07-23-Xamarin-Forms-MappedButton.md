@@ -11,7 +11,7 @@ Back when Steven Thewissen proposed the
 
 In my particular app, the user would be filling out a form about a number of people.  One question would be if the person is male or female (we'll be ignoring the non-binary).  This could be handled with a switch control,  but they're really intended for yes/no questions, nor either/or question.  It also needed for  "Lead", "Supporting" or "Featured"  (the app is for reviewing stage shows).
 
-These really wanted to be handled with something like a RadioButton.  Or, more precisely a collection of RadioButtons in a  RadioGroup.  Basically, a whole bunch of controls to just a little bit of information.
+These really wanted to be handled with something like a RadioButton.  Or, more precisely a collection of RadioButtons in a RadioGroup.  Basically, a whole bunch of controls to just a little bit of information.
 
 And I do mean a little bit,  and that's another complication.  While it would be displaying "Male" and "Female", it would actually be storing "M" and "F", so that what goes into the bound variable, which needs to be two-way
 ![screenshot](/images/MappedButtonExample.png)

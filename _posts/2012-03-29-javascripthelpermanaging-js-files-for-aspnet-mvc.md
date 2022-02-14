@@ -156,9 +156,9 @@ All script from either AddScript methods is rendered in a block at the script in
 Now that I've made this public, it's really just a beta. I think there's still a bit more to be done before it's ready to be "Production-Ready v1.0". And I need some feedback....
 
 
- * First of all, how exactly should it be packaged  I've been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but it's just one file, so that seem like overkill. I'd really like to create a NuGet package for this, but that question needs to be settled first.
+ * First of all, how exactly should it be packaged? I've been just added to source file to my project, which is simple, but not very elegant. The alternative would be to create an assembly for it, but it's just one file, so that seem like overkill. I'd really like to create a NuGet package for this, but that question needs to be settled first.
 
- * Or do we think bigger  Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).  Should be deeply embedded into the MVC eco-system  
+ * Or do we think bigger?  Microsoft has open-sourced the MVC framework, and is [now accepting pull-requests](http://haacked.com/archive/2012/03/29/asp-net-mvc-now-accepting-pull-requests.aspx).  Should be deeply embedded into the MVC eco-system  
 
  * Also, how is the API  Are the method names sufficiently intuitive 
 

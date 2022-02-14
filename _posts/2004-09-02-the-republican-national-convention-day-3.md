@@ -5,7 +5,7 @@ tags: politics my-life
 ---
 Lots'o'photos today.  Partial because I did a lot, and partial because one event lent itself to photographing everything.  As usually, images are on [flickr](http://www.flickr.com/photos/49188839@N00/sets/72157633703650828/) 
 
-First off, I dragged myself into the City an hour & a half earlier than normal, because I wanted to join in on "The World's Longest Unemployment Line" which ran along Broadway from Wall St to MSG. (That's about 3+ miles).  Participants were given large cardboard "Pink Slips" to wave.  I joined the line at 23rd St (right by the Flatiron Building).  Broadway is crossing 5th Ave there, so there this rather desolate island between the three streets, which needed to be covered. Our block leader wasn't very good at talking people into moving, so while the sidewalk was crowded south of 23rd, we were a bit sparse just north of it.  Oddly, the &#8220;Pants-on-Fire&#8221; car which I'd seen last night, was stationed at the intersection as well (I think it's following me!).  The protest was scheduled to last only 15 minutes. 
+First off, I dragged myself into the City an hour & a half earlier than normal, because I wanted to join in on "The World's Longest Unemployment Line" which ran along Broadway from Wall St to MSG. (That's about 3+ miles).  Participants were given large cardboard "Pink Slips" to wave.  I joined the line at 23rd St (right by the Flatiron Building).  Broadway is crossing 5th Ave there, so there this rather desolate island between the three streets, which needed to be covered. Our block leader wasn't very good at talking people into moving, so while the sidewalk was crowded south of 23rd, we were a bit sparse just north of it.  Oddly, the &#8220;Pants-on-Fire&#8221; car which I'd seen last night, was stationed at the intersection as well (I think it's following me!)  The protest was scheduled to last only 15 minutes. 
 
 At it, I met a woman who flew in from Olympia, WA for the protests.  Last night, I met a couple from Arizona. So, it's not just the "wild radicals" of NYC --- dislike of W is widespread, and they are just converging here......
 
@@ -16,6 +16,6 @@ After work, I head downtown again, this time to Battery Park,  where the Axis of
 
 Finally, I headed back to the Union Sq area, to see a play called ["*Voting for Godot*"](http://www.votingforgodot.com)  a satire of modern elections.  It was alright, but never really took off.  I got the feeling that it was written & produced in just the last month or so, so the writing could have used some sharpening, and the actors could have used a bit more rehearsal to work on their timing.  Also, I believe the action parallels "*Waiting for Godot*": "Vladimir" and "Estragon" become "Quo" and "Poppy", but I really don't know the earlier play well enough to fully see the parallels.
 
-After dashing a mile down 14th street to the PATH station after the show  to catch a just departing train to Hoboken, I again miss a train to Bloomfield by seconds, and have to wait in the Hoboken station for 50 minutes before the next one.
+After dashing a mile down 14th street to the PATH station after the show to catch a just departing train to Hoboken, I again miss a train to Bloomfield by seconds, and have to wait in the Hoboken station for 50 minutes before the next one.
 
 (Update: I fixed a lot of typos again)

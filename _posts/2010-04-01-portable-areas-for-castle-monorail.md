@@ -12,7 +12,7 @@ Now, having a controller and its actions together in a single assembly is a basi
 
 I would have to store - and retrieve at the right times, the view template files, and all other associated files - images, style sheets, script files, etc.
 
-Storing the files was in itself trivial -- .NET has a means built right it. The file just need to be added to the project as embedded resources.  In Visual Studio, on the file's property panel, set the "Build  Action" to "Embedded Resource".
+Storing the files was in itself trivial -- .NET has a means built right it. The file just need to be added to the project as embedded resources.  In Visual Studio, on the file's property panel, set the "Build Action" to "Embedded Resource".
 
 Now that the files were in the assembly, we had to get them out of it. For views, which I had assumed were going to be the most trouble, this turned out to be simple, with the plumbing for it was already built into the Monorail framework.  Apparently, someone had planned for portable areas, but never followed through.  View templates are loaded by a class aptly called the FileAssemblyViewSourceLoader.  It looks in the "Views" folder for the template, and failing there, looks among the embedded resources of the assemblies in its collection.  However, nothing in the framework ever added an assembly to that collection, so this feature has always laid fallow.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Throwing the Book at &lsquo;em &mdash; Knowing Your  Storage
+title: Throwing the Book at &lsquo;em &mdash; Knowing Your Storage
 tags: programming, dotnet, csharp
 ---
 
