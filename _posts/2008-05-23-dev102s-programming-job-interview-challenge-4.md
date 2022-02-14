@@ -15,7 +15,7 @@ The folks at Dev102.com are offering weekly programming challenges, where they o
  
       int foo(int n)
       {          
-          return (n==7)   17 : (n==17)   7 : n;
+          return (n==7)  ? 17 : (n==17)  ? 7 : n;
       }
       
 
@@ -33,7 +33,7 @@ There may be a formula in there that works, but that one doesn't, and before I f
   
     int foo(int n)
     {
-     	return 24-n;
+     	return 24 - n;
     } 
     
 Yep, it's just that simple.
