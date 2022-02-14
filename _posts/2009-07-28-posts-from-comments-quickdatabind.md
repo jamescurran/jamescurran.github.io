@@ -15,7 +15,7 @@ To start us off, a few days ago, [Samer wrote about an extension method](http://
         return myListView;
     }
 
-Now, this is all well and good.  but why are we limiting ourselves to just ListViews   Many ASP.NET WebControl take a datasource and use that idiom.  Why not make an generic extension method to handle all of them?
+Now, this is all well and good.  but why are we limiting ourselves to just ListViews? Many ASP.NET WebControl take a datasource and use that idiom.  Why not make an generic extension method to handle all of them?
 
 
 	public static T QuickDataBind(this T myDataBoundControl, object myDataSource) 
@@ -30,5 +30,5 @@ It's still called exactly the same way:
 
        myGridView.QuickDataBind(myDS);
 	   
-but now it can be used on ListViews, GridView, DropDownLists DataGrids, Repeaters or anything else that uses a DataSOurce. 
+but now it can be used on ListViews, GridView, DropDownLists DataGrids, Repeaters or anything else that uses a DataSource. 
 

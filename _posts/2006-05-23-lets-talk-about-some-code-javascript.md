@@ -13,11 +13,11 @@ However, every now &amp; then, the authors just get a bit caught up in "clever" 
 
 <script src="https://gist.github.com/jamescurran/7443388.js">     </script>
 
-Now, the important thing to note here, is that nearly every line is affected by the value of targetvisibility, and we test for that value 4 times in just that short function.  Now, let's consider if we just tested for it once :
+Now, the important thing to note here, is that nearly every line is affected by the value of `targetvisibility`, and we test for that value 4 times in just that short function.  Now, let's consider if we just tested for it once :
 
 <script src="https://gist.github.com/jamescurran/7443419.js">  </script>
 
-So, now while, it's a bit longer, it's a whole bunch easier to read &amp; understand. But let's take this a step further.  How do we initially call this function   Again, from pg. 178 :
+So, now while, it's a bit longer, it's a whole bunch easier to read &amp; understand. But let's take this a step further.  How do we initially call this function? Again, from pg. 178 :
 
 <script src="https://gist.github.com/jamescurran/7443825.js">  </script>
     

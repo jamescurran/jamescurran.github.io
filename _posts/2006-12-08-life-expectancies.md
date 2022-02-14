@@ -15,7 +15,7 @@ Now, while this is technically true, it's not nearly as shocking as it sounds.  
 
 Consider a group of 100 newborn babies.  Let's say that we know that one of them will die each year, with the last one dying at age 100.  Now, at the start of this experiment, the life expectancy for the group is 50 years, because the majority of them will live to be at least 50 year old.
 
-Now, consider the group after 20 years, when 20 members of the group have died.  What's their life expectancy then   Now, it's 60, because of the remaining 80 people, 40 will die before age 60, and 40 will die afterwards.
+Now, consider the group after 20 years, when 20 members of the group have died.  What's their life expectancy then? Now, it's 60, because of the remaining 80 people, 40 will die before age 60, and 40 will die afterwards.
 
 Wait another 20 years, and the life expectancy is now 70, because of the remaining 60  forty-year-old people, 30 will die before age 70 and 30 will die afterwards.
 

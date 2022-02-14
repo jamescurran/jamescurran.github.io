@@ -23,7 +23,7 @@ Part of the problem can be traced to the fact that most Americans have absolutel
 
 This, of course, shouldn't be surprising from an American populace that generally seems proud of their inability to do math, and treat anyone who can do even the simplest arithmetic in his head as a freak.  
   
-Then there is accountability --- we feel that we are able to recognize a good doctor from a bad doctor, and maybe a good lawyer from a bad lawyer, but if you have no clue what a person does, how can you rate them   They consider the teenager that can a throw together an Html page as much of a "computer genius" as a compiler author (or they would if they had any clue what a "compiler author" was). 
+Then there is accountability --- we feel that we are able to recognize a good doctor from a bad doctor, and maybe a good lawyer from a bad lawyer, but if you have no clue what a person does, how can you rate them? They consider the teenager that can a throw together an Html page as much of a "computer genius" as a compiler author (or they would if they had any clue what a "compiler author" was). 
   
 Star doctors save lives; star athletes fill stadiums, and as such deserve huge salaries.  However, star developers, in the public's mind (and unfortunately in the minds of upper management of many companies hiring developers), [can be replaced by nerdy 16-year-olds](http://xkcd.com/519/).   Salaries have plateaued --  According to Payscale.com, [a developer with 20 years experience can be expected to make only about 30% more than one with just one year of experience](http://www.payscale.com/research/US/Job=Sr._Software_Engineer_%2F_Developer_%2F_Programmer/Salary).   In the same survey, a [similarly experienced lawyer](http://www.payscale.com/research/US/Job=Attorney_%2f_Lawyer/Salary) can expect double the salary of a beginner.
   
@@ -45,5 +45,5 @@ Damned if I know.
 
 I suspect that high school biology and social studies classes help us appreciate the skill of doctors and lawyer.  As far as I know, HS classes on computers are largely limited to using MSWord and Excel --- teaching us to appreciate the secretaries we don't have anymore.  
 
-So, should high schoolers by required to take a semester in programming   That would be nice, but I figure if you add a required course, that means you'll have to drop an existing required course, and I'm not sure what I'd give the heave-ho to.  What's more, programming isn't even my top choice for course that all should be part of the basic curriculum --- recent event have shown that that clearly needs to be a course in Personal Finance. 
+So, should high schoolers by required to take a semester in programming? That would be nice, but I figure if you add a required course, that means you'll have to drop an existing required course, and I'm not sure what I'd give the heave-ho to.  What's more, programming isn't even my top choice for course that all should be part of the basic curriculum --- recent event have shown that that clearly needs to be a course in Personal Finance. 
     

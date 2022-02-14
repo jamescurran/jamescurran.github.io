@@ -5,7 +5,7 @@ tags: code c# .net programming dotnet csharp codeproject
 ---
 Peter recently caused a bit of a stir with his article "[Sometimes an enum is not the best idea](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/05/30/sometimes-an-enum-is-not-the-best-idea.aspx)".  In it, he had a very specific problem: When an enum is passed to a method as an Object, and that method converts it to a usable value by calling `ToString()`, you get that enum's name and not it's value.  And he gave a gave very specific solution to that problem.  Peter wanted an simple ad hoc solution that he could just drop into his code.  Peter's idea was basically a quick fix to replace a bad design with something slightly less bad.   The problem arose when readers inferred that it was intended as a far more general solution, and pointed out different, more architectural solutions.  Bickering started in the comments.
 
-I think the main problem is that Peter just want a quick fix to his existing design, and viewed a proper design as overkill for his simple needs.  However, since those simple needs were out of scope of his original purpose for the  article, he never got into specifics.  However, knowing the specifics would be key to knowing how complex the design needs to be.  This was the essence of Peter's follow-up [article](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/06/02/ask-first.aspx) (which he posted as I was in the middle of writing this)
+I think the main problem is that Peter just want a quick fix to his existing design, and viewed a proper design as overkill for his simple needs.  However, since those simple needs were out of scope of his original purpose for the article, he never got into specifics.  However, knowing the specifics would be key to knowing how complex the design needs to be.  This was the essence of Peter's follow-up [article](http://codebetter.com/blogs/peter.van.ooijen/archive/2010/06/02/ask-first.aspx) (which he posted as I was in the middle of writing this)
 
 So, let's try looking at this problem to see if we can come up with a better design that still meets the goal of being simple.
 
@@ -156,7 +156,7 @@ So, what have we accomplished
 
  * And we have those special features as part of the Supplier object. 
 
-But, wait.  You're probably saying that those properties we've defined on Order are rather specific to one particular trait.  Would it be nice to be able to have one general algorithm which is customizable   That can be done too, by just extending the general principle, which involves using a method instead of a property, but the basic idea is still the same:  instead of returning a value, we return a function:
+But, wait.  You're probably saying that those properties we've defined on Order are rather specific to one particular trait.  Would it be nice to be able to have one general algorithm which is customizable? That can be done too, by just extending the general principle, which involves using a method instead of a property, but the basic idea is still the same:  instead of returning a value, we return a function:
 
 	  public static Action< OrderItem > ShippingByWeight(int pounds, decimal cost)
 	{
