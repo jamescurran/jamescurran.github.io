@@ -28,7 +28,7 @@ Ok, now we move to adding the quotes. The Literature Clock project has a large c
 
 I've also ported the clock webpage into Blazor (as well as port the R program into C#) so that might be a future blog story.
 
-For each minutes, there's a json file with a name in the form "HH_MM.json", which holds an array of objects which look like this:
+For each minute, there's a json file with a name in the form "HH_MM.json", which holds an array of objects which look like this:
 
 <script src="https://gist.github.com/jamescurran/11d9dea47ef0741128fcc0959afb2ce1.js"> </script>
 
