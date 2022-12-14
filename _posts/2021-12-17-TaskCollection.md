@@ -78,6 +78,5 @@ And the methods:
 
 Full code given here:
 
-<script src="https://gist.github.com/jamescurran/46d90e84646c3c308cdea0d664addd1d.js"> </script>
-
+{% gist 46d90e84646c3c308cdea0d664addd1d test.md %}
 
