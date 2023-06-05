@@ -1,5 +1,6 @@
----
----
+title: Honest Illusion
+email: james.curran@gmail.com
+
 lsi: false
 exclude: [safe]
 permalink: /blog/:year/:month/:day/:title/
