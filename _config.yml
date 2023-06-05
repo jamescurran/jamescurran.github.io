@@ -1,7 +1,6 @@
 ---
 ---
 lsi: false
-highlighter: true
 exclude: [safe]
 permalink: /blog/:year/:month/:day/:title/
 
@@ -12,17 +11,20 @@ plugins:
 future:      true
 markdown:    kramdown
 
-lsi: false
 safe: true
 incremental: false
 highlighter: rouge
 gist:
     noscript: false
+
 kramdown:
-    math_engine: mathjax
-    syntax_highlighter: rouge
-
-
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
 maruku:
   use_tex:    false
@@ -31,15 +33,6 @@ maruku:
   png_dir:    images/latex
   png_url:    /images/latex
 
-
-
 redcarpet:
-  extensions: ["gh_blockcode", "fenced_code"]
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+  extensions: ["fenced_code_blocks"]
   
