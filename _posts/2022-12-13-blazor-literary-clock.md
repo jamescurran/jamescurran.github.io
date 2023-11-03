@@ -78,11 +78,11 @@ The javascript version includes a formula to adjust the font size to accomodate 
 
 And Blazor:
 
-<style>
-	#lit_quote {
-		font-size: @(_fontSize)vw
-	}
-</style>
+        <style>
+        	#lit_quote {
+        		font-size: @(_fontSize)vw
+        	}
+        </style>
 
 You can see the clock in action (along with two other online clocks of mine) here: [https://noveltheory.com/clock/](https://noveltheory.com/clock/)
 
