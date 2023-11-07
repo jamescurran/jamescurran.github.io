@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Oregon Trail Project - Part 0: Intro
+title: The Oregon Trail Project - Part 0 - Intro
 tags: code programming retro history
 ---
  You might notice that I don't write much on this blog.  My last entry was the written last Decemeber for the [2022 C# Advent Calendar](https://www.csadvent.christmas/), and I've already signed up for the 2023 version, and I had a idea for that.
