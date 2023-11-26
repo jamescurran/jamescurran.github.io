@@ -6,7 +6,7 @@ tags: code programming retro history opensource
 
 Oregon Trail Project
 --------------------
- - Part 0 : Intro (https://honestillusion.com/blog/2023/11/07/oregon-trail-project-intro/)
+ - Part 0 : [Intro](https://honestillusion.com/blog/2023/11/07/oregon-trail-project-intro/)
  - Part 1 : Markdown to Spectre Console (this one)
 
 Continuing my attempt to port the 1978 BASIC code for the Oregon Trail game to C#, the first step is *quite simple*. We need a way to display text.  
