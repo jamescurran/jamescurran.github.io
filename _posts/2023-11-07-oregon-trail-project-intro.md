@@ -14,16 +14,16 @@ But then, [Virtual Coffee](https://virtualcoffee.io/) announced that this month'
 
 > This is not even close to what this is going to be about (But then, it is based on my original misspelling of "Trail" in the title.)
 
-I came up with one idea for that (which I think I'll write up after this -- but post it first --  just to keep you guessing), and was just going to leave it at that, when I recalled this project, which I had been thought about for a few months, but hadn't spend any actual time working on it.  It seemed like it could make a nice serial, which would rack up the word count.
+I came up with one idea for that (which I think I'll write up after this -- but post it first --  just to keep you guessing), and was just going to leave it at that, when I recalled this project, which I had been thinking about for a few months, but hadn't spend any actual time working on it.  It seemed like it could make a nice serial, which would rack up the word count.
 
 
 ## The Oregon Trail : Background
 
-The Oregon trail, of course, was an actual historical route real American settlers used in the 1800s, but no one cares about that.  The important one was a computer games used in schools in the 1970s & '80s, to teach history (or something like that).  It was apparently written in 1971, but didn't go nationwide until 1978, when grammar schools were being given Apple II computers, and Oregon Trail was pretty much the only thing they would that ran on them.
+The Oregon trail, of course, was an actual historical route real American settlers used in the 1800s, but no one cares about that.  The important one was a computer game used in schools in the 1970s & '80s, to teach history (or something like that).  It was apparently written in 1971, but didn't go nationwide until 1978, when grammar schools were being given Apple II computers, and Oregon Trail was pretty much the only thing they had that ran on them.
 
 Or at least, that's what I've been told.  By 1978, I was already in high school, and I missed all that.  I didn't hear about it until the 2000s, when I was quite surprised to learn it was some sort of cultural phenomenon.  And it mostly involved dying of dysentery.
 
-So, I was a bit delighted to copy of the original BASIC source code on the Interwebs a few months ago.  (OK, not the "original-original" -- The one I found claims it was 1978). 
+So, I was a bit delighted to find copy of the original BASIC source code on the Interwebs a few months ago.  (OK, not the "original-original" -- [The one I found claims it was from 1978](https://archive.org/details/200106-tops10-in-a-box) (thanks to Jimmy Maher for posting it)). 
 
 ## The Project
 
