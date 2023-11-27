@@ -6,20 +6,21 @@ tags: code programming retro history opensource
 
 Oregon Trail Project
 --------------------
- - Part 0 : [Intro](https://honestillusion.com/blog/2023/11/07/oregon-trail-project-intro/)
- - Part 1 : Markdown to Spectre Console (this one)
+
+- Part 0 : [Intro](https://honestillusion.com/blog/2023/11/07/oregon-trail-project-intro/)
+- Part 1 : Markdown to Spectre Console (this one)
 
 Continuing my attempt to port the 1978 BASIC code for the Oregon Trail game to C#, the first step is *quite simple*. We need a way to display text.  
 
 The original game just had some basic text.  Mostly just a sentence or less at a time.  The largest block was the instructions and it's not even 300 words. But I wanted to added some formatting to it -- in a way that could be adapted to whatever output media this was eventually going to be used.  That was going to be console text in this first version, but HTML or WPF versions might be in the future.  I figured the best way would be to use [MarkDown.](https://en.wikipedia.org/wiki/Markdown).
 
-**And Then I went down a rabbit hole**
+## And Then I went down a rabbit hole ##
 
 I started looking for a markdown component to output to the console. The problem here is that Markdown was intended to translate to Html, so a parser to do that is easy to find. It was also intended for formatting which just can't be done on a text console.  So, no one tried.
 
 I did, however, discover [SpectreConsole](https://github.com/spectreconsole/spectre.console), which makes it easier to create beautiful console output.
 
-So, I could get a really nice output, if I was willing to give up the possibility of non-console output -- or I could keep looking for a markdown solution. 
+So, I could get a really nice output, if I was willing to give up the possibility of non-console output -- or I could keep looking for a markdown solution.
 
 But then I discovered [MarkDig](https://github.com/xoofx/markdig), which is a parser for markdown, which has a number of renderers for output media (Html, Wpf, Xml), but more importantly, it's essentially a toolkit for building a renderer for other media.
 
@@ -41,11 +42,10 @@ It took me a while to figure out that the solution wasn't in the list handling c
 
 And those pretty much handled everything I needed for Oregon Trail.
 
-**And the rabbit hole got deeper...**
+## And the rabbit hole got deeper ##
 
 While that was enough, I wasn't quite satisfied. I really should to something for headers, but we can't change the font size in text mode, but SpectreConsole did have a feature called `Figlet` which could be used.  And both MarkDown and Spectre had Tables, and Code Samples.
 
 But, the problem here is that those features didn't use the markup style the other features did. Using the advanced features entails creating a object and rendering it, which didn't really play well with the markup style.  After playing around for much too long, I decided to give up of those, and come back to them later.
 
-The code for this is available at: https://github.com/jamescurran/Markdig.SpectreConsole 
-
+The code for this is available at: https://github.com/jamescurran/Markdig.SpectreConsole
