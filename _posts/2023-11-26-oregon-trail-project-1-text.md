@@ -47,5 +47,5 @@ While that was enough, I wasn't quite satisfied. I really should to something fo
 
 But, the problem here is that those features didn't use the markup style the other features did. Using the advanced features entails creating a object and rendering it, which didn't really play well with the markup style.  After playing around for much too long, I decided to give up of those, and come back to them later.
 
-The code for this is available at: https://github.com/jamescurran/Markdig.SpectreConsole 
+The code for this is available at: [https://github.com/jamescurran/Markdig.SpectreConsole](https://github.com/jamescurran/Markdig.SpectreConsole)
 
