@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Oregon Trail Project - Part 2 - 
+title: The Oregon Trail Project - Part 2 - Dates
 tags: code programming retro history opensource dates
 ---
 
