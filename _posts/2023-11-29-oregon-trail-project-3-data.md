@@ -98,6 +98,7 @@ After a bit of analysis, I came up with this:
     {
         public Resources Resources { get; set; }
         public int TurnCounter { get; set; }
+        public int Miles { get; set; }
 
         public bool ClearedSouthPass { get; set; }       //  REM F1 = FLAG FOR CLEARING SOUTH PASS
         public bool ClearedBlueMountains { get; set; }   //  REM F2 = FLAG FOR CLEARING BLUE MOUNTAINS
