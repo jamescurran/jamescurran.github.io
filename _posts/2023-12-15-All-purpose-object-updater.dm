@@ -1,8 +1,8 @@
-X---
+---
 layout: post
 title: All Purpose Object Updater
 tags: code programming dotnet advent
-X---
+---
 
 
 This post is for day 15  of the [2023 C# Advent Calendar](https://www.csadvent.christmas/) operated by [Matthew Groves](https://crosscuttingconcerns.com/). Thanks for letting me participate!
