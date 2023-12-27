@@ -34,11 +34,11 @@ If you're not familiar with Basic code, let me explain.  `RND(0)` return a rando
 
 So, first pass thru, `D1` is 1, `D` is 6, and `R1` is a random number [0..100). If that random number is less than or equal to 6, the `GOTO .. OF` lines will direct execution to the first trail event.  If it is greater than 6, it tries again with `D1` as 2, `D` as 11.
 
-It tries this up to 16 times, with the value of `D` increasing each time until one hits.  On the 16th iteration, if the random number less than 100, is also less than 95, we go to trail event at line 4670 (line 3650).  On the next time thru the loop, we go directly to line 4670 ("HELPFUL INDIANS SHOW YOU WHERE TO FIND MORE FOOD").
+It tries this up to 16 times, with the value of `D` increasing each time until one hits.  On the 16th iteration, if the random number less than 100, is also less than 95, we go to trail event at line 4610 (line 3650).  On the next time thru the loop, we go directly to line 4670 ("HELPFUL INDIANS SHOW YOU WHERE TO FIND MORE FOOD").
 
 So, the percentage chance of any particular trail event happening is the difference between it's corresponding value in the `DATA` line, and the value below it. Which means we can just use the difference, and the order doesn't matter. This makes the next step possible.
 
-I want to isolate each of those trail event into individual class (and then organize them using .NET's [Managed Extensibility Framework (MEF)](https://learn.microsoft.com/en-us/dotnet/framework/mef/)).  This is major over-engineering, but that pretty much describes this entire project, so we're not going to let that stop is.  
+I want to isolate each of those trail events into individual classes (and then organize them using .NET's [Managed Extensibility Framework (MEF)](https://learn.microsoft.com/en-us/dotnet/framework/mef/)).  This is major over-engineering, but that pretty much describes this entire project, so we're not going to let that stop is.  
 
 A typical trail event looks like this:
 
@@ -55,7 +55,7 @@ To translate this into C# with MEF, first we define an Interface to be used by e
         string Occasion(GameContext context);
     }
 
-(I couldn't stand calling the method `Invoke`, which led to a trip to a thesaurus, hence `Occasion`.  That interface may change as this project develops. I think particularly the return value will change.)
+(I couldn't stand calling the method `Invoke`, which led to a trip to a thesaurus, hence `Occasion`.  That interface may change as this project develops. I think particularly that return value will change.)
 
 This will make the code:
 

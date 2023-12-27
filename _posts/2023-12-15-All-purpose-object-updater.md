@@ -11,7 +11,7 @@ In past years, when I've written for the Advent Calender (this is my sixth year 
 
 So, now back to the matter at hand, a one-off bit coding for those just popping up for the holidays.
  
-In my day job, we had a need to test a object for some condition, and if true, make some change to the object.  For example, if in an order record, a credit card number is given, then the `PayementType` property must be set to `CreditCard`.  The trick is that both the condition (there are many of them) and the changes to be made are stored in a database as JSON.
+In my day job, we had a need to test a object for some condition, and if true, make some change to the object.  For example, if in an order record, a credit card number is given, then the `PaymentType` property must be set to `CreditCard`.  The trick is that both the condition (there are many of them) and the changes to be made are stored in a database as JSON.
 
 Testing for the condition is handled by the [MicroRulesEngine](https://github.com/runxc1/MicroRuleEngine), an open source project I've contributed heavily to.
 
@@ -25,7 +25,7 @@ Perhaps you are familiar with the "non-destructive mutation" syntax added in C# 
 This is conceptional similar, except it's a ***destructive,*** *in-place* mutation, which actually means it's quite different.
 
     var me = new Person { FirstName = "James", LastName ="Curran" };
-    me.Update( { FirstName = "Jean" });
+    me.Update( new { FirstName = "Jean" });
 
 <script src="https://gist.github.com/jamescurran/c5e4887a3a688e397528fd8a8d581e1b.js"> </script>
 
