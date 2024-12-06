@@ -36,19 +36,19 @@ No collection behind it.  Just "the next item", which in this case is the next h
 
 Now, with the case of `Where()`, and other LINQ methods like `Select`, which take a `IEnumerable` as a parameter, and returns an `IEnumerable`, the method really just creates a new IEnumerable object which wraps the given `IEnumerable`.
 
-Essentially what is happening it the example I wrote above, is that the `ToList()` says "I need to build a list. Give me the first item to start", and asks the it's input `IEnumerable` for some item.  This input `IEnumerable` is the object created by the second `Where()` method.  
+Essentially what is happening in the example I wrote above, is that the `ToList()` says "I need to build a list. Give me the first item to start", and asks its input `IEnumerable` for some item.  This input `IEnumerable` is the object created by the second `Where()` method.  
 
 This `IEnumerable` says "I have no object to complete that request, so I must ask *my* input `IEnumerable` for one". That input `IEnumerable` is, of course, the object created by the first `Where()`.
 
 And so on.  That `IEnumerable` similarly says "I have no object to complete that request, so I must ask *my* input `IEnumerable` for one". That input `IEnumerable` is `myCollection`, which we'll assume is a `List<int>` holding [4, 7, 2, 6, etc] for this example.
 
-`myCollection` (which, here, is just another `IEnumerable`) cordially offers up it's first element, 4,  when asked.  To which the first Where() says "Nope, not what I was looking for", and asks for another.  `myCollection` then gives up 7, which the first Where() likes, so it passes it onto the second Where().
+`myCollection` (which, here, is just another `IEnumerable`) cordially offers up its first element, 4, when asked. To which the first Where() says "Nope, not what I was looking for", and asks for another.  `myCollection` then gives up 7, which the first Where() likes, so it passes it onto the second Where().
 
 *But*, the second Where rejects the 7, and thus must ask the first Where() for another `int`. For this, the first Where() must go back to `myCollection`, first for the 2 (which the first Where rejects), and then for 6, which it likes and passes onto the second `Where()`.
 
 The second Where() also like the 6, and therefore passes it onto the `ToList()` which finally can place a value into the list it's building. But then, it immediately starts the whole process over --- asking for an `int` from the second Where(), which then asks the first `Where`, which asked `myCollection` and so on, until `myCollection` says it has no more, and that information is passed down the chain.
 
-We can see this taking our example from before and augmenting it with some logging into the predicate lambdas. 
+We can see this by taking our example from before and augmenting it with some logging in the predicate lambdas. 
 
 	int[] myCollection = {4,7,2,6};
 
