@@ -39,7 +39,7 @@ Except not exactly.  It actually turns the interpolated string into a `Formattab
 
 >> Ok, that's actually a lie.  Under some circumstances, the compiler will just optimize it down to just the `String.Format` call.  But, let's talk about the non-optimized use of the `FormattableString` class.
 
-FormattableString has a couple propereties, `Format` (string) and `ArgumentCount` (int), and a couple methods, `GetArgument(int)` and `GetArguments()`, which return an object and an array or object, respectively.
+FormattableString has a couple properties, `Format` (string) and `ArgumentCount` (int), and a couple methods, `GetArgument(int)` and `GetArguments()`, which return an object and an array or object, respectively.
 
 To start, we can manipulate those, to have some fun:
 
@@ -77,7 +77,7 @@ Normally, if we tried using an interpolated string here, it would yield a simple
 
 we can then use 
 
-     context.ExecuteQuery("select * from table where ID = {id}");
+     context.ExecuteQuery($"select * from table where ID = {id}");
 	 
 and we have convenience and safety. But can we take this further?  
 
