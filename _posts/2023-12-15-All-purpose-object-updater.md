@@ -37,6 +37,6 @@ Now that's fine if you have an object with the changes (or can deserialize a bit
 
 This runs basically the same way, except now we are iterating over the items in the dictionary.  It has a couple special features: You can use the word "null" instead of a `null` value to set the property to `null`. (`null` itself also works)  And you can use "Y" or "N" (or "Yes" or "no") to set a boolean to `true` or `false`.
 
-Which brings us to another special case we had.  Sometimes there was only one property to change, but it had to be set to one of two values depending on condition.  Again, the changes were stored as text in the database, so we settled on the format: "{propertyname}={truevalue} | {falsevalue},  e.g., `Mode=3|5`.
+Which brings us to another special case we had.  Sometimes there was only one property to change, but it had to be set to one of two values depending on condition.  Again, the changes were stored as text in the database, so we settled on the format: "{propertyname}={truevalue} \| {falsevalue},  e.g., `Mode=3|5`.
 
 <script src="https://gist.github.com/jamescurran/8ed9ad531d799e17091bd30f19cb9d83.js"> </script>
