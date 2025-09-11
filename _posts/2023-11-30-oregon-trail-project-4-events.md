@@ -61,7 +61,7 @@ This will make the code:
 
     public string Occasion(GameContext context)
     {
-        context.Miles += Random.Shared.Next(-5, 5);
+        context.Miles -= Random.Shared.Next(5, 15);
         context.Resources.Bullets -= 200;
         context.Resources.Misc -= Random.Shared.Next(1, 4);
 
